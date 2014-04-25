@@ -6,8 +6,7 @@ use GovTribe\Storage\EntityRepositoryInterface;
 
 class APIController extends BaseController {
 
-	protected $defaultSortByField = 'timestamp';
-	protected $defaultSortByDirection = 'desc';
+	protected $entity;
 
 	/**
 	 * Create a new instance of the controller.
@@ -22,7 +21,6 @@ class APIController extends BaseController {
 	/**
 	 * Display a listing of the resource.
 	 *
-	 * @param  string  $version
 	 * @return Response
 	 */
 	public function index($version)
@@ -33,13 +31,14 @@ class APIController extends BaseController {
 	/**
 	 * Display the specified resource.
 	 *
-	 * @param  string  $version
 	 * @param  string  $id
 	 * @return Response
 	 */
-	public function show($version, $id)
+	public function show($id)
 	{
-		return Response::json($this->entity->findOrFail($id)->toAPI());
+		$columns = array_keys($this->entity->getAPITypeSpec()['properties']);
+
+		return Response::json($this->entity->findOrFail($id, $columns)->toAPI());
 	}
 
 	public function scopePeople($query)

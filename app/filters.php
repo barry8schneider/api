@@ -44,18 +44,17 @@ Route::filter('auth.basic', function()
 	return Auth::basic();
 });
 
-Route::filter('versionIsValid', function($version)
+Route::filter('setRequestedAPIVersion', function($version)
 {
-	$version = Request::segment(1);
-
-	if (!in_array($version, array_keys(Config::get('api.spec'))))
+	if ($version = Request::header('x-gt-api-version'))
 	{
-		return Response::json('API version not supported', 400);
+		if (!in_array($version, array_keys(Config::get('api.spec'))))
+		{
+			return Response::json('API version not supported', 400);
+		}
+		else Config::set('api.requestedVersion', $version);
 	}
-	else
-	{
-		Config::set('api.version', $version);
-	}
+	else Config::set('api.requestedVersion', Config::get('api.defaultVersion'));
 });
 
 

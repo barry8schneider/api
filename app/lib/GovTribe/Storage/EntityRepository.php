@@ -7,13 +7,23 @@ class EntityRepository implements EntityRepositoryInterface {
 		return $this->entity->all();
 	}
  
-	public function findOrFail($id)
+	public function find($id, $columns = array('*'))
 	{
-		return $this->entity->find($id);
+		return $this->entity->find($id, $columns);
+	}
+
+	public function findOrFail($id, $columns = array('*'))
+	{
+		return $this->entity->findOrFail($id, $columns);
 	}
 
 	public function paginate($perPage)
 	{
 		return $this->entity->paginate($perPage);
+	}
+
+	public function getAPITypeSpec()
+	{
+		return $this->entity->getAPITypeSpec();
 	}
 }

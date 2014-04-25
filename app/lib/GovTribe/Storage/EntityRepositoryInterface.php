@@ -4,7 +4,11 @@ interface EntityRepositoryInterface {
 
 	public function all();
 
-	public function findOrFail($id);
+	public function find($id, $columns = array('*'));
+
+	public function findOrFail($id, $columns = array('*'));
 
 	public function paginate($perPage);
+
+	public function getAPITypeSpec();
 }

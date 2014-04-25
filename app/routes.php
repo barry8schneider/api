@@ -16,10 +16,7 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
-Route::group(array('prefix' => '{version}'), function()
+Route::group(array('before' => 'setRequestedAPIVersion'), function()
 {
-	Route::group(array('before' => 'versionIsValid'), function()
-	{
-		Route::resource('agency', 'GovTribe\Controllers\AgencyController', array('only' => array('index', 'show')));
-	});
+	Route::resource('agency', 'GovTribe\Controllers\AgencyController', array('only' => array('index', 'show')));
 });

@@ -22,26 +22,34 @@ class APIEntity extends \Jenssegers\Mongodb\Model {
 	 */
 	public function toAPI()
 	{
-		$version = Config::get('api.version');
-		$typeSpecs = Config::get('api.spec.' . $version)['types'];
-		$thisTypeSpec = Config::get('api.spec.' . $version . '.types.' . class_basename($this));
-		$attributesToSend = [];
+		$typeSpec = $this->getAPITypeSpec();
 
-		if (isset($thisTypeSpec['extends']))
-		{
-			$attributesToSend = array_merge(
-				$this->buildFromAPITypeSpec($typeSpecs[$thisTypeSpec['extends']]),
-				$this->buildFromAPITypeSpec($thisTypeSpec)
-			);
-		}
-		else
-		{
-			$attributesToSend = $this->buildFromAPITypeSpec($thisTypeSpec);
-		}
-
+		$attributesToSend = $this->buildFromAPITypeSpec($typeSpec);
 		ksort($attributesToSend, SORT_NATURAL);
 
 		return $this->makeAPISafeAttributes($attributesToSend);
+	}
+
+	/**
+	 * Based on the requested version, get the model's API type spec.
+	 *
+	 * @return array
+	 */
+	public function getAPITypeSpec()
+	{
+		$version = Config::get('api.requestedVersion');
+		$typeSpecs = Config::get('api.spec.' . $version)['types'];
+		$thisTypeSpec = Config::get('api.spec.' . $version . '.types.' . class_basename($this));
+
+		if (isset($thisTypeSpec['extends']))
+		{
+			$thisTypeSpec['properties'] = array_merge(
+				$typeSpecs[$thisTypeSpec['extends']]['properties'], 
+				$thisTypeSpec['properties']
+			);
+		}
+
+		return $thisTypeSpec;
 	}
 
 	/**

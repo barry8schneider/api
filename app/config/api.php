@@ -8,8 +8,11 @@ return array(
 	|--------------------------------------------------------------------------
 	*/
 
+	'defaultVersion' => '3',
+	'requestedVersion' => null,
+
 	'spec' => array(
-		'v3' => array(
+		'3' => array(
 			'types' => array(
 				'APIEntity' => array(
 					'extends' => null,
