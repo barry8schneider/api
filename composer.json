@@ -1,0 +1,44 @@
+{
+	"name": "laravel/laravel",
+	"description": "The Laravel Framework.",
+	"keywords": ["framework", "laravel"],
+	"license": "MIT",
+	"require": {
+		"laravel/framework": "4.1.*",
+		"jenssegers/mongodb": "*",
+		"zircote/swagger-php": "0.9.*@dev"
+	},
+	"require-dev": {
+		"way/generators": "2.*",
+		"raveren/kint": "1.0.*@dev",
+		"mockery/mockery": "0.9.*@dev"
+	},	
+	"autoload": {
+		"classmap": [
+			"app/commands",
+			"app/database/migrations",
+			"app/database/seeds",
+			"app/tests/TestCase.php"
+		],
+		"psr-0": {
+			"GovTribe": "app/lib"
+		}
+	},
+	"scripts": {
+		"post-install-cmd": [
+			"php artisan clear-compiled",
+			"php artisan optimize"
+		],
+		"post-update-cmd": [
+			"php artisan clear-compiled",
+			"php artisan optimize"
+		],
+		"post-create-project-cmd": [
+			"php artisan key:generate"
+		]
+	},
+	"config": {
+		"preferred-install": "dist"
+	},
+	"minimum-stability": "stable"
+}

@@ -1,0 +1,1 @@
+/Users/jhariani/Development/gt-api/app/views/Foos/show.blade.php
