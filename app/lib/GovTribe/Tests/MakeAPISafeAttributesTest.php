@@ -7,12 +7,11 @@ class MakeAPISafeAttributesTest extends \TestCase
 	public function setup()
 	{
 		parent::setup();
-		\Illuminate\Support\Facades\Route::enableFilters();
 	}
 
 	public function tearDown()
 	{
-		Mockery::close();
+		parent::tearDown();
 	}
 
 	public function testMakeAPISafeAttributes()
