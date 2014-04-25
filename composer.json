@@ -4,6 +4,7 @@
 	"keywords": ["framework", "laravel"],
 	"license": "MIT",
 	"require": {
+		"php": ">=5.5.0",
 		"laravel/framework": "4.1.*",
 		"jenssegers/mongodb": "*",
 		"zircote/swagger-php": "0.9.*@dev"
@@ -11,7 +12,8 @@
 	"require-dev": {
 		"way/generators": "2.*",
 		"raveren/kint": "1.0.*@dev",
-		"mockery/mockery": "0.9.*@dev"
+		"mockery/mockery": "0.9.*@dev",
+		"satooshi/php-coveralls": "dev-master"
 	},	
 	"autoload": {
 		"classmap": [
