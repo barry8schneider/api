@@ -22,7 +22,7 @@ class MakeAPISafeAttributesTest extends \TestCase
 			'created_at' => \Carbon\Carbon::now(),
 		);
 
-		$check = \GovTribe\Models\APIEntity::MakeAPISafeAttributes($attributes);
+		$check = \GovTribe\Response\Response::api($attributes)->getData(true);
 
 		$this->assertTrue(is_string($check['_id']));
 		$this->assertTrue(is_int($check['timestamp']));

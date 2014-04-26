@@ -181,7 +181,7 @@ return array(
 		'Redirect'        => 'Illuminate\Support\Facades\Redirect',
 		'Redis'           => 'Illuminate\Support\Facades\Redis',
 		'Request'         => 'Illuminate\Support\Facades\Request',
-		'Response'        => 'Illuminate\Support\Facades\Response',
+		//'Response'        => 'Illuminate\Support\Facades\Response',
 		'Route'           => 'Illuminate\Support\Facades\Route',
 		'Schema'          => 'Illuminate\Support\Facades\Schema',
 		'Seeder'          => 'Illuminate\Database\Seeder',
@@ -193,10 +193,10 @@ return array(
 		'View'            => 'Illuminate\Support\Facades\View',
 
 		//GovTribe.
-		'Agency'          => 'GovTribe\Models\Agency',
+		'Response'        => 'GovTribe\Response\Response',
 
 		//3rd Party.
-		//...
+		//.
 	),
 
 );

@@ -8,8 +8,5 @@ composer.lock
 Thumbs.db
 /app/views/hello.php
 .env.local.php
-
 npm-debug.log
-/node_modules/
-!/node_modules/
-!src/node_modules/
+/node_modules

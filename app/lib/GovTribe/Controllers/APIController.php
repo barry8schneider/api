@@ -1,8 +1,8 @@
 <?php namespace GovTribe\Controllers;
 
-use \Illuminate\Support\Facades\Response;
-use \Illuminate\Routing\Controller as BaseController;
+use Illuminate\Routing\Controller as BaseController;
 use GovTribe\Storage\EntityRepositoryInterface;
+use GovTribe\Response\Response;
 
 class APIController extends BaseController {
 
@@ -19,31 +19,74 @@ class APIController extends BaseController {
 	}
 
 	/**
-	 * Display a listing of the resource.
-	 *
-	 * @return Response
-	 */
-	public function index($version)
-	{
-
-	}
-
-	/**
 	 * Display the specified resource.
 	 *
 	 * @param  string  $id
+	 * @param  array   $columns
 	 * @return Response
 	 */
-	public function show($id)
+	public function show($id, array $columns = array('*'))
 	{
-		$columns = array_keys($this->entity->getAPITypeSpec()['properties']);
-
-		return Response::json($this->entity->findOrFail($id, $columns)->toAPI());
+		return Response::api($this->entity->findOrFail($id, $columns)->getAttributes());
 	}
 
-	public function scopePeople($query)
+	/**
+	 * Get the resource's dollar flow.
+	 *
+	 * @param  string  $type
+	 * @param  string  $id
+	 * @return Response
+	 */
+	public function getDollarFlow($type, $id)
 	{
-		return $query->where('votes', '>', 100);
+		$columns = array(
+			'market.dollarFlow',
+		);
+		$rawData = $this->entity->findOrFail($id, $columns)->toArray();
+
+		if (!isset($rawData['market']['dollarFlow']))
+		{
+			return Response::api(array());
+		}
+		else
+		{
+			unset($rawData['market']['dollarFlow']['allTime']);
+			return Response::api($rawData['market']['dollarFlow']);
+		}
+	}
+
+	/**
+	 * Get the resource's recent, most awarded vendors.
+	 *
+	 * @param  string  $type
+	 * @param  string  $id
+	 * @return Response
+	 */
+	public function getTopVendors($type, $id)
+	{
+		$columns = array(
+			'market.characteristics.vendors',
+		);
+		$rawData = $this->entity->findOrFail($id, $columns)->toArray();
+
+		$mongo = \DB::getMongoDb();
+
+		$cursor = $mongo->activity->find(array(
+			'type' => 'project',
+			'participants' => new \MongoId($id),
+			'timestamp' => array('$gte' => new \MongoDate(\Carbon\Carbon::now()->subMonths(12)->timestamp))
+		));
+
+		dd($cursor->count());
+
+		if (!isset($rawData['market']['characteristics']['vendors']))
+		{
+			return Response::api(array());
+		}
+		else
+		{
+			return Response::api($rawData['market']['characteristics']['vendors']);
+		}
 	}
 
 }

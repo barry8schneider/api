@@ -4,115 +4,36 @@ use Illuminate\Support\Facades\Config;
 
 class APIEntity extends \Jenssegers\Mongodb\Model {
 
+	/**
+	 * Indicates whether attributes are snake cased on arrays.
+	 *
+	 * @var bool
+	 */
 	public static $snakeAttributes = false;
 	
+	/**
+	 * The accessors to append to the model's array form.
+	 *
+	 * @var array
+	 */
 	protected $appends = array('type');
 
-	protected $perPage = 50;
-
+	/**
+	 * Create a new Eloquent Collection instance.
+	 *
+	 * @param  array  $models
+	 * @return \Illuminate\Database\Eloquent\Collection
+	 */
 	public function newCollection(array $models = array())
 	{
 		return new APICollection($models);
 	}
 
 	/**
-	 * Convert the model instance to API.
+	 * Get the value of the model's type key.
 	 *
-	 * @return array
+	 * @return string
 	 */
-	public function toAPI()
-	{
-		$typeSpec = $this->getAPITypeSpec();
-
-		$attributesToSend = $this->buildFromAPITypeSpec($typeSpec);
-		ksort($attributesToSend, SORT_NATURAL);
-
-		return $this->makeAPISafeAttributes($attributesToSend);
-	}
-
-	/**
-	 * Based on the requested version, get the model's API type spec.
-	 *
-	 * @return array
-	 */
-	public function getAPITypeSpec()
-	{
-		$version = Config::get('api.requestedVersion');
-		$typeSpecs = Config::get('api.spec.' . $version)['types'];
-		$thisTypeSpec = Config::get('api.spec.' . $version . '.types.' . class_basename($this));
-
-		if (isset($thisTypeSpec['extends']))
-		{
-			$thisTypeSpec['properties'] = array_merge(
-				$typeSpecs[$thisTypeSpec['extends']]['properties'], 
-				$thisTypeSpec['properties']
-			);
-		}
-
-		return $thisTypeSpec;
-	}
-
-	/**
-	 * Build an array of attributes based on an API's entity type spec.
-	 *
-	 * @param  array $spec
-	 * @return array
-	 */
-	public function buildFromAPITypeSpec(array $spec)
-	{
-		$built = [];
-
-		foreach ($spec['properties'] as $property => $definition)
-		{
-			if ($definition['with'])
-			{
-				$built[$property] = call_user_func_array(array($this, $definition['with']), $definition['args']);
-			}
-			elseif ($definition['default'])
-			{
-				$built[$property] = $definition['default'];
-			}
-			else
-			{
-				$built[$property] = $this->getAttribute($property);
-			}
-		}
-
-		return $built;
-	}
-
-	/**
-	 * Convert attributes to their API-safe versions.
-	 *
-	 * @param  array $attributes
-	 *
-	 * @return array
-	 */
-	public static function makeAPISafeAttributes(array $attributes)
-	{
-		array_walk_recursive($attributes, function(&$item, $key)
-		{
-			if ($item instanceof \MongoId)
-			{
-				$item = (string) $item;
-			}
-			elseif ($item instanceof \MongoDate)
-			{
-				$item = $item->sec;
-			}
-			elseif ($item instanceof \Carbon\Carbon)
-			{
-				$item = $item->timestamp;
-			}
-			elseif ($key === 'name' && empty($item))
-			{
-				$item = "Not Available";
-			}
-		});
-
-		return $attributes;
-	}
-
 	public function getTypeAttribute()
 	{
 	    return $this->attributes['type'] = strtolower(class_basename($this));

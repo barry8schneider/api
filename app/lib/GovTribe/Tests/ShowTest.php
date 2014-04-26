@@ -16,15 +16,11 @@ class ShowTest extends TestCase
 
 	public function testShowEntity()
 	{
-		// Supported API version
-		foreach ($this->app['config']['api']['spec'] as $version => $spec)
+		foreach ($this->app['config']['api']['supportedVersions'] as $version)
 		{
 			$response = $this->action('GET', 
-				'GovTribe\Controllers\AgencyController@show',
-				array('agency' => '51548150db40a5165c0000b6'),
-				array(),
-				array(),
-				array('HTTP_X_GT_API_VERSION' => $version)
+				'GovTribe\Controllers\AgencyController' . $version . '@show',
+				array('agency' => '51548150db40a5165c0000b6')
 			);
 
 			$this->assertResponseOk();

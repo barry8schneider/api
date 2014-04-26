@@ -2,6 +2,36 @@
 
 /*
 |--------------------------------------------------------------------------
+| Set requested API version.
+|--------------------------------------------------------------------------
+|
+| Validate and set the version of the API requested by the client. If one 
+| isn't provided, or is invalid, use a default. This needs to be done
+| before routes are registered. 
+|
+*/
+
+$setRequestedVersion = function($requestedVersion)
+{
+	$requestedVersion = str_replace('.', '', $requestedVersion);
+
+	if (!in_array($requestedVersion, Config::get('api.supportedVersions')))
+	{
+		Config::set('api.requestedVersion', Config::get('api.defaultVersion'));
+	}
+	else 
+	{
+		Config::set('api.requestedVersion', $requestedVersion);
+	}
+};
+
+$setRequestedVersion(Request::header('x-gt-api-version'));
+
+// var_dump(Request::header());
+// var_dump('---');
+
+/*
+|--------------------------------------------------------------------------
 | Application Routes
 |--------------------------------------------------------------------------
 |
@@ -13,10 +43,36 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return json_encode(Config::get('api.requestedVersion'));
+
+	return View::make('docs');
 });
 
-Route::group(array('before' => 'setRequestedAPIVersion'), function()
+$registerRoutesForRequestedVersion = function($requestedVersion)
 {
-	Route::resource('agency', 'GovTribe\Controllers\AgencyController', array('only' => array('index', 'show')));
-});
+	$resources = array('Agency');
+
+	foreach ($resources as $resourceName)
+	{
+		switch ($requestedVersion) 
+		{
+			case '30':
+
+				$resourceControllerName = 'GovTribe\Controllers\\' . $resourceName . 'Controller' . '30';
+
+				Route::resource(strtolower($resourceName), $resourceControllerName, array('only' => array('show')));
+
+				Route::group(array('prefix' => '{' . strtolower($resourceName) . '}/{id}'), function() use ($resourceControllerName)
+				{
+					Route::controller('/', $resourceControllerName);
+				});
+
+				break;
+		}
+	}
+};
+
+$registerRoutesForRequestedVersion(Config::get('api.requestedVersion'));
+
+
+
