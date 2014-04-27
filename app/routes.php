@@ -27,9 +27,6 @@ $setRequestedVersion = function($requestedVersion)
 
 $setRequestedVersion(Request::header('x-gt-api-version'));
 
-// var_dump(Request::header());
-// var_dump('---');
-
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -50,7 +47,10 @@ Route::get('/', function()
 
 $registerRoutesForRequestedVersion = function($requestedVersion)
 {
-	$resources = array('Agency');
+	$resources = array(
+			'Agency', 'Category', 'Office',
+			'Person', 'Protest', 'Vendor',
+		);
 
 	foreach ($resources as $resourceName)
 	{
@@ -61,18 +61,12 @@ $registerRoutesForRequestedVersion = function($requestedVersion)
 				$resourceControllerName = 'GovTribe\Controllers\\' . $resourceName . 'Controller' . '30';
 
 				Route::resource(strtolower($resourceName), $resourceControllerName, array('only' => array('show')));
-
-				Route::group(array('prefix' => '{' . strtolower($resourceName) . '}/{id}'), function() use ($resourceControllerName)
-				{
-					Route::controller('/', $resourceControllerName);
-				});
-
+				Route::controller(strtolower($resourceName) . '/{id}', $resourceControllerName);
 				break;
 		}
 	}
 };
 
 $registerRoutesForRequestedVersion(Config::get('api.requestedVersion'));
-
 
 

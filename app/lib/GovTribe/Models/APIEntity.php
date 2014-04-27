@@ -16,7 +16,7 @@ class APIEntity extends \Jenssegers\Mongodb\Model {
 	 *
 	 * @var array
 	 */
-	protected $appends = array('type');
+	protected $appends = array('type', 'lastActive');
 
 	/**
 	 * Create a new Eloquent Collection instance.
@@ -37,6 +37,27 @@ class APIEntity extends \Jenssegers\Mongodb\Model {
 	public function getTypeAttribute()
 	{
 	    return $this->attributes['type'] = strtolower(class_basename($this));
+	}
+
+	/**
+	 * Get the value of the model's timestamp attribute.
+	 *
+	 * @return int
+	 */
+	public function getTimestampAttribute()
+	{
+	    return $this->attributes['timestamp']->sec;
+	}
+
+	/**
+	 * Get the model's lastActive attribute.
+	 *
+	 * @return string
+	 */
+	public function getLastActiveAttribute()
+	{
+		if (!isset($this->attributes['timestamp'])) return null;
+		return \Carbon\Carbon::createFromTimeStamp($this->attributes['timestamp']->sec)->diffForHumans();
 	}
 
 }
