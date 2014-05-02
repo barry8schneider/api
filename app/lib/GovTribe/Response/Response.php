@@ -15,40 +15,17 @@ class Response extends BaseResponse {
 	 */
 	public static function api($data = array(), $status = 200, array $headers = array())
 	{
-		if (is_array($data)) $data = self::makeAPISafeDataTypes($data);
+		$response = new JsonResponse($data, $status, $headers);
+	
+		// Add the requested API version as a header
+		$version = floatval(\Config::get('api.requestedVersion')) / 10;
+		$version = number_format($version, 1);
+		$headers['X-GT-API-Version'] = $version;
+
+		// Add the response time as a header
+		$responseTime = microtime(true) - \Request::server('REQUEST_TIME_FLOAT', 0);
+		$headers['X-GT-Response-Time'] = number_format($responseTime, 3) . ' sec';
 
 		return new JsonResponse($data, $status, $headers);
-	}
-
-	/**
-	 * Convert data types to their API-safe versions.
-	 *
-	 * @param  array $data
-	 *
-	 * @return array
-	 */
-	protected static function makeAPISafeDataTypes(array $data)
-	{
-		array_walk_recursive($data, function(&$item, $key)
-		{
-			if ($item instanceof \MongoId)
-			{
-				$item = (string) $item;
-			}
-			elseif ($item instanceof \MongoDate)
-			{
-				$item = $item->sec;
-			}
-			elseif ($item instanceof \Carbon\Carbon)
-			{
-				$item = $item->timestamp;
-			}
-			elseif ($key === 'name' && empty($item))
-			{
-				$item = "Not Available";
-			}
-		});
-
-		return $data;
 	}
 }

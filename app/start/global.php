@@ -49,6 +49,18 @@ Log::useFiles(storage_path().'/logs/laravel.log');
 App::error(function(Exception $exception, $code)
 {
 	Log::error($exception);
+
+	switch (class_basename($exception)) {
+		case 'ModelNotFoundException':
+			
+			return Response::api('not found', 404);
+
+			break;
+		
+		default:
+			# code...
+			break;
+	}
 });
 
 /*

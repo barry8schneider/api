@@ -121,11 +121,14 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 
 		// Govtribe.
-		//...
+		'GovTribe\Middleware\MiddlewareServiceProvider',
+		'GovTribe\Transformers\TransformerServiceProvider',
+		'GovTribe\Search\SearchServiceProvider',
 
 		// 3rd party.
 		'Jenssegers\Mongodb\MongodbServiceProvider',
-		'Way\Generators\GeneratorsServiceProvider'
+		'Way\Generators\GeneratorsServiceProvider',
+		'm4tthumphrey\FractalLaravel\ServiceProvider',
 	),
 
 	/*
@@ -194,9 +197,10 @@ return array(
 
 		//GovTribe.
 		'Response'        => 'GovTribe\Response\Response',
+		'Search'          => 'GovTribe\Search\Facades\Search',
 
 		//3rd Party.
-		//.
+		'Fractal' => 'm4tthumphrey\FractalLaravel\Facade',
 	),
 
 );

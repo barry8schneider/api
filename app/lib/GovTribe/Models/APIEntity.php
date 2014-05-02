@@ -1,6 +1,8 @@
 <?php namespace GovTribe\Models;
 
-use Illuminate\Support\Facades\Config;
+use GovTribe\Models\Collection;
+use GovTribe\Transformers\AgencyTransformer;
+use GovTribe\Transformers\PersonTransformer;
 
 class APIEntity extends \Jenssegers\Mongodb\Model {
 
@@ -10,13 +12,17 @@ class APIEntity extends \Jenssegers\Mongodb\Model {
 	 * @var bool
 	 */
 	public static $snakeAttributes = false;
-	
+
 	/**
-	 * The accessors to append to the model's array form.
+	 * Get the model's transformer
 	 *
-	 * @var array
+	 * @param  array  $models
+	 * @return GovTribe\Transformers\Transformer
 	 */
-	protected $appends = array('type', 'lastActive');
+	public function getTransformer()
+	{
+		return \App::make(class_basename($this) . 'Transformer');
+	}
 
 	/**
 	 * Create a new Eloquent Collection instance.
@@ -26,38 +32,99 @@ class APIEntity extends \Jenssegers\Mongodb\Model {
 	 */
 	public function newCollection(array $models = array())
 	{
-		return new APICollection($models);
+		return new Collection($models);
 	}
 
 	/**
-	 * Get the value of the model's type key.
+	 * Get the model's top vendors.
 	 *
-	 * @return string
+	 * @return array
 	 */
-	public function getTypeAttribute()
+	public function getTopVendorsAttribute()
 	{
-	    return $this->attributes['type'] = strtolower(class_basename($this));
+		if (!isset($this->attributes['market']['characteristics']['vendors'])) return [];
+
+		$topVendors = $this->attributes['market']['characteristics']['vendors'];
+
+		return array_map(function($value)
+		{
+			$value['_id']['_id'] = (string) $value['_id']['_id'];
+
+			return array_merge($value['_id'], array('awardsLast90Days' => $value['count']));
+		}, $topVendors);
 	}
 
 	/**
-	 * Get the value of the model's timestamp attribute.
+	 * Get the model's set aside types.
 	 *
-	 * @return int
+	 * @return array
 	 */
-	public function getTimestampAttribute()
+	public function getTopSetAsideTypesAttribute()
 	{
-	    return $this->attributes['timestamp']->sec;
+		if (!isset($this->attributes['market']['characteristics']['setAsideType'])) return [];
+
+		$setAsideTypes = $this->attributes['market']['characteristics']['setAsideType'];
+
+		foreach ($setAsideTypes as $key => $value) if ($key === 'None') unset($setAsideTypes[$key]);
+
+		return $setAsideTypes;
 	}
 
 	/**
-	 * Get the model's lastActive attribute.
+	 * Get the model's top categories attribute.
 	 *
-	 * @return string
+	 * @return array
 	 */
-	public function getLastActiveAttribute()
+	public function getTopCategoriesAttribute()
 	{
-		if (!isset($this->attributes['timestamp'])) return null;
-		return \Carbon\Carbon::createFromTimeStamp($this->attributes['timestamp']->sec)->diffForHumans();
+		if (!isset($this->attributes['market']['characteristics']['categories'])) return [];
+
+		$topCategories = $this->attributes['market']['characteristics']['categories'];
+
+		return array_map(function($value)
+		{
+			$value['_id']['_id'] = (string) $value['_id']['_id'];
+
+			return array_merge($value['_id'], array('awardsLast90Days' => $value['count']));
+		}, $topCategories);
+	}
+
+	/**
+	 * Get the model's top people attribute.
+	 *
+	 * @return array
+	 */
+	public function getTopPeopleAttribute()
+	{
+		if (!isset($this->attributes['market']['characteristics']['people'])) return [];
+
+		$topPeople = $this->attributes['market']['characteristics']['people'];
+
+		return array_map(function($value)
+		{
+			$value['_id']['_id'] = (string) $value['_id']['_id'];
+
+			return array_merge($value['_id'], array('awardsLast90Days' => $value['count']));
+		}, $topPeople);
+	}
+
+	/**
+	 * Get the model's top offices attribute.
+	 *
+	 * @return array
+	 */
+	public function getTopOfficesAttribute()
+	{
+		if (!isset($this->attributes['market']['characteristics']['offices'])) return [];
+
+		$topOffices = $this->attributes['market']['characteristics']['offices'];
+
+		return array_map(function($value)
+		{
+			$value['_id']['_id'] = (string) $value['_id']['_id'];
+
+			return array_merge($value['_id'], array('awardsLast90Days' => $value['count']));
+		}, $topOffices);
 	}
 
 }

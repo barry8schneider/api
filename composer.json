@@ -7,7 +7,8 @@
 		"php": ">=5.5.0",
 		"laravel/framework": "4.1.*",
 		"jenssegers/mongodb": "*",
-		"zircote/swagger-php": "0.9.*@dev"
+		"m4tthumphrey/fractal-laravel" : "1.*",
+		"ruflin/Elastica": "*"
 	},
 	"require-dev": {
 		"way/generators": "2.*",
