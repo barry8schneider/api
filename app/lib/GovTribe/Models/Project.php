@@ -114,8 +114,7 @@ class Project extends APIEntity {
 		$relatedNodes = array_merge(
 			$this->attributes['agencies'], 
 			$this->attributes['offices'],
-			$this->attributes['people'],
-			$this->attributes['categories']
+			$this->attributes['people']
 		);
 
 		$queries = [];
