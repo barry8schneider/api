@@ -1,7 +1,6 @@
 <?php namespace GovTribe\Transformers;
 
-use GovTribe\Models\Person;
-use GovTribe\Models\APICollection as APICollection;
+use Carbon\Carbon;
 
 class PersonTransformer extends Transformer
 {
@@ -10,16 +9,16 @@ class PersonTransformer extends Transformer
 		switch ($this->requestedAPIVersion) 
 		{
 			case '30':
-				$data = array_filter(array(
-					'name' => $entity->name ? $entity->name : 'Not Available',
+				$data = array(
+					'name' => $entity->name ? $entity->name :  $entity->mail,
 					'type' => 'person',
 					'_id' => (string) $entity->_id,
-				));
+				);
 
 				break;
 		}
 
-		return $data;
+		return $this->sortKINO($data);
 	}
 
 	public function transformForResource($entity)
@@ -27,21 +26,20 @@ class PersonTransformer extends Transformer
 		switch ($this->requestedAPIVersion) 
 		{
 			case '30':
-				$data = array_filter(array(
-					'name' => $entity->name ? $entity->name : 'Not Available',
-					'position' => $entity->position ? $entity->position : 'Not Available',
-					'phoneNumber' => $entity->phoneNumber ? $entity->phoneNumber : 'Not Available',
-					'email' => $entity->email,
+				$data = array(
+					'name' => $entity->name ? $entity->name : self::NULL_TEXT,
+					'position' => $entity->position ? $entity->position : self::NULL_TEXT,
+					'email' => $entity->mail,
 					'type' => 'person',
 					'_id' => (string) $entity->_id,
-					'acronym' => $entity->acronym,
-					'dollarFlow' => $entity->market['dollarFlow'],
-					'timestamp' => $entity->timestamp ? $entity->timestamp->sec: null,
-				));
+					'dollarFlow' => isset($entity->market['dollarFlow']) ? $entity->market['dollarFlow'] : array(),
+					'timestamp'  => $entity->timestamp ? Carbon::createFromTimeStamp($entity->timestamp->sec)->toISO8601String() : self::NULL_TIMESTAMP,
+				);
 
+				ksort($data);
 				break;
 		}
 
-		return $data;
+		return $this->sortKINO($data);
 	}
 }

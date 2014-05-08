@@ -41,11 +41,6 @@ class TransformerServiceProvider extends ServiceProvider {
 			return new ProjectTransformer;
 		});
 
-		$this->app->bind('SearchTransformer', function()
-		{
-			return new SearchTransformer;
-		});
-
 		$this->app->bind('VendorTransformer', function()
 		{
 			return new VendorTransformer;

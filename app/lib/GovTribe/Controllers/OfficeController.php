@@ -1,17 +1,17 @@
 <?php namespace GovTribe\Controllers;
 
-use GovTribe\Storage\AgencyRepository as EntityRepository;
-use GovTribe\Transformers\AgencyTransformer as Transformer;
+use GovTribe\Storage\OfficeRepository as EntityRepository;
+use GovTribe\Transformers\OfficeTransformer as Transformer;
 use GovTribe\Transformers\Manager as Manager;
 
-class AgencyController extends APIController {
+class OfficeController extends APIController {
 
 	/**
 	 * Entity type for this controller.
 	 *
 	 * @var string
 	 */
-	protected $entityType = 'agency';
+	protected $entityType = 'office';
 
 	/**
 	 * Create a new instance of the controller.
@@ -32,7 +32,7 @@ class AgencyController extends APIController {
 	public function show($id)
 	{
 		$columns = array(
-			'name', 'type', '_id', 'acronym', 'timestamp',
+			'name', 'type', '_id', 'timestamp',
 			'market',
 		);
 
@@ -40,7 +40,7 @@ class AgencyController extends APIController {
 
 		if (!$entity)
 		{
-			return $this->errorNotFound('Did you just invent an id and try loading an agency?');
+			return $this->errorNotFound('Did you just invent an id and try loading an office?');
 		}
 		else return $this->respondWithItem($entity, $this->transformer);
 	}
@@ -68,7 +68,7 @@ class AgencyController extends APIController {
 		{
 			$response = $this->entity->findRecentlyActive($params);
 		}
-
+		
 		$paginator = \Paginator::make($response->getResults(), $response->getTotalHits(), $this->take);
 
 		return $this->respondWithPaginator($paginator, $this->transformer);

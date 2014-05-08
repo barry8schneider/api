@@ -10,16 +10,16 @@ class VendorTransformer extends Transformer
 		switch ($this->requestedAPIVersion) 
 		{
 			case '30':
-				$data = array_filter(array(
-					'name' => $entity->name ? $entity->name : 'Not Available',
+				$data = array(
+					'name' => $entity->name ? $entity->name : self::NULL_TEXT,
 					'type' => 'vendor',
 					'_id' => (string) $entity->_id,
-				));
+				);
 
 				break;
 		}
 
-		return $data;
+		return $this->sortKINO($data);
 	}
 
 	public function transformForResource($entity)
@@ -27,15 +27,15 @@ class VendorTransformer extends Transformer
 		switch ($this->requestedAPIVersion) 
 		{
 			case '30':
-				$data = array_filter(array(
-					'name' => $entity->name ? $entity->name : 'Not Available',
+				$data = array(
+					'name' => $entity->name ? $entity->name : self::NULL_TEXT,
 					'type' => 'vendor',
 					'_id' => (string) $entity->_id,
-				));
+				);
 
 				break;
 		}
 
-		return $data;
+		return $this->sortKINO($data);
 	}
 }

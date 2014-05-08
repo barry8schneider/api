@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'default' => 'mongodb',
+	'default' => 'databot',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -83,15 +83,23 @@ return array(
 			'prefix'   => '',
 		),
 
-		'mongodb' => array(
+		'databot' => array(
 			'driver'   => 'mongodb',
-			'host'     => $_ENV['MONGO_HOST'],
-			'port'     => $_ENV['MONGO_PORT'],
-			'username' => $_ENV['MONGO_USERNAME'],
-			'password' => $_ENV['MONGO_PASSWORD'],
-			'database' => $_ENV['MONGO_DATABASE'],
+			'host'     => $_ENV['MONGO_HOST_DATABOT'],
+			'port'     => $_ENV['MONGO_PORT_DATABOT'],
+			'username' => $_ENV['MONGO_USERNAME_DATABOT'],
+			'password' => $_ENV['MONGO_PASSWORD_DATABOT'],
+			'database' => $_ENV['MONGO_DATABASE_DATABOT'],
 		),
 
+		'graph' => array(
+			'driver'   => 'mongodb',
+			'host'     => $_ENV['MONGO_HOST_GRAPH'],
+			'username' => $_ENV['MONGO_USERNAME_GRAPH'],
+			'password' => $_ENV['MONGO_PASSWORD_GRAPH'],
+			'database' => $_ENV['MONGO_DATABASE_GRAPH'],
+			'options'  => ['replicaSet' => $_ENV['MONGO_RS_GRAPH'], 'readPreference' => MongoClient::RP_SECONDARY_PREFERRED],
+		),
 	),
 
 	/*

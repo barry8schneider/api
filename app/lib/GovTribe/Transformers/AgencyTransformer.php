@@ -1,7 +1,5 @@
 <?php namespace GovTribe\Transformers;
 
-use GovTribe\Models\Agency as Agency;
-use GovTribe\Models\APICollection as APICollection;
 use Carbon\Carbon;
 
 class AgencyTransformer extends Transformer
@@ -11,16 +9,16 @@ class AgencyTransformer extends Transformer
 		switch ($this->requestedAPIVersion) 
 		{
 			case '30':
-				$data = array_filter(array(
-					'name' => $entity->name ? $entity->name : 'Not Available',
+				$data = array(
+					'name' => $entity->name ? $entity->name : self::NULL_TEXT,
 					'type' => 'agency',
 					'_id' => (string) $entity->_id,
-				));
+				);
 
 				break;
 		}
 
-		return $data;
+		return $this->sortKINO($data);
 	}
 
 	public function transformForResource($entity)
@@ -28,37 +26,18 @@ class AgencyTransformer extends Transformer
 		switch ($this->requestedAPIVersion) 
 		{
 			case '30':
-
-	
-				$data = array_filter(array(
-					
-					'name' => $entity->name ? $entity->name : 'Not Available',
-					
+				$data = array(
+					'name' => $entity->name ? $entity->name : self::NULL_TEXT,
 					'type' => 'agency',
-					
 					'_id' => (string) $entity->_id,
-					
 					'acronym' => $entity->acronym ? $entity->acronym : 'None',
-					
 					'dollarFlow' => isset($entity->market['dollarFlow']) ? $entity->market['dollarFlow'] : array(),
+					'timestamp'  => $entity->timestamp ? Carbon::createFromTimeStamp($entity->timestamp->sec)->toISO8601String() : self::NULL_TIMESTAMP,
+				);
 
-					'topSetAsideTypes' => $entity->topSetAsideTypes,
-
-					'topVendors' => $entity->topVendors,
-
-					'topCategories' => $entity->topCategories,
-
-					'topPeople' => $entity->topPeople,
-
-					'topOffices' => $entity->topOffices,
-
-					'timestamp'  => $entity->timestamp ? Carbon::createFromTimeStamp($entity->timestamp->sec)->toISO8601String() : 'No Activity',
-				));
-
-				ksort($data);
 				break;
 		}
 
-		return $data;
+		return $this->sortKINO($data);
 	}
 }

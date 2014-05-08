@@ -2,4 +2,7 @@
 
 class Agency extends APIEntity {
 
+	protected $connection = 'databot';
+	protected $collection = 'agencies';
+
 }

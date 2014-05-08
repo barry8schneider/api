@@ -2,7 +2,7 @@
 
 use Carbon\Carbon;
 
-class OfficeTransformer extends Transformer
+class ActivityTransformer extends Transformer
 {
 	public function transformForIndex($entity)
 	{
@@ -10,8 +10,8 @@ class OfficeTransformer extends Transformer
 		{
 			case '30':
 				$data = array(
-					'name' => $entity->name ? $entity->name : self::NULL_TEXT,
-					'type' => 'office',
+					'name' => 'Activity Message',
+					'type' => 'activity',
 					'_id' => (string) $entity->_id,
 				);
 
@@ -28,9 +28,8 @@ class OfficeTransformer extends Transformer
 			case '30':
 				$data = array(
 					'name' => $entity->name ? $entity->name : self::NULL_TEXT,
-					'type' => 'office',
+					'type' => 'agency',
 					'_id' => (string) $entity->_id,
-					'dollarFlow' => isset($entity->market['dollarFlow']) ? $entity->market['dollarFlow'] : array(),
 					'timestamp'  => $entity->timestamp ? Carbon::createFromTimeStamp($entity->timestamp->sec)->toISO8601String() : self::NULL_TIMESTAMP,
 				);
 

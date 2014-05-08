@@ -2,4 +2,7 @@
 
 class Protest extends APIEntity {
 
+	protected $connection = 'databot';
+	protected $collection = 'protests';
+
 }

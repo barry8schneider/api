@@ -1,0 +1,1 @@
+aglio -i docs/docs.md -o app/views/docs.php

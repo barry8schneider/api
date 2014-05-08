@@ -8,7 +8,8 @@ use GovTribe\Transformers\Manager as Manager;
 use GovTribe\Transformers\Transformer as Transformer;
 use GovTribe\Transformers\Resource\Item as Item;
 use GovTribe\Transformers\Resource\Collection as Collection;
-use GovTribe\Storage\EntityRepository as EntityRepository;
+
+use GovTribe\Storage\EntityRepository;
 
 class APIController extends BaseController {
 
@@ -45,7 +46,7 @@ class APIController extends BaseController {
 	 *
 	 * @var int
 	 */
-	protected $perPage = 50;
+	protected $take = 50;
 
 	/**
 	 * Results to skip.
@@ -59,17 +60,13 @@ class APIController extends BaseController {
 	 *
 	 * @return self
 	*/
-	public function __construct($entity, Manager $fractal, Transformer $transformer)
+	public function __construct(EntityRepository $entity, Manager $manager, Transformer $transformer)
 	{
-		if (\Input::get('page', 0) > 1)
-		{
-			$this->skip = (\Input::get('page') - 1 ) * $this->perPage;
-		}
-
-		$this->search = \App::make('search');
 		$this->entity = $entity;
-		$this->fractal = $fractal;
+		$this->fractal = $manager;
 		$this->transformer = $transformer;
+
+		if (\Input::get('page', 0) > 1) $this->skip = (\Input::get('page') - 1 ) * $this->take;
 
 		\DB::connection()->disableQueryLog();
 	}
@@ -88,11 +85,23 @@ class APIController extends BaseController {
 	 * Set the response status code.
 	 *
 	 * @param  int    $statusCode
-	 * @return void
+	 * @return self
 	 */
 	public function setStatusCode($statusCode)
 	{
 		$this->statusCode = $statusCode;
+		return $this;
+	}
+
+	/**
+	 * Catch all for missing methods.
+	 *
+	 * @param  array    $parameters
+	 * @return Response
+	 */
+	public function missingMethod($parameters = array())
+	{
+		return $this->errorNotFound('Hmm. I don\'t have a way to respond to this request...');
 	}
 
 	/**
@@ -107,7 +116,8 @@ class APIController extends BaseController {
 		$transformer->setMode('resource');
 		$resource = Item::make($item, $transformer);
 		$rootScope = $this->fractal->createData($resource);
-		return $this->respondWithArray($rootScope->toArray()); 
+
+		return $this->respondWithArray($rootScope->toArray()['data']); 
 	}
 
 	/**
@@ -122,6 +132,7 @@ class APIController extends BaseController {
 		$transformer->setMode('index');
 		$resource = Collection::make($collection, $transformer);
 		$rootScope = $this->fractal->createData($resource);
+
 		return $this->respondWithArray($rootScope->toArray()); 
 	}
 
@@ -143,7 +154,9 @@ class APIController extends BaseController {
 		$data = $this->fractal->createData($resource)->toArray();
 
 		$response = array();
+
 		$response['results'] = $data['data'];
+
 		$response['pagination'] = array(
 			'total' => $data['pagination']['total'],
 			'count' => $data['pagination']['count'],
@@ -169,133 +182,69 @@ class APIController extends BaseController {
 	}
 
 	/**
-	 * Get the resource's related agencies.
+	 * Error API response.
 	 *
-	 * @param  string  $id
+	 * @param  string   $message
 	 * @return Response
 	 */
-	public function getAgency($id)
+	protected function respondWithError($message)
 	{
-		$related = $this->entity->findRelatedEntities($id, array('project'), 'actors', 'agency');
-
-		$paginator = \Paginator::make($related['collection']->all(), $related['total'], $this->perPage);
-
-		return $this->respondWithPaginator($paginator, $related['collection']->getTransformer());
-	}
-
-	/**
-	 * Get the resource's related protests.
-	 *
-	 * @param  string  $type
-	 * @param  string  $id
-	 * @return Response
-	 */
-	public function getProtest($id)
-	{
-		$related = $this->entity->findRelatedEntities($id, array('protest'), 'targets', 'protest');
-
-		$paginator = \Paginator::make($related['collection']->all(), $related['total'], $this->perPage);
-
-		return $this->respondWithPaginator($paginator, $related['collection']->getTransformer());
-	}
-
-
-	/**
-	 * Get other entities related to this one.
-	 *
-	 * @param  string  $rootID      ID of entity to find related entities for (51548150db40a5165c0000b8)
-	 * @param  string  $rootType    Type of entity to find related entities for (agency, office)
-	 * @param  string  $relatedType Type of related entity to find (office, projects)
-	 * @return Elastica\ResultSet
-	 */
-	public function findRelatedEntites($rootID, $rootType, $relatedType)
-	{
-		$rootCollectionName = str_plural($this->entityType);
-		$relatedCollectionName = str_plural($relatedType);
-		$relatedElasticType = str_singular(ucfirst($relatedType));
-		$baseQuery = new \Elastica\Query([
-			'size' => $this->perPage,
-			'fields' => ['name', '_type', '_id'],
-			'sort' => ['timestamp' => ['order' => 'desc']],
-			'from' => $this->skip,
+		return $this->respondWithArray([ 
+			'error' => [
+				'code' => $this->statusCode,
+				'message' => $message,
+			] 
 		]);
-
-		$boolAndFilter = new \Elastica\Filter\BoolAnd;
-
-		// Only match documents that embed the rootID and rootType as an NTI
-		$termFilter = new \Elastica\Filter\Term;
-		$termFilter->setTerm($rootCollectionName . '._id', $rootID);
-
-		$nestedFilter = new \Elastica\Filter\Nested;
-		$nestedFilter->setPath($rootCollectionName);
-		$nestedFilter->setFilter($termFilter);
-		$boolAndFilter->addFilter($nestedFilter);
-
-		// Filter to the type of entity we want to find
-		$boolAndFilter->addFilter(new \Elastica\Filter\Type($relatedElasticType));
-		$baseQuery->setFilter($boolAndFilter);
-
-		return $this->search->getIndex('entity-name')->search($baseQuery);
 	}
 
 	/**
-	 * Get the resource's related offices.
-	 *
-	 * @param  string  $id
-	 * @return Response
-	 */
-	public function getOffice($id)
+	* Generates a Response with a 403 HTTP header and a given message.
+	*
+	* @return  Response
+	*/
+	public function errorForbidden($message = 'Forbidden') 
 	{
-		$response = $this->findRelatedEntites($id, $this->entityType, 'office');
-
-		$paginator = \Paginator::make($response->getResults(), $response->getTotalHits(), $this->perPage);
-
-		return $this->respondWithPaginator($paginator, \App::make('SearchTransformer'));
+		return $this->setStatusCode(403)->respondWithError($message); 
 	}
 
 	/**
-	 * Get the resource's related vendors.
+	 * Generates a Response with a 500 HTTP header and a given message.
 	 *
-	 * @param  string  $id
-	 * @return Response
+	 * @return  Response
 	 */
-	public function getVendor($id)
+	public function errorInternalError($message = 'Internal Error')
 	{
-		$result = $this->entity->findRelatedEntities($id, 'vendor');
-
-		$paginator = \Paginator::make($result['collection']->all(), $result['total'], $this->perPage);
-
-
-		return $this->respondWithPaginator($paginator, $result['collection']->getTransformer());
+		return $this->setStatusCode(500)->respondWithError($message);
 	}
 
 	/**
-	 * Get the resource's related people.
+	 * Generates a Response with a 404 HTTP header and a given message.
 	 *
-	 * @param  string  $id
-	 * @return Response
+	 * @return  Response
 	 */
-	public function getPerson($id)
+	public function errorNotFound($message = 'Resource Not Found') 
 	{
-		$response = $this->findRelatedEntites($id, $this->entityType, 'person');
-
-		$paginator = \Paginator::make($response->getResults(), $response->getTotalHits(), $this->perPage);
-
-		return $this->respondWithPaginator($paginator, \App::make('SearchTransformer'));
+		return $this->setStatusCode(404)->respondWithError($message);
 	}
 
 	/**
-	 * Get the resource's related projects.
+	 * Generates a Response with a 401 HTTP header and a given message.
 	 *
-	 * @param  string  $id
-	 * @return Response
+	 * @return  Response
 	 */
-	public function getProject($id)
+	public function errorUnauthorized($message = 'Unauthorized') 
 	{
-		$response = $this->findRelatedEntites($id, $this->entityType, 'project');
-
-		$paginator = \Paginator::make($response->getResults(), $response->getTotalHits(), $this->perPage);
-
-		return $this->respondWithPaginator($paginator, \App::make('SearchTransformer'));
+		return $this->setStatusCode(401)->respondWithError($message);
 	}
+
+	/**
+	 * Generates a Response with a 400 HTTP header and a given message.
+	 *
+	 * @return  Response
+	 */
+	public function errorWrongArgs($message = 'Wrong Arguments') 
+	{
+		return $this->setStatusCode(400)->respondWithError($message);
+	}
+
 }

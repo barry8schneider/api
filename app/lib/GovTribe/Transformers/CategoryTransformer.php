@@ -1,7 +1,6 @@
 <?php namespace GovTribe\Transformers;
 
-use GovTribe\Models\Category as Category;
-use GovTribe\Models\APICollection as APICollection;
+use Carbon\Carbon;
 
 class CategoryTransformer extends Transformer
 {
@@ -10,16 +9,16 @@ class CategoryTransformer extends Transformer
 		switch ($this->requestedAPIVersion) 
 		{
 			case '30':
-				$data = array_filter(array(
-					'name' => $entity->name ? $entity->name : 'Not Available',
+				$data = array(
+					'name' => $entity->name ? $entity->name : self::NULL_TEXT,
 					'type' => 'category',
 					'_id' => (string) $entity->_id,
-				));
+				);
 
 				break;
 		}
 
-		return $data;
+		return $this->sortKINO($data);
 	}
 
 	public function transformForResource($entity)
@@ -27,15 +26,17 @@ class CategoryTransformer extends Transformer
 		switch ($this->requestedAPIVersion) 
 		{
 			case '30':
-				$data = array_filter(array(
-					'name' => $entity->name ? $entity->name : 'Not Available',
+				$data = array(
+					'name' => $entity->name ? $entity->name : self::NULL_TEXT,
 					'type' => 'category',
 					'_id' => (string) $entity->_id,
-				));
+					'timestamp'  => $entity->timestamp ? Carbon::createFromTimeStamp($entity->timestamp->sec)->toISO8601String() : self::NULL_TIMESTAMP,
+					'dollarFlow' => isset($entity->market['dollarFlow']) ? $entity->market['dollarFlow'] : array(),
+				);
 
 				break;
 		}
 
-		return $data;
+		return $this->sortKINO($data);
 	}
 }

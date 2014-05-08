@@ -1,17 +1,17 @@
 <?php namespace GovTribe\Controllers;
 
-use GovTribe\Storage\AgencyRepository as EntityRepository;
-use GovTribe\Transformers\AgencyTransformer as Transformer;
+use GovTribe\Storage\ProtestRepository as EntityRepository;
+use GovTribe\Transformers\ProtestTransformer as Transformer;
 use GovTribe\Transformers\Manager as Manager;
 
-class AgencyController extends APIController {
+class ProtestController extends APIController {
 
 	/**
 	 * Entity type for this controller.
 	 *
 	 * @var string
 	 */
-	protected $entityType = 'agency';
+	protected $entityType = 'protest';
 
 	/**
 	 * Create a new instance of the controller.
@@ -32,15 +32,12 @@ class AgencyController extends APIController {
 	public function show($id)
 	{
 		$columns = array(
-			'name', 'type', '_id', 'acronym', 'timestamp',
-			'market',
+			'name', 'type', '_id', 'timestamp',
 		);
-
-		$entity = $this->entity->find($id, $columns);
 
 		if (!$entity)
 		{
-			return $this->errorNotFound('Did you just invent an id and try loading an agency?');
+			return $this->errorNotFound('Did you just invent an id and try loading a protest?');
 		}
 		else return $this->respondWithItem($entity, $this->transformer);
 	}
@@ -58,7 +55,7 @@ class AgencyController extends APIController {
 			'columns' => ['name', '_id'],
 			'skip' => $this->skip,
 		];
-
+		
 		if ($q = \Input::get('q'))
 		{
 			$params['query'] = $q;

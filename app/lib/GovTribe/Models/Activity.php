@@ -2,6 +2,7 @@
 
 class Activity extends APIEntity {
 
+	protected $connection = 'databot';
 	protected $collection = 'activity';
 
 }

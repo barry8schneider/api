@@ -16,7 +16,7 @@ class Response extends BaseResponse {
 	public static function api($data = array(), $status = 200, array $headers = array())
 	{
 		$response = new JsonResponse($data, $status, $headers);
-	
+
 		// Add the requested API version as a header
 		$version = floatval(\Config::get('api.requestedVersion')) / 10;
 		$version = number_format($version, 1);

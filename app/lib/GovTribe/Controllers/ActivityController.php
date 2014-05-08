@@ -1,17 +1,17 @@
 <?php namespace GovTribe\Controllers;
 
-use GovTribe\Storage\AgencyRepository as EntityRepository;
-use GovTribe\Transformers\AgencyTransformer as Transformer;
+use GovTribe\Storage\ActivityRepository as EntityRepository;
+use GovTribe\Transformers\ActivityTransformer as Transformer;
 use GovTribe\Transformers\Manager as Manager;
 
-class AgencyController extends APIController {
+class ActivityController extends APIController {
 
 	/**
 	 * Entity type for this controller.
 	 *
 	 * @var string
 	 */
-	protected $entityType = 'agency';
+	protected $entityType = 'activity';
 
 	/**
 	 * Create a new instance of the controller.
@@ -32,15 +32,14 @@ class AgencyController extends APIController {
 	public function show($id)
 	{
 		$columns = array(
-			'name', 'type', '_id', 'acronym', 'timestamp',
-			'market',
+			'name', 'type', '_id',
 		);
 
 		$entity = $this->entity->find($id, $columns);
 
 		if (!$entity)
 		{
-			return $this->errorNotFound('Did you just invent an id and try loading an agency?');
+			return $this->errorNotFound('Did you just invent an id and try loading an activity message?');
 		}
 		else return $this->respondWithItem($entity, $this->transformer);
 	}
@@ -55,19 +54,11 @@ class AgencyController extends APIController {
 	{
 		$params = [
 			'take' => $this->take,
-			'columns' => ['name', '_id'],
+			'columns' => ['name', '_id', 'type'],
 			'skip' => $this->skip,
 		];
 
-		if ($q = \Input::get('q'))
-		{
-			$params['query'] = $q;
-			$response = $this->entity->search($params);
-		}
-		else
-		{
-			$response = $this->entity->findRecentlyActive($params);
-		}
+		$response = $this->entity->findRecentlyActive($params);
 
 		$paginator = \Paginator::make($response->getResults(), $response->getTotalHits(), $this->take);
 

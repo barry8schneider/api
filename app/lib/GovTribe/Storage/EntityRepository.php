@@ -38,82 +38,69 @@ class EntityRepository {
 	}
 
 	/**
-	 * Search for entities by name, via a RegEx query.
+	 * Search for an entity.
 	 *
-	 * @param  string  $query
-	 * @param  array   $columns
+	 * @param  array  $params
 	 * @return object
 	 */
-	public function searchNameRegex($query, $columns = array('*'))
+	public function search(array $params)
 	{
-		$results = array();
-		$mongo = \DB::getMongoDb();
+		$index = \Search::getIndex(str_singular($this->entity->getTable()));
 
-		$results = $this->entity
-					->where('name', 'regex', new \MongoRegex("/^$query/i"))
-					->take(100)
-					->orderBy('timestamp', 'desc')
-					->get($columns);
+		$query = new \Elastica\Query([
+			'size' => $params['take'],
+			'fields' => $params['columns'],
+			'from' => $params['skip'],
+		]);
 
-		return $results;
+		$query->setHighlight(array(
+			'fields' => array(
+				'name' => array(
+					'fragment_size' => 200,
+					'number_of_fragments' => 2,
+				),
+				'synopsis' => array(
+					'fragment_size' => 200,
+					'number_of_fragments' => 2,
+				),
+			),
+			'pre_tags' => array('<em class="highlight">'),
+			'post_tags'  => array('</em>'),
+		));
+
+		$qsQuery = new \Elastica\Query\QueryString;
+		$qsQuery->setQuery($params['query']);
+		$qsQuery->setPhraseSlop(15);
+		$qsQuery->setUseDisMax(true);
+		$qsQuery->setAnalyzer('standard');
+
+		$fsQuery = new \Elastica\Query\FunctionScore;
+		$fsQuery->setScoreMode('avg');
+		$fsQuery->addDecayFunction('gauss', 'timestamp', date('Y-m-d'), '30d', '30d', 0.2);
+		$fsQuery->setQuery($qsQuery);
+
+		$query->setQuery($fsQuery);
+
+		return $index->search($query);
 	}
 
 	/**
 	 * Find recently active entities.
 	 *
-	 * @param  array   $columns
+	 * @param  array  $params
 	 * @return object
 	 */
-	public function findRecentlyActive($columns = array('*'))
+	public function findRecentlyActive(array $params)
 	{
-		$results = array();
-		$mongo = \DB::getMongoDb();
+		$index = \Search::getIndex(str_singular($this->entity->getTable()));
 
-		$results = $this->entity
-					->take(100)
-					->orderBy('timestamp', 'desc')
-					->get($columns);
+		$query = new \Elastica\Query([
+			'size' => $params['take'],
+			'fields' => $params['columns'],
+			'from' => $params['skip'],
+			'sort' => ['timestamp' => ['order' => 'desc']],
+		]);
 
-		return $results;
-	}
-
-	/**
-	 * Find the entity's related entities.
-	 *
-	 * @param  string  $id
-	 * @param  string  $type  Type of related entity to find
-	 * @param  int     $skip   Skip this number of records
-	 * @param  int     $limit  Limit this number of records returned
-	 * @return array
-	 */
-	public function findRelatedEntities($id, $type, $skip = 0, $limit = 25)
-	{
-		return Relationship::raw(function($mongoCollection) use ($id, $type, $skip, $limit)
-		{
-			$rTable = $mongoCollection->findOne(
-				[
-					'parentId' => new \MongoId($id),
-					'type' => $type,
-				],
-				[
-					'relationships' => [
-						'$slice' => [
-							$skip, $limit
-						]
-					]
-				]
-			);
-
-			$collection = new Collection($rTable['relationships']);
-
-			$relatedModelType = 'GovTribe\Models\\' . ucfirst($type);
-
-			$collection->transform(function($relatedId) use ($relatedModelType)
-			{
-				return $relatedModelType::find($relatedId, array('name'));
-			});
-
-			return array('collection' => $collection, 'total' => $rTable['count']);
-		});
+		return $index->search($query);
 	}
 }

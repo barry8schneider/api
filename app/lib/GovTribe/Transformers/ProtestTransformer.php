@@ -1,7 +1,6 @@
 <?php namespace GovTribe\Transformers;
 
-use GovTribe\Models\Protest;
-use GovTribe\Models\APICollection as APICollection;
+use Carbon\Carbon;
 
 class ProtestTransformer extends Transformer
 {
@@ -11,7 +10,7 @@ class ProtestTransformer extends Transformer
 		{
 			case '30':
 				$data = array_filter(array(
-					'name' => $entity->name ? $entity->name : 'Not Available',
+					'name' => $entity->name ? $entity->name : self::NULL_TEXT,
 					'type' => 'protest',
 					'_id' => (string) $entity->_id,
 				));
@@ -19,7 +18,7 @@ class ProtestTransformer extends Transformer
 				break;
 		}
 
-		return $data;
+		return $this->sortKINO($data);
 	}
 
 	public function transformForResource($entity)
@@ -27,15 +26,16 @@ class ProtestTransformer extends Transformer
 		switch ($this->requestedAPIVersion) 
 		{
 			case '30':
-				$data = array_filter(array(
-					'name' => $entity->name ? $entity->name : 'Not Available',
+				$data = array(
+					'name' => $entity->name ? $entity->name : self::NULL_TEXT,
 					'type' => 'protest',
 					'_id' => (string) $entity->_id,
-				));
+					'timestamp'  => $entity->timestamp ? Carbon::createFromTimeStamp($entity->timestamp->sec)->toISO8601String() : self::NULL_TIMESTAMP,
+				);
 
 				break;
 		}
 
-		return $data;
+		return $this->sortKINO($data);
 	}
 }

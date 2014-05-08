@@ -50,16 +50,20 @@ App::error(function(Exception $exception, $code)
 {
 	Log::error($exception);
 
-	switch (class_basename($exception)) {
-		case 'ModelNotFoundException':
-			
-			return Response::api('not found', 404);
+	if (App::environment('production'))
+	{
+		return Response::json("We're having a problem. Check back again soon or contact support@govtribe.com for more information", 500);
+	}
 
-			break;
-		
-		default:
-			# code...
-			break;
+});
+
+App::fatal(function($exception)
+{
+	Log::error($exception);
+
+	if (App::environment('production'))
+	{
+		return Response::json("We're having a problem. Check back again soon or contact support@govtribe.com for more information", 500);
 	}
 });
 
@@ -76,7 +80,7 @@ App::error(function(Exception $exception, $code)
 
 App::down(function()
 {
-	return Response::make("Be right back!", 503);
+	return Response::json("We're temporarily down. Check back again soon or contact support@govtribe.com for more information", 500);
 });
 
 /*
