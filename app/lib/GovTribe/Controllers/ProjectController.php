@@ -3,6 +3,7 @@
 use GovTribe\Storage\ProjectRepository as EntityRepository;
 use GovTribe\Transformers\ProjectTransformer as Transformer;
 use GovTribe\Transformers\Manager as Manager;
+use Illuminate\Http\Request as Input;
 
 class ProjectController extends APIController {
 
@@ -14,13 +15,24 @@ class ProjectController extends APIController {
 	protected $entityType = 'project';
 
 	/**
+	 * Available filters.
+	 *
+	 * @var array
+	 */
+	protected $filters = [
+		'agency', 'office', 'person',
+		'vendor', 'category', 'setAsideType',
+		'workflowStatus'
+	];
+
+	/**
 	 * Create a new instance of the controller.
 	 *
 	 * @return self
 	*/
-	public function __construct(EntityRepository $entity, Manager $manager, Transformer $transformer)
+	public function __construct(EntityRepository $entity, Manager $manager, Transformer $transformer, Input $input)
 	{
-		parent::__construct($entity, $manager, $transformer);
+		parent::__construct($entity, $manager, $transformer, $input);
 	}
 
 	/**
@@ -78,34 +90,4 @@ class ProjectController extends APIController {
 
 		return $this->respondWithPaginator($paginator, $this->transformer);
 	}
-
-
-	// /**
-	//  * Get award data for the
-	//  *
-	//  * @param  object  $collection
-	//  * @return Response
-	//  */
-	// public function index()
-	// {
-	// 	$params = [
-	// 		'take' => $this->take,
-	// 		'columns' => ['name', '_id', 'timestamp'],
-	// 		'skip' => $this->skip,
-	// 	];
-
-	// 	if ($q = \Input::get('q'))
-	// 	{
-	// 		$params['query'] = $q;
-	// 		$response = $this->entity->search($params);
-	// 	}
-	// 	else
-	// 	{
-	// 		$response = $this->entity->findRecentlyActive($params);
-	// 	}
-
-	// 	$paginator = \Paginator::make($response->getResults(), $response->getTotalHits(), $this->take);
-
-	// 	return $this->respondWithPaginator($paginator, $this->transformer);
-	// }
 }

@@ -34,4 +34,36 @@ class APIEntity extends \Jenssegers\Mongodb\Model {
 	{
 		return new Collection($models);
 	}
+
+	protected function getNumberOfAwardsAttribute()
+	{
+		$pipeline = [
+			['$match' => [
+				'_id' => new \MongoRegex(
+					'/^' . strtolower(class_basename($this)) . '\\|' . $this->_id . '\\|project\\|project\\|wf\\|awarded/'
+					)
+				]
+			],
+			['$project' => ['_id' => 0, 'ts' => 1]],
+			['$unwind' => '$ts'],
+			['$unwind' => '$ts.tb'],
+			['$group' => ['_id' => '$ts.tb', 'c' => ['$sum' => 1]]],
+			['$match' => ['_id' => new \MongoRegex('/year/')]],
+			['$sort' => ['_id' => -1]],
+		];
+
+		$agg = \DB::connection('graph')->getCollection('edges')->aggregate($pipeline);
+
+		$timeBuckets = [];
+
+		if (isset($agg['result']))
+		{
+			foreach ($agg['result'] as $year)
+			{
+				$timeBuckets[] = ['calendarYear' => substr($year['_id'], -8, 4), 'numberOfAwards' => $year['c']];
+			}
+		}
+
+		return $timeBuckets;
+	}
 }

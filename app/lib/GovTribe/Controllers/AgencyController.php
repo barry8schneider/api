@@ -33,7 +33,7 @@ class AgencyController extends APIController {
 	{
 		$columns = array(
 			'name', 'type', '_id', 'acronym', 'timestamp',
-			'market',
+			'market.dollarFlow', 'sourceLink',
 		);
 
 		$entity = $this->entity->find($id, $columns);

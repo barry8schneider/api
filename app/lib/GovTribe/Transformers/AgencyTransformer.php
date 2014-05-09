@@ -30,9 +30,16 @@ class AgencyTransformer extends Transformer
 					'name' => $entity->name ? $entity->name : self::NULL_TEXT,
 					'type' => 'agency',
 					'_id' => (string) $entity->_id,
-					'acronym' => $entity->acronym ? $entity->acronym : 'None',
-					'dollarFlow' => isset($entity->market['dollarFlow']) ? $entity->market['dollarFlow'] : array(),
+
+					'acronyms' => $entity->acronyms ? $entity->acronyms : self::EMPTY_NTI_ARRAY,
 					'timestamp'  => $entity->timestamp ? Carbon::createFromTimeStamp($entity->timestamp->sec)->toISO8601String() : self::NULL_TIMESTAMP,
+					'website'  => $entity->sourceLink ? $entity->sourceLink : self::NULL_TEXT,
+					'procurementStats' => [
+						'awardDollarFlow' => isset($entity->market['dollarFlow']) ? $entity->market['dollarFlow'] : self::EMPTY_NTI_ARRAY,
+						'numbersOfAwards' => $entity->numberOfAwards,
+					],
+
+
 				);
 
 				break;
