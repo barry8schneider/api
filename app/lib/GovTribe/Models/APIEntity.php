@@ -44,11 +44,11 @@ class APIEntity extends \Jenssegers\Mongodb\Model {
 					)
 				]
 			],
-			['$project' => ['_id' => 0, 'ts' => 1]],
-			['$unwind' => '$ts'],
-			['$unwind' => '$ts.tb'],
-			['$group' => ['_id' => '$ts.tb', 'c' => ['$sum' => 1]]],
-			['$match' => ['_id' => new \MongoRegex('/year/')]],
+			['$project' => ['_id' => 0, 'tb' => '$ts.tb']],
+			['$unwind' => '$tb'],
+			['$unwind' => '$tb'],
+			['$match' => ['tb' => new \MongoRegex('/year/')]],
+			['$group' => ['_id' => '$tb', 'c' => ['$sum' => 1]]],
 			['$sort' => ['_id' => -1]],
 		];
 
