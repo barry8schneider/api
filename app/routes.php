@@ -42,6 +42,7 @@ Route::get('/', function()
 	return View::make('docs');
 });
 
+
 $registerRoutesForRequestedVersion = function($requestedVersion)
 {
 	$resources = array(
@@ -54,8 +55,10 @@ $registerRoutesForRequestedVersion = function($requestedVersion)
 	{
 		$resourceControllerName = 'GovTribe\Controllers\\' . $resourceName . 'Controller';
 
+		Route::get(strtolower($resourceName) . '/search', array('uses' => $resourceControllerName . '@getSearch'));
+		Route::get(strtolower($resourceName) . '/{' . strtolower($resourceName) .'}/slice/{sliceName}', array('uses' => $resourceControllerName . '@getSlice'));
+
 		Route::resource(strtolower($resourceName), $resourceControllerName, array('only' => array('show', 'index')));
-		Route::controller(strtolower($resourceName) . '/{id}', $resourceControllerName);
 	}
 };
 $registerRoutesForRequestedVersion(Config::get('api.requestedVersion'));
