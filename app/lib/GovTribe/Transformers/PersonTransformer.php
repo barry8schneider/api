@@ -46,15 +46,6 @@ class PersonTransformer extends Transformer
 						'numbersOfAwards' => isset($entity->market['characteristics']['awardsPerYear']) ? $entity->market['characteristics']['awardsPerYear'] : self::EMPTY_NTI_ARRAY,
 						'awardDollarFlow' => isset($entity->market['dollarFlow']) ? $entity->market['dollarFlow'] : self::EMPTY_NTI_ARRAY,
 					],
-
-					'protestStats' => [
-						'totalProtests' => isset($entity->market['characteristics']['protestsPerYear']) ? $entity->market['characteristics']['protestsPerYear'] : self::EMPTY_NTI_ARRAY,
-						'protestsWithdrawn' => isset($entity->market['characteristics']['protestsWithdrawn']) ? $entity->market['characteristics']['protestsWithdrawn'] : self::EMPTY_NTI_ARRAY,
-						'protestsDenied' => isset($entity->market['characteristics']['protestsDenied']) ? $entity->market['characteristics']['protestsDenied'] : self::EMPTY_NTI_ARRAY,
-						'protestsSustained' => isset($entity->market['characteristics']['protestsSustained']) ? $entity->market['characteristics']['protestsSustained'] : self::EMPTY_NTI_ARRAY,
-						'protestsDismissed' => isset($entity->market['characteristics']['protestsDismissed']) ? $entity->market['characteristics']['protestsDismissed'] : self::EMPTY_NTI_ARRAY,
-					],
-
 				);
 
 				break;

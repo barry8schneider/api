@@ -10,9 +10,9 @@ class CategoryTransformer extends Transformer
 		{
 			case '30':
 				$data = array(
-					'name' => $entity['name'] ? $entity['name'] : self::NULL_TEXT,
+					'name' => $entity->name ? $entity->name: self::NULL_TEXT,
 					'type' => 'category',
-					'_id' => (string) $entity['_id'],
+					'_id' => (string) $entity->_id,
 				);
 
 				break;
