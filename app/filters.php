@@ -13,7 +13,8 @@
 
 App::before(function($request)
 {
-	//
+	// Disable all query logging.
+	DB::connection()->disableQueryLog();
 });
 
 

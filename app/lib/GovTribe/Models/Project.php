@@ -83,16 +83,6 @@ class Project extends APIEntity {
 		return $this->cleanDirtyHTML($value);
 	}
 
-	// Get all the project's sourceLinks attribute
-	public function getSourceLinksAttribute($value)
-	{
-		$output = [];
-
-		if (isset($this->attributes['sourceLink'])) $output[] = $this->attributes['sourceLink'];
-
-		return $output;
-	}
-
 	public function getNameAttribute($value)
 	{
 		// Remove leading NAICS/Class code.
@@ -114,7 +104,8 @@ class Project extends APIEntity {
 		$relatedNodes = array_merge(
 			$this->attributes['agencies'], 
 			$this->attributes['offices'],
-			$this->attributes['people']
+			$this->attributes['people'],
+			$this->attributes['categories']
 		);
 
 		$queries = [];
@@ -132,11 +123,11 @@ class Project extends APIEntity {
 				$queries[] = new \MongoRegex('/^' . $NTI['type'] . '\\|' . $NTI['_id'] . '\\|vendor\\|project\\|na\\|' . $val . '/');
 			}
 
-			if ($this->attributes['setAsideType'])
-			{
-				$val = strtolower(preg_replace('/[^A-Za-z0-9]/', '', $this->attributes['setAsideType']));
-				$queries[] = new \MongoRegex('/^' . $NTI['type'] . '\\|' . $NTI['_id'] . '\\|vendor\\|project\\|sa\\|' . $val . '/');
-			}
+			// if ($this->attributes['setAsideType'])
+			// {
+			// 	$val = strtolower(preg_replace('/[^A-Za-z0-9]/', '', $this->attributes['setAsideType']));
+			// 	$queries[] = new \MongoRegex('/^' . $NTI['type'] . '\\|' . $NTI['_id'] . '\\|vendor\\|project\\|sa\\|' . $val . '/');
+			// }
 
 		}
 
@@ -159,12 +150,14 @@ class Project extends APIEntity {
 		{
 			foreach ($agg['result'] as &$vendor)
 			{
+				$count = $vendor['c'];
 				$vendor = \GovTribe\Models\Vendor::find($vendor['_id'], ['name']);
 
 				$vendor = [
 					'name' => $vendor->name,
 					'type' => 'vendor',
 					'_id' => $vendor['_id'],
+					'count' => $count,
 				];
 			}
 

@@ -43,6 +43,8 @@ class Search
 	 */
 	protected function setElastica(Elastica\Client $elastica)
 	{
+		$elastica->getConnection()->setConfig(['url' => $_ENV['ELASTICA_URI']]);
+
 		$this->elastica = $elastica;
 	}
 	

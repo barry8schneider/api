@@ -1,6 +1,8 @@
 <?php namespace GovTribe\Storage;
 
 use GovTribe\Models\Project;
+use GovTribe\Models\Edge;
+use GovTribe\Search\Search;
 
 class ProjectRepository extends EntityRepository {
 
@@ -9,9 +11,9 @@ class ProjectRepository extends EntityRepository {
 	 *
 	 * @return self
 	*/
-	public function __construct(Project $entity)
+	public function __construct(Search $search, Project $entity, Edge $edge)
 	{
-		$this->entity = $entity;
+		parent::__construct($search, $entity, $edge);
 	}
 
 	/**
@@ -22,7 +24,7 @@ class ProjectRepository extends EntityRepository {
 	 */
 	public function search(array $params)
 	{
-		$index = \Search::getIndex(str_singular($this->entity->getTable()));
+		$index = $this->search->getIndex(str_singular($this->entity->getTable()));
 
 		$query = new \Elastica\Query([
 			'size' => $params['take'],

@@ -4,7 +4,6 @@ use Illuminate\Database\Eloquent\Collection as BaseCollection;
 
 class Collection extends BaseCollection
 {
-
 	/**
 	 * Get the model's transformer
 	 *
@@ -21,7 +20,20 @@ class Collection extends BaseCollection
 		{
 			return \App::make('AgencyTransformer');
 		}
-		
 	}
 
+	/**
+	 * Get the items in the collection as an array of NTIs.
+	 *
+	 * @return array
+	 */
+	public function toNTIs()
+	{
+		$this->transform(function($item)
+		{
+			$item->type = strtolower(class_basename($item));
+			return $item;
+		});
+		return $this->all();
+	}
 }

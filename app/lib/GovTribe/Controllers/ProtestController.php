@@ -1,5 +1,6 @@
 <?php namespace GovTribe\Controllers;
 
+use Illuminate\Http\Request as Request;
 use GovTribe\Storage\ProtestRepository as EntityRepository;
 use GovTribe\Transformers\ProtestTransformer as Transformer;
 use GovTribe\Transformers\Manager as Manager;
@@ -18,9 +19,9 @@ class ProtestController extends APIController {
 	 *
 	 * @return self
 	*/
-	public function __construct(EntityRepository $entity, Manager $manager, Transformer $transformer)
+	public function __construct(Request $request, EntityRepository $entity, Manager $manager, Transformer $transformer)
 	{
-		parent::__construct($entity, $manager, $transformer);
+		parent::__construct($request, $entity, $manager, $transformer);
 	}
 
 	/**
@@ -33,7 +34,11 @@ class ProtestController extends APIController {
 	{
 		$columns = array(
 			'name', 'type', '_id', 'timestamp',
+			'status', 'agencies', 'offices', 'protesters',
+			'projects', 'people', 'sourceLink', 'synopsis',
 		);
+
+		$entity = $this->entity->find($id, $columns);
 
 		if (!$entity)
 		{

@@ -5,7 +5,6 @@ class Agency extends APIEntity {
 	protected $connection = 'databot';
 	protected $collection = 'agencies';
 
-
 	public function getAcronymsAttribute()
 	{
 		if (isset($this->attributes['acronym']))

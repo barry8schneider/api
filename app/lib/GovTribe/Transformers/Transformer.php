@@ -123,4 +123,23 @@ class Transformer extends TransformerAbstract
 		
 		return $array;
 	}
+
+	/**
+	 * Recursively convert arrays that contain html entities to their
+	 * character equivalent.
+	 *
+	 * @param  array  $attributes
+	 *
+	 * @return array
+	 */
+	public function convertHTMLEntitiesInArray(array $array)
+	{
+		array_walk_recursive($array, function(&$item)
+		{
+			if (is_string($item)) $item = html_entity_decode($item);
+		});
+
+		return $array;
+	}
+
 }

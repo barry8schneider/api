@@ -1,5 +1,6 @@
 <?php namespace GovTribe\Controllers;
 
+use Illuminate\Http\Request as Request;
 use GovTribe\Storage\ActivityRepository as EntityRepository;
 use GovTribe\Transformers\ActivityTransformer as Transformer;
 use GovTribe\Transformers\Manager as Manager;
@@ -14,13 +15,20 @@ class ActivityController extends APIController {
 	protected $entityType = 'activity';
 
 	/**
+	 * Private activity message types.
+	 *
+	 * @var array
+	 */
+	protected $privateTypes = ['view', 'hord', 'unhord'];
+
+	/**
 	 * Create a new instance of the controller.
 	 *
 	 * @return self
 	*/
-	public function __construct(EntityRepository $entity, Manager $manager, Transformer $transformer)
+	public function __construct(Request $request, EntityRepository $entity, Manager $manager, Transformer $transformer)
 	{
-		parent::__construct($entity, $manager, $transformer);
+		parent::__construct($request, $entity, $manager, $transformer);
 	}
 
 	/**
@@ -32,12 +40,13 @@ class ActivityController extends APIController {
 	public function show($id)
 	{
 		$columns = array(
-			'name', 'type', '_id',
+			'type', '_id', 'timestamp', 'actors',
+			'targets', 'participants', 'actions',
 		);
 
 		$entity = $this->entity->find($id, $columns);
 
-		if (!$entity)
+		if (!$entity || in_array($entity->type, $this->privateTypes))
 		{
 			return $this->errorNotFound('Did you just invent an id and try loading an activity message?');
 		}
@@ -56,6 +65,7 @@ class ActivityController extends APIController {
 			'take' => $this->take,
 			'columns' => ['name', '_id', 'type'],
 			'skip' => $this->skip,
+			'privateTypes' => $this->privateTypes,
 		];
 
 		$response = $this->entity->findRecentlyActive($params);

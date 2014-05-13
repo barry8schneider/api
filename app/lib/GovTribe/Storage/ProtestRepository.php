@@ -1,6 +1,8 @@
 <?php namespace GovTribe\Storage;
 
 use GovTribe\Models\Protest;
+use GovTribe\Models\Edge;
+use GovTribe\Search\Search;
 
 class ProtestRepository extends EntityRepository {
 
@@ -9,8 +11,8 @@ class ProtestRepository extends EntityRepository {
 	 *
 	 * @return self
 	*/
-	public function __construct(Protest $entity)
+	public function __construct(Search $search, Protest $entity, Edge $edge)
 	{
-		$this->entity = $entity;
+		parent::__construct($search, $entity, $edge);
 	}
 }

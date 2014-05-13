@@ -2,13 +2,13 @@
 
 use League\Fractal\Pagination\IlluminatePaginatorAdapter;
 use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Http\Request as Request;
 use Illuminate\Pagination\Paginator;
 use GovTribe\Response\Response;
 use GovTribe\Transformers\Manager as Manager;
 use GovTribe\Transformers\Transformer as Transformer;
 use GovTribe\Transformers\Resource\Item as Item;
 use GovTribe\Transformers\Resource\Collection as Collection;
-
 use GovTribe\Storage\EntityRepository;
 
 class APIController extends BaseController {
@@ -60,15 +60,14 @@ class APIController extends BaseController {
 	 *
 	 * @return self
 	*/
-	public function __construct(EntityRepository $entity, Manager $manager, Transformer $transformer)
+	public function __construct(Request $request, EntityRepository $entity, Manager $manager, Transformer $transformer)
 	{
+		$this->request = $request;
 		$this->entity = $entity;
 		$this->fractal = $manager;
 		$this->transformer = $transformer;
 
 		if (\Input::get('page', 0) > 1) $this->skip = (\Input::get('page') - 1 ) * $this->take;
-
-		\DB::connection()->disableQueryLog();
 	}
 
 	/**
@@ -246,5 +245,4 @@ class APIController extends BaseController {
 	{
 		return $this->setStatusCode(400)->respondWithError($message);
 	}
-
 }

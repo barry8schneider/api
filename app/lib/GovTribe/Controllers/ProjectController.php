@@ -1,5 +1,6 @@
 <?php namespace GovTribe\Controllers;
 
+use Illuminate\Http\Request as Request;
 use GovTribe\Storage\ProjectRepository as EntityRepository;
 use GovTribe\Transformers\ProjectTransformer as Transformer;
 use GovTribe\Transformers\Manager as Manager;
@@ -30,9 +31,9 @@ class ProjectController extends APIController {
 	 *
 	 * @return self
 	*/
-	public function __construct(EntityRepository $entity, Manager $manager, Transformer $transformer, Input $input)
+	public function __construct(Request $request, EntityRepository $entity, Manager $manager, Transformer $transformer)
 	{
-		parent::__construct($entity, $manager, $transformer, $input);
+		parent::__construct($request, $entity, $manager, $transformer);
 	}
 
 	/**
@@ -50,7 +51,7 @@ class ProjectController extends APIController {
 			'people', 'goodsOrServices', 'POPs', 'placeOfPerformanceText',
 			'sourceLink', 'solicitationNumbers', 'contractNumbers',
 			'files', 'classCode', 'agencies', 'categories', 'raws', 'offices',
-			'synopsis', 'awardValue', 'awardValueNumeric', 'vendors'
+			'synopsis', 'awardValue', 'awardValueNumeric', 'vendors', 'tags'
 		);
 
 		$entity = $this->entity->find($id, $columns);

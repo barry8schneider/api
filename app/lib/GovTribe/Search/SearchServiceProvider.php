@@ -28,9 +28,7 @@ class SearchServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$elastica = new \Elastica\Client(array(
-			'url' => $_ENV['ELASTICA_URI'],
-		));
+		$elastica = new \Elastica\Client();
 
 		$this->app->bind('search', function() use ($elastica)
 		{

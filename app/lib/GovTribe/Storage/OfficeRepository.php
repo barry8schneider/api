@@ -1,6 +1,8 @@
 <?php namespace GovTribe\Storage;
 
 use GovTribe\Models\Office;
+use GovTribe\Models\Edge;
+use GovTribe\Search\Search;
 
 class OfficeRepository extends EntityRepository {
 
@@ -9,8 +11,8 @@ class OfficeRepository extends EntityRepository {
 	 *
 	 * @return self
 	*/
-	public function __construct(Office $entity)
+	public function __construct(Search $search, Office $entity, Edge $edge)
 	{
-		$this->entity = $entity;
+		parent::__construct($search, $entity, $edge);
 	}
 }

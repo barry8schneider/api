@@ -1,5 +1,6 @@
 <?php namespace GovTribe\Controllers;
 
+use Illuminate\Http\Request as Request;
 use GovTribe\Storage\PersonRepository as EntityRepository;
 use GovTribe\Transformers\PersonTransformer as Transformer;
 use GovTribe\Transformers\Manager as Manager;
@@ -18,9 +19,9 @@ class PersonController extends APIController {
 	 *
 	 * @return self
 	*/
-	public function __construct(EntityRepository $entity, Manager $manager, Transformer $transformer)
+	public function __construct(Request $request, EntityRepository $entity, Manager $manager, Transformer $transformer)
 	{
-		parent::__construct($entity, $manager, $transformer);
+		parent::__construct($request, $entity, $manager, $transformer);
 	}
 
 	/**
@@ -33,7 +34,8 @@ class PersonController extends APIController {
 	{
 		$columns = array(
 			'name', 'type', '_id', 'timestamp',
-			'market', 'mail', 'position', 'facility',
+			'market', 'mail', 'position', 'phoneNumber',
+			'offices', 'agencies',
 		);
 
 		$entity = $this->entity->find($id, $columns);
