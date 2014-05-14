@@ -52,7 +52,9 @@ App::error(function(Exception $exception, $code)
 
 	if (App::environment('production'))
 	{
-		return Response::json("We're having a problem. Check back again soon or contact support@govtribe.com for more information", 500);
+		return App::make('Govtribe\Controllers\APIController')->setStatusCode(500)->respondWithError(
+				"We have a problem. Check back again soon or contact support@govtribe.com for more information"
+			);
 	}
 
 });
@@ -63,7 +65,9 @@ App::fatal(function($exception)
 
 	if (App::environment('production'))
 	{
-		return Response::json("We're having a problem. Check back again soon or contact support@govtribe.com for more information", 500);
+		return App::make('Govtribe\Controllers\APIController')->setStatusCode(500)->respondWithError(
+				"We have a problem. Check back again soon or contact support@govtribe.com for more information"
+			);
 	}
 });
 

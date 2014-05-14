@@ -95,7 +95,7 @@ a.list-group-item.heading {
     min-width: 212px;
   }
 }
-</style></head><body><a href="#top" class="text-muted back-to-top"><i class="fa fa-toggle-up"></i>&nbsp;Back to top</a><div class="container"><div class="row"><div class="col-md-3"><nav id="nav" class="hidden-sm hidden-xs affix nav"><div class="list-group"><a href="#primary-entities" class="list-group-item heading">Primary Entities</a><a href="#primary-entities-primary-entity-collection" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Primary Entity Collection</a></div><div class="list-group"><a href="#project" class="list-group-item heading">Project</a><a href="#project-project" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Project</a><a href="#project-project-award-data" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Project Award Data</a><a href="#project-project-obligation-data" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Project Obligation Data</a><a href="#project-search-projects" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Search Projects</a><a href="#project-filtered-projects" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Filtered Projects</a></div><div class="list-group"><a href="#agency" class="list-group-item heading">Agency</a><a href="#agency-agency" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Agency</a></div><div class="list-group"><a href="#office" class="list-group-item heading">Office</a><a href="#office-office" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Office</a></div><div class="list-group"><a href="#person" class="list-group-item heading">Person</a><a href="#person-person" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Person</a></div><div class="list-group"><a href="#vendor" class="list-group-item heading">Vendor</a><a href="#vendor-vendor" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Vendor</a></div><div class="list-group"><a href="#category" class="list-group-item heading">Category</a><a href="#category-category" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Category</a></div><p style="text-align: center"><a href="http://api.govtribe.com">http://api.govtribe.com</a></p></nav></div><div class="col-md-9"><div><header><div class="page-header"><h1 id="top">GT API Beta</h1></div></header><div class="description"><p>The <a href="http://www.govtribe.com">GovTribe</a> API provides data on the U.S federal government contracting market. </p>
+</style></head><body><a href="#top" class="text-muted back-to-top"><i class="fa fa-toggle-up"></i>&nbsp;Back to top</a><div class="container"><div class="row"><div class="col-md-3"><nav id="nav" class="hidden-sm hidden-xs affix nav"><div class="list-group"><a href="#primary-entities" class="list-group-item heading">Primary Entities</a><a href="#primary-entities-primary-entity-collection" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Primary Entity Collection</a></div><div class="list-group"><a href="#project" class="list-group-item heading">Project</a><a href="#project-project" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Project</a><a href="#project-project-award-data" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Project Award Data</a><a href="#project-project-obligation-data" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Project Obligation Data</a><a href="#project-search-projects" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Search Projects</a><a href="#project-filtered-projects" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Filtered Projects</a></div><div class="list-group"><a href="#agency" class="list-group-item heading">Agency</a><a href="#agency-agency" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Agency</a><a href="#agency-agency-slices" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Agency Slices</a><a href="#agency-search-agencies" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Search Agencies</a></div><div class="list-group"><a href="#office" class="list-group-item heading">Office</a><a href="#office-office" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Office</a><a href="#office-office-slices" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Office Slices</a><a href="#office-search-offices" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Search Offices</a></div><div class="list-group"><a href="#person" class="list-group-item heading">Person</a><a href="#person-person" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Person</a><a href="#person-person-slices" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Person Slices</a><a href="#person-search-people" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Search People</a></div><div class="list-group"><a href="#vendor" class="list-group-item heading">Vendor</a><a href="#vendor-vendor" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Vendor</a><a href="#vendor-search-vendors" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Search Vendors</a><a href="#vendor-vendor-slices" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Vendor Slices</a></div><div class="list-group"><a href="#category" class="list-group-item heading">Category</a><a href="#category-category" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Category</a><a href="#category-search-categories" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Search Categories</a><a href="#category-category-slices" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Category Slices</a></div><div class="list-group"><a href="#activity" class="list-group-item heading">Activity</a><a href="#activity-activity" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Activity</a><a href="#activity-activity-feed" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Activity Feed</a></div><div class="list-group"><a href="#protest" class="list-group-item heading">Protest</a><a href="#protest-protest" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Protest</a><a href="#protest-search-protests" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Search Protests</a></div><p style="text-align: center"><a href="http://api.govtribe.com">http://api.govtribe.com</a></p></nav></div><div class="col-md-9"><div><header><div class="page-header"><h1 id="top">GT API Beta</h1></div></header><div class="description"><p>The <a href="http://www.govtribe.com">GovTribe</a> API provides data on the U.S. federal government contracting market. </p>
 <h2 id="primary-entites">Primary Entites</h2>
 <p>Created with data from multiple open government data sources, the GovTribe API presents six primary types of entities as well as their relationships to each other. Each entity type is a resource and has an endpoint.</p>
 <ul>
@@ -109,16 +109,14 @@ a.list-group-item.heading {
 <h2 id="secondary-entities">Secondary Entities</h2>
 <p>The GovTribe API presents two types of secondary entities. Each supporting entity is a resource and has an endpoint. </p>
 <ul>
-<li>Protest - Define Protest</li>
-<li>Activity - Define Activity</li>
+<li>Protest - The laws and regulations that govern contracting with the federal government are designed to ensure that federal procurements are conducted fairly and, whenever possible, in a way that maximizes competition. On occasion, however, bidders or others interested in government procurements may have reason to believe that a contract has been or is about to be awarded improperly or illegally, or that they have been unfairly denied a contract or an opportunity to compete for a contract. This is a protest.</li>
+<li>Activity - The Activity collection provides objects representing the ongoing activty of one or more of the Primary Entity types. It is a time series of the world of government procurement.</li>
 </ul>
-<h2 id="services">Services</h2>
-<p>The GovTribe API provides a search service for accessing all primary entity types. </p>
 </div></div><div><div class="panel panel-default"><div class="panel-heading"><h3 id="primary-entities">Primary Entities&nbsp;<a href="#primary-entities"><i class="fa fa-link"></i></a></h3></div><div class="panel-body"><h4 id="primary-entities-primary-entity-collection">Primary Entity Collection&nbsp;<a href="#primary-entities-primary-entity-collection"><i class="fa fa-link"></i></a></h4><p>Collection of one of the six types of primary entities, returned as a paginated list of NTIs (name, type, ID), ordered by timestamp.</p>
 <section id="primary-entities-primary-entity-collection-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">List Primary Entities</span></div><div style="float:left"><a href="#primary-entities-primary-entity-collection-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/{entityType}/{?skip,take}</code></div></div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>entityType</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>project</span></span><p>The type of entitiies to be returned</p>
 <p><strong>Choices:&nbsp;</strong><code>project</code>&nbsp;<code>vendor</code>&nbsp;<code>category</code>&nbsp;<code>agency</code>&nbsp;<code>office</code>&nbsp;<code>person</code>&nbsp;</p></dd><dt>skip</dt><dd><code>number</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>0</span></span>&nbsp;<p>The number of entities to skip.</p>
 </dd><dt>take</dt><dd><code>number</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>25</span></span>&nbsp;<p>The number of entities to return.</p>
-</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Request&nbsp;&nbsp;<code>Project</code></strong><a data-toggle="collapse" data-target="#403b483b7419a23ed8aaa5bde1722709" class="pull-right">Toggle</a></li><li id="403b483b7419a23ed8aaa5bde1722709" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-API-Key</span>: <span class="hljs-string">yourAPIKey</span><br></code></pre></li><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#765575bf22a426a61589ee73b773455c" class="pull-right">Toggle</a></li><li id="765575bf22a426a61589ee73b773455c" class="list-group-item panel-collapse collapse"><h5>Body</h5><pre><code>{
+</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Request&nbsp;&nbsp;<code>Primart Entities</code></strong><a data-toggle="collapse" data-target="#c575c44c03211146366e7c0488048c15" class="pull-right">Toggle</a></li><li id="c575c44c03211146366e7c0488048c15" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-API-Key</span>: <span class="hljs-string">yourAPIKey</span><br></code></pre></li><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#e991e9b73281cb03a03c80021a980349" class="pull-right">Toggle</a></li><li id="e991e9b73281cb03a03c80021a980349" class="list-group-item panel-collapse collapse"><h5>Body</h5><pre><code>{
 "<span class="hljs-attribute">total</span>": <span class="hljs-value"><span class="hljs-number">670413</span></span>,
 "<span class="hljs-attribute">skip</span>": <span class="hljs-value"><span class="hljs-number">0</span></span>,
 "<span class="hljs-attribute">take</span>": <span class="hljs-value"><span class="hljs-number">2</span></span>,
@@ -140,21 +138,28 @@ a.list-group-item.heading {
     "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
         "<span class="hljs-attribute">total</span>": <span class="hljs-value">{
             "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
-            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The total number of entities for this endpoint"</span>                        
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The total number of entities for this endpoint"</span></span>,
+            "<span class="hljs-attribute">minimum</span>" : <span class="hljs-value"><span class="hljs-number">0</span>
         </span>}</span>,
         "<span class="hljs-attribute">skip</span>": <span class="hljs-value">{
             "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
             "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The number of entities skipped in the response"</span></span>,
-            "<span class="hljs-attribute">default</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+            "<span class="hljs-attribute">default</span>": <span class="hljs-value"><span class="hljs-number">0</span></span>,
+            "<span class="hljs-attribute">maximum</span>" : <span class="hljs-value"><span class="hljs-number">250</span></span>,
+            "<span class="hljs-attribute">minimum</span>" : <span class="hljs-value"><span class="hljs-number">0</span>
         </span>}</span>,
         "<span class="hljs-attribute">take</span>": <span class="hljs-value">{
             "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
             "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The number of entities returned in the response"</span></span>,
-            "<span class="hljs-attribute">default</span>": <span class="hljs-value"><span class="hljs-number">25</span>
+            "<span class="hljs-attribute">default</span>": <span class="hljs-value"><span class="hljs-number">25</span></span>,
+            "<span class="hljs-attribute">maximum</span>" : <span class="hljs-value"><span class="hljs-number">250</span></span>,
+            "<span class="hljs-attribute">minimum</span>" : <span class="hljs-value"><span class="hljs-number">0</span>
         </span>}</span>,
         "<span class="hljs-attribute">results</span>": <span class="hljs-value">{
             "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
             "<span class="hljs-attribute">uniqueItems</span>": <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+            "<span class="hljs-attribute">minItems</span>" : <span class="hljs-value"><span class="hljs-number">0</span></span>,
+            "<span class="hljs-attribute">maxItems</span>" : <span class="hljs-value"><span class="hljs-number">250</span></span>,
             "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
                 "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
                 "<span class="hljs-attribute">title</span>": <span class="hljs-value"><span class="hljs-string">"NTI"</span></span>,
@@ -182,457 +187,479 @@ a.list-group-item.heading {
 </span>}
 </code></pre></li></ul></section></div></div></div><div><div class="panel panel-default"><div class="panel-heading"><h3 id="project">Project&nbsp;<a href="#project"><i class="fa fa-link"></i></a></h3></div><div class="panel-body"><h4 id="project-project">Project&nbsp;<a href="#project-project"><i class="fa fa-link"></i></a></h4><p>A Project is a U.S. federal government contract or opportunity. </p>
 <section id="project-project-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Retrieve a Single Project</span></div><div style="float:left"><a href="#project-project-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/project/{_id}</code></div></div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>_id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>51f79dd2ca985f9b7c00031c</span></span><p>String <code>id</code> of the desired Project entity to perform action with.</p>
-</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Request&nbsp;&nbsp;<code>Project</code></strong><a data-toggle="collapse" data-target="#1860a33d3efc93219d08ee68383cd165" class="pull-right">Toggle</a></li><li id="1860a33d3efc93219d08ee68383cd165" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-API-Key</span>: <span class="hljs-string">yourAPIKey</span><br></code></pre></li><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#aa10258df4ef3256f5e52015dbaad9f8" class="pull-right">Toggle</a></li><li id="aa10258df4ef3256f5e52015dbaad9f8" class="list-group-item panel-collapse collapse"><h5>Body</h5><pre><code>{
+</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Request&nbsp;&nbsp;<code>Project</code></strong><a data-toggle="collapse" data-target="#1860a33d3efc93219d08ee68383cd165" class="pull-right">Toggle</a></li><li id="1860a33d3efc93219d08ee68383cd165" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-API-Key</span>: <span class="hljs-string">yourAPIKey</span><br></code></pre></li><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#9ac0f598e94e4924f367e84ac4a4432a" class="pull-right">Toggle</a></li><li id="9ac0f598e94e4924f367e84ac4a4432a" class="list-group-item panel-collapse collapse"><h5>Body</h5><pre><code>{
     "<span class="hljs-attribute">Hello</span>" : <span class="hljs-value"><span class="hljs-string">"there"</span></span>,
     "<span class="hljs-attribute">You look</span>" : <span class="hljs-value"><span class="hljs-string">"nice"</span>
 </span>}
 </code></pre><h5>Schema</h5><pre><code>{
-    "type": "object",
-    "properties": {
-        "_id" : {
-            "type":"string"
-            "description": "The unique ID for the Project"
-        },
-        "NAICS" : {
-            "type":"string"
-            "description": "The North American Industry Classification Code assigned to the Project"
-        },
+    "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+    "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+        "<span class="hljs-attribute">_id</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The unique ID for the Project"</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">NAICS</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The North American Industry Classification Code assigned to the Project"</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">setAsideType</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The set aside designated for a project"</span></span>,
+            "<span class="hljs-attribute">enum</span>" : <span class="hljs-value">[<span class="hljs-string">"Total Small Business"</span>, <span class="hljs-string">"Service-Disabled Veteran-Owned Small Business"</span>, <span class="hljs-string">"HUBZone"</span>, <span class="hljs-string">"Competitive 8(a)"</span>, <span class="hljs-string">"Woman Owned Small Business"</span>, <span class="hljs-string">"Partial Small Business"</span>, <span class="hljs-string">"Economically Disadvantaged Woman Owned Small Business"</span>, <span class="hljs-string">"Emerging Small Business"</span>, <span class="hljs-string">"Total HBCU / MI"</span>, <span class="hljs-string">"Partial HBCU / MI"</span>]
+        </span>}</span>,
+        "<span class="hljs-attribute">importantDates</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"All due dates for a project across its lifecycle"</span></span>,
+            "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{ 
+                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A specific due date for project"</span></span>,
+                "<span class="hljs-attribute">properties</span>" : <span class="hljs-value">{
+                    "<span class="hljs-attribute">dateType</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The type of event or workflow status for a date"</span></span>,
+                        "<span class="hljs-attribute">enum</span>" : <span class="hljs-value">[<span class="hljs-string">"Forecast"</span>, <span class="hljs-string">"Presolicitation Posting"</span>, <span class="hljs-string">"Presolicitation Due"</span>, <span class="hljs-string">"Solicitation Posting"</span>, <span class="hljs-string">"Solicitation Due"</span>, <span class="hljs-string">"Award"</span>, <span class="hljs-string">"contractEnd"</span>, <span class="hljs-string">"Base Period End"</span>, <span class="hljs-string">"Option Period End"</span>]
+                    </span>}</span>,
+                    "<span class="hljs-attribute">date</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The value for a specific date"</span></span>,
+                        "<span class="hljs-attribute">format</span>" : <span class="hljs-value"><span class="hljs-string">"date-time"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">valueSource</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"An indication of whether the date value is derived from mining source data or predcited by GovTribe"</span></span>,
+                        "<span class="hljs-attribute">enum</span>" : <span class="hljs-value">[<span class="hljs-string">"Sourced"</span>, <span class="hljs-string">"Predicted"</span>] 
+                    </span>}
+                </span>}
+            </span>}
+        </span>}</span>,
+        "<span class="hljs-attribute">workflowStatus</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+            "<span class="hljs-attribute">enum</span>" : <span class="hljs-value">[<span class="hljs-string">"Forecasted"</span>, <span class="hljs-string">"Presolicitation"</span>, <span class="hljs-string">"Open For Bid"</span>, <span class="hljs-string">"Canceled"</span>, <span class="hljs-string">"Awarded"</span>, <span class="hljs-string">"Active"</span>, <span class="hljs-string">"Ended"</span>]</span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The status of a specific project with respect to the contracting lifecycle"</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">pointsOfContact</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The NTIs for the government points of contact associated with a project"</span></span>,
+            "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"An NTI for a government point of contact"</span></span>,
+                "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+                    "<span class="hljs-attribute">name</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The name of the person"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">type</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">enum</span>": <span class="hljs-value">[<span class="hljs-string">"person"</span>]</span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The type of the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">_id</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The unique ID for the entity"</span>
+                    </span>}
 
-        "setAsideType" : {
-            "type":"string"
-            "description": "The <span class="hljs-operator"><span class="hljs-keyword">set</span> aside designated <span class="hljs-keyword">for</span> a project<span class="hljs-string">"
-            "</span>enum<span class="hljs-string">" : ["</span>Total Small Business<span class="hljs-string">", "</span>Service-Disabled Veteran-Owned Small Business<span class="hljs-string">", "</span>HUBZone<span class="hljs-string">", "</span>Competitive <span class="hljs-number">8</span>(a)<span class="hljs-string">", "</span>Woman Owned Small Business<span class="hljs-string">", "</span><span class="hljs-keyword">Partial</span> Small Business<span class="hljs-string">", "</span>Economically Disadvantaged Woman Owned Small Business<span class="hljs-string">", "</span>Emerging Small Business<span class="hljs-string">", "</span>Total HBCU / MI<span class="hljs-string">", "</span><span class="hljs-keyword">Partial</span> HBCU / MI<span class="hljs-string">"]
-        },
-        "</span>dueDates<span class="hljs-string">": {
-            "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
-            "</span>description<span class="hljs-string">" : "</span><span class="hljs-keyword">All</span> due dates <span class="hljs-keyword">for</span> a project across its lifecycle<span class="hljs-string">",
-            "</span>items<span class="hljs-string">" : { 
-                "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">"
-                "</span>description<span class="hljs-string">" : "</span>A specific due <span class="hljs-keyword">date</span> <span class="hljs-keyword">for</span> project<span class="hljs-string">",
-                "</span>properties<span class="hljs-string">" : {
-                    "</span>dueDateType<span class="hljs-string">" : {
-                        "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
-                        "</span>description<span class="hljs-string">" : "</span>The type <span class="hljs-keyword">of</span> event <span class="hljs-keyword">or</span> workflow status <span class="hljs-keyword">for</span> a due <span class="hljs-keyword">date</span><span class="hljs-string">",
-                        "</span>enum<span class="hljs-string">" : ["</span>Presolicitation Response<span class="hljs-string">", "</span>Complete Response<span class="hljs-string">"]
-                    },
-                    "</span><span class="hljs-keyword">date</span><span class="hljs-string">" : {
-                        "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
-                        "</span>description<span class="hljs-string">" : "</span>The <span class="hljs-keyword">date</span> <span class="hljs-keyword">value</span> <span class="hljs-keyword">for</span> a specific due <span class="hljs-keyword">date</span><span class="hljs-string">",
-                        "</span>format<span class="hljs-string">" : "</span><span class="hljs-keyword">date</span>-<span class="hljs-keyword">time</span><span class="hljs-string">"
-                    }
-                }
-            }
-        },
-        "</span>workflowStatus<span class="hljs-string">" : {
-            "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
-            "</span>enum<span class="hljs-string">" : ["</span>Forecasted<span class="hljs-string">", "</span>Presolicitation<span class="hljs-string">", "</span><span class="hljs-keyword">Open</span> <span class="hljs-keyword">For</span> Bid<span class="hljs-string">", "</span>Canceled<span class="hljs-string">", "</span>Awarded<span class="hljs-string">", "</span>Active<span class="hljs-string">", "</span>Ended<span class="hljs-string">"],
-            "</span>description<span class="hljs-string">" : "</span>The status <span class="hljs-keyword">of</span> a specific project <span class="hljs-keyword">with</span> respect <span class="hljs-keyword">to</span> the contracting lifecycle<span class="hljs-string">"
-        },
-        "</span>pointsOfContact<span class="hljs-string">" : {
-            "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">"
-            "</span>description<span class="hljs-string">" : "</span>The NTIs <span class="hljs-keyword">for</span> the government points <span class="hljs-keyword">of</span> contact associated <span class="hljs-keyword">with</span> a project<span class="hljs-string">",
-            "</span>items<span class="hljs-string">" : {
-                "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
-                "</span>description<span class="hljs-string">" : "</span>An NTI <span class="hljs-keyword">for</span> a government point <span class="hljs-keyword">of</span> contact<span class="hljs-string">",
-                "</span>properties<span class="hljs-string">": {
-                    "</span>name<span class="hljs-string">": {
-                        "</span>type<span class="hljs-string">":"</span>string<span class="hljs-string">",
-                        "</span>description<span class="hljs-string">": "</span>The name <span class="hljs-keyword">of</span> the person<span class="hljs-string">"
-                    },
-                    "</span>type<span class="hljs-string">": {
-                        "</span>type<span class="hljs-string">":"</span>string<span class="hljs-string">",
-                        "</span>enum<span class="hljs-string">": ["</span>person<span class="hljs-string">"],
-                        "</span>description<span class="hljs-string">": "</span>The type <span class="hljs-keyword">of</span> the entity<span class="hljs-string">"
-                    },
-                    "</span>_id<span class="hljs-string">": {
-                        "</span>type<span class="hljs-string">":"</span>string<span class="hljs-string">"
-                        "</span>description<span class="hljs-string">": "</span>The <span class="hljs-keyword">unique</span> ID <span class="hljs-keyword">for</span> the entity<span class="hljs-string">"
-                    }
-
-                }
-            }
-        },
-        "</span>goodsOrServices<span class="hljs-string">" : {
-            "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
-            "</span>description<span class="hljs-string">" : "</span>Indicates whether a project <span class="hljs-keyword">is</span> <span class="hljs-keyword">for</span> goods <span class="hljs-keyword">or</span> Services<span class="hljs-string">",
-            "</span>enum<span class="hljs-string">" : ["</span>Goods<span class="hljs-string">", "</span>Services<span class="hljs-string">"]
-        },
-        "</span>POPs<span class="hljs-string">": {
-            "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
-            "</span>description<span class="hljs-string">" : "</span>Geocoded places <span class="hljs-keyword">of</span> performance <span class="hljs-keyword">for</span> a project<span class="hljs-string">",
-            "</span>items<span class="hljs-string">" : {
-                "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
-                "</span>description<span class="hljs-string">" : "</span>A geocoded place <span class="hljs-keyword">of</span> performance <span class="hljs-keyword">for</span> a project<span class="hljs-string">",
-                "</span>properties<span class="hljs-string">" : {
-                    "</span>name<span class="hljs-string">" : {
-                        "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
-                        "</span>description<span class="hljs-string">" : "</span>The name <span class="hljs-keyword">of</span> a place <span class="hljs-keyword">of</span> performance<span class="hljs-string">"
-                    },
-                    "</span>type<span class="hljs-string">" : {
-                        "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
-                        "</span>description<span class="hljs-string">" :  "</span>The type <span class="hljs-keyword">of</span> the geocoded place <span class="hljs-keyword">of</span> performance<span class="hljs-string">"
-                    }, 
-                    "</span>coordinates<span class="hljs-string">" : {
-                        "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">"
-                        "</span>items<span class="hljs-string">" : {
-                            "</span>type<span class="hljs-string">" : "</span><span class="hljs-keyword">number</span><span class="hljs-string">",
-                            "</span>description<span class="hljs-string">" : "</span>The lat <span class="hljs-keyword">and</span> long <span class="hljs-keyword">for</span> a given coordinate<span class="hljs-string">"
-                        }
-                    },
-                    "</span>coordinateType<span class="hljs-string">" : {
-                        "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
-                        "</span>description<span class="hljs-string">" : "</span>The type <span class="hljs-keyword">of</span> the coordinate<span class="hljs-string">",
-                        "</span>enum<span class="hljs-string">" : ["</span>Point<span class="hljs-string">"]
-                    }
-                }
-            }
-        },
-        "</span>sourceLinks<span class="hljs-string">" : {
-            "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">"
-            "</span>description<span class="hljs-string">" : "</span>Listing <span class="hljs-keyword">of</span> source data providers <span class="hljs-keyword">for</span> this project<span class="hljs-string">",
-            "</span>items<span class="hljs-string">" : {
-                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
-                "</span>description<span class="hljs-string">" : "</span>A source link string<span class="hljs-string">",
-                "</span>format<span class="hljs-string">" : "</span>uri<span class="hljs-string">"
-            }
-        },
-        "</span>awardedVendors<span class="hljs-string">" : {
-            "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">"
-            "</span>description<span class="hljs-string">" : "</span>The NTIs <span class="hljs-keyword">for</span> <span class="hljs-keyword">all</span> vendors receiving awards <span class="hljs-keyword">for</span> this project<span class="hljs-string">",
-            "</span>items<span class="hljs-string">" : {
-                "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
-                "</span>description<span class="hljs-string">" : "</span>An NTI <span class="hljs-keyword">for</span> a vendor<span class="hljs-string">",
-                "</span>properties<span class="hljs-string">": {
-                    "</span>name<span class="hljs-string">": {
-                        "</span>type<span class="hljs-string">":"</span>string<span class="hljs-string">",
-                        "</span>description<span class="hljs-string">": "</span>The name <span class="hljs-keyword">of</span> the vendor<span class="hljs-string">"
-                    },
-                    "</span>type<span class="hljs-string">": {
-                        "</span>type<span class="hljs-string">":"</span>string<span class="hljs-string">",
-                        "</span>enum<span class="hljs-string">": ["</span>vendor<span class="hljs-string">"],
-                        "</span>description<span class="hljs-string">": "</span>The type <span class="hljs-keyword">of</span> the entity<span class="hljs-string">"
-                    },
-                    "</span>_id<span class="hljs-string">": {
-                        "</span>type<span class="hljs-string">":"</span>string<span class="hljs-string">"
-                        "</span>description<span class="hljs-string">": "</span>The <span class="hljs-keyword">unique</span> ID <span class="hljs-keyword">for</span> the entity<span class="hljs-string">"
-                    }
-                }
-            }
-        },
-        "</span>predictedCompetition<span class="hljs-string">" : {
-            "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">"
-            "</span>description<span class="hljs-string">" : "</span>The NTIs <span class="hljs-keyword">for</span> <span class="hljs-keyword">all</span> vendors predicted <span class="hljs-keyword">by</span> GovTribe <span class="hljs-keyword">to</span> compete <span class="hljs-keyword">for</span> this project.<span class="hljs-string">",
-            "</span>items<span class="hljs-string">" : {
-                "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
-                "</span>description<span class="hljs-string">" : "</span>An NTI <span class="hljs-keyword">for</span> a vendor, <span class="hljs-keyword">as</span> well <span class="hljs-keyword">as</span> likliehood <span class="hljs-keyword">of</span> winning<span class="hljs-string">",
-                "</span>properties<span class="hljs-string">": {
-                    "</span>name<span class="hljs-string">": {
-                        "</span>type<span class="hljs-string">":"</span>string<span class="hljs-string">",
-                        "</span>description<span class="hljs-string">": "</span>The name <span class="hljs-keyword">of</span> the vendor<span class="hljs-string">"
-                    },
-                    "</span>type<span class="hljs-string">": {
-                        "</span>type<span class="hljs-string">":"</span>string<span class="hljs-string">",
-                        "</span>enum<span class="hljs-string">": ["</span>vendor<span class="hljs-string">"],
-                        "</span>description<span class="hljs-string">": "</span>The type <span class="hljs-keyword">of</span> the entity<span class="hljs-string">"
-                    },
-                    "</span>_id<span class="hljs-string">": {
-                        "</span>type<span class="hljs-string">":"</span>string<span class="hljs-string">"
-                        "</span>description<span class="hljs-string">": "</span>The <span class="hljs-keyword">unique</span> ID <span class="hljs-keyword">for</span> the entity<span class="hljs-string">"
-                    },
-                    "</span>_id<span class="hljs-string">": {
-                        "</span>type<span class="hljs-string">":"</span>string<span class="hljs-string">"
-                        "</span>description<span class="hljs-string">": "</span>The likliehood a vendor will win this project<span class="hljs-string">"
-                        "</span>enum<span class="hljs-string">" : ["</span>High<span class="hljs-string">", "</span>Moderate<span class="hljs-string">", "</span>Low<span class="hljs-string">"]
-                    }
-                }
-            }
-        },
-        "</span>solicitationNumbers<span class="hljs-string">" : {
-            "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
-            "</span>description<span class="hljs-string">" : "</span>A listing <span class="hljs-keyword">of</span> <span class="hljs-keyword">all</span> solicitation numbers <span class="hljs-keyword">for</span> a specific project<span class="hljs-string">"
-            "</span>items<span class="hljs-string">" : {
-                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
-                "</span>description<span class="hljs-string">" : "</span>A solicitation <span class="hljs-keyword">number</span><span class="hljs-string">"
-            }
-        },
-        "</span>files<span class="hljs-string">": {
-            "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
-            "</span>description<span class="hljs-string">" : "</span><span class="hljs-keyword">All</span> files <span class="hljs-keyword">or</span> attachments associated <span class="hljs-keyword">with</span> a project<span class="hljs-string">",
-            "</span>items<span class="hljs-string">" : {
-                "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
-                "</span>description<span class="hljs-string">" : "</span>A package <span class="hljs-keyword">or</span> grouping <span class="hljs-keyword">of</span> files<span class="hljs-string">",
-                "</span>properties<span class="hljs-string">" : {
-                    "</span>packageName<span class="hljs-string">" : {
-                        "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
-                        "</span>description<span class="hljs-string">" : "</span>The name <span class="hljs-keyword">of</span> the file package<span class="hljs-string">"
-                    },
-                    "</span>packageData<span class="hljs-string">" : {
-                        "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
-                        "</span>desscription<span class="hljs-string">" : "</span>A listing <span class="hljs-keyword">of</span> file data <span class="hljs-keyword">for</span> a package<span class="hljs-string">",
-                        "</span>items<span class="hljs-string">" : {
-                            "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
-                            "</span>description<span class="hljs-string">" : "</span>Data <span class="hljs-keyword">for</span> a specifc file <span class="hljs-keyword">or</span> attachment<span class="hljs-string">",
-                            "</span>properties<span class="hljs-string">" : {
-                                "</span>fileURI<span class="hljs-string">" : {
-                                    "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
-                                    "</span>description<span class="hljs-string">" : "</span>URI <span class="hljs-keyword">for</span> a specific file<span class="hljs-string">",
-                                },
-                                "</span>fileName<span class="hljs-string">" : {
-                                    "</span>type<span class="hljs-string">"  "</span>string<span class="hljs-string">"
-                                    "</span>description<span class="hljs-string">" : "</span>The name <span class="hljs-keyword">of</span> the file<span class="hljs-string">"
-                                },
-                                "</span>fileDescription<span class="hljs-string">" : {
-                                    "</span>type<span class="hljs-string">"  "</span>string<span class="hljs-string">"
-                                    "</span>description<span class="hljs-string">" : "</span>The description <span class="hljs-keyword">of</span> the file<span class="hljs-string">"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "</span>classCodes<span class="hljs-string">" : {
-            "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
-            "</span>description<span class="hljs-string">" : "</span>The Products <span class="hljs-keyword">and</span> Services Class (PSC) Codes <span class="hljs-keyword">for</span> a project<span class="hljs-string">",
-            "</span>items<span class="hljs-string">" : {
-                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
-                "</span>description<span class="hljs-string">" : "</span>A PSC Code<span class="hljs-string">"
-            }
-        },
-        "</span>tags<span class="hljs-string">": {
-            "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
-            "</span>description<span class="hljs-string">" : "</span>The topical tags <span class="hljs-keyword">for</span> a project<span class="hljs-string">",
-            "</span>items<span class="hljs-string">" : {
-                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
-                "</span>description<span class="hljs-string">" : "</span>A tag <span class="hljs-keyword">or</span> topic extracted <span class="hljs-keyword">from</span> the project<span class="hljs-string">"
-            }
-        },
-        "</span><span class="hljs-keyword">timestamp</span><span class="hljs-string">" : {
-            "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
-            "</span>description<span class="hljs-string">" : "</span>The <span class="hljs-keyword">date</span> <span class="hljs-keyword">for</span> the <span class="hljs-keyword">last</span> <span class="hljs-keyword">time</span> a project was changed<span class="hljs-string">",
-            "</span>format<span class="hljs-string">" : "</span><span class="hljs-keyword">date</span>-<span class="hljs-keyword">time</span><span class="hljs-string">"
-        },
-        "</span>agencies<span class="hljs-string">" : {
-            "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">"
-            "</span>description<span class="hljs-string">" : "</span>The NTIs <span class="hljs-keyword">for</span> <span class="hljs-keyword">all</span> agencies managing this project<span class="hljs-string">",
-            "</span>items<span class="hljs-string">" : {
-                "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
-                "</span>description<span class="hljs-string">" : "</span>An NTI <span class="hljs-keyword">for</span> a n agency<span class="hljs-string">",
-                "</span>properties<span class="hljs-string">": {
-                    "</span>name<span class="hljs-string">": {
-                        "</span>type<span class="hljs-string">":"</span>string<span class="hljs-string">",
-                        "</span>description<span class="hljs-string">": "</span>The name <span class="hljs-keyword">of</span> the agency<span class="hljs-string">"
-                    },
-                    "</span>type<span class="hljs-string">": {
-                        "</span>type<span class="hljs-string">":"</span>string<span class="hljs-string">",
-                        "</span>enum<span class="hljs-string">": ["</span>agency<span class="hljs-string">"],
-                        "</span>description<span class="hljs-string">": "</span>The type <span class="hljs-keyword">of</span> the entity<span class="hljs-string">"
-                    },
-                    "</span>_id<span class="hljs-string">": {
-                        "</span>type<span class="hljs-string">":"</span>string<span class="hljs-string">"
-                        "</span>description<span class="hljs-string">": "</span>The <span class="hljs-keyword">unique</span> ID <span class="hljs-keyword">for</span> the entity<span class="hljs-string">"
-                    }
-                }
-            }
-        },
-        "</span>contractNumbers<span class="hljs-string">" : {
-            "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
-            "</span>description<span class="hljs-string">" : "</span>A listing <span class="hljs-keyword">of</span> <span class="hljs-keyword">all</span> contract numbers <span class="hljs-keyword">for</span> a specific project<span class="hljs-string">"
-            "</span>items<span class="hljs-string">" : {
-                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
-                "</span>description<span class="hljs-string">" : "</span>A contract <span class="hljs-keyword">number</span><span class="hljs-string">"
-            }
-        },
-        "</span>categories<span class="hljs-string">" : {
-            "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">"
-            "</span>description<span class="hljs-string">" : "</span>The NTIs <span class="hljs-keyword">for</span> <span class="hljs-keyword">all</span> categories related <span class="hljs-keyword">to</span> this project<span class="hljs-string">",
-            "</span>items<span class="hljs-string">" : {
-                "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
-                "</span>description<span class="hljs-string">" : "</span>An NTI <span class="hljs-keyword">for</span> a category<span class="hljs-string">",
-                "</span>properties<span class="hljs-string">": {
-                    "</span>name<span class="hljs-string">": {
-                        "</span>type<span class="hljs-string">":"</span>string<span class="hljs-string">",
-                        "</span>description<span class="hljs-string">": "</span>The name <span class="hljs-keyword">of</span> the category<span class="hljs-string">"
-                    },
-                    "</span>type<span class="hljs-string">": {
-                        "</span>type<span class="hljs-string">":"</span>string<span class="hljs-string">",
-                        "</span>enum<span class="hljs-string">": ["</span>category<span class="hljs-string">"],
-                        "</span>description<span class="hljs-string">": "</span>The type <span class="hljs-keyword">of</span> the entity<span class="hljs-string">"
-                    },
-                    "</span>_id<span class="hljs-string">": {
-                        "</span>type<span class="hljs-string">":"</span>string<span class="hljs-string">"
-                        "</span>description<span class="hljs-string">": "</span>The <span class="hljs-keyword">unique</span> ID <span class="hljs-keyword">for</span> the entity<span class="hljs-string">"
-                    }
-                }
-            }
-        },
-        "</span>name<span class="hljs-string">" : {
-            "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
-            "</span>description<span class="hljs-string">" : "</span>The name <span class="hljs-keyword">of</span> a project<span class="hljs-string">"
-        },
-        "</span>synopsis<span class="hljs-string">" : {
-            "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
-            "</span>description<span class="hljs-string">" : "</span><span class="hljs-keyword">All</span> <span class="hljs-keyword">of</span> the synopses <span class="hljs-keyword">for</span> a project across its lifecycle, provided <span class="hljs-keyword">in</span> reverse <span class="hljs-keyword">order</span> <span class="hljs-keyword">of</span> occurance<span class="hljs-string">",
-            "</span>items: {
-                <span class="hljs-string">"type"</span> : <span class="hljs-string">"string"</span>,
-                <span class="hljs-string">"description"</span> : <span class="hljs-string">"A synopsis"</span>
-            }
-        },
-        <span class="hljs-string">"offices"</span> : {
-            <span class="hljs-string">"type"</span> : <span class="hljs-string">"array"</span>
-            <span class="hljs-string">"description"</span> : <span class="hljs-string">"The NTIs for all offices managing this project"</span>,
-            <span class="hljs-string">"items"</span> : {
-                <span class="hljs-string">"type"</span> : <span class="hljs-string">"object"</span>,
-                <span class="hljs-string">"description"</span> : <span class="hljs-string">"An NTI for an office"</span>,
-                <span class="hljs-string">"properties"</span>: {
-                    <span class="hljs-string">"name"</span>: {
-                        <span class="hljs-string">"type"</span>:<span class="hljs-string">"string"</span>,
-                        <span class="hljs-string">"description"</span>: <span class="hljs-string">"The name of the office"</span>
-                    },
-                    <span class="hljs-string">"type"</span>: {
-                        <span class="hljs-string">"type"</span>:<span class="hljs-string">"string"</span>,
-                        <span class="hljs-string">"enum"</span>: [<span class="hljs-string">"office"</span>],
-                        <span class="hljs-string">"description"</span>: <span class="hljs-string">"The type of the entity"</span>
-                    },
-                    <span class="hljs-string">"_id"</span>: {
-                        <span class="hljs-string">"type"</span>:<span class="hljs-string">"string"</span>
-                        <span class="hljs-string">"description"</span>: <span class="hljs-string">"The unique ID for the entity"</span>
-                    }
-                }
-            }
-        },
-        <span class="hljs-string">"type"</span> : {
-            <span class="hljs-string">"type"</span> : <span class="hljs-string">"string"</span>,
-            <span class="hljs-string">"description"</span> : <span class="hljs-string">"The type of the entity"</span>,
-            <span class="hljs-string">"enum"</span> : [<span class="hljs-string">"project]
-        }
-    }
-}
-</span></span></code></pre></li></ul></section><h4 id="project-project-award-data">Project Award Data&nbsp;<a href="#project-project-award-data"><i class="fa fa-link"></i></a></h4><section id="project-project-award-data-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Retrieve Project Award Data</span></div><div style="float:left"><a href="#project-project-award-data-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/project/{_id}/awardData</code></div></div><div class="panel-body"><p>Returns the award data for a given project</p>
-</div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>_id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>51f79dd2ca985f9b7c00031c</span></span><p>String <code>id</code> of the desired Project entity to perform action with.</p>
-</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Request&nbsp;&nbsp;<code>Project Award Data</code></strong><a data-toggle="collapse" data-target="#a7791d6ebf95954fe0358e0d64c8005f" class="pull-right">Toggle</a></li><li id="a7791d6ebf95954fe0358e0d64c8005f" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-API-Key</span>: <span class="hljs-string">yourAPIKey</span><br></code></pre></li><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#6d51d2dbca80de22dd97e8661871f4bd" class="pull-right">Toggle</a></li><li id="6d51d2dbca80de22dd97e8661871f4bd" class="list-group-item panel-collapse collapse"><h5>Body</h5><pre><code>{
+                </span>}
+            </span>}
+        </span>}</span>,
+        "<span class="hljs-attribute">goodsOrServices</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"Indicates whether a project is for goods or Services"</span></span>,
+            "<span class="hljs-attribute">enum</span>" : <span class="hljs-value">[<span class="hljs-string">"Goods"</span>, <span class="hljs-string">"Services"</span>]
+        </span>}</span>,
+        "<span class="hljs-attribute">placeOfPerformanceText</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The raw string mined for a place of performance"</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">geoCodedPlacesOfPerformance</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"Geocoded places of performance for a project. Will resolve to the lowest level of detail possible for the mined POP string."</span></span>,
+            "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A geocoded place of performance for a project. Conforms to GEOJSON Point spec."</span></span>,
+                "<span class="hljs-attribute">properties</span>" : <span class="hljs-value">{
+                    "<span class="hljs-attribute">attributes</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"Stuff"</span></span>,
+                        "<span class="hljs-attribute">properties</span>" : <span class="hljs-value">{
+                            "<span class="hljs-attribute">type</span>": <span class="hljs-value">{
+                                "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The type of the attribute. i.e Country."</span>
+                            </span>}</span>,
+                            "<span class="hljs-attribute">name</span>" : <span class="hljs-value">{
+                                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The name of the point."</span>
+                            </span>}
+                        </span>}
+                    </span>}</span>,
+                    "<span class="hljs-attribute">type</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>" :  <span class="hljs-value"><span class="hljs-string">"The type of the geocoded place of performance"</span>
+                    </span>}</span>, 
+                    "<span class="hljs-attribute">coordinates</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+                        "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
+                            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The lat and long for a given coordinate"</span>
+                        </span>}
+                    </span>}</span>,
+                    "<span class="hljs-attribute">coordinateType</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The type of the coordinate. Usually a point."</span>
+                    </span>}
+                </span>}
+            </span>}
+        </span>}</span>,
+        "<span class="hljs-attribute">sourceLinks</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"Listing of source data providers for this project"</span></span>,
+            "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A source link string"</span></span>,
+                "<span class="hljs-attribute">format</span>" : <span class="hljs-value"><span class="hljs-string">"uri"</span>
+            </span>}
+        </span>}</span>,
+        "<span class="hljs-attribute">awardedVendors</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The NTIs for all vendors receiving awards for this project"</span></span>,
+            "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"An NTI for a vendor"</span></span>,
+                "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+                    "<span class="hljs-attribute">name</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The name of the vendor"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">type</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">enum</span>": <span class="hljs-value">[<span class="hljs-string">"vendor"</span>]</span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The type of the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">_id</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The unique ID for the entity"</span>
+                    </span>}
+                </span>}
+            </span>}
+        </span>}</span>,
+        "<span class="hljs-attribute">predictedCompetition</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The NTIs for all vendors predicted by GovTribe to compete for this project."</span></span>,
+            "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"An NTI for a vendor, as well as likliehood of winning"</span></span>,
+                "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+                    "<span class="hljs-attribute">name</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The name of the vendor"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">type</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">enum</span>": <span class="hljs-value">[<span class="hljs-string">"vendor"</span>]</span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The type of the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">_id</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The unique ID for the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">_id</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The likliehood a vendor will win this project"</span></span>,
+                        "<span class="hljs-attribute">enum</span>" : <span class="hljs-value">[<span class="hljs-string">"High"</span>, <span class="hljs-string">"Moderate"</span>, <span class="hljs-string">"Low"</span>]
+                    </span>}
+                </span>}
+            </span>}
+        </span>}</span>,
+        "<span class="hljs-attribute">solicitationNumbers</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A listing of all solicitation numbers for a specific project"</span></span>,
+            "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A solicitation number"</span>
+            </span>}
+        </span>}</span>,
+        "<span class="hljs-attribute">files</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"All files or attachments associated with a project"</span></span>,
+            "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A package or grouping of files"</span></span>,
+                "<span class="hljs-attribute">properties</span>" : <span class="hljs-value">{
+                    "<span class="hljs-attribute">packageName</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The name of the file package"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">packageData</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A listing of file data for a package"</span></span>,
+                        "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"Data for a specifc file or attachment"</span></span>,
+                            "<span class="hljs-attribute">properties</span>" : <span class="hljs-value">{
+                                "<span class="hljs-attribute">fileURI</span>" : <span class="hljs-value">{
+                                    "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                                    "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"URI for a specific file"</span>
+                                </span>}</span>,
+                                "<span class="hljs-attribute">fileName</span>" : <span class="hljs-value">{
+                                    "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                                    "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The name of the file"</span>
+                                </span>}</span>,
+                                "<span class="hljs-attribute">fileDescription</span>" : <span class="hljs-value">{
+                                    "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                                    "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The description of the file"</span>
+                                </span>}
+                            </span>}
+                        </span>}
+                    </span>}
+                </span>}
+            </span>}
+        </span>}</span>,
+        "<span class="hljs-attribute">classCodes</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The Products and Services Class (PSC) Codes for a project"</span></span>,
+            "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A PSC Code"</span>
+            </span>}
+        </span>}</span>,
+        "<span class="hljs-attribute">tags</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The topical tags for a project"</span></span>,
+            "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A tag or topic extracted from the project"</span>
+            </span>}
+        </span>}</span>,
+        "<span class="hljs-attribute">timestamp</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The date for the last time a project was changed"</span></span>,
+            "<span class="hljs-attribute">format</span>" : <span class="hljs-value"><span class="hljs-string">"date-time"</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">agencies</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The NTIs for all agencies managing this project"</span></span>,
+            "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"An NTI for a n agency"</span></span>,
+                "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+                    "<span class="hljs-attribute">name</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The name of the agency"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">type</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">enum</span>": <span class="hljs-value">[<span class="hljs-string">"agency"</span>]</span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The type of the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">_id</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The unique ID for the entity"</span>
+                    </span>}
+                </span>}
+            </span>}
+        </span>}</span>,
+        "<span class="hljs-attribute">contractNumbers</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A listing of all contract numbers for a specific project"</span></span>,
+            "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A contract number"</span>
+            </span>}
+        </span>}</span>,
+        "<span class="hljs-attribute">categories</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The NTIs for all categories related to this project"</span></span>,
+            "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"An NTI for a category"</span></span>,
+                "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+                    "<span class="hljs-attribute">name</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The name of the category"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">type</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">enum</span>": <span class="hljs-value">[<span class="hljs-string">"category"</span>]</span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The type of the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">_id</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The unique ID for the entity"</span>
+                    </span>}
+                </span>}
+            </span>}
+        </span>}</span>,
+        "<span class="hljs-attribute">name</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The name of a project"</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">synopsis</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"All of the synopses for a project across its lifecycle, provided in reverse order of occurance"</span></span>,
+            "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A synopsis"</span>
+            </span>}
+        </span>}</span>,
+        "<span class="hljs-attribute">offices</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The NTIs for all offices managing this project"</span></span>,
+            "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"An NTI for an office"</span></span>,
+                "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+                    "<span class="hljs-attribute">name</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The name of the office"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">type</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">enum</span>": <span class="hljs-value">[<span class="hljs-string">"office"</span>]</span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The type of the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">_id</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The unique ID for the entity"</span>
+                    </span>}
+                </span>}
+            </span>}
+        </span>}</span>,
+        "<span class="hljs-attribute">type</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The type of the entity"</span></span>,
+            "<span class="hljs-attribute">enum</span>" : <span class="hljs-value">[<span class="hljs-string">"project"</span>]
+        </span>}</span>,
+        "<span class="hljs-attribute">contractType</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The contract type for this project."</span></span>,
+            "<span class="hljs-attribute">enum</span>" : <span class="hljs-value">[<span class="hljs-string">"Not Available"</span>, <span class="hljs-string">"Firm Fixed Price"</span>, <span class="hljs-string">"etc"</span>, <span class="hljs-string">"etc2"</span>]
+        </span>}
+    </span>}
+</span>}
+</code></pre></li></ul></section><h4 id="project-project-award-data">Project Award Data&nbsp;<a href="#project-project-award-data"><i class="fa fa-link"></i></a></h4><p>Returns the award data for a given project.</p>
+<section id="project-project-award-data-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Retrieve A Single Project Award Data</span></div><div style="float:left"><a href="#project-project-award-data-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/project/{_id}/awardData</code></div></div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>_id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>51f79dd2ca985f9b7c00031c</span></span><p>String <code>id</code> of the desired Project entity to perform action with.</p>
+</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Request&nbsp;&nbsp;<code>Project Award Data</code></strong><a data-toggle="collapse" data-target="#20553083b3cd0f8d656335c6c96c9505" class="pull-right">Toggle</a></li><li id="20553083b3cd0f8d656335c6c96c9505" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-API-Key</span>: <span class="hljs-string">yourAPIKey</span><br></code></pre></li><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#fa6618dc06c0fdc702a6332ffcb617ae" class="pull-right">Toggle</a></li><li id="fa6618dc06c0fdc702a6332ffcb617ae" class="list-group-item panel-collapse collapse"><h5>Body</h5><pre><code>{
     "<span class="hljs-attribute">hello</span>" : <span class="hljs-value"><span class="hljs-string">"There"</span>
     <span class="hljs-string">"my"</span> : <span class="hljs-string">"property"</span>
 </span>}
 </code></pre><h5>Schema</h5><pre><code>{
-    "type" : "object",
-    "description" : "Information related to the award of this project",
-    "properties": {
-        "totalAwardValue" {
-            "type" : "number",
-            "description" : "The total amount of dollars awarded across all base and option years"
-        },
-        "basePeriodAwardData" : {
-            "type" : "object",
-            "description" : "Base period Award Data for each vendor awarded a contract for a project.",
-            "properties" : {
-                "startDate" : {
-                    "type" : "string",
-                    "description" : "The starting date for the base award period",
-                    "format" : "date-time"
-                },
-                "endDate" : {
-                    "type" : "string",
-                    "description" : "The <span class="hljs-operator"><span class="hljs-keyword">end</span> <span class="hljs-keyword">date</span> <span class="hljs-keyword">for</span> the base award period<span class="hljs-string">",
-                    "</span>format<span class="hljs-string">" : "</span><span class="hljs-keyword">date</span>-<span class="hljs-keyword">time</span><span class="hljs-string">"
-                },
-                "</span>totalValue<span class="hljs-string">" : {
-                    "</span>type<span class="hljs-string">" : "</span><span class="hljs-keyword">number</span><span class="hljs-string">",
-                    "</span>description<span class="hljs-string">" : "</span>The total amount across <span class="hljs-keyword">all</span> awards <span class="hljs-keyword">of</span> the base period<span class="hljs-string">",
-                }
-                "</span>awardedVendors<span class="hljs-string">" : {
-                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
-                    "</span>description<span class="hljs-string">" : "</span>A collection <span class="hljs-keyword">of</span> vendor NTIs <span class="hljs-keyword">and</span> their award <span class="hljs-keyword">values</span> <span class="hljs-keyword">for</span> the base award period<span class="hljs-string">",
-                    "</span>items<span class="hljs-string">" : { 
-                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
-                        "</span>description<span class="hljs-string">" : "</span>A base period award object <span class="hljs-keyword">for</span> specific vendor<span class="hljs-string">",
-                        "</span>properties<span class="hljs-string">" : {
-                             "</span>name<span class="hljs-string">" : {
-                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
-                                "</span>description<span class="hljs-string">" : "</span>The name <span class="hljs-keyword">of</span> the vendor<span class="hljs-string">"
-                            }, 
-                            "</span>type<span class="hljs-string">" : {
-                                "</span>type<span class="hljs-string">": "</span>string<span class="hljs-string">",
-                                "</span>description<span class="hljs-string">" : "</span>The type <span class="hljs-keyword">of</span> the entity. Will always be vendor.<span class="hljs-string">"
-                            },
-                            "</span>_id<span class="hljs-string">" : {
-                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
-                                "</span>description<span class="hljs-string">" : "</span>The <span class="hljs-keyword">unique</span> _id <span class="hljs-keyword">for</span> the entity.<span class="hljs-string">"
-                            },
-                            "</span>amount<span class="hljs-string">" : {
-                                "</span>type<span class="hljs-string">" : "</span><span class="hljs-keyword">number</span><span class="hljs-string">",
-                                "</span>description<span class="hljs-string">" : "</span>The dollar amount awarded <span class="hljs-keyword">for</span> the base period<span class="hljs-string">",
-                                "</span>minValue<span class="hljs-string">" : "</span><span class="hljs-number">0</span><span class="hljs-string">"
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "</span>optionPeriodsAwardData<span class="hljs-string">" : {
-            "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
-            "</span>description<span class="hljs-string">" : "</span><span class="hljs-keyword">Option</span> periods award data<span class="hljs-string">",
-            "</span>items<span class="hljs-string">" : {
-                "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
-                "</span>description<span class="hljs-string">" : "</span>Base period Award Data <span class="hljs-keyword">for</span> <span class="hljs-keyword">each</span> vendor awarded a contract <span class="hljs-keyword">for</span> a project.<span class="hljs-string">",
-                "</span>properties<span class="hljs-string">" : {
-                    "</span>optionName<span class="hljs-string">" : {
-                        "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">"
-                        "</span>description<span class="hljs-string">" : "</span>The name <span class="hljs-keyword">of</span> the <span class="hljs-keyword">option</span> period<span class="hljs-string">".
-                    },
-                    "</span>optionNumber<span class="hljs-string">" : {
-                        "</span>type<span class="hljs-string">" : "</span><span class="hljs-keyword">number</span><span class="hljs-string">"
-                        "</span>description<span class="hljs-string">" : "</span>The <span class="hljs-keyword">number</span>, <span class="hljs-keyword">in</span> sequential <span class="hljs-keyword">order</span> <span class="hljs-keyword">of</span> the <span class="hljs-keyword">option</span> period<span class="hljs-string">".
-                    },
-                    "</span>startDate<span class="hljs-string">" : {
-                        "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
-                        "</span>description<span class="hljs-string">" : "</span>The starting <span class="hljs-keyword">date</span> <span class="hljs-keyword">for</span> the base award period<span class="hljs-string">",
-                        "</span>format<span class="hljs-string">" : "</span><span class="hljs-keyword">date</span>-<span class="hljs-keyword">time</span><span class="hljs-string">"
-                    },
-                    "</span>endDate<span class="hljs-string">" : {
-                        "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
-                        "</span>description<span class="hljs-string">" : "</span>The <span class="hljs-keyword">end</span> <span class="hljs-keyword">date</span> <span class="hljs-keyword">for</span> the base award period<span class="hljs-string">",
-                        "</span>format<span class="hljs-string">" : "</span><span class="hljs-keyword">date</span>-<span class="hljs-keyword">time</span><span class="hljs-string">"
-                    },
-                    "</span>totalValue<span class="hljs-string">" : {
-                        "</span>type<span class="hljs-string">" : "</span><span class="hljs-keyword">number</span><span class="hljs-string">",
-                        "</span>description<span class="hljs-string">" : "</span>The total amount across <span class="hljs-keyword">all</span> awards the <span class="hljs-keyword">option</span> period<span class="hljs-string">",
-                    }
-                    "</span>awardedVendors<span class="hljs-string">" : {
-                        "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
-                        "</span>description<span class="hljs-string">" : "</span>A collection <span class="hljs-keyword">of</span> vendor NTIs <span class="hljs-keyword">and</span> their award <span class="hljs-keyword">values</span> <span class="hljs-keyword">for</span> the <span class="hljs-keyword">option</span> award period<span class="hljs-string">",
-                        "</span>items<span class="hljs-string">" : { 
-                            "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
-                            "</span>description<span class="hljs-string">" : "</span>An <span class="hljs-keyword">option</span> period award object <span class="hljs-keyword">for</span> specific vendor<span class="hljs-string">",
-                            "</span>properties<span class="hljs-string">" : {
-                                 "</span>name<span class="hljs-string">" : {
-                                    "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
-                                    "</span>description<span class="hljs-string">" : "</span>The name <span class="hljs-keyword">of</span> the vendor<span class="hljs-string">"
-                                }, 
-                                "</span>type<span class="hljs-string">" : {
-                                    "</span>type<span class="hljs-string">": "</span>string<span class="hljs-string">",
-                                    "</span>description<span class="hljs-string">" : "</span>The type <span class="hljs-keyword">of</span> the entity. Will always be vendor.<span class="hljs-string">"
-                                },
-                                "</span>_id<span class="hljs-string">" : {
-                                    "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
-                                    "</span>description<span class="hljs-string">" : "</span>The <span class="hljs-keyword">unique</span> _id <span class="hljs-keyword">for</span> the entity.<span class="hljs-string">"
-                                },
-                                "</span>amount<span class="hljs-string">" : {
-                                    "</span>type<span class="hljs-string">" : "</span><span class="hljs-keyword">number</span><span class="hljs-string">",
-                                    "</span>description<span class="hljs-string">" : "</span>The dollar amount awarded <span class="hljs-keyword">for</span> the <span class="hljs-keyword">option</span> period<span class="hljs-string">",
-                                    "</span>minValue<span class="hljs-string">" : "</span><span class="hljs-number">0</span><span class="hljs-string">"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-</span></span></code></pre></li></ul></section><h4 id="project-project-obligation-data">Project Obligation Data&nbsp;<a href="#project-project-obligation-data"><i class="fa fa-link"></i></a></h4><section id="project-project-obligation-data-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Retrieve Project Obligation Data</span></div><div style="float:left"><a href="#project-project-obligation-data-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/project/{_id}/obligationData</code></div></div><div class="panel-body"><p>Returns the obligation data for a given project</p>
-</div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>_id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>51f79dd2ca985f9b7c00031c</span></span><p>String <code>id</code> of the desired Project entity to perform action with.</p>
-</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Request&nbsp;&nbsp;<code>Project Award Data</code></strong><a data-toggle="collapse" data-target="#573201b59eab3290cc320672673ac23e" class="pull-right">Toggle</a></li><li id="573201b59eab3290cc320672673ac23e" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-API-Key</span>: <span class="hljs-string">yourAPIKey</span><br></code></pre></li><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#8150bb76fe1bce172f66c5fd0182a984" class="pull-right">Toggle</a></li><li id="8150bb76fe1bce172f66c5fd0182a984" class="list-group-item panel-collapse collapse"><h5>Body</h5><pre><code>{
+    "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+    "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"Information related to the award of this project"</span></span>,
+    "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+        "<span class="hljs-attribute">totalAwardValue</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The total amount of dollars awarded across all base and option years"</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">basePeriodAwardData</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"Base period Award Data for each vendor awarded a contract for a project."</span></span>,
+            "<span class="hljs-attribute">properties</span>" : <span class="hljs-value">{
+                "<span class="hljs-attribute">startDate</span>" : <span class="hljs-value">{
+                    "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                    "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The starting date for the base award period"</span></span>,
+                    "<span class="hljs-attribute">format</span>" : <span class="hljs-value"><span class="hljs-string">"date-time"</span>
+                </span>}</span>,
+                "<span class="hljs-attribute">endDate</span>" : <span class="hljs-value">{
+                    "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                    "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The end date for the base award period"</span></span>,
+                    "<span class="hljs-attribute">format</span>" : <span class="hljs-value"><span class="hljs-string">"date-time"</span>
+                </span>}</span>,
+                "<span class="hljs-attribute">totalValue</span>" : <span class="hljs-value">{
+                    "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
+                    "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The total amount across all awards of the base period"</span>
+                </span>}</span>,
+                "<span class="hljs-attribute">awardedVendors</span>" : <span class="hljs-value">{
+                    "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+                    "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A collection of vendor NTIs and their award values for the base award period"</span></span>,
+                    "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{ 
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A base period award object for specific vendor"</span></span>,
+                        "<span class="hljs-attribute">properties</span>" : <span class="hljs-value">{
+                             "<span class="hljs-attribute">name</span>" : <span class="hljs-value">{
+                                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The name of the vendor"</span>
+                            </span>}</span>, 
+                            "<span class="hljs-attribute">type</span>" : <span class="hljs-value">{
+                                "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The type of the entity. Will always be vendor."</span>
+                            </span>}</span>,
+                            "<span class="hljs-attribute">_id</span>" : <span class="hljs-value">{
+                                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The unique _id for the entity."</span>
+                            </span>}</span>,
+                            "<span class="hljs-attribute">amount</span>" : <span class="hljs-value">{
+                                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
+                                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The dollar amount awarded for the base period"</span></span>,
+                                "<span class="hljs-attribute">minValue</span>" : <span class="hljs-value"><span class="hljs-string">"0"</span>
+                            </span>}
+                        </span>}
+                    </span>}
+                </span>}
+            </span>}
+        </span>}</span>,
+        "<span class="hljs-attribute">optionPeriodsAwardData</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"Option periods award data"</span></span>,
+            "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"Base period Award Data for each vendor awarded a contract for a project."</span></span>,
+                "<span class="hljs-attribute">properties</span>" : <span class="hljs-value">{
+                    "<span class="hljs-attribute">optionName</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The name of the option period"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">optionNumber</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The number, in sequential order of the option period"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">startDate</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The starting date for the base award period"</span></span>,
+                        "<span class="hljs-attribute">format</span>" : <span class="hljs-value"><span class="hljs-string">"date-time"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">endDate</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The end date for the base award period"</span></span>,
+                        "<span class="hljs-attribute">format</span>" : <span class="hljs-value"><span class="hljs-string">"date-time"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">totalValue</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The total amount across all awards the option period"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">awardedVendors</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A collection of vendor NTIs and their award values for the option award period"</span></span>,
+                        "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{ 
+                            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"An option period award object for specific vendor"</span></span>,
+                            "<span class="hljs-attribute">properties</span>" : <span class="hljs-value">{
+                                 "<span class="hljs-attribute">name</span>" : <span class="hljs-value">{
+                                    "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                                    "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The name of the vendor"</span>
+                                </span>}</span>, 
+                                "<span class="hljs-attribute">type</span>" : <span class="hljs-value">{
+                                    "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                                    "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The type of the entity. Will always be vendor."</span>
+                                </span>}</span>,
+                                "<span class="hljs-attribute">_id</span>" : <span class="hljs-value">{
+                                    "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                                    "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The unique _id for the entity."</span>
+                                </span>}</span>,
+                                "<span class="hljs-attribute">amount</span>" : <span class="hljs-value">{
+                                    "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
+                                    "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The dollar amount awarded for the option period"</span></span>,
+                                    "<span class="hljs-attribute">minValue</span>" : <span class="hljs-value"><span class="hljs-string">"0"</span>
+                                </span>}
+                            </span>}
+                        </span>}
+                    </span>}
+                </span>}
+            </span>}
+        </span>}
+    </span>}
+</span>}
+</code></pre></li></ul></section><h4 id="project-project-obligation-data">Project Obligation Data&nbsp;<a href="#project-project-obligation-data"><i class="fa fa-link"></i></a></h4><p>Returns the obligation data for a given project.</p>
+<section id="project-project-obligation-data-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Retrieve A Single Project Obligation Data</span></div><div style="float:left"><a href="#project-project-obligation-data-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/project/{_id}/obligationData</code></div></div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>_id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>51f79dd2ca985f9b7c00031c</span></span><p>String <code>id</code> of the desired Project entity to perform action with.</p>
+</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Request&nbsp;&nbsp;<code>Project Award Data</code></strong><a data-toggle="collapse" data-target="#167b827430b9e4e8bee5d8a094826742" class="pull-right">Toggle</a></li><li id="167b827430b9e4e8bee5d8a094826742" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-API-Key</span>: <span class="hljs-string">yourAPIKey</span><br></code></pre></li><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#441932bcf093e709461bca196b80cdc8" class="pull-right">Toggle</a></li><li id="441932bcf093e709461bca196b80cdc8" class="list-group-item panel-collapse collapse"><h5>Body</h5><pre><code>{
     "<span class="hljs-attribute">hello</span>" : <span class="hljs-value"><span class="hljs-string">"There"</span>
     <span class="hljs-string">"my"</span> : <span class="hljs-string">"property"</span>
 </span>}
@@ -666,8 +693,8 @@ a.list-group-item.heading {
                                 "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The type of the entity"</span>
                             </span>}</span>,
                             "<span class="hljs-attribute">_id</span>": <span class="hljs-value">{
-                                "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span>
-                                <span class="hljs-string">"description"</span>: <span class="hljs-string">"The unique ID for the entity"</span>
+                                "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                                "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The unique ID for the entity"</span>
                             </span>}
                         </span>}
                     </span>}</span>,
@@ -684,11 +711,12 @@ a.list-group-item.heading {
         </span>}
     </span>}
 </span>}
-</code></pre></li></ul></section><h4 id="project-search-projects">Search Projects&nbsp;<a href="#project-search-projects"><i class="fa fa-link"></i></a></h4><section id="project-search-projects-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Search Projects</span></div><div style="float:left"><a href="#project-search-projects-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/project/{?searchString,skip,take}</code></div></div><div class="panel-body"><p>Search all projects by keyword</p>
+</code></pre></li></ul></section><h4 id="project-search-projects">Search Projects&nbsp;<a href="#project-search-projects"><i class="fa fa-link"></i></a></h4><p>Search Projects by keyword or phrase. GovTribe indexes project names, synopsese, files, and extracted tags for a project.</p>
+<section id="project-search-projects-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Retrieve Project Search Results</span></div><div style="float:left"><a href="#project-search-projects-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/project/search/{?searchString,skip,take}</code></div></div><div class="panel-body"><p>Search all projects by keyword</p>
 </div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>searchString</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>Green Laser</span></span><p>The string with which we will query the projects</p>
 </dd><dt>skip</dt><dd><code>number</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>0</span></span>&nbsp;<p>The number of entities to skip.</p>
 </dd><dt>take</dt><dd><code>number</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>25</span></span>&nbsp;<p>The number of entities to return.</p>
-</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Request&nbsp;&nbsp;<code>Search Projects</code></strong><a data-toggle="collapse" data-target="#12e7bae7458ba4598e65f3201c29db15" class="pull-right">Toggle</a></li><li id="12e7bae7458ba4598e65f3201c29db15" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-API-Key</span>: <span class="hljs-string">yourAPIKey</span><br></code></pre></li><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#7203b88a9e482c2714f3d5afa45b09a4" class="pull-right">Toggle</a></li><li id="7203b88a9e482c2714f3d5afa45b09a4" class="list-group-item panel-collapse collapse"><h5>Body</h5><pre><code>{
+</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Request&nbsp;&nbsp;<code>Search Projects</code></strong><a data-toggle="collapse" data-target="#6ea3521f1c6720d89a72b108af37c96d" class="pull-right">Toggle</a></li><li id="6ea3521f1c6720d89a72b108af37c96d" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-API-Key</span>: <span class="hljs-string">yourAPIKey</span><br></code></pre></li><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#c53bc4d387a4f0497c63f1192246fcfd" class="pull-right">Toggle</a></li><li id="c53bc4d387a4f0497c63f1192246fcfd" class="list-group-item panel-collapse collapse"><h5>Body</h5><pre><code>{
     "<span class="hljs-attribute">Hello</span>" : <span class="hljs-value"><span class="hljs-string">"You Fool"</span>
 </span>}
 </code></pre><h5>Schema</h5><pre><code>{
@@ -711,6 +739,7 @@ a.list-group-item.heading {
         "<span class="hljs-attribute">results</span>": <span class="hljs-value">{
             "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
             "<span class="hljs-attribute">uniqueItems</span>": <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+            "<span class="hljs-attribute">minItems</span>" : <span class="hljs-value"><span class="hljs-number">0</span></span>,
             "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
                 "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
                 "<span class="hljs-attribute">title</span>": <span class="hljs-value"><span class="hljs-string">"NTI"</span></span>,
@@ -722,39 +751,38 @@ a.list-group-item.heading {
                     </span>}</span>,
                     "<span class="hljs-attribute">type</span>": <span class="hljs-value">{
                         "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-                        "<span class="hljs-attribute">enum</span>": <span class="hljs-value">[<span class="hljs-string">"project"</span>, <span class="hljs-string">"agency"</span>, <span class="hljs-string">"office"</span>, <span class="hljs-string">"person"</span>, <span class="hljs-string">"vendor"</span>, <span class="hljs-string">"category"</span>]</span>,
                         "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The type of the entity"</span>
                     </span>}</span>,
                     "<span class="hljs-attribute">_id</span>": <span class="hljs-value">{
-                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span>
-                        <span class="hljs-string">"description"</span>: <span class="hljs-string">"The unique ID for the entity"</span>
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The unique ID for the entity"</span>
                     </span>}</span>,
                     "<span class="hljs-attribute">highlighted</span>" : <span class="hljs-value">{
                         "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
                         "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A snippet of text that matches the search query"</span>
-                    </span>}
-                    <span class="hljs-string">"score"</span> : {
+                    </span>}</span>,
+                    "<span class="hljs-attribute">score</span>" : <span class="hljs-value">{
                         "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
                         "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The score for a particular result"</span>
                     </span>}
                 </span>}</span>,
-                "<span class="hljs-attribute">required</span>":<span class="hljs-value">[<span class="hljs-string">"name"</span>, <span class="hljs-string">"type"</span>, <span class="hljs-string">"_id"</span>, <span class="hljs-string">"highlighted"</span>, <span class="hljs-string">"score"</span>]</span>,
-            }
-            <span class="hljs-string">"required"</span>: [<span class="hljs-string">"total"</span>, <span class="hljs-string">"skip"</span>, <span class="hljs-string">"take"</span>, <span class="hljs-string">"results"</span>]     
+                "<span class="hljs-attribute">required</span>":<span class="hljs-value">[<span class="hljs-string">"name"</span>, <span class="hljs-string">"type"</span>, <span class="hljs-string">"_id"</span>, <span class="hljs-string">"highlighted"</span>, <span class="hljs-string">"score"</span>]
+            </span>}</span>,
+            "<span class="hljs-attribute">required</span>": <span class="hljs-value">[<span class="hljs-string">"total"</span>, <span class="hljs-string">"skip"</span>, <span class="hljs-string">"take"</span>, <span class="hljs-string">"results"</span>]     
         </span>}
     </span>}
 </span>}
-</code></pre></li></ul></section><h4 id="project-filtered-projects">Filtered Projects&nbsp;<a href="#project-filtered-projects"><i class="fa fa-link"></i></a></h4><section id="project-filtered-projects-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Projects with Specific Attributes</span></div><div style="float:left"><a href="#project-filtered-projects-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/project/{?skip,take,setAsideType,workflowStatus,agency,office,person,vendor,category}</code></div></div><div class="panel-body"><p>Returns a paginated list of projects, ordered by their timestamp property.</p>
-</div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>setAsideType</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<p>The set aside type for the Project</p>
+</code></pre></li></ul></section><h4 id="project-filtered-projects">Filtered Projects&nbsp;<a href="#project-filtered-projects"><i class="fa fa-link"></i></a></h4><p>Returns a paginated list of filtered projects, ordered by their timestamp property.</p>
+<section id="project-filtered-projects-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Retrieve Projects with Specific Attributes</span></div><div style="float:left"><a href="#project-filtered-projects-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/project/{?skip,take,setAsideType,workflowStatus,agency,office,person,vendor,category}</code></div></div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>setAsideType</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<p>The set aside type for the Project</p>
 <p><strong>Choices:&nbsp;</strong><code>Total Small Business</code>&nbsp;<code>Service-Disabled Veteran-Owned Small Business</code>&nbsp;<code>HUBZone</code>&nbsp;<code>Competitive 8(a)</code>&nbsp;<code>Woman Owned Small Business</code>&nbsp;<code>Partial Small Business</code>&nbsp;<code>Economically Disadvantaged Woman Owned Small Business</code>&nbsp;<code>Emerging Small Business</code>&nbsp;<code>Total HBCU / MI</code>&nbsp;<code>Partial HBCU / MI</code>&nbsp;</p></dd><dt>workflowStatus</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<p>The workflow status for the Project</p>
-<p><strong>Choices:&nbsp;</strong><code>Presolicitation</code>&nbsp;<code>Open For Bid</code>&nbsp;<code>Awarded</code>&nbsp;<code>Canceled</code>&nbsp;<code>Underway</code>&nbsp;<code>Ended</code>&nbsp;</p></dd><dt>agency</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>51548151db40a5165c0000d4</span></span><p>The _id for a specific Agency</p>
+<p><strong>Choices:&nbsp;</strong><code>Forecasted</code>&nbsp;<code>Presolicitation</code>&nbsp;<code>Open For Bid</code>&nbsp;<code>Awarded</code>&nbsp;<code>Canceled</code>&nbsp;<code>Active</code>&nbsp;<code>Ended</code>&nbsp;</p></dd><dt>agency</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>51548151db40a5165c0000d4</span></span><p>The _id for a specific Agency</p>
 </dd><dt>office</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<p>The _id for a specific Office</p>
 </dd><dt>person</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<p>The _id for a specific Person</p>
 </dd><dt>vendor</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<p>The _id for a specific vendor</p>
 </dd><dt>category</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<p>The _id for a specific category</p>
 </dd><dt>skip</dt><dd><code>number</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>0</span></span>&nbsp;<p>The number of entities to skip.</p>
 </dd><dt>take</dt><dd><code>number</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>25</span></span>&nbsp;<p>The number of entities to return.</p>
-</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Request&nbsp;&nbsp;<code>Project</code></strong><a data-toggle="collapse" data-target="#8134b1ff3c4d1a1d894c58f5dbf94302" class="pull-right">Toggle</a></li><li id="8134b1ff3c4d1a1d894c58f5dbf94302" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-API-Key</span>: <span class="hljs-string">yourAPIKey</span><br></code></pre></li><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#c3417181c97e5d876fa87e97ccbabdd6" class="pull-right">Toggle</a></li><li id="c3417181c97e5d876fa87e97ccbabdd6" class="list-group-item panel-collapse collapse"><h5>Body</h5><pre><code>{
+</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Request&nbsp;&nbsp;<code>Project</code></strong><a data-toggle="collapse" data-target="#c533a3bdf885f45414978070e2af8aa9" class="pull-right">Toggle</a></li><li id="c533a3bdf885f45414978070e2af8aa9" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-API-Key</span>: <span class="hljs-string">yourAPIKey</span><br></code></pre></li><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#ffb79a0d1cee98f29d9266819ceab27d" class="pull-right">Toggle</a></li><li id="ffb79a0d1cee98f29d9266819ceab27d" class="list-group-item panel-collapse collapse"><h5>Body</h5><pre><code>{
 "<span class="hljs-attribute">total</span>": <span class="hljs-value"><span class="hljs-number">670413</span></span>,
 "<span class="hljs-attribute">skip</span>": <span class="hljs-value"><span class="hljs-number">0</span></span>,
 "<span class="hljs-attribute">take</span>": <span class="hljs-value"><span class="hljs-number">2</span></span>,
@@ -776,21 +804,28 @@ a.list-group-item.heading {
     "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
         "<span class="hljs-attribute">total</span>": <span class="hljs-value">{
             "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
-            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The total number of entities for this endpoint"</span>                        
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The total number of entities for this endpoint"</span></span>,
+            "<span class="hljs-attribute">minimum</span>" : <span class="hljs-value"><span class="hljs-number">0</span>
         </span>}</span>,
         "<span class="hljs-attribute">skip</span>": <span class="hljs-value">{
             "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
             "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The number of entities skipped in the response"</span></span>,
-            "<span class="hljs-attribute">default</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+            "<span class="hljs-attribute">default</span>": <span class="hljs-value"><span class="hljs-number">0</span></span>,
+            "<span class="hljs-attribute">maximum</span>" : <span class="hljs-value"><span class="hljs-number">250</span></span>,
+            "<span class="hljs-attribute">minimum</span>" : <span class="hljs-value"><span class="hljs-number">0</span>
         </span>}</span>,
         "<span class="hljs-attribute">take</span>": <span class="hljs-value">{
             "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
             "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The number of entities returned in the response"</span></span>,
-            "<span class="hljs-attribute">default</span>": <span class="hljs-value"><span class="hljs-number">25</span>
+            "<span class="hljs-attribute">default</span>": <span class="hljs-value"><span class="hljs-number">25</span></span>,
+            "<span class="hljs-attribute">maximum</span>" : <span class="hljs-value"><span class="hljs-number">250</span></span>,
+            "<span class="hljs-attribute">minimum</span>" : <span class="hljs-value"><span class="hljs-number">0</span>
         </span>}</span>,
         "<span class="hljs-attribute">results</span>": <span class="hljs-value">{
             "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
             "<span class="hljs-attribute">uniqueItems</span>": <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+            "<span class="hljs-attribute">minItems</span>" : <span class="hljs-value"><span class="hljs-number">0</span></span>,
+            "<span class="hljs-attribute">maxItems</span>" : <span class="hljs-value"><span class="hljs-number">250</span></span>,
             "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
                 "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
                 "<span class="hljs-attribute">title</span>": <span class="hljs-value"><span class="hljs-string">"NTI"</span></span>,
@@ -818,158 +853,7 @@ a.list-group-item.heading {
 </span>}
 </code></pre></li></ul></section></div></div></div><div><div class="panel panel-default"><div class="panel-heading"><h3 id="agency">Agency&nbsp;<a href="#agency"><i class="fa fa-link"></i></a></h3></div><div class="panel-body"><h4 id="agency-agency">Agency&nbsp;<a href="#agency-agency"><i class="fa fa-link"></i></a></h4><p>An Agency is a U.S. government agency </p>
 <section id="agency-agency-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Retrieve a Single Agency</span></div><div style="float:left"><a href="#agency-agency-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/agency/{_id}</code></div></div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>_id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>51f79dd2ca985f9b7c00031c</span></span><p>String <code>id</code> of the desired Agency entity.</p>
-</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Request&nbsp;&nbsp;<code>Agency</code></strong><a data-toggle="collapse" data-target="#55d9a50bf4ae5dd7fe54222ce8757f44" class="pull-right">Toggle</a></li><li id="55d9a50bf4ae5dd7fe54222ce8757f44" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-API-Key</span>: <span class="hljs-string">yourAPIKey</span><br></code></pre></li><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#bde65789038e495415d8af07008a6487" class="pull-right">Toggle</a></li><li id="bde65789038e495415d8af07008a6487" class="list-group-item panel-collapse collapse"><h5>Body</h5><pre><code>{
-    "<span class="hljs-attribute">Hello</span>" : <span class="hljs-value"><span class="hljs-string">"there"</span></span>,
-    "<span class="hljs-attribute">You look</span>" : <span class="hljs-value"><span class="hljs-string">"nice"</span>
-</span>}
-</code></pre><h5>Schema</h5><pre><code>{
-    "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
-    "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
-        "<span class="hljs-attribute">_id</span>" : <span class="hljs-value">{
-            "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The unique ID for the agency"</span>
-        </span>}</span>,
-        "<span class="hljs-attribute">timestamp</span>" : <span class="hljs-value">{
-            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The date for the last time an agency was active"</span></span>,
-            "<span class="hljs-attribute">format</span>" : <span class="hljs-value"><span class="hljs-string">"date-time"</span>
-        </span>}</span>,
-        "<span class="hljs-attribute">name</span>" : <span class="hljs-value">{
-            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The name of the agency"</span>
-        </span>}</span>,
-        "<span class="hljs-attribute">type</span>" : <span class="hljs-value">{
-            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The type of the entity"</span></span>,
-            "<span class="hljs-attribute">enum</span>" : <span class="hljs-value">[<span class="hljs-string">"agency"</span>]
-        </span>}</span>,
-        "<span class="hljs-attribute">acronyms</span>" : <span class="hljs-value">{
-            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
-            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"Common acronyms for the agency"</span></span>,
-            "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
-                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"An acronym"</span>
-            </span>}
-        </span>}</span>,
-        "<span class="hljs-attribute">website</span>" : <span class="hljs-value">{
-            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The website for the agency."</span></span>,
-            "<span class="hljs-attribute">format</span>" : <span class="hljs-value"><span class="hljs-string">"uri"</span>
-        </span>}</span>,
-        "<span class="hljs-attribute">procurementStats</span>" : <span class="hljs-value">{
-            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
-            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"Statistics about the agencies public procurements, broken down by year. Updated daily."</span></span>,
-            "<span class="hljs-attribute">properties</span>" : <span class="hljs-value">{
-                "<span class="hljs-attribute">averageTimesToAward</span>" : <span class="hljs-value">{
-                    "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
-                    "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A list of the average number of days for the agencies' Projects to move from Open for Bid to Award or Canceled for each year."</span></span>,
-                    "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
-                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
-                        "<span class="hljs-attribute">description</span>" :  <span class="hljs-value"><span class="hljs-string">"The average number of days for the agencies' Projects to move from Open for Bid to Award or Canceled for a given year."</span></span>,
-                        "<span class="hljs-attribute">properties</span>" : <span class="hljs-value">{
-                            "<span class="hljs-attribute">calendarYear</span>" : <span class="hljs-value">{
-                                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-                                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A calendar year"</span>
-                            </span>}</span>,
-                            "<span class="hljs-attribute">averageTimeToAward</span>" : <span class="hljs-value">{
-                                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
-                                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The number of days"</span>
-                            </span>}
-                        </span>}
-                    </span>}
-                </span>}</span>,
-                "<span class="hljs-attribute">averageAwardValues</span>" : <span class="hljs-value">{
-                    "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
-                    "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A list of the average award values for an agencies projects for each year."</span></span>,
-                    "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
-                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
-                        "<span class="hljs-attribute">description</span>" :  <span class="hljs-value"><span class="hljs-string">"Average award value for an agencies' projects for a given year."</span></span>,
-                        "<span class="hljs-attribute">properties</span>" : <span class="hljs-value">{
-                            "<span class="hljs-attribute">calendarYear</span>" : <span class="hljs-value">{
-                                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-                                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A calendar year"</span>
-                            </span>}</span>,
-                            "<span class="hljs-attribute">averageAwardValue</span>" : <span class="hljs-value">{
-                                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
-                                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The average award value"</span>
-                            </span>}
-                        </span>}
-                    </span>}
-                </span>}</span>,
-                "<span class="hljs-attribute">numbersOfAwards</span>" : <span class="hljs-value">{
-                    "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
-                    "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A list of the numbers of awards for an agency, broken down by year."</span></span>,
-                    "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
-                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
-                        "<span class="hljs-attribute">description</span>" :  <span class="hljs-value"><span class="hljs-string">"Number of awards for a given year."</span></span>,
-                        "<span class="hljs-attribute">properties</span>" : <span class="hljs-value">{
-                            "<span class="hljs-attribute">calendarYear</span>" : <span class="hljs-value">{
-                                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-                                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A calendar year"</span>
-                            </span>}</span>,
-                            "<span class="hljs-attribute">numberOfAwards</span>" : <span class="hljs-value">{
-                                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
-                                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The number of awards. Does not differntiate with respect to competitive nature of process."</span>
-                            </span>}
-                        </span>}
-                    </span>}
-                </span>}
-            </span>}
-        </span>}</span>,
-        "<span class="hljs-attribute">organizationalStats</span>" : <span class="hljs-value">{
-            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
-            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"Statistics about the organization, inlcuding active people and office counts. Updated daily."</span></span>,
-            "<span class="hljs-attribute">properties</span>" : <span class="hljs-value">{
-                "<span class="hljs-attribute">activePeopleInTheLastYear</span>" : <span class="hljs-value">{
-                    "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
-                    "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">" The number of people working for this agency who have been active in the past 12 calendar months."</span>
-                </span>}</span>,
-                "<span class="hljs-attribute">activeOfficesInTheLastYear</span>" : <span class="hljs-value">{
-                    "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
-                    "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">" The number of offices this agency that have been active in the past 12 calendar months."</span>
-                </span>}
-            </span>}
-        </span>}</span>, 
-        "<span class="hljs-attribute">obligationStats</span>" : <span class="hljs-value">{
-
-        }</span>,
-        "<span class="hljs-attribute">protestStats</span>" : <span class="hljs-value">{
-
-        }
-    </span>}
-</span>}
-</code></pre></li></ul></section></div></div></div><div><div class="panel panel-default"><div class="panel-heading"><h3 id="office">Office&nbsp;<a href="#office"><i class="fa fa-link"></i></a></h3></div><div class="panel-body"><h4 id="office-office">Office&nbsp;<a href="#office-office"><i class="fa fa-link"></i></a></h4><p>An Office is a sub unit of a U.S. government agency </p>
-<section id="office-office-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Retrieve a Single Office</span></div><div style="float:left"><a href="#office-office-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/office/{_id}</code></div></div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>_id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>51f79dd2ca985f9b7c00031c</span></span><p>String <code>id</code> of the desired Office entity.</p>
-</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Request&nbsp;&nbsp;<code>Office</code></strong><a data-toggle="collapse" data-target="#84d51fd599507c1f91e64ad8877ae166" class="pull-right">Toggle</a></li><li id="84d51fd599507c1f91e64ad8877ae166" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-API-Key</span>: <span class="hljs-string">yourAPIKey</span><br></code></pre></li><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#99fb08908c5a5f7a8487cc3e2c27b81e" class="pull-right">Toggle</a></li><li id="99fb08908c5a5f7a8487cc3e2c27b81e" class="list-group-item panel-collapse collapse"><h5>Body</h5><pre><code>{
-    "<span class="hljs-attribute">Hello</span>" : <span class="hljs-value"><span class="hljs-string">"there"</span></span>,
-    "<span class="hljs-attribute">You look</span>" : <span class="hljs-value"><span class="hljs-string">"nice"</span>
-</span>}
-</code></pre><h5>Schema</h5><pre><code>{
-    "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
-    "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
-        "<span class="hljs-attribute">_id</span>" : <span class="hljs-value">{
-            "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span>
-            <span class="hljs-string">"description"</span>: <span class="hljs-string">"The unique ID for the office"</span>
-        </span>}</span>,
-        "<span class="hljs-attribute">timestamp</span>" : <span class="hljs-value">{
-            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The date for the last time an office was active"</span></span>,
-            "<span class="hljs-attribute">format</span>" : <span class="hljs-value"><span class="hljs-string">"date-time"</span>
-        </span>}</span>,
-        "<span class="hljs-attribute">name</span>" : <span class="hljs-value">{
-            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The name of the office"</span>
-        </span>}</span>,
-        "<span class="hljs-attribute">type</span>" : <span class="hljs-value">{
-            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The type of the entity"</span></span>,
-            "<span class="hljs-attribute">enum</span>" : <span class="hljs-value">[<span class="hljs-string">"office"</span>]
-        </span>}
-    </span>}
-</span>}
-</code></pre></li></ul></section></div></div></div><div><div class="panel panel-default"><div class="panel-heading"><h3 id="person">Person&nbsp;<a href="#person"><i class="fa fa-link"></i></a></h3></div><div class="panel-body"><h4 id="person-person">Person&nbsp;<a href="#person-person"><i class="fa fa-link"></i></a></h4><p>An Person is a U.S. government point of contact for one or more projects </p>
-<section id="person-person-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Retrieve a Single Person</span></div><div style="float:left"><a href="#person-person-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/person/{_id}</code></div></div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>_id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>51f79dd2ca985f9b7c00031c</span></span><p>String <code>id</code> of the desired Person entity.</p>
-</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Request&nbsp;&nbsp;<code>Person</code></strong><a data-toggle="collapse" data-target="#6a90dba05cae9291b5a2b026cffca770" class="pull-right">Toggle</a></li><li id="6a90dba05cae9291b5a2b026cffca770" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-API-Key</span>: <span class="hljs-string">yourAPIKey</span><br></code></pre></li><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#04f814a5e878ca459f6df4bd147d18b8" class="pull-right">Toggle</a></li><li id="04f814a5e878ca459f6df4bd147d18b8" class="list-group-item panel-collapse collapse"><h5>Body</h5><pre><code>{
+</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Request&nbsp;&nbsp;<code>Agency</code></strong><a data-toggle="collapse" data-target="#55d9a50bf4ae5dd7fe54222ce8757f44" class="pull-right">Toggle</a></li><li id="55d9a50bf4ae5dd7fe54222ce8757f44" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-API-Key</span>: <span class="hljs-string">yourAPIKey</span><br></code></pre></li><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#0492f67c189acb55c066fd7cca9b1db0" class="pull-right">Toggle</a></li><li id="0492f67c189acb55c066fd7cca9b1db0" class="list-group-item panel-collapse collapse"><h5>Body</h5><pre><code>{
     "<span class="hljs-attribute">Hello</span>" : <span class="hljs-value"><span class="hljs-string">"there"</span></span>,
     "<span class="hljs-attribute">You look</span>" : <span class="hljs-value"><span class="hljs-string">"nice"</span>
 </span>}
@@ -977,7 +861,1281 @@ a.list-group-item.heading {
     <span class="hljs-string">"type"</span>: <span class="hljs-string">"object"</span>,
     <span class="hljs-string">"properties"</span>: {
         <span class="hljs-string">"_id"</span> : {
-            <span class="hljs-string">"type"</span>:<span class="hljs-string">"string"</span>
+            <span class="hljs-string">"type"</span>:<span class="hljs-string">"string"</span>,
+            <span class="hljs-string">"description"</span>: <span class="hljs-string">"The unique ID for the agency"</span>
+        },
+        <span class="hljs-string">"timestamp"</span> : {
+            <span class="hljs-string">"type"</span> : <span class="hljs-string">"string"</span>,
+            <span class="hljs-string">"description"</span> : <span class="hljs-string">"The date for the last time an agency was active"</span>,
+            <span class="hljs-string">"format"</span> : <span class="hljs-string">"date-time"</span>
+        },
+        <span class="hljs-string">"name"</span> : {
+            <span class="hljs-string">"type"</span> : <span class="hljs-string">"string"</span>,
+            <span class="hljs-string">"description"</span> : <span class="hljs-string">"The name of the agency"</span>
+        },
+        <span class="hljs-string">"type"</span> : {
+            <span class="hljs-string">"type"</span> : <span class="hljs-string">"string"</span>,
+            <span class="hljs-string">"description"</span> : <span class="hljs-string">"The type of the entity"</span>,
+            <span class="hljs-string">"enum"</span> : <span class="hljs-matrix">[<span class="hljs-string">"agency"</span>]</span>
+        },
+        <span class="hljs-string">"acronyms"</span> : {
+            <span class="hljs-string">"type"</span> : <span class="hljs-string">"array"</span>,
+            <span class="hljs-string">"description"</span> : <span class="hljs-string">"Common acronyms for the agency"</span>,
+            <span class="hljs-string">"items"</span> : {
+                <span class="hljs-string">"type"</span> : <span class="hljs-string">"string"</span>,
+                <span class="hljs-string">"description"</span> : <span class="hljs-string">"An acronym"</span>
+            }
+        },
+        <span class="hljs-string">"website"</span> : {
+            <span class="hljs-string">"type"</span> : <span class="hljs-string">"string"</span>,
+            <span class="hljs-string">"description"</span> : <span class="hljs-string">"The website for the agency."</span>,
+            <span class="hljs-string">"format"</span> : <span class="hljs-string">"uri"</span>
+        },
+        <span class="hljs-string">"procurementStats"</span> : {
+            <span class="hljs-string">"type"</span> : <span class="hljs-string">"object"</span>,
+            <span class="hljs-string">"description"</span> : <span class="hljs-string">"Statistics about the agencies public procurements, broken down by year. Updated daily."</span>,
+            <span class="hljs-string">"properties"</span> : {
+                <span class="hljs-string">"averageTimesToAward"</span> : {
+                    <span class="hljs-string">"type"</span> : <span class="hljs-string">"array"</span>,
+                    <span class="hljs-string">"description"</span> : <span class="hljs-string">"A list of the average number of days for the agencies'</span> Projects to move from Open <span class="hljs-keyword">for</span> Bid to Award <span class="hljs-built_in">or</span> Canceled <span class="hljs-keyword">for</span> each <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>The average number of days <span class="hljs-keyword">for</span> the <span class="hljs-transposed_variable">agencies'</span> Projects to move from Open <span class="hljs-keyword">for</span> Bid to Award <span class="hljs-built_in">or</span> Canceled <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>averageTimeToAward<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The number of days<span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>averageAwardValues<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of the average award values <span class="hljs-keyword">for</span> an agencies projects <span class="hljs-keyword">for</span> each <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Average award value <span class="hljs-keyword">for</span> an <span class="hljs-transposed_variable">agencies'</span> projects <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>averageAwardValue<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The average award value<span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>numbersOfAwards<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of the numbers of awards <span class="hljs-keyword">for</span> an agency, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Number of awards <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>numberOfAwards<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The number of <span class="hljs-transposed_variable">awards.</span> Does not differntiate with respect to competitive nature of <span class="hljs-transposed_variable">process.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>awardDollarFlow<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">"  "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>The total award values <span class="hljs-keyword">for</span> an entity, grouped by time buckets, going back two <span class="hljs-transposed_variable">years.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" : "</span>A time bucket of total award value<span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : "</span> {
+                            <span class="hljs-string">"timeBucket"</span> : {
+                                <span class="hljs-string">"type"</span> : <span class="hljs-string">"string"</span>,
+                                <span class="hljs-string">"description"</span> : <span class="hljs-string">"A human readable time bucket"</span>
+                            },
+                            <span class="hljs-string">"total"</span> : {
+                                <span class="hljs-string">"type"</span> : <span class="hljs-string">"string"</span>,
+                                <span class="hljs-string">"description"</span> : <span class="hljs-string">"The total amount awarded for a time bucket. 
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "</span>organizationalStats<span class="hljs-string">" : {
+            "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+            "</span>description<span class="hljs-string">" : "</span>Statistics about the organization, inlcuding active people <span class="hljs-built_in">and</span> office <span class="hljs-transposed_variable">counts.</span> Updated <span class="hljs-transposed_variable">daily.</span><span class="hljs-string">",
+            "</span>properties<span class="hljs-string">" : {
+                "</span>activePeople<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of the numbers of active people <span class="hljs-keyword">for</span> an agency, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Number of active people <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>numberOfActivePeople<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The number of active <span class="hljs-transposed_variable">people.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>activeOffices<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of the numbers of active offices <span class="hljs-keyword">for</span> an agency, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Number of active offices <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>numberOfActiveOffices<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The number of active <span class="hljs-transposed_variable">offices.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                }
+            }
+        }, 
+        "</span>obligationStats<span class="hljs-string">" : {
+            "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+            "</span>description<span class="hljs-string">" : "</span>Obligation stats about an organization, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+            "</span>properties<span class="hljs-string">" : {
+                "</span>totalObligations<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of total obligations, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Total obligations <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>obligations<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The total dollar value of the <span class="hljs-transposed_variable">obligations.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>obligationsDollarFlow<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">"  "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>The total obligation values <span class="hljs-keyword">for</span> an entity, grouped by time buckets, going back two <span class="hljs-transposed_variable">years.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" : "</span>A time bucket of total obligations<span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : "</span> {
+                            <span class="hljs-string">"timeBucket"</span> : {
+                                <span class="hljs-string">"type"</span> : <span class="hljs-string">"string"</span>,
+                                <span class="hljs-string">"description"</span> : <span class="hljs-string">"A human readable time bucket"</span>
+                            },
+                            <span class="hljs-string">"total"</span> : {
+                                <span class="hljs-string">"type"</span> : <span class="hljs-string">"string"</span>,
+                                <span class="hljs-string">"description"</span> : <span class="hljs-string">"The total amount obligated for a time bucket. 
+                            }
+                        }
+                    }
+                }
+                "</span>totalSmallBusinessObligations<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of total obligations designated as the Total Small Business Set Aside, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Obligations <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>obligations<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The total dollar value of the <span class="hljs-transposed_variable">obligations.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>serviceDisabledVeteranOwnedSmallBusinessObligations<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of total obligations designated as the Service-Disabled Veteran-Owned Small Business Set Aside, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Obligations <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>obligations<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The total dollar value of the <span class="hljs-transposed_variable">obligations.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>HUBZoneObligations<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of total obligations designated as HUBZone Set Aside, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Obligations <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>obligations<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The total dollar value of the <span class="hljs-transposed_variable">obligations.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>competitive8aObligations<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of total obligations designated as Competitive <span class="hljs-number">8</span>(a) Set Aside, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Obligations <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>obligations<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The total dollar value of the <span class="hljs-transposed_variable">obligations.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>womanOwnedSmallBusinessObligations<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of total obligations designated as Woman Owned Small Business Set Aside, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Obligations <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>obligations<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The total dollar value of the <span class="hljs-transposed_variable">obligations.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>partialSmallBusinessObligations<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of total obligations designated as Partial Small Business Set Aside, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Obligations <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>obligations<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The total dollar value of the <span class="hljs-transposed_variable">obligations.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>economicallyDisadvantagedWomanOwnedSmallBusinessObligations<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of total obligations designated as Economically Disadvantaged Woman Owned Small Business Set Aside, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Obligations <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>obligations<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The total dollar value of the <span class="hljs-transposed_variable">obligations.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>emergingSmallBusinessObligations<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of total obligations designated as Emerging Small Business Set Aside, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Obligations <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>obligations<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The total dollar value of the <span class="hljs-transposed_variable">obligations.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>totalHBCUMIObligations<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of total obligations designated as Total HBCU / MI Set Aside, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Obligations <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>obligations<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The total dollar value of the <span class="hljs-transposed_variable">obligations.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>partialHBCUMIObligations<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of total obligations designated as Partial HBCU / MI Set Aside, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Obligations <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>obligations<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The total dollar value of the <span class="hljs-transposed_variable">obligations.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+            }
+        },
+        "</span>Stats<span class="hljs-string">" : {
+            "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+            "</span>description<span class="hljs-string">" : "</span>Protest stats <span class="hljs-keyword">for</span> the projects of an organization, including breakdowns by protest <span class="hljs-transposed_variable">status.</span><span class="hljs-string">",
+            "</span>properties<span class="hljs-string">" : {
+                "</span>totalProtests<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of the numbers of total protests <span class="hljs-keyword">for</span> an agency, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Number of total protests <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>numberOfProtests<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The number of <span class="hljs-transposed_variable">protests.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>protestsWithdrawn<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of the numbers of total protests with a status of Withdrawn, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Number of protests <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>numberOfProtests<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The number of <span class="hljs-transposed_variable">protests.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>protestsDenied<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of the numbers of total protests with a status of Denied, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Number of protests <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>numberOfProtests<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The number of <span class="hljs-transposed_variable">protests.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>protestsSustained<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of the numbers of total protests with a status of Sustained, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Number of protests <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>numberOfProtests<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The number of <span class="hljs-transposed_variable">protests.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>protestsDismissed<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of the numbers of total protests with a status of Dismissed, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Number of protests <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>numberOfProtests<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The number of <span class="hljs-transposed_variable">protests.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "</span>govTribeStats : {
+            <span class="hljs-string">"type"</span> : <span class="hljs-string">"object"</span>,
+            <span class="hljs-string">"description"</span> : <span class="hljs-string">"Proprietary GovTribe stats about the organization"</span>,
+            <span class="hljs-string">"properties"</span> : {
+                <span class="hljs-string">"purseStringIndicies"</span> : {
+                    <span class="hljs-string">"type"</span> : <span class="hljs-string">"array"</span>,
+                    <span class="hljs-string">"description"</span> : <span class="hljs-string">"A list of the purse string indices for an agency, broken down by year."</span>,
+                    <span class="hljs-string">"items"</span> : {
+                        <span class="hljs-string">"type"</span> : <span class="hljs-string">"object"</span>,
+                        <span class="hljs-string">"description"</span> :  <span class="hljs-string">"The purse string index is computed by combining the frequency, speed, and magnitude of awards for an agency."</span>,
+                        <span class="hljs-string">"properties"</span> : {
+                            <span class="hljs-string">"calendarYear"</span> : {
+                                <span class="hljs-string">"type"</span> : <span class="hljs-string">"string"</span>,
+                                <span class="hljs-string">"description"</span> : <span class="hljs-string">"A calendar year"</span>
+                            },
+                            <span class="hljs-string">"purseStringIndex"</span> : {
+                                <span class="hljs-string">"type"</span> : <span class="hljs-string">"number"</span>,
+                                <span class="hljs-string">"description"</span> : <span class="hljs-string">"The purse string index for a given year."</span>
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+</code></pre></li></ul></section><h4 id="agency-agency-slices">Agency Slices&nbsp;<a href="#agency-agency-slices"><i class="fa fa-link"></i></a></h4><p>Returns a listing (slice) of NTIs that are related to an agency based on the slice name. For example, the <code>vendorsThatWinTotalSmallBusinessSetAsideProjects</code> slice will return a list of vendor NTIs for a given agency that have won projects desginated as a Total Small Business set aside.</p>
+<section id="agency-agency-slices-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Retrieve a Slice for an Agency</span></div><div style="float:left"><a href="#agency-agency-slices-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/agency/{_id}/{slice}</code></div></div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>_id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>51f79dd2ca985f9b7c00031c</span></span><p>id of the desired Agency Entity</p>
+</dd><dt>slice</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>vendorsThatWinTotalSmallBusinessSetAsideProjects</span></span><p>A list of entities or slice, relative to the agency.</p>
+<p><strong>Choices:&nbsp;</strong><code>vendorsThatWinTotalSmallBusinessSetAsideProjects</code>&nbsp;<code>vendorsThatWinServiceDisabledVeteranOwnedSmallBusinessSetAsideProjects</code>&nbsp;<code>vendorsThatWinHUBZoneSetAsideProjects</code>&nbsp;<code>vendorsThatWinCompetitive8ASetAsideProjects</code>&nbsp;<code>vendorsThatWinWomanOwnedSmallBusinessSetAsideProjects</code>&nbsp;<code>vendorsThatWinPartialSmallBusinessSetAsideProjects</code>&nbsp;<code>vendorsThatWinEconomicallyDisadvantagedWomanOwnedSmallBusinessSetAsideProjects</code>&nbsp;<code>vendorsThatWinEmergingSmallBusinessSetAsideProjects</code>&nbsp;<code>vendorsThatWinTotalHBCUMISetAsideProjects</code>&nbsp;<code>vendorsThatWinPartialHBCUMISetAsideProjects</code>&nbsp;<code>officesThatPostTotalSmallBusinessSetAsideProjects</code>&nbsp;<code>officesThatPostServiceDisabledVeteranOwnedSmallBusinessSetAsideProjects</code>&nbsp;<code>officesThatPostHUBZoneSetAsideProjects</code>&nbsp;<code>officesThatPostCompetitive8ASetAsideProjects</code>&nbsp;<code>officesThatPostWomanOwnedSmallBusinessSetAsideProjects</code>&nbsp;<code>officesThatPostPartialSmallBusinessSetAsideProjects</code>&nbsp;<code>officesThatPostEconomicallyDisadvantagedWomanOwnedSmallBusinessSetAsideProjects</code>&nbsp;<code>officesThatPostEmergingSmallBusinessSetAsideProjects</code>&nbsp;<code>officesThatPostTotalHBCUMISetAsideProjects</code>&nbsp;<code>officesThatPostPartialHBCUMISetAsideProjects</code>&nbsp;<code>peopleThatPostTotalSmallBusinessSetAsideProjects</code>&nbsp;<code>peopleThatPostServiceDisabledVeteranOwnedSmallBusinessSetAsideProjects</code>&nbsp;<code>peopleThatPostHUBZoneSetAsideProjects</code>&nbsp;<code>peopleThatPostCompetitive8ASetAsideProjects</code>&nbsp;<code>peopleThatPostWomanOwnedSmallBusinessSetAsideProjects</code>&nbsp;<code>peopleThatPostPartialSmallBusinessSetAsideProjects</code>&nbsp;<code>peopleThatPostEconomicallyDisadvantagedWomanOwnedSmallBusinessSetAsideProjects</code>&nbsp;<code>peopleThatPostEmergingSmallBusinessSetAsideProjects</code>&nbsp;<code>peopleThatPostTotalHBCUMISetAsideProjects</code>&nbsp;<code>peopleThatPostPartialHBCUMISetAsideProjects</code>&nbsp;<code>categoriesThatContainTotalSmallBusinessSetAsideProjects</code>&nbsp;<code>categoriesThatContainServiceDisabledVeteranOwnedSmallBusinessSetAsideProjects</code>&nbsp;<code>categoriesThatContainHUBZoneSetAsideProjects</code>&nbsp;<code>categoriesThatContainCompetitive8ASetAsideProjects</code>&nbsp;<code>categoriesThatContainWomanOwnedSmallBusinessSetAsideProjects</code>&nbsp;<code>categoriesThatContainPartialSmallBusinessSetAsideProjects</code>&nbsp;<code>categoriesThatContainEconomicallyDisadvantagedWomanOwnedSmallBusinessSetAsideProjects</code>&nbsp;<code>categoriesThatContainEmergingSmallBusinessSetAsideProjects</code>&nbsp;<code>categoriesThatContainTotalHBCUMISetAsideProjects</code>&nbsp;<code>categoriesThatContainPartialHBCUMISetAsideProjects</code>&nbsp;</p></dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Request&nbsp;&nbsp;<code>Slice</code></strong><a data-toggle="collapse" data-target="#60b6e39f97097461197e0be418734908" class="pull-right">Toggle</a></li><li id="60b6e39f97097461197e0be418734908" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-API-Key</span>: <span class="hljs-string">yourAPIKey</span><br></code></pre></li><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#ff405746d68510b850eb19c9241234d5" class="pull-right">Toggle</a></li><li id="ff405746d68510b850eb19c9241234d5" class="list-group-item panel-collapse collapse"><h5>Body</h5><pre><code>{
+"<span class="hljs-attribute">total</span>": <span class="hljs-value"><span class="hljs-number">670413</span></span>,
+"<span class="hljs-attribute">skip</span>": <span class="hljs-value"><span class="hljs-number">0</span></span>,
+"<span class="hljs-attribute">take</span>": <span class="hljs-value"><span class="hljs-number">2</span></span>,
+"<span class="hljs-attribute">results</span>":<span class="hljs-value">[
+    {
+        "<span class="hljs-attribute">name</span>":<span class="hljs-value"><span class="hljs-string">"USDA EVENT - Rural Small Business Connections - Pine Bluff, AR"</span></span>,
+        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"project"</span></span>,
+        "<span class="hljs-attribute">_id</span>":<span class="hljs-value"><span class="hljs-string">"5363be766c5cc8a60d8b4567"</span>
+    </span>},
+    {
+        "<span class="hljs-attribute">name</span>":<span class="hljs-value"><span class="hljs-string">"SOLE SOURCE ENGINEERING TECHNICAL SERVICES TO SUPPORT THE IMPROVED CONTROL AND DISPLAY UPGRADE TO THE SLQ-32 COUNTERMEASURE SYSTEM"</span></span>,
+        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"project"</span></span>,
+        "<span class="hljs-attribute">_id</span>":<span class="hljs-value"><span class="hljs-string">"5363be2b6c5cc8a00c8b4567"</span>
+    </span>}
+]
+</span>}
+</code></pre><h5>Schema</h5><pre><code>{
+    "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+    "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+        "<span class="hljs-attribute">total</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The total number of entities for this endpoint"</span></span>,
+            "<span class="hljs-attribute">minimum</span>" : <span class="hljs-value"><span class="hljs-number">0</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">skip</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The number of entities skipped in the response"</span></span>,
+            "<span class="hljs-attribute">default</span>": <span class="hljs-value"><span class="hljs-number">0</span></span>,
+            "<span class="hljs-attribute">maximum</span>" : <span class="hljs-value"><span class="hljs-number">250</span></span>,
+            "<span class="hljs-attribute">minimum</span>" : <span class="hljs-value"><span class="hljs-number">0</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">take</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The number of entities returned in the response"</span></span>,
+            "<span class="hljs-attribute">default</span>": <span class="hljs-value"><span class="hljs-number">25</span></span>,
+            "<span class="hljs-attribute">maximum</span>" : <span class="hljs-value"><span class="hljs-number">250</span></span>,
+            "<span class="hljs-attribute">minimum</span>" : <span class="hljs-value"><span class="hljs-number">0</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">results</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">uniqueItems</span>": <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+            "<span class="hljs-attribute">minItems</span>" : <span class="hljs-value"><span class="hljs-number">0</span></span>,
+            "<span class="hljs-attribute">maxItems</span>" : <span class="hljs-value"><span class="hljs-number">250</span></span>,
+            "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                "<span class="hljs-attribute">title</span>": <span class="hljs-value"><span class="hljs-string">"NTI"</span></span>,
+                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The name, type, and ID of an entity. Commonly referred to as an NTI"</span></span>,
+                "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+                    "<span class="hljs-attribute">name</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The name of the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">type</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">enum</span>": <span class="hljs-value">[<span class="hljs-string">"project"</span>, <span class="hljs-string">"agency"</span>, <span class="hljs-string">"office"</span>, <span class="hljs-string">"person"</span>, <span class="hljs-string">"vendor"</span>, <span class="hljs-string">"category"</span>]</span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The type of the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">_id</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span>
+                        <span class="hljs-string">"description"</span>: <span class="hljs-string">"The unique ID for the entity"</span>
+                    </span>}
+                </span>}</span>,
+                "<span class="hljs-attribute">required</span>":<span class="hljs-value">[<span class="hljs-string">"name"</span>, <span class="hljs-string">"type"</span>, <span class="hljs-string">"_id"</span>]</span>,
+            }
+            <span class="hljs-string">"required"</span>: [<span class="hljs-string">"total"</span>, <span class="hljs-string">"skip"</span>, <span class="hljs-string">"take"</span>, <span class="hljs-string">"results"</span>]     
+        </span>}
+    </span>}
+</span>}
+</code></pre></li></ul></section><h4 id="agency-search-agencies">Search Agencies&nbsp;<a href="#agency-search-agencies"><i class="fa fa-link"></i></a></h4><p>Find Agencies by their name or acronym</p>
+<section id="agency-search-agencies-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Retireve Agency Search Results</span></div><div style="float:left"><a href="#agency-search-agencies-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/agency/search/{?searchString,skip,take}</code></div></div><div class="panel-body"><p>Search all agencies by keyword</p>
+</div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>searchString</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>USDA</span></span><p>The string with which we will query the agencies</p>
+</dd><dt>skip</dt><dd><code>number</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>0</span></span>&nbsp;<p>The number of entities to skip.</p>
+</dd><dt>take</dt><dd><code>number</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>25</span></span>&nbsp;<p>The number of entities to return.</p>
+</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Request&nbsp;&nbsp;<code>Search Projects</code></strong><a data-toggle="collapse" data-target="#5c7a9222805e596100af655acc6d42a3" class="pull-right">Toggle</a></li><li id="5c7a9222805e596100af655acc6d42a3" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-API-Key</span>: <span class="hljs-string">yourAPIKey</span><br></code></pre></li><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#e96825e9f9403e96036a843b45300848" class="pull-right">Toggle</a></li><li id="e96825e9f9403e96036a843b45300848" class="list-group-item panel-collapse collapse"><h5>Body</h5><pre><code>{
+    "<span class="hljs-attribute">Hello</span>" : <span class="hljs-value"><span class="hljs-string">"You Fool"</span>
+</span>}
+</code></pre><h5>Schema</h5><pre><code>{
+    "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+    "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+        "<span class="hljs-attribute">total</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The total number of returned entities for this search"</span>                        
+        </span>}</span>,
+        "<span class="hljs-attribute">skip</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The number of entities skipped in the response"</span></span>,
+            "<span class="hljs-attribute">default</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">take</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The number of entities returned in the response"</span></span>,
+            "<span class="hljs-attribute">default</span>": <span class="hljs-value"><span class="hljs-number">25</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">results</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">uniqueItems</span>": <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+            "<span class="hljs-attribute">minItems</span>" : <span class="hljs-value"><span class="hljs-number">0</span></span>,
+            "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                "<span class="hljs-attribute">title</span>": <span class="hljs-value"><span class="hljs-string">"NTI"</span></span>,
+                "<span class="hljs-attribute">desription</span>" : <span class="hljs-value"><span class="hljs-string">"The name, type, and ID of an entity. Commonly referred to as an NTI"</span></span>,
+                "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+                    "<span class="hljs-attribute">name</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The name of the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">type</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The type of the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">_id</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The unique ID for the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">highlighted</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A snippet of text that matches the search query"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">score</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The score for a particular result"</span>
+                    </span>}
+                </span>}</span>,
+                "<span class="hljs-attribute">required</span>":<span class="hljs-value">[<span class="hljs-string">"name"</span>, <span class="hljs-string">"type"</span>, <span class="hljs-string">"_id"</span>, <span class="hljs-string">"highlighted"</span>, <span class="hljs-string">"score"</span>]
+            </span>}</span>,
+            "<span class="hljs-attribute">required</span>": <span class="hljs-value">[<span class="hljs-string">"total"</span>, <span class="hljs-string">"skip"</span>, <span class="hljs-string">"take"</span>, <span class="hljs-string">"results"</span>]     
+        </span>}
+    </span>}
+</span>}
+</code></pre></li></ul></section></div></div></div><div><div class="panel panel-default"><div class="panel-heading"><h3 id="office">Office&nbsp;<a href="#office"><i class="fa fa-link"></i></a></h3></div><div class="panel-body"><h4 id="office-office">Office&nbsp;<a href="#office-office"><i class="fa fa-link"></i></a></h4><p>An Office is a sub unit of a U.S. government agency </p>
+<section id="office-office-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Retrieve a Single Office</span></div><div style="float:left"><a href="#office-office-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/office/{_id}</code></div></div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>_id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>51f79dd2ca985f9b7c00031c</span></span><p>String <code>id</code> of the desired Office entity.</p>
+</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Request&nbsp;&nbsp;<code>Agency</code></strong><a data-toggle="collapse" data-target="#4fcca7cd1dbeaf0abdcf02e15a86918c" class="pull-right">Toggle</a></li><li id="4fcca7cd1dbeaf0abdcf02e15a86918c" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-API-Key</span>: <span class="hljs-string">yourAPIKey</span><br></code></pre></li><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#b025fcf834e9b06eebdeb68e619c3893" class="pull-right">Toggle</a></li><li id="b025fcf834e9b06eebdeb68e619c3893" class="list-group-item panel-collapse collapse"><h5>Body</h5><pre><code>{
+    "<span class="hljs-attribute">Hello</span>" : <span class="hljs-value"><span class="hljs-string">"there"</span></span>,
+    "<span class="hljs-attribute">You look</span>" : <span class="hljs-value"><span class="hljs-string">"nice"</span>
+</span>}
+</code></pre><h5>Schema</h5><pre><code>{
+    <span class="hljs-string">"type"</span>: <span class="hljs-string">"object"</span>,
+    <span class="hljs-string">"properties"</span>: {
+        <span class="hljs-string">"_id"</span> : {
+            <span class="hljs-string">"type"</span>:<span class="hljs-string">"string"</span>,
+            <span class="hljs-string">"description"</span>: <span class="hljs-string">"The unique ID for the agency"</span>
+        },
+        <span class="hljs-string">"timestamp"</span> : {
+            <span class="hljs-string">"type"</span> : <span class="hljs-string">"string"</span>,
+            <span class="hljs-string">"description"</span> : <span class="hljs-string">"The date for the last time an agency was active"</span>,
+            <span class="hljs-string">"format"</span> : <span class="hljs-string">"date-time"</span>
+        },
+        <span class="hljs-string">"name"</span> : {
+            <span class="hljs-string">"type"</span> : <span class="hljs-string">"string"</span>,
+            <span class="hljs-string">"description"</span> : <span class="hljs-string">"The name of the agency"</span>
+        },
+        <span class="hljs-string">"type"</span> : {
+            <span class="hljs-string">"type"</span> : <span class="hljs-string">"string"</span>,
+            <span class="hljs-string">"description"</span> : <span class="hljs-string">"The type of the entity"</span>,
+            <span class="hljs-string">"enum"</span> : <span class="hljs-matrix">[<span class="hljs-string">"agency"</span>]</span>
+        },
+        <span class="hljs-string">"acronyms"</span> : {
+            <span class="hljs-string">"type"</span> : <span class="hljs-string">"array"</span>,
+            <span class="hljs-string">"description"</span> : <span class="hljs-string">"Common acronyms for the agency"</span>,
+            <span class="hljs-string">"items"</span> : {
+                <span class="hljs-string">"type"</span> : <span class="hljs-string">"string"</span>,
+                <span class="hljs-string">"description"</span> : <span class="hljs-string">"An acronym"</span>
+            }
+        },
+        <span class="hljs-string">"website"</span> : {
+            <span class="hljs-string">"type"</span> : <span class="hljs-string">"string"</span>,
+            <span class="hljs-string">"description"</span> : <span class="hljs-string">"The website for the agency."</span>,
+            <span class="hljs-string">"format"</span> : <span class="hljs-string">"uri"</span>
+        },
+        <span class="hljs-string">"procurementStats"</span> : {
+            <span class="hljs-string">"type"</span> : <span class="hljs-string">"object"</span>,
+            <span class="hljs-string">"description"</span> : <span class="hljs-string">"Statistics about the agencies public procurements, broken down by year. Updated daily."</span>,
+            <span class="hljs-string">"properties"</span> : {
+                <span class="hljs-string">"averageTimesToAward"</span> : {
+                    <span class="hljs-string">"type"</span> : <span class="hljs-string">"array"</span>,
+                    <span class="hljs-string">"description"</span> : <span class="hljs-string">"A list of the average number of days for the agencies'</span> Projects to move from Open <span class="hljs-keyword">for</span> Bid to Award <span class="hljs-built_in">or</span> Canceled <span class="hljs-keyword">for</span> each <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>The average number of days <span class="hljs-keyword">for</span> the <span class="hljs-transposed_variable">agencies'</span> Projects to move from Open <span class="hljs-keyword">for</span> Bid to Award <span class="hljs-built_in">or</span> Canceled <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>averageTimeToAward<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The number of days<span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>averageAwardValues<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of the average award values <span class="hljs-keyword">for</span> an agencies projects <span class="hljs-keyword">for</span> each <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Average award value <span class="hljs-keyword">for</span> an <span class="hljs-transposed_variable">agencies'</span> projects <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>averageAwardValue<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The average award value<span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>numbersOfAwards<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of the numbers of awards <span class="hljs-keyword">for</span> an agency, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Number of awards <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>numberOfAwards<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The number of <span class="hljs-transposed_variable">awards.</span> Does not differntiate with respect to competitive nature of <span class="hljs-transposed_variable">process.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>awardDollarFlow<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">"  "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>The total award values <span class="hljs-keyword">for</span> an entity, grouped by time buckets, going back two <span class="hljs-transposed_variable">years.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" : "</span>A time bucket of total award value<span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : "</span> {
+                            <span class="hljs-string">"timeBucket"</span> : {
+                                <span class="hljs-string">"type"</span> : <span class="hljs-string">"string"</span>,
+                                <span class="hljs-string">"description"</span> : <span class="hljs-string">"A human readable time bucket"</span>
+                            },
+                            <span class="hljs-string">"total"</span> : {
+                                <span class="hljs-string">"type"</span> : <span class="hljs-string">"string"</span>,
+                                <span class="hljs-string">"description"</span> : <span class="hljs-string">"The total amount awarded for a time bucket. 
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "</span>organizationalStats<span class="hljs-string">" : {
+            "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+            "</span>description<span class="hljs-string">" : "</span>Statistics about the organization, inlcuding active people <span class="hljs-built_in">and</span> office <span class="hljs-transposed_variable">counts.</span> Updated <span class="hljs-transposed_variable">daily.</span><span class="hljs-string">",
+            "</span>properties<span class="hljs-string">" : {
+                "</span>activePeople<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of the numbers of active people <span class="hljs-keyword">for</span> an agency, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Number of active people <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>numberOfActivePeople<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The number of active <span class="hljs-transposed_variable">people.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>activeOffices<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of the numbers of active offices <span class="hljs-keyword">for</span> an agency, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Number of active offices <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>numberOfActiveOffices<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The number of active <span class="hljs-transposed_variable">offices.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                }
+            }
+        }, 
+        "</span>obligationStats<span class="hljs-string">" : {
+            "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+            "</span>description<span class="hljs-string">" : "</span>Obligation stats about an organization, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+            "</span>properties<span class="hljs-string">" : {
+                "</span>totalObligations<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of total obligations, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Total obligations <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>obligations<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The total dollar value of the <span class="hljs-transposed_variable">obligations.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>obligationsDollarFlow<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">"  "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>The total obligation values <span class="hljs-keyword">for</span> an entity, grouped by time buckets, going back two <span class="hljs-transposed_variable">years.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" : "</span>A time bucket of total obligations<span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : "</span> {
+                            <span class="hljs-string">"timeBucket"</span> : {
+                                <span class="hljs-string">"type"</span> : <span class="hljs-string">"string"</span>,
+                                <span class="hljs-string">"description"</span> : <span class="hljs-string">"A human readable time bucket"</span>
+                            },
+                            <span class="hljs-string">"total"</span> : {
+                                <span class="hljs-string">"type"</span> : <span class="hljs-string">"string"</span>,
+                                <span class="hljs-string">"description"</span> : <span class="hljs-string">"The total amount obligated for a time bucket. 
+                            }
+                        }
+                    }
+                }
+                "</span>totalSmallBusinessObligations<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of total obligations designated as the Total Small Business Set Aside, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Obligations <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>obligations<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The total dollar value of the <span class="hljs-transposed_variable">obligations.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>serviceDisabledVeteranOwnedSmallBusinessObligations<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of total obligations designated as the Service-Disabled Veteran-Owned Small Business Set Aside, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Obligations <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>obligations<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The total dollar value of the <span class="hljs-transposed_variable">obligations.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>HUBZoneObligations<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of total obligations designated as HUBZone Set Aside, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Obligations <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>obligations<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The total dollar value of the <span class="hljs-transposed_variable">obligations.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>competitive8aObligations<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of total obligations designated as Competitive <span class="hljs-number">8</span>(a) Set Aside, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Obligations <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>obligations<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The total dollar value of the <span class="hljs-transposed_variable">obligations.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>womanOwnedSmallBusinessObligations<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of total obligations designated as Woman Owned Small Business Set Aside, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Obligations <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>obligations<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The total dollar value of the <span class="hljs-transposed_variable">obligations.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>partialSmallBusinessObligations<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of total obligations designated as Partial Small Business Set Aside, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Obligations <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>obligations<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The total dollar value of the <span class="hljs-transposed_variable">obligations.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>economicallyDisadvantagedWomanOwnedSmallBusinessObligations<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of total obligations designated as Economically Disadvantaged Woman Owned Small Business Set Aside, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Obligations <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>obligations<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The total dollar value of the <span class="hljs-transposed_variable">obligations.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>emergingSmallBusinessObligations<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of total obligations designated as Emerging Small Business Set Aside, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Obligations <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>obligations<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The total dollar value of the <span class="hljs-transposed_variable">obligations.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>totalHBCUMIObligations<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of total obligations designated as Total HBCU / MI Set Aside, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Obligations <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>obligations<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The total dollar value of the <span class="hljs-transposed_variable">obligations.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>partialHBCUMIObligations<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of total obligations designated as Partial HBCU / MI Set Aside, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Obligations <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>obligations<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The total dollar value of the <span class="hljs-transposed_variable">obligations.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+            }
+        },
+        "</span>Stats<span class="hljs-string">" : {
+            "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+            "</span>description<span class="hljs-string">" : "</span>Protest stats <span class="hljs-keyword">for</span> the projects of an organization, including breakdowns by protest <span class="hljs-transposed_variable">status.</span><span class="hljs-string">",
+            "</span>properties<span class="hljs-string">" : {
+                "</span>totalProtests<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of the numbers of total protests <span class="hljs-keyword">for</span> an agency, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Number of total protests <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>numberOfProtests<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The number of <span class="hljs-transposed_variable">protests.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>protestsWithdrawn<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of the numbers of total protests with a status of Withdrawn, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Number of protests <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>numberOfProtests<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The number of <span class="hljs-transposed_variable">protests.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>protestsDenied<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of the numbers of total protests with a status of Denied, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Number of protests <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>numberOfProtests<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The number of <span class="hljs-transposed_variable">protests.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>protestsSustained<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of the numbers of total protests with a status of Sustained, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Number of protests <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>numberOfProtests<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The number of <span class="hljs-transposed_variable">protests.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>protestsDismissed<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of the numbers of total protests with a status of Dismissed, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Number of protests <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>numberOfProtests<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The number of <span class="hljs-transposed_variable">protests.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "</span>govTribeStats : {
+            <span class="hljs-string">"type"</span> : <span class="hljs-string">"object"</span>,
+            <span class="hljs-string">"description"</span> : <span class="hljs-string">"Proprietary GovTribe stats about the organization"</span>,
+            <span class="hljs-string">"properties"</span> : {
+                <span class="hljs-string">"purseStringIndicies"</span> : {
+                    <span class="hljs-string">"type"</span> : <span class="hljs-string">"array"</span>,
+                    <span class="hljs-string">"description"</span> : <span class="hljs-string">"A list of the purse string indices for an agency, broken down by year."</span>,
+                    <span class="hljs-string">"items"</span> : {
+                        <span class="hljs-string">"type"</span> : <span class="hljs-string">"object"</span>,
+                        <span class="hljs-string">"description"</span> :  <span class="hljs-string">"The purse string index is computed by combining the frequency, speed, and magnitude of awards for an agency."</span>,
+                        <span class="hljs-string">"properties"</span> : {
+                            <span class="hljs-string">"calendarYear"</span> : {
+                                <span class="hljs-string">"type"</span> : <span class="hljs-string">"string"</span>,
+                                <span class="hljs-string">"description"</span> : <span class="hljs-string">"A calendar year"</span>
+                            },
+                            <span class="hljs-string">"purseStringIndex"</span> : {
+                                <span class="hljs-string">"type"</span> : <span class="hljs-string">"number"</span>,
+                                <span class="hljs-string">"description"</span> : <span class="hljs-string">"The purse string index for a given year."</span>
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+</code></pre></li></ul></section><h4 id="office-office-slices">Office Slices&nbsp;<a href="#office-office-slices"><i class="fa fa-link"></i></a></h4><p>Returns a listing (slice) of NTIs that are related to an office based on the slice name. For example, the <code>vvendorsThatWinTotalSmallBusinessSetAsideProjects</code> slice will return a list of vendor NTIs for a given agency that have won projects desginated as a Total Small Business set aside.</p>
+<section id="office-office-slices-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Retrieve a Slice for an Office</span></div><div style="float:left"><a href="#office-office-slices-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/office/{_id}/{slice}</code></div></div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>_id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>51f79dd2ca985f9b7c00031c</span></span><p>id of the desired Office Entity</p>
+</dd><dt>slice</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>vendorsThatWinTotalSmallBusinessSetAsideProjects</span></span><p>A list of entities or slice, relative to the office.</p>
+<p><strong>Choices:&nbsp;</strong><code>vendorsThatWinTotalSmallBusinessSetAsideProjects</code>&nbsp;<code>vendorsThatWinServiceDisabledVeteranOwnedSmallBusinessSetAsideProjects</code>&nbsp;<code>vendorsThatWinHUBZoneSetAsideProjects</code>&nbsp;<code>vendorsThatWinCompetitive8ASetAsideProjects</code>&nbsp;<code>vendorsThatWinWomanOwnedSmallBusinessSetAsideProjects</code>&nbsp;<code>vendorsThatWinPartialSmallBusinessSetAsideProjects</code>&nbsp;<code>vendorsThatWinEconomicallyDisadvantagedWomanOwnedSmallBusinessSetAsideProjects</code>&nbsp;<code>vendorsThatWinEmergingSmallBusinessSetAsideProjects</code>&nbsp;<code>vendorsThatWinTotalHBCUMISetAsideProjects</code>&nbsp;<code>vendorsThatWinPartialHBCUMISetAsideProjects</code>&nbsp;<code>peopleThatPostTotalSmallBusinessSetAsideProjects</code>&nbsp;<code>peopleThatPostServiceDisabledVeteranOwnedSmallBusinessSetAsideProjects</code>&nbsp;<code>peopleThatPostHUBZoneSetAsideProjects</code>&nbsp;<code>peopleThatPostCompetitive8ASetAsideProjects</code>&nbsp;<code>peopleThatPostWomanOwnedSmallBusinessSetAsideProjects</code>&nbsp;<code>peopleThatPostPartialSmallBusinessSetAsideProjects</code>&nbsp;<code>peopleThatPostEconomicallyDisadvantagedWomanOwnedSmallBusinessSetAsideProjects</code>&nbsp;<code>peopleThatPostEmergingSmallBusinessSetAsideProjects</code>&nbsp;<code>peopleThatPostTotalHBCUMISetAsideProjects</code>&nbsp;<code>peopleThatPostPartialHBCUMISetAsideProjects</code>&nbsp;<code>categoriesThatContainTotalSmallBusinessSetAsideProjects</code>&nbsp;<code>categoriesThatContainServiceDisabledVeteranOwnedSmallBusinessSetAsideProjects</code>&nbsp;<code>categoriesThatContainHUBZoneSetAsideProjects</code>&nbsp;<code>categoriesThatContainCompetitive8ASetAsideProjects</code>&nbsp;<code>categoriesThatContainWomanOwnedSmallBusinessSetAsideProjects</code>&nbsp;<code>categoriesThatContainPartialSmallBusinessSetAsideProjects</code>&nbsp;<code>categoriesThatContainEconomicallyDisadvantagedWomanOwnedSmallBusinessSetAsideProjects</code>&nbsp;<code>categoriesThatContainEmergingSmallBusinessSetAsideProjects</code>&nbsp;<code>categoriesThatContainTotalHBCUMISetAsideProjects</code>&nbsp;<code>categoriesThatContainPartialHBCUMISetAsideProjects</code>&nbsp;</p></dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Request&nbsp;&nbsp;<code>Slice</code></strong><a data-toggle="collapse" data-target="#ce2d40cdcced529fd2373c6e60990dd9" class="pull-right">Toggle</a></li><li id="ce2d40cdcced529fd2373c6e60990dd9" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-API-Key</span>: <span class="hljs-string">yourAPIKey</span><br></code></pre></li><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#ba884460b7de0711d82772013837d116" class="pull-right">Toggle</a></li><li id="ba884460b7de0711d82772013837d116" class="list-group-item panel-collapse collapse"><h5>Body</h5><pre><code>{
+"<span class="hljs-attribute">total</span>": <span class="hljs-value"><span class="hljs-number">670413</span></span>,
+"<span class="hljs-attribute">skip</span>": <span class="hljs-value"><span class="hljs-number">0</span></span>,
+"<span class="hljs-attribute">take</span>": <span class="hljs-value"><span class="hljs-number">2</span></span>,
+"<span class="hljs-attribute">results</span>":<span class="hljs-value">[
+    {
+        "<span class="hljs-attribute">name</span>":<span class="hljs-value"><span class="hljs-string">"USDA EVENT - Rural Small Business Connections - Pine Bluff, AR"</span></span>,
+        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"project"</span></span>,
+        "<span class="hljs-attribute">_id</span>":<span class="hljs-value"><span class="hljs-string">"5363be766c5cc8a60d8b4567"</span>
+    </span>},
+    {
+        "<span class="hljs-attribute">name</span>":<span class="hljs-value"><span class="hljs-string">"SOLE SOURCE ENGINEERING TECHNICAL SERVICES TO SUPPORT THE IMPROVED CONTROL AND DISPLAY UPGRADE TO THE SLQ-32 COUNTERMEASURE SYSTEM"</span></span>,
+        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"project"</span></span>,
+        "<span class="hljs-attribute">_id</span>":<span class="hljs-value"><span class="hljs-string">"5363be2b6c5cc8a00c8b4567"</span>
+    </span>}
+]
+</span>}
+</code></pre><h5>Schema</h5><pre><code>{
+    "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+    "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+        "<span class="hljs-attribute">total</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The total number of entities for this endpoint"</span></span>,
+            "<span class="hljs-attribute">minimum</span>" : <span class="hljs-value"><span class="hljs-number">0</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">skip</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The number of entities skipped in the response"</span></span>,
+            "<span class="hljs-attribute">default</span>": <span class="hljs-value"><span class="hljs-number">0</span></span>,
+            "<span class="hljs-attribute">maximum</span>" : <span class="hljs-value"><span class="hljs-number">250</span></span>,
+            "<span class="hljs-attribute">minimum</span>" : <span class="hljs-value"><span class="hljs-number">0</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">take</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The number of entities returned in the response"</span></span>,
+            "<span class="hljs-attribute">default</span>": <span class="hljs-value"><span class="hljs-number">25</span></span>,
+            "<span class="hljs-attribute">maximum</span>" : <span class="hljs-value"><span class="hljs-number">250</span></span>,
+            "<span class="hljs-attribute">minimum</span>" : <span class="hljs-value"><span class="hljs-number">0</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">results</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">uniqueItems</span>": <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+            "<span class="hljs-attribute">minItems</span>" : <span class="hljs-value"><span class="hljs-number">0</span></span>,
+            "<span class="hljs-attribute">maxItems</span>" : <span class="hljs-value"><span class="hljs-number">250</span></span>,
+            "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                "<span class="hljs-attribute">title</span>": <span class="hljs-value"><span class="hljs-string">"NTI"</span></span>,
+                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The name, type, and ID of an entity. Commonly referred to as an NTI"</span></span>,
+                "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+                    "<span class="hljs-attribute">name</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The name of the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">type</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">enum</span>": <span class="hljs-value">[<span class="hljs-string">"project"</span>, <span class="hljs-string">"agency"</span>, <span class="hljs-string">"office"</span>, <span class="hljs-string">"person"</span>, <span class="hljs-string">"vendor"</span>, <span class="hljs-string">"category"</span>]</span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The type of the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">_id</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span>
+                        <span class="hljs-string">"description"</span>: <span class="hljs-string">"The unique ID for the entity"</span>
+                    </span>}
+                </span>}</span>,
+                "<span class="hljs-attribute">required</span>":<span class="hljs-value">[<span class="hljs-string">"name"</span>, <span class="hljs-string">"type"</span>, <span class="hljs-string">"_id"</span>]</span>,
+            }
+            <span class="hljs-string">"required"</span>: [<span class="hljs-string">"total"</span>, <span class="hljs-string">"skip"</span>, <span class="hljs-string">"take"</span>, <span class="hljs-string">"results"</span>]     
+        </span>}
+    </span>}
+</span>}
+</code></pre></li></ul></section><h4 id="office-search-offices">Search Offices&nbsp;<a href="#office-search-offices"><i class="fa fa-link"></i></a></h4><p>Find an office by its name or acronym.</p>
+<section id="office-search-offices-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Retireve Office Search Results</span></div><div style="float:left"><a href="#office-search-offices-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/office/search/{?searchString,skip,take}</code></div></div><div class="panel-body"><p>Search all agencies by keyword</p>
+</div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>searchString</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>Bureau of Prisons</span></span><p>The string with which we will query the offices</p>
+</dd><dt>skip</dt><dd><code>number</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>0</span></span>&nbsp;<p>The number of entities to skip.</p>
+</dd><dt>take</dt><dd><code>number</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>25</span></span>&nbsp;<p>The number of entities to return.</p>
+</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Request&nbsp;&nbsp;<code>Search Projects</code></strong><a data-toggle="collapse" data-target="#aec67a9715a38355e44303d09594cba4" class="pull-right">Toggle</a></li><li id="aec67a9715a38355e44303d09594cba4" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-API-Key</span>: <span class="hljs-string">yourAPIKey</span><br></code></pre></li><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#216d4553e06244417934d744ca040e80" class="pull-right">Toggle</a></li><li id="216d4553e06244417934d744ca040e80" class="list-group-item panel-collapse collapse"><h5>Body</h5><pre><code>{
+    "<span class="hljs-attribute">Hello</span>" : <span class="hljs-value"><span class="hljs-string">"You Fool"</span>
+</span>}
+</code></pre><h5>Schema</h5><pre><code>{
+    "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+    "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+        "<span class="hljs-attribute">total</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The total number of returned entities for this search"</span>                        
+        </span>}</span>,
+        "<span class="hljs-attribute">skip</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The number of entities skipped in the response"</span></span>,
+            "<span class="hljs-attribute">default</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">take</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The number of entities returned in the response"</span></span>,
+            "<span class="hljs-attribute">default</span>": <span class="hljs-value"><span class="hljs-number">25</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">results</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">uniqueItems</span>": <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+            "<span class="hljs-attribute">minItems</span>" : <span class="hljs-value"><span class="hljs-number">0</span></span>,
+            "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                "<span class="hljs-attribute">title</span>": <span class="hljs-value"><span class="hljs-string">"NTI"</span></span>,
+                "<span class="hljs-attribute">desription</span>" : <span class="hljs-value"><span class="hljs-string">"The name, type, and ID of an entity. Commonly referred to as an NTI"</span></span>,
+                "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+                    "<span class="hljs-attribute">name</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The name of the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">type</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The type of the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">_id</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The unique ID for the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">highlighted</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A snippet of text that matches the search query"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">score</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The score for a particular result"</span>
+                    </span>}
+                </span>}</span>,
+                "<span class="hljs-attribute">required</span>":<span class="hljs-value">[<span class="hljs-string">"name"</span>, <span class="hljs-string">"type"</span>, <span class="hljs-string">"_id"</span>, <span class="hljs-string">"highlighted"</span>, <span class="hljs-string">"score"</span>]
+            </span>}</span>,
+            "<span class="hljs-attribute">required</span>": <span class="hljs-value">[<span class="hljs-string">"total"</span>, <span class="hljs-string">"skip"</span>, <span class="hljs-string">"take"</span>, <span class="hljs-string">"results"</span>]     
+        </span>}
+    </span>}
+</span>}
+</code></pre></li></ul></section></div></div></div><div><div class="panel panel-default"><div class="panel-heading"><h3 id="person">Person&nbsp;<a href="#person"><i class="fa fa-link"></i></a></h3></div><div class="panel-body"><h4 id="person-person">Person&nbsp;<a href="#person-person"><i class="fa fa-link"></i></a></h4><p>An Person is a U.S. government point of contact for one or more projects </p>
+<section id="person-person-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Retrieve a Single Person</span></div><div style="float:left"><a href="#person-person-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/person/{_id}</code></div></div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>_id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>51f79dd2ca985f9b7c00031c</span></span><p>String <code>id</code> of the desired Person entity.</p>
+</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Request&nbsp;&nbsp;<code>Person</code></strong><a data-toggle="collapse" data-target="#6a90dba05cae9291b5a2b026cffca770" class="pull-right">Toggle</a></li><li id="6a90dba05cae9291b5a2b026cffca770" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-API-Key</span>: <span class="hljs-string">yourAPIKey</span><br></code></pre></li><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#7abcbddeb5f486f2f29ee4288567720d" class="pull-right">Toggle</a></li><li id="7abcbddeb5f486f2f29ee4288567720d" class="list-group-item panel-collapse collapse"><h5>Body</h5><pre><code>{
+    "<span class="hljs-attribute">Hello</span>" : <span class="hljs-value"><span class="hljs-string">"there"</span></span>,
+    "<span class="hljs-attribute">You look</span>" : <span class="hljs-value"><span class="hljs-string">"nice"</span>
+</span>}
+</code></pre><h5>Schema</h5><pre><code>{
+    <span class="hljs-string">"type"</span>: <span class="hljs-string">"object"</span>,
+    <span class="hljs-string">"properties"</span>: {
+        <span class="hljs-string">"_id"</span> : {
+            <span class="hljs-string">"type"</span>:<span class="hljs-string">"string"</span>,
             <span class="hljs-string">"description"</span>: <span class="hljs-string">"The unique ID for the person"</span>
         },
         <span class="hljs-string">"timestamp"</span> : {
@@ -987,18 +2145,407 @@ a.list-group-item.heading {
         },
         <span class="hljs-string">"name"</span> : {
             <span class="hljs-string">"type"</span> : <span class="hljs-string">"string"</span>,
-            <span class="hljs-string">"description"</span> : <span class="hljs-string">"The name of the person
+            <span class="hljs-string">"description"</span> : <span class="hljs-string">"The name of the person. Defaults to email if no name found."</span>
         },
-        "</span><span class="hljs-keyword">type</span><span class="hljs-string">" : {
-            "</span><span class="hljs-keyword">type</span><span class="hljs-string">" : "</span><span class="hljs-built_in">string</span><span class="hljs-string">",
-            "</span>description<span class="hljs-string">" : "</span>The <span class="hljs-keyword">type</span> of the entity<span class="hljs-string">",
-            "</span>enum<span class="hljs-string">" : ["</span>person<span class="hljs-string">"]
+        <span class="hljs-string">"type"</span> : {
+            <span class="hljs-string">"type"</span> : <span class="hljs-string">"string"</span>,
+            <span class="hljs-string">"description"</span> : <span class="hljs-string">"The type of the entity"</span>,
+            <span class="hljs-string">"enum"</span> : <span class="hljs-matrix">[<span class="hljs-string">"agency"</span>]</span>
+        },
+        <span class="hljs-string">"email"</span> : {
+            <span class="hljs-string">"type"</span> : <span class="hljs-string">"string"</span>,
+            <span class="hljs-string">"description"</span> : <span class="hljs-string">"The email for a person"</span>,
+            <span class="hljs-string">"format"</span> : <span class="hljs-string">"email"</span>
+        },
+        <span class="hljs-string">"phone"</span> : {
+            <span class="hljs-string">"type"</span> : <span class="hljs-string">"string"</span>,
+            <span class="hljs-string">"description"</span> : <span class="hljs-string">"The phone number for a person"</span>
+        },
+        <span class="hljs-string">"position"</span> : {
+            <span class="hljs-string">"type"</span> : <span class="hljs-string">"string"</span>,
+            <span class="hljs-string">"description"</span> : <span class="hljs-string">"The last known position for a person"</span>
+        },
+        <span class="hljs-string">"agencies"</span> : {
+            <span class="hljs-string">"type"</span> : <span class="hljs-string">"array"</span>
+            <span class="hljs-string">"description"</span> : <span class="hljs-string">"The NTIs for all agencies related to this person"</span>,
+            <span class="hljs-string">"items"</span> : {
+                <span class="hljs-string">"type"</span> : <span class="hljs-string">"object"</span>,
+                <span class="hljs-string">"description"</span> : <span class="hljs-string">"An NTI for a n agency"</span>,
+                <span class="hljs-string">"properties"</span>: {
+                    <span class="hljs-string">"name"</span>: {
+                        <span class="hljs-string">"type"</span>:<span class="hljs-string">"string"</span>,
+                        <span class="hljs-string">"description"</span>: <span class="hljs-string">"The name of the agency"</span>
+                    },
+                    <span class="hljs-string">"type"</span>: {
+                        <span class="hljs-string">"type"</span>:<span class="hljs-string">"string"</span>,
+                        <span class="hljs-string">"enum"</span>: <span class="hljs-matrix">[<span class="hljs-string">"agency"</span>]</span>,
+                        <span class="hljs-string">"description"</span>: <span class="hljs-string">"The type of the entity"</span>
+                    },
+                    <span class="hljs-string">"_id"</span>: {
+                        <span class="hljs-string">"type"</span>:<span class="hljs-string">"string"</span>
+                        <span class="hljs-string">"description"</span>: <span class="hljs-string">"The unique ID for the entity"</span>
+                    }
+                }
+            }
+        },
+        <span class="hljs-string">"offices"</span> : {
+            <span class="hljs-string">"type"</span> : <span class="hljs-string">"array"</span>
+            <span class="hljs-string">"description"</span> : <span class="hljs-string">"The NTIs for all offices related to this person"</span>,
+            <span class="hljs-string">"items"</span> : {
+                <span class="hljs-string">"type"</span> : <span class="hljs-string">"object"</span>,
+                <span class="hljs-string">"description"</span> : <span class="hljs-string">"An NTI for an office"</span>,
+                <span class="hljs-string">"properties"</span>: {
+                    <span class="hljs-string">"name"</span>: {
+                        <span class="hljs-string">"type"</span>:<span class="hljs-string">"string"</span>,
+                        <span class="hljs-string">"description"</span>: <span class="hljs-string">"The name of the office"</span>
+                    },
+                    <span class="hljs-string">"type"</span>: {
+                        <span class="hljs-string">"type"</span>:<span class="hljs-string">"string"</span>,
+                        <span class="hljs-string">"enum"</span>: <span class="hljs-matrix">[<span class="hljs-string">"office"</span>]</span>,
+                        <span class="hljs-string">"description"</span>: <span class="hljs-string">"The type of the entity"</span>
+                    },
+                    <span class="hljs-string">"_id"</span>: {
+                        <span class="hljs-string">"type"</span>:<span class="hljs-string">"string"</span>
+                        <span class="hljs-string">"description"</span>: <span class="hljs-string">"The unique ID for the entity"</span>
+                    }
+                }
+            }
+        },
+        <span class="hljs-string">"procurementStats"</span> : {
+            <span class="hljs-string">"type"</span> : <span class="hljs-string">"object"</span>,
+            <span class="hljs-string">"description"</span> : <span class="hljs-string">"Statistics about the person'</span>s public procurements, broken down by <span class="hljs-transposed_variable">year.</span> Updated <span class="hljs-transposed_variable">daily.</span><span class="hljs-string">",
+            "</span>properties<span class="hljs-string">" : {
+                "</span>averageTimesToAward<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of the average number of days <span class="hljs-keyword">for</span> the <span class="hljs-transposed_variable">person'</span>s Projects to move from Open <span class="hljs-keyword">for</span> Bid to Award <span class="hljs-built_in">or</span> Canceled <span class="hljs-keyword">for</span> each <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>The average number of days <span class="hljs-keyword">for</span> the <span class="hljs-transposed_variable">person'</span>s Projects to move from Open <span class="hljs-keyword">for</span> Bid to Award <span class="hljs-built_in">or</span> Canceled <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>averageTimeToAward<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The number of days<span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>averageAwardValues<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of the average award values <span class="hljs-keyword">for</span> an <span class="hljs-transposed_variable">persons'</span>s projects <span class="hljs-keyword">for</span> each <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Average award value <span class="hljs-keyword">for</span> an <span class="hljs-transposed_variable">person'</span>s projects <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>averageAwardValue<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The average award value<span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>numbersOfAwards<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of the numbers of awards <span class="hljs-keyword">for</span> a person, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Number of awards <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>numberOfAwards<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The number of <span class="hljs-transposed_variable">awards.</span> Does not differntiate with respect to competitive nature of <span class="hljs-transposed_variable">process.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>awardDollarFlow<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">"  "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>The total award values <span class="hljs-keyword">for</span> an entity, grouped by time buckets, going back two <span class="hljs-transposed_variable">years.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" : "</span>A time bucket of total award values<span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : "</span> {
+                            <span class="hljs-string">"timeBucket"</span> : {
+                                <span class="hljs-string">"type"</span> : <span class="hljs-string">"string"</span>,
+                                <span class="hljs-string">"description"</span> : <span class="hljs-string">"A human readable time bucket"</span>
+                            },
+                            <span class="hljs-string">"total"</span> : {
+                                <span class="hljs-string">"type"</span> : <span class="hljs-string">"string"</span>,
+                                <span class="hljs-string">"description"</span> : <span class="hljs-string">"The total amount awarded for a time bucket. 
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "</span>protestStats<span class="hljs-string">" : {
+            "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+            "</span>description<span class="hljs-string">" : "</span>Protest stats <span class="hljs-keyword">for</span> the projects of a person, including breakdowns by protest <span class="hljs-transposed_variable">status.</span><span class="hljs-string">",
+            "</span>properties<span class="hljs-string">" : {
+                "</span>totalProtests<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of the numbers of total protests <span class="hljs-keyword">for</span> a person, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Number of total protests <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>numberOfProtests<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The number of <span class="hljs-transposed_variable">protests.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>protestsWithdrawn<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of the numbers of total protests with a status of Withdrawn, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Number of protests <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>numberOfProtests<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The number of <span class="hljs-transposed_variable">protests.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>protestsDenied<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of the numbers of total protests with a status of Denied, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Number of protests <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>numberOfProtests<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The number of <span class="hljs-transposed_variable">protests.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>protestsSustained<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of the numbers of total protests with a status of Sustained, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Number of protests <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>numberOfProtests<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The number of <span class="hljs-transposed_variable">protests.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                },
+                "</span>protestsDismissed<span class="hljs-string">" : {
+                    "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">",
+                    "</span>description<span class="hljs-string">" : "</span>A <span class="hljs-built_in">list</span> of the numbers of total protests with a status of Dismissed, broken down by <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                    "</span>items<span class="hljs-string">" : {
+                        "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">" :  "</span>Number of protests <span class="hljs-keyword">for</span> a given <span class="hljs-transposed_variable">year.</span><span class="hljs-string">",
+                        "</span>properties<span class="hljs-string">" : {
+                            "</span>calendarYear<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>A calendar year<span class="hljs-string">"
+                            },
+                            "</span>numberOfProtests<span class="hljs-string">" : {
+                                "</span>type<span class="hljs-string">" : "</span>number<span class="hljs-string">",
+                                "</span>description<span class="hljs-string">" : "</span>The number of <span class="hljs-transposed_variable">protests.</span><span class="hljs-string">"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "</span>govTribeStats : {
+            <span class="hljs-string">"type"</span> : <span class="hljs-string">"object"</span>,
+            <span class="hljs-string">"description"</span> : <span class="hljs-string">"Proprietary GovTribe stats about the organization"</span>,
+            <span class="hljs-string">"properties"</span> : {
+                <span class="hljs-string">"purseStringIndicies"</span> : {
+                    <span class="hljs-string">"type"</span> : <span class="hljs-string">"array"</span>,
+                    <span class="hljs-string">"description"</span> : <span class="hljs-string">"A list of the purse string indices for a person, broken down by year."</span>,
+                    <span class="hljs-string">"items"</span> : {
+                        <span class="hljs-string">"type"</span> : <span class="hljs-string">"object"</span>,
+                        <span class="hljs-string">"description"</span> :  <span class="hljs-string">"The purse string index is computed by combining the frequency, speed, and magnitude of awards for a person."</span>,
+                        <span class="hljs-string">"properties"</span> : {
+                            <span class="hljs-string">"calendarYear"</span> : {
+                                <span class="hljs-string">"type"</span> : <span class="hljs-string">"string"</span>,
+                                <span class="hljs-string">"description"</span> : <span class="hljs-string">"A calendar year"</span>
+                            },
+                            <span class="hljs-string">"purseStringIndex"</span> : {
+                                <span class="hljs-string">"type"</span> : <span class="hljs-string">"number"</span>,
+                                <span class="hljs-string">"description"</span> : <span class="hljs-string">"The purse string index for a given year."</span>
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
-</span></code></pre></li></ul></section></div></div></div><div><div class="panel panel-default"><div class="panel-heading"><h3 id="vendor">Vendor&nbsp;<a href="#vendor"><i class="fa fa-link"></i></a></h3></div><div class="panel-body"><h4 id="vendor-vendor">Vendor&nbsp;<a href="#vendor-vendor"><i class="fa fa-link"></i></a></h4><p>An Vendor is a business entity that has won a Project </p>
+</code></pre></li></ul></section><h4 id="person-person-slices">Person Slices&nbsp;<a href="#person-person-slices"><i class="fa fa-link"></i></a></h4><p>Returns a listing (slice) of NTIs that are related to an person based on the slice name. For example, the <code>vendorsThatWinTotalSmallBusinessSetAsideProjects</code> slice will return a list of vendor NTIs for a given person that have won projects desginated as a Total Small Business set aside.</p>
+<section id="person-person-slices-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Retrieve a Slice for a Person</span></div><div style="float:left"><a href="#person-person-slices-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/person/{_id}/{slice}</code></div></div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>_id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>51f79dd2ca985f9b7c00031c</span></span><p>id of the desired Office Entity</p>
+</dd><dt>slice</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>vendorsThatWinTotalSmallBusinessSetAsideProjects</span></span><p>A list of entities or slice, relative to the office.</p>
+<p><strong>Choices:&nbsp;</strong><code>vendorsThatWinTotalSmallBusinessSetAsideProjects</code>&nbsp;<code>vendorsThatWinServiceDisabledVeteranOwnedSmallBusinessSetAsideProjects</code>&nbsp;<code>vendorsThatWinHUBZoneSetAsideProjects</code>&nbsp;<code>vendorsThatWinCompetitive8ASetAsideProjects</code>&nbsp;<code>vendorsThatWinWomanOwnedSmallBusinessSetAsideProjects</code>&nbsp;<code>vendorsThatWinPartialSmallBusinessSetAsideProjects</code>&nbsp;<code>vendorsThatWinEconomicallyDisadvantagedWomanOwnedSmallBusinessSetAsideProjects</code>&nbsp;<code>vendorsThatWinEmergingSmallBusinessSetAsideProjects</code>&nbsp;<code>vendorsThatWinTotalHBCUMISetAsideProjects</code>&nbsp;<code>vendorsThatWinPartialHBCUMISetAsideProjects</code>&nbsp;<code>categoriesThatContainTotalSmallBusinessSetAsideProjects</code>&nbsp;<code>categoriesThatContainServiceDisabledVeteranOwnedSmallBusinessSetAsideProjects</code>&nbsp;<code>categoriesThatContainHUBZoneSetAsideProjects</code>&nbsp;<code>categoriesThatContainCompetitive8ASetAsideProjects</code>&nbsp;<code>categoriesThatContainWomanOwnedSmallBusinessSetAsideProjects</code>&nbsp;<code>categoriesThatContainPartialSmallBusinessSetAsideProjects</code>&nbsp;<code>categoriesThatContainEconomicallyDisadvantagedWomanOwnedSmallBusinessSetAsideProjects</code>&nbsp;<code>categoriesThatContainEmergingSmallBusinessSetAsideProjects</code>&nbsp;<code>categoriesThatContainTotalHBCUMISetAsideProjects</code>&nbsp;<code>categoriesThatContainPartialHBCUMISetAsideProjects</code>&nbsp;</p></dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Request&nbsp;&nbsp;<code>Slice</code></strong><a data-toggle="collapse" data-target="#d13d648e40a7bd9cb79ab68b933516de" class="pull-right">Toggle</a></li><li id="d13d648e40a7bd9cb79ab68b933516de" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-API-Key</span>: <span class="hljs-string">yourAPIKey</span><br></code></pre></li><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#d7292e82515d2784b239b17bb4e34677" class="pull-right">Toggle</a></li><li id="d7292e82515d2784b239b17bb4e34677" class="list-group-item panel-collapse collapse"><h5>Body</h5><pre><code>{
+"<span class="hljs-attribute">total</span>": <span class="hljs-value"><span class="hljs-number">670413</span></span>,
+"<span class="hljs-attribute">skip</span>": <span class="hljs-value"><span class="hljs-number">0</span></span>,
+"<span class="hljs-attribute">take</span>": <span class="hljs-value"><span class="hljs-number">2</span></span>,
+"<span class="hljs-attribute">results</span>":<span class="hljs-value">[
+    {
+        "<span class="hljs-attribute">name</span>":<span class="hljs-value"><span class="hljs-string">"USDA EVENT - Rural Small Business Connections - Pine Bluff, AR"</span></span>,
+        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"project"</span></span>,
+        "<span class="hljs-attribute">_id</span>":<span class="hljs-value"><span class="hljs-string">"5363be766c5cc8a60d8b4567"</span>
+    </span>},
+    {
+        "<span class="hljs-attribute">name</span>":<span class="hljs-value"><span class="hljs-string">"SOLE SOURCE ENGINEERING TECHNICAL SERVICES TO SUPPORT THE IMPROVED CONTROL AND DISPLAY UPGRADE TO THE SLQ-32 COUNTERMEASURE SYSTEM"</span></span>,
+        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"project"</span></span>,
+        "<span class="hljs-attribute">_id</span>":<span class="hljs-value"><span class="hljs-string">"5363be2b6c5cc8a00c8b4567"</span>
+    </span>}
+]
+</span>}
+</code></pre><h5>Schema</h5><pre><code>{
+    "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+    "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+        "<span class="hljs-attribute">total</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The total number of entities for this endpoint"</span></span>,
+            "<span class="hljs-attribute">minimum</span>" : <span class="hljs-value"><span class="hljs-number">0</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">skip</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The number of entities skipped in the response"</span></span>,
+            "<span class="hljs-attribute">default</span>": <span class="hljs-value"><span class="hljs-number">0</span></span>,
+            "<span class="hljs-attribute">maximum</span>" : <span class="hljs-value"><span class="hljs-number">250</span></span>,
+            "<span class="hljs-attribute">minimum</span>" : <span class="hljs-value"><span class="hljs-number">0</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">take</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The number of entities returned in the response"</span></span>,
+            "<span class="hljs-attribute">default</span>": <span class="hljs-value"><span class="hljs-number">25</span></span>,
+            "<span class="hljs-attribute">maximum</span>" : <span class="hljs-value"><span class="hljs-number">250</span></span>,
+            "<span class="hljs-attribute">minimum</span>" : <span class="hljs-value"><span class="hljs-number">0</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">results</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">uniqueItems</span>": <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+            "<span class="hljs-attribute">minItems</span>" : <span class="hljs-value"><span class="hljs-number">0</span></span>,
+            "<span class="hljs-attribute">maxItems</span>" : <span class="hljs-value"><span class="hljs-number">250</span></span>,
+            "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                "<span class="hljs-attribute">title</span>": <span class="hljs-value"><span class="hljs-string">"NTI"</span></span>,
+                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The name, type, and ID of an entity. Commonly referred to as an NTI"</span></span>,
+                "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+                    "<span class="hljs-attribute">name</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The name of the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">type</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">enum</span>": <span class="hljs-value">[<span class="hljs-string">"project"</span>, <span class="hljs-string">"agency"</span>, <span class="hljs-string">"office"</span>, <span class="hljs-string">"person"</span>, <span class="hljs-string">"vendor"</span>, <span class="hljs-string">"category"</span>]</span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The type of the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">_id</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span>
+                        <span class="hljs-string">"description"</span>: <span class="hljs-string">"The unique ID for the entity"</span>
+                    </span>}
+                </span>}</span>,
+                "<span class="hljs-attribute">required</span>":<span class="hljs-value">[<span class="hljs-string">"name"</span>, <span class="hljs-string">"type"</span>, <span class="hljs-string">"_id"</span>]</span>,
+            }
+            <span class="hljs-string">"required"</span>: [<span class="hljs-string">"total"</span>, <span class="hljs-string">"skip"</span>, <span class="hljs-string">"take"</span>, <span class="hljs-string">"results"</span>]     
+        </span>}
+    </span>}
+</span>}
+</code></pre></li></ul></section><h4 id="person-search-people">Search People&nbsp;<a href="#person-search-people"><i class="fa fa-link"></i></a></h4><p>Find a person by their name, email, telephone number or position.</p>
+<section id="person-search-people-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Retrieve Person Search Results</span></div><div style="float:left"><a href="#person-search-people-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/person/search/{?searchString,skip,take}</code></div></div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>searchString</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>James Smith</span></span><p>The string with which we will query the people</p>
+</dd><dt>skip</dt><dd><code>number</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>0</span></span>&nbsp;<p>The number of entities to skip.</p>
+</dd><dt>take</dt><dd><code>number</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>25</span></span>&nbsp;<p>The number of entities to return.</p>
+</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Request&nbsp;&nbsp;<code>Search Projects</code></strong><a data-toggle="collapse" data-target="#a47c78c3fc79452d8be6940ff0b9f066" class="pull-right">Toggle</a></li><li id="a47c78c3fc79452d8be6940ff0b9f066" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-API-Key</span>: <span class="hljs-string">yourAPIKey</span><br></code></pre></li><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#c8d4af3fbd13862b03995294dbfca6af" class="pull-right">Toggle</a></li><li id="c8d4af3fbd13862b03995294dbfca6af" class="list-group-item panel-collapse collapse"><h5>Body</h5><pre><code>{
+    "<span class="hljs-attribute">Hello</span>" : <span class="hljs-value"><span class="hljs-string">"You Fool"</span>
+</span>}
+</code></pre><h5>Schema</h5><pre><code>{
+    "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+    "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+        "<span class="hljs-attribute">total</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The total number of returned entities for this search"</span>                        
+        </span>}</span>,
+        "<span class="hljs-attribute">skip</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The number of entities skipped in the response"</span></span>,
+            "<span class="hljs-attribute">default</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">take</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The number of entities returned in the response"</span></span>,
+            "<span class="hljs-attribute">default</span>": <span class="hljs-value"><span class="hljs-number">25</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">results</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">uniqueItems</span>": <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+            "<span class="hljs-attribute">minItems</span>" : <span class="hljs-value"><span class="hljs-number">0</span></span>,
+            "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                "<span class="hljs-attribute">title</span>": <span class="hljs-value"><span class="hljs-string">"NTI"</span></span>,
+                "<span class="hljs-attribute">desription</span>" : <span class="hljs-value"><span class="hljs-string">"The name, type, and ID of an entity. Commonly referred to as an NTI"</span></span>,
+                "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+                    "<span class="hljs-attribute">name</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The name of the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">type</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The type of the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">_id</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The unique ID for the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">highlighted</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A snippet of text that matches the search query"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">score</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The score for a particular result"</span>
+                    </span>}
+                </span>}</span>,
+                "<span class="hljs-attribute">required</span>":<span class="hljs-value">[<span class="hljs-string">"name"</span>, <span class="hljs-string">"type"</span>, <span class="hljs-string">"_id"</span>, <span class="hljs-string">"highlighted"</span>, <span class="hljs-string">"score"</span>]
+            </span>}</span>,
+            "<span class="hljs-attribute">required</span>": <span class="hljs-value">[<span class="hljs-string">"total"</span>, <span class="hljs-string">"skip"</span>, <span class="hljs-string">"take"</span>, <span class="hljs-string">"results"</span>]     
+        </span>}
+    </span>}
+</span>}
+</code></pre></li></ul></section></div></div></div><div><div class="panel panel-default"><div class="panel-heading"><h3 id="vendor">Vendor&nbsp;<a href="#vendor"><i class="fa fa-link"></i></a></h3></div><div class="panel-body"><h4 id="vendor-vendor">Vendor&nbsp;<a href="#vendor-vendor"><i class="fa fa-link"></i></a></h4><p>An Vendor is an entity that has been awarded a Project </p>
 <section id="vendor-vendor-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Retrieve a Single Vendor</span></div><div style="float:left"><a href="#vendor-vendor-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/vendor/{_id}</code></div></div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>_id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>51f79dd2ca985f9b7c00031c</span></span><p>String <code>id</code> of the desired Vendor entity.</p>
-</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Request&nbsp;&nbsp;<code>Vendor</code></strong><a data-toggle="collapse" data-target="#3ed2c16cd8324c7b51673c948e4bdd78" class="pull-right">Toggle</a></li><li id="3ed2c16cd8324c7b51673c948e4bdd78" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-API-Key</span>: <span class="hljs-string">yourAPIKey</span><br></code></pre></li><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#92c292afac756c9764b56335578cb7b7" class="pull-right">Toggle</a></li><li id="92c292afac756c9764b56335578cb7b7" class="list-group-item panel-collapse collapse"><h5>Body</h5><pre><code>{
+</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Request&nbsp;&nbsp;<code>Vendor</code></strong><a data-toggle="collapse" data-target="#3ed2c16cd8324c7b51673c948e4bdd78" class="pull-right">Toggle</a></li><li id="3ed2c16cd8324c7b51673c948e4bdd78" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-API-Key</span>: <span class="hljs-string">yourAPIKey</span><br></code></pre></li><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#9f1ee1f69110c38161910a04965e0edd" class="pull-right">Toggle</a></li><li id="9f1ee1f69110c38161910a04965e0edd" class="list-group-item panel-collapse collapse"><h5>Body</h5><pre><code>{
     "<span class="hljs-attribute">Hello</span>" : <span class="hljs-value"><span class="hljs-string">"there"</span></span>,
     "<span class="hljs-attribute">You look</span>" : <span class="hljs-value"><span class="hljs-string">"nice"</span>
 </span>}
@@ -1006,28 +2553,329 @@ a.list-group-item.heading {
     "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
     "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
         "<span class="hljs-attribute">_id</span>" : <span class="hljs-value">{
-            "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span>
-            <span class="hljs-string">"description"</span>: <span class="hljs-string">"The unique ID for the vendor"</span>
+            "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The unique ID for the Vendor"</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">websites</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A listing of websites for this vendor"</span></span>,
+            "<span class="hljs-attribute">minLength</span>" : <span class="hljs-value"><span class="hljs-number">0</span></span>,
+            "<span class="hljs-attribute">uniqueItems</span>" : <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+            "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A uri for a vendor's website"</span></span>,
+                "<span class="hljs-attribute">format</span>" : <span class="hljs-value"><span class="hljs-string">"uri"</span>
+            </span>}
+        </span>}</span>,
+        "<span class="hljs-attribute">setAsideDesignations</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A listing of set aside designations for a vendor"</span></span>,
+            "<span class="hljs-attribute">minLength</span>" : <span class="hljs-value"><span class="hljs-number">0</span></span>,
+            "<span class="hljs-attribute">uniqueItems</span>" : <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+            "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A set aside designation for a vendor"</span></span>,
+                "<span class="hljs-attribute">enum</span>" : <span class="hljs-value">[<span class="hljs-string">"type 1"</span>, <span class="hljs-string">"type 2"</span>]
+            </span>}
+        </span>}</span>,
+        "<span class="hljs-attribute">NAICSWon</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">minLength</span>" : <span class="hljs-value"><span class="hljs-number">0</span></span>,
+            "<span class="hljs-attribute">uniqueItems</span>": <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The North American Industry Classification Code for Projects this vendor has won"</span></span>,
+            "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A  North American Industry Classification Code"</span>
+            </span>}
+        </span>}</span>,
+        "<span class="hljs-attribute">setAsideTypesWon</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">minLength</span>" : <span class="hljs-value"><span class="hljs-number">0</span></span>,
+            "<span class="hljs-attribute">uniqueItems</span>": <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The Set Aside Types for Projects this vendor has won"</span></span>,
+            "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A  Set Aside Type"</span>
+            </span>}
+        </span>}</span>,
+        "<span class="hljs-attribute">classCodesWon</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">minLength</span>" : <span class="hljs-value"><span class="hljs-number">0</span></span>,
+            "<span class="hljs-attribute">uniqueItems</span>": <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The Products and Services Class (PSC) Codes for projects this vendor has won"</span></span>,
+            "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A PSC Code"</span>
+            </span>}
+        </span>}</span>,
+        "<span class="hljs-attribute">tagsWon</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">minLength</span>" : <span class="hljs-value"><span class="hljs-number">0</span></span>,
+            "<span class="hljs-attribute">maxLength</span>" : <span class="hljs-value"><span class="hljs-number">25</span></span>,
+            "<span class="hljs-attribute">uniqueItems</span>": <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The topical tags for a projects this vendor has won, as well as its frequency"</span></span>,
+            "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A tag or topic and frequency"</span></span>,
+                "<span class="hljs-attribute">properties</span>" : <span class="hljs-value">{
+                    "<span class="hljs-attribute">tag</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A topical tag"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">count</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The number of times that tag has appeared across all projects won by the vendor"</span>
+                    </span>}
+                </span>}
+            </span>}
         </span>}</span>,
         "<span class="hljs-attribute">timestamp</span>" : <span class="hljs-value">{
             "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The date for the last time a vendor was active"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The date for the last time the vendor was active"</span></span>,
             "<span class="hljs-attribute">format</span>" : <span class="hljs-value"><span class="hljs-string">"date-time"</span>
         </span>}</span>,
         "<span class="hljs-attribute">name</span>" : <span class="hljs-value">{
             "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The name of the vendor"</span>
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The name of a project"</span>
         </span>}</span>,
         "<span class="hljs-attribute">type</span>" : <span class="hljs-value">{
             "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
             "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The type of the entity"</span></span>,
             "<span class="hljs-attribute">enum</span>" : <span class="hljs-value">[<span class="hljs-string">"vendor"</span>]
+        </span>}</span>,
+        "<span class="hljs-attribute">procurementStats</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"Procurement stats for a vendor."</span></span>,
+            "<span class="hljs-attribute">properties</span>" : <span class="hljs-value">{
+                "<span class="hljs-attribute">totalAwards</span>" : <span class="hljs-value">{
+                    "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+                    "<span class="hljs-attribute">minLength</span>" : <span class="hljs-value"><span class="hljs-number">0</span></span>,
+                    "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A list of the numbers of total awards for a vendor, broken down by year."</span></span>,
+                    "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                        "<span class="hljs-attribute">description</span>" :  <span class="hljs-value"><span class="hljs-string">"Number of total awards for a given year."</span></span>,
+                        "<span class="hljs-attribute">properties</span>" : <span class="hljs-value">{
+                            "<span class="hljs-attribute">calendarYear</span>" : <span class="hljs-value">{
+                                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A calendar year"</span>
+                            </span>}</span>,
+                            "<span class="hljs-attribute">numberOfProtests</span>" : <span class="hljs-value">{
+                                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
+                                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The number of awards."</span>
+                            </span>}
+                        </span>}
+                    </span>}
+                </span>}
+            </span>}
+
+        </span>}</span>,
+        "<span class="hljs-attribute">protestStats</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"Protest stats for a vendor."</span></span>,
+            "<span class="hljs-attribute">properties</span>" : <span class="hljs-value">{
+                "<span class="hljs-attribute">totalProtests</span>" : <span class="hljs-value">{
+                    "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+                    "<span class="hljs-attribute">minLength</span>" : <span class="hljs-value"><span class="hljs-number">0</span></span>,
+                    "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A list of the numbers of total protests for a vendor, broken down by year."</span></span>,
+                    "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                        "<span class="hljs-attribute">description</span>" :  <span class="hljs-value"><span class="hljs-string">"Number of total protests for a given year."</span></span>,
+                        "<span class="hljs-attribute">properties</span>" : <span class="hljs-value">{
+                            "<span class="hljs-attribute">calendarYear</span>" : <span class="hljs-value">{
+                                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A calendar year"</span>
+                            </span>}</span>,
+                            "<span class="hljs-attribute">numberOfProtests</span>" : <span class="hljs-value">{
+                                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
+                                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The number of protests."</span>
+                            </span>}
+                        </span>}
+                    </span>}
+                </span>}
+            </span>}
+        </span>}</span>,
+        "<span class="hljs-attribute">obligationStats</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">minLength</span>" : <span class="hljs-value"><span class="hljs-number">0</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The obligations for a vendor, broken down by year and agency."</span></span>,
+            "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"Total obligations for a given year, broken down by top 5 agencies"</span></span>,
+                "<span class="hljs-attribute">properties</span>" : <span class="hljs-value">{
+                     "<span class="hljs-attribute">totalObligations</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The total amount of obligations to a vendor for a given year"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">calendarYear</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A calendar year"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">agenciesBreakdown</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+                        "<span class="hljs-attribute">minLength</span>" : <span class="hljs-value"><span class="hljs-number">0</span></span>,
+                        "<span class="hljs-attribute">maxLength</span>" : <span class="hljs-value"><span class="hljs-number">6</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The percentage of a vendors total obligations for that year, split by agency. Top 5 listed. Remainder listed as All Other Agencies"</span></span>,
+                        "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A percentage of the vendor's obligations for a specific agency"</span></span>,
+                            "<span class="hljs-attribute">properties</span>"  : <span class="hljs-value">{
+                                "<span class="hljs-attribute">agencyName</span>" : <span class="hljs-value">{
+                                    "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                                    "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The name of the agency. Will only be an actual agency for the top 5. Remainder noted as All Other Agencies"</span>
+                                </span>}</span>,
+                                "<span class="hljs-attribute">percentage</span>" : <span class="hljs-value">{
+                                    "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
+                                    "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The percentage of a vendors total obligations for this agency"</span>
+                                </span>}
+                            </span>}
+                        </span>}
+                    </span>}
+                </span>}
+            </span>}
+        </span>}</span>,
+        "<span class="hljs-attribute">govTribeStats</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"Proprietary GovTribe stats about a vendor"</span></span>,
+            "<span class="hljs-attribute">properties</span>" : <span class="hljs-value">{
+            }
         </span>}
     </span>}
 </span>}
-</code></pre></li></ul></section></div></div></div><div><div class="panel panel-default"><div class="panel-heading"><h3 id="category">Category&nbsp;<a href="#category"><i class="fa fa-link"></i></a></h3></div><div class="panel-body"><h4 id="category-category">Category&nbsp;<a href="#category-category"><i class="fa fa-link"></i></a></h4><p>A Category is a topical grouping based on NAICS codes and PSC codes </p>
-<section id="category-category-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Retrieve a Single Category</span></div><div style="float:left"><a href="#category-category-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/category/{_id}</code></div></div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>_id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>51f79dd2ca985f9b7c00031c</span></span><p>String <code>id</code> of the desired category entity.</p>
-</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Request&nbsp;&nbsp;<code>Category</code></strong><a data-toggle="collapse" data-target="#fb7410f522a929bc88bf15049a187ed1" class="pull-right">Toggle</a></li><li id="fb7410f522a929bc88bf15049a187ed1" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-API-Key</span>: <span class="hljs-string">yourAPIKey</span><br></code></pre></li><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#52c59106f5ca1e1cc85be2828cba82b1" class="pull-right">Toggle</a></li><li id="52c59106f5ca1e1cc85be2828cba82b1" class="list-group-item panel-collapse collapse"><h5>Body</h5><pre><code>{
+</code></pre></li></ul></section><h4 id="vendor-search-vendors">Search Vendors&nbsp;<a href="#vendor-search-vendors"><i class="fa fa-link"></i></a></h4><p>Find a vendor by name.</p>
+<section id="vendor-search-vendors-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Retrieve Vendor Search Results</span></div><div style="float:left"><a href="#vendor-search-vendors-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/vendor/search/{?searchString,skip,take}</code></div></div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>searchString</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>James Smith</span></span><p>The string with which we will query the vendors</p>
+</dd><dt>skip</dt><dd><code>number</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>0</span></span>&nbsp;<p>The number of entities to skip.</p>
+</dd><dt>take</dt><dd><code>number</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>25</span></span>&nbsp;<p>The number of entities to return.</p>
+</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Request&nbsp;&nbsp;<code>Search Vendors</code></strong><a data-toggle="collapse" data-target="#35d3519ee3111087c3deb983a508a8ac" class="pull-right">Toggle</a></li><li id="35d3519ee3111087c3deb983a508a8ac" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-API-Key</span>: <span class="hljs-string">yourAPIKey</span><br></code></pre></li><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#357fca3b709948481567956edfc283d6" class="pull-right">Toggle</a></li><li id="357fca3b709948481567956edfc283d6" class="list-group-item panel-collapse collapse"><h5>Body</h5><pre><code>{
+    "<span class="hljs-attribute">Hello</span>" : <span class="hljs-value"><span class="hljs-string">"You Fool"</span>
+</span>}
+</code></pre><h5>Schema</h5><pre><code>{
+    "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+    "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+        "<span class="hljs-attribute">total</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The total number of returned entities for this search"</span>                        
+        </span>}</span>,
+        "<span class="hljs-attribute">skip</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The number of entities skipped in the response"</span></span>,
+            "<span class="hljs-attribute">default</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">take</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The number of entities returned in the response"</span></span>,
+            "<span class="hljs-attribute">default</span>": <span class="hljs-value"><span class="hljs-number">25</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">results</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">uniqueItems</span>": <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+            "<span class="hljs-attribute">minItems</span>" : <span class="hljs-value"><span class="hljs-number">0</span></span>,
+            "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                "<span class="hljs-attribute">title</span>": <span class="hljs-value"><span class="hljs-string">"NTI"</span></span>,
+                "<span class="hljs-attribute">desription</span>" : <span class="hljs-value"><span class="hljs-string">"The name, type, and ID of an entity. Commonly referred to as an NTI"</span></span>,
+                "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+                    "<span class="hljs-attribute">name</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The name of the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">type</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The type of the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">_id</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The unique ID for the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">highlighted</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A snippet of text that matches the search query"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">score</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The score for a particular result"</span>
+                    </span>}
+                </span>}</span>,
+                "<span class="hljs-attribute">required</span>":<span class="hljs-value">[<span class="hljs-string">"name"</span>, <span class="hljs-string">"type"</span>, <span class="hljs-string">"_id"</span>, <span class="hljs-string">"highlighted"</span>, <span class="hljs-string">"score"</span>]
+            </span>}</span>,
+            "<span class="hljs-attribute">required</span>": <span class="hljs-value">[<span class="hljs-string">"total"</span>, <span class="hljs-string">"skip"</span>, <span class="hljs-string">"take"</span>, <span class="hljs-string">"results"</span>]     
+        </span>}
+    </span>}
+</span>}
+</code></pre></li></ul></section><h4 id="vendor-vendor-slices">Vendor Slices&nbsp;<a href="#vendor-vendor-slices"><i class="fa fa-link"></i></a></h4><p>Returns a listing (slice) of NTIs that are related to a vendor based on the slice name. For example, the <code>agenciesThatAwardToThisVendor</code> slice will return a list of agency NTIs that have awarded projects to this vendor.</p>
+<section id="vendor-vendor-slices-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Retrieve a Slice for a Vendor</span></div><div style="float:left"><a href="#vendor-vendor-slices-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/vendor/{_id}/{slice}</code></div></div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>_id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>51f79dd2ca985f9b7c00031c</span></span><p>id of the desired vendor Entity</p>
+</dd><dt>slice</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>agenciesThatAwardToThisVendor</span></span><p>A list of entities or slice, relative to the vendor.</p>
+<p><strong>Choices:&nbsp;</strong><code>agenciesThatAwardToThisVendor</code>&nbsp;<code>officesThatAwardToThisVendor</code>&nbsp;<code>peopleThatAwardToThisVendor</code>&nbsp;<code>categoriesThatContainAwardsToThisVendor</code>&nbsp;</p></dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Request&nbsp;&nbsp;<code>Slice</code></strong><a data-toggle="collapse" data-target="#0b2c2b64edd92cefb7a9d4f579e04ff6" class="pull-right">Toggle</a></li><li id="0b2c2b64edd92cefb7a9d4f579e04ff6" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-API-Key</span>: <span class="hljs-string">yourAPIKey</span><br></code></pre></li><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#98cebd7ef7a9db43b97a13ef0496857e" class="pull-right">Toggle</a></li><li id="98cebd7ef7a9db43b97a13ef0496857e" class="list-group-item panel-collapse collapse"><h5>Body</h5><pre><code>{
+"<span class="hljs-attribute">total</span>": <span class="hljs-value"><span class="hljs-number">670413</span></span>,
+"<span class="hljs-attribute">skip</span>": <span class="hljs-value"><span class="hljs-number">0</span></span>,
+"<span class="hljs-attribute">take</span>": <span class="hljs-value"><span class="hljs-number">2</span></span>,
+"<span class="hljs-attribute">results</span>":<span class="hljs-value">[
+    {
+        "<span class="hljs-attribute">name</span>":<span class="hljs-value"><span class="hljs-string">"USDA EVENT - Rural Small Business Connections - Pine Bluff, AR"</span></span>,
+        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"project"</span></span>,
+        "<span class="hljs-attribute">_id</span>":<span class="hljs-value"><span class="hljs-string">"5363be766c5cc8a60d8b4567"</span>
+    </span>},
+    {
+        "<span class="hljs-attribute">name</span>":<span class="hljs-value"><span class="hljs-string">"SOLE SOURCE ENGINEERING TECHNICAL SERVICES TO SUPPORT THE IMPROVED CONTROL AND DISPLAY UPGRADE TO THE SLQ-32 COUNTERMEASURE SYSTEM"</span></span>,
+        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"project"</span></span>,
+        "<span class="hljs-attribute">_id</span>":<span class="hljs-value"><span class="hljs-string">"5363be2b6c5cc8a00c8b4567"</span>
+    </span>}
+]
+</span>}
+</code></pre><h5>Schema</h5><pre><code>{
+    "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+    "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+        "<span class="hljs-attribute">total</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The total number of entities for this endpoint"</span></span>,
+            "<span class="hljs-attribute">minimum</span>" : <span class="hljs-value"><span class="hljs-number">0</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">skip</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The number of entities skipped in the response"</span></span>,
+            "<span class="hljs-attribute">default</span>": <span class="hljs-value"><span class="hljs-number">0</span></span>,
+            "<span class="hljs-attribute">maximum</span>" : <span class="hljs-value"><span class="hljs-number">250</span></span>,
+            "<span class="hljs-attribute">minimum</span>" : <span class="hljs-value"><span class="hljs-number">0</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">take</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The number of entities returned in the response"</span></span>,
+            "<span class="hljs-attribute">default</span>": <span class="hljs-value"><span class="hljs-number">25</span></span>,
+            "<span class="hljs-attribute">maximum</span>" : <span class="hljs-value"><span class="hljs-number">250</span></span>,
+            "<span class="hljs-attribute">minimum</span>" : <span class="hljs-value"><span class="hljs-number">0</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">results</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">uniqueItems</span>": <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+            "<span class="hljs-attribute">minItems</span>" : <span class="hljs-value"><span class="hljs-number">0</span></span>,
+            "<span class="hljs-attribute">maxItems</span>" : <span class="hljs-value"><span class="hljs-number">250</span></span>,
+            "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                "<span class="hljs-attribute">title</span>": <span class="hljs-value"><span class="hljs-string">"NTI"</span></span>,
+                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The name, type, and ID of an entity. Commonly referred to as an NTI"</span></span>,
+                "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+                    "<span class="hljs-attribute">name</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The name of the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">type</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">enum</span>": <span class="hljs-value">[<span class="hljs-string">"project"</span>, <span class="hljs-string">"agency"</span>, <span class="hljs-string">"office"</span>, <span class="hljs-string">"person"</span>, <span class="hljs-string">"vendor"</span>, <span class="hljs-string">"category"</span>]</span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The type of the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">_id</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span>
+                        <span class="hljs-string">"description"</span>: <span class="hljs-string">"The unique ID for the entity"</span>
+                    </span>}
+                </span>}</span>,
+                "<span class="hljs-attribute">required</span>":<span class="hljs-value">[<span class="hljs-string">"name"</span>, <span class="hljs-string">"type"</span>, <span class="hljs-string">"_id"</span>]</span>,
+            }
+            <span class="hljs-string">"required"</span>: [<span class="hljs-string">"total"</span>, <span class="hljs-string">"skip"</span>, <span class="hljs-string">"take"</span>, <span class="hljs-string">"results"</span>]     
+        </span>}
+    </span>}
+</span>}
+</code></pre></li></ul></section></div></div></div><div><div class="panel panel-default"><div class="panel-heading"><h3 id="category">Category&nbsp;<a href="#category"><i class="fa fa-link"></i></a></h3></div><div class="panel-body"><h4 id="category-category">Category&nbsp;<a href="#category-category"><i class="fa fa-link"></i></a></h4><p>Categories are a hierarchical topical grouping construct. They are based on NAICS codes and PSC codes.  </p>
+<section id="category-category-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Retrieve a Single Category</span></div><div style="float:left"><a href="#category-category-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/category/{_id}</code></div></div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>_id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>51f79dd2ca985f9b7c00031c</span></span><p>String <code>id</code> of the desired Category entity.</p>
+</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Request&nbsp;&nbsp;<code>Category</code></strong><a data-toggle="collapse" data-target="#fb7410f522a929bc88bf15049a187ed1" class="pull-right">Toggle</a></li><li id="fb7410f522a929bc88bf15049a187ed1" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-API-Key</span>: <span class="hljs-string">yourAPIKey</span><br></code></pre></li><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#16d22646707c7553e18401f781e8a426" class="pull-right">Toggle</a></li><li id="16d22646707c7553e18401f781e8a426" class="list-group-item panel-collapse collapse"><h5>Body</h5><pre><code>{
     "<span class="hljs-attribute">Hello</span>" : <span class="hljs-value"><span class="hljs-string">"there"</span></span>,
     "<span class="hljs-attribute">You look</span>" : <span class="hljs-value"><span class="hljs-string">"nice"</span>
 </span>}
@@ -1035,26 +2883,756 @@ a.list-group-item.heading {
     "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
     "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
         "<span class="hljs-attribute">_id</span>" : <span class="hljs-value">{
-            "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span>
-            <span class="hljs-string">"description"</span>: <span class="hljs-string">"The unique ID for the category"</span>
+            "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The unique ID for the Category"</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">description</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A description of the category. This is so meta."</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">mappedNAICS</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">minLength</span>" : <span class="hljs-value"><span class="hljs-number">0</span></span>,
+            "<span class="hljs-attribute">uniqueItems</span>": <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The North American Industry Classification Codes that map to this category"</span></span>,
+            "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A  North American Industry Classification Code"</span>
+            </span>}
+        </span>}</span>,
+        "<span class="hljs-attribute">mappedClassCodes</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">minLength</span>" : <span class="hljs-value"><span class="hljs-number">0</span></span>,
+            "<span class="hljs-attribute">uniqueItems</span>": <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The Products and Services Class (PSC) Codes mapped to this category"</span></span>,
+            "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A PSC Code"</span>
+            </span>}
+        </span>}</span>,
+        "<span class="hljs-attribute">parentCategories</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"An array for of one or more parent categories that contain this category."</span></span>,
+            "<span class="hljs-attribute">uniqueItems</span>" : <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+            "<span class="hljs-attribute">minLength</span>" : <span class="hljs-value"><span class="hljs-number">0</span></span>,
+            "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"An NTI for the parent catgory of this category"</span></span>,
+                "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+                    "<span class="hljs-attribute">name</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The name of the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">type</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The type of the entity - namely category"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">_id</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The unique ID for the entity"</span>
+                    </span>}
+                </span>}
+            </span>}
+        </span>}</span>,
+        "<span class="hljs-attribute">childCategories</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"An array for of one or more children categories for which this category is the parent."</span></span>,
+            "<span class="hljs-attribute">uniqueItems</span>" : <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+            "<span class="hljs-attribute">minLength</span>" : <span class="hljs-value"><span class="hljs-number">0</span></span>,
+            "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"An NTI for a child catgory of this category"</span></span>,
+                "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+                    "<span class="hljs-attribute">name</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The name of the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">type</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The type of the entity - namely category"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">_id</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The unique ID for the entity"</span>
+                    </span>}
+                </span>}
+            </span>}
         </span>}</span>,
         "<span class="hljs-attribute">timestamp</span>" : <span class="hljs-value">{
             "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The date for the last time a category was active"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The date for the last time an event occurred for projects within this category"</span></span>,
             "<span class="hljs-attribute">format</span>" : <span class="hljs-value"><span class="hljs-string">"date-time"</span>
         </span>}</span>,
         "<span class="hljs-attribute">name</span>" : <span class="hljs-value">{
             "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The name of the category"</span>
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The name of a project"</span>
         </span>}</span>,
         "<span class="hljs-attribute">type</span>" : <span class="hljs-value">{
             "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The type of the entity"</span></span>,
-            "<span class="hljs-attribute">enum</span>" : <span class="hljs-value">[<span class="hljs-string">"category"</span>]
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The type of the entity"</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">procurementStats</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"Procurement stats for a category."</span></span>,
+            "<span class="hljs-attribute">properties</span>" : <span class="hljs-value">{
+                "<span class="hljs-attribute">totalAwards</span>" : <span class="hljs-value">{
+                    "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+                    "<span class="hljs-attribute">minLength</span>" : <span class="hljs-value"><span class="hljs-number">0</span></span>,
+                    "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A list of the numbers of total awards for a category, broken down by year."</span></span>,
+                    "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                        "<span class="hljs-attribute">description</span>" :  <span class="hljs-value"><span class="hljs-string">"Number of total awards for a given year."</span></span>,
+                        "<span class="hljs-attribute">properties</span>" : <span class="hljs-value">{
+                            "<span class="hljs-attribute">calendarYear</span>" : <span class="hljs-value">{
+                                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A calendar year"</span>
+                            </span>}</span>,
+                            "<span class="hljs-attribute">numberOfAwards</span>" : <span class="hljs-value">{
+                                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
+                                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The number of awards."</span>
+                            </span>}
+                        </span>}
+                    </span>}
+                </span>}
+            </span>}
+
+        </span>}</span>,
+        "<span class="hljs-attribute">obligationStats</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">minLength</span>" : <span class="hljs-value"><span class="hljs-number">0</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The obligations for a category, broken down by year and agency."</span></span>,
+            "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"Total obligations for a given year, broken down by top 5 agencies"</span></span>,
+                "<span class="hljs-attribute">properties</span>" : <span class="hljs-value">{
+                     "<span class="hljs-attribute">totalObligations</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The total amount of obligations within a category for a given year"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">calendarYear</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A calendar year"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">agenciesBreakdown</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+                        "<span class="hljs-attribute">minLength</span>" : <span class="hljs-value"><span class="hljs-number">0</span></span>,
+                        "<span class="hljs-attribute">maxLength</span>" : <span class="hljs-value"><span class="hljs-number">6</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The percentage of a category's total obligations for that year, split by agency. Top 5 listed. Remainder listed as All Other Agencies"</span></span>,
+                        "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A percentage of the category's obligations for a specific agency"</span></span>,
+                            "<span class="hljs-attribute">properties</span>"  : <span class="hljs-value">{
+                                "<span class="hljs-attribute">agencyName</span>" : <span class="hljs-value">{
+                                    "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                                    "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The name of the agency. Will only be an actual agency for the top 5. Remainder noted as All Other Agencies"</span>
+                                </span>}</span>,
+                                "<span class="hljs-attribute">percentage</span>" : <span class="hljs-value">{
+                                    "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
+                                    "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The percentage of a categories' total obligations for this agency"</span>
+                                </span>}
+                            </span>}
+                        </span>}
+                    </span>}
+                </span>}
+            </span>}
+        </span>}</span>,
+        "<span class="hljs-attribute">govTribeStats</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"Proprietary GovTribe stats about a category"</span></span>,
+            "<span class="hljs-attribute">properties</span>" : <span class="hljs-value">{
+            }
         </span>}
     </span>}
 </span>}
-</code></pre></li></ul></section></div></div></div></div></div></div><p style="text-align: center;" class="text-muted">Generated by&nbsp;<a href="https://github.com/danielgtaylor/aglio" class="aglio">aglio</a>&nbsp;on 07 May 2014</p><div id="localFile" style="display: none; position: absolute; top: 0; left: 0; width: 100%; color: white; background: red; font-size: 150%; text-align: center; padding: 1em;">This page may not display correctly when opened as a local file. Instead, view it from a web server.
+</code></pre></li></ul></section><h4 id="category-search-categories">Search Categories&nbsp;<a href="#category-search-categories"><i class="fa fa-link"></i></a></h4><p>Find a category by its name, NAICS, PSC Code, or description.</p>
+<section id="category-search-categories-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Retrieve Vendor Search Results</span></div><div style="float:left"><a href="#category-search-categories-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/category/search/{?searchString,skip,take}</code></div></div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>searchString</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>Mining</span></span><p>The string with which we will query the categories</p>
+</dd><dt>skip</dt><dd><code>number</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>0</span></span>&nbsp;<p>The number of entities to skip.</p>
+</dd><dt>take</dt><dd><code>number</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>25</span></span>&nbsp;<p>The number of entities to return.</p>
+</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Request&nbsp;&nbsp;<code>Search Vendors</code></strong><a data-toggle="collapse" data-target="#e44130c018eb7b5c72f86431ede8986d" class="pull-right">Toggle</a></li><li id="e44130c018eb7b5c72f86431ede8986d" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-API-Key</span>: <span class="hljs-string">yourAPIKey</span><br></code></pre></li><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#4a82187d86e2c604242eaf9a552f8228" class="pull-right">Toggle</a></li><li id="4a82187d86e2c604242eaf9a552f8228" class="list-group-item panel-collapse collapse"><h5>Body</h5><pre><code>{
+    "<span class="hljs-attribute">Hello</span>" : <span class="hljs-value"><span class="hljs-string">"You Fool"</span>
+</span>}
+</code></pre><h5>Schema</h5><pre><code>{
+    "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+    "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+        "<span class="hljs-attribute">total</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The total number of returned entities for this search"</span>                        
+        </span>}</span>,
+        "<span class="hljs-attribute">skip</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The number of entities skipped in the response"</span></span>,
+            "<span class="hljs-attribute">default</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">take</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The number of entities returned in the response"</span></span>,
+            "<span class="hljs-attribute">default</span>": <span class="hljs-value"><span class="hljs-number">25</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">results</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">uniqueItems</span>": <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+            "<span class="hljs-attribute">minItems</span>" : <span class="hljs-value"><span class="hljs-number">0</span></span>,
+            "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                "<span class="hljs-attribute">title</span>": <span class="hljs-value"><span class="hljs-string">"NTI"</span></span>,
+                "<span class="hljs-attribute">desription</span>" : <span class="hljs-value"><span class="hljs-string">"The name, type, and ID of an entity. Commonly referred to as an NTI"</span></span>,
+                "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+                    "<span class="hljs-attribute">name</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The name of the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">type</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The type of the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">_id</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The unique ID for the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">highlighted</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A snippet of text that matches the search query"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">score</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The score for a particular result"</span>
+                    </span>}
+                </span>}</span>,
+                "<span class="hljs-attribute">required</span>":<span class="hljs-value">[<span class="hljs-string">"name"</span>, <span class="hljs-string">"type"</span>, <span class="hljs-string">"_id"</span>, <span class="hljs-string">"highlighted"</span>, <span class="hljs-string">"score"</span>]
+            </span>}</span>,
+            "<span class="hljs-attribute">required</span>": <span class="hljs-value">[<span class="hljs-string">"total"</span>, <span class="hljs-string">"skip"</span>, <span class="hljs-string">"take"</span>, <span class="hljs-string">"results"</span>]     
+        </span>}
+    </span>}
+</span>}
+</code></pre></li></ul></section><h4 id="category-category-slices">Category Slices&nbsp;<a href="#category-category-slices"><i class="fa fa-link"></i></a></h4><p>Returns a listing (slice) of NTIs that are related to a category based on the slice name. For example, the <code>agenciesThatAwardProjectsInThisCategory</code> slice will return a list of agency NTIs that award projects within this catgeory.</p>
+<section id="category-category-slices-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Retrieve a Slice for a Category</span></div><div style="float:left"><a href="#category-category-slices-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/category/{_id}/{slice}</code></div></div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>_id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>51f79dd2ca985f9b7c00031c</span></span><p>id of the desired category</p>
+</dd><dt>slice</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>agenciesThatAwardProjectsInThisCategory</span></span><p>A list of entities or slice, relative to the category.</p>
+<p><strong>Choices:&nbsp;</strong><code>agenciesThatAwardProjectsInThisCategory</code>&nbsp;<code>officesThatAwardProjectsInThisCategory</code>&nbsp;<code>peopleThatAwardProjectsInThisCategory</code>&nbsp;<code>vendorsThatWinProjectsInThisCategory</code>&nbsp;</p></dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Request&nbsp;&nbsp;<code>Slice</code></strong><a data-toggle="collapse" data-target="#ed6b652a922c89ba804fd7926f155113" class="pull-right">Toggle</a></li><li id="ed6b652a922c89ba804fd7926f155113" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-API-Key</span>: <span class="hljs-string">yourAPIKey</span><br></code></pre></li><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#91c12d9ca7d9764adc176cb79c55db62" class="pull-right">Toggle</a></li><li id="91c12d9ca7d9764adc176cb79c55db62" class="list-group-item panel-collapse collapse"><h5>Body</h5><pre><code>{
+"<span class="hljs-attribute">total</span>": <span class="hljs-value"><span class="hljs-number">670413</span></span>,
+"<span class="hljs-attribute">skip</span>": <span class="hljs-value"><span class="hljs-number">0</span></span>,
+"<span class="hljs-attribute">take</span>": <span class="hljs-value"><span class="hljs-number">2</span></span>,
+"<span class="hljs-attribute">results</span>":<span class="hljs-value">[
+    {
+        "<span class="hljs-attribute">name</span>":<span class="hljs-value"><span class="hljs-string">"USDA EVENT - Rural Small Business Connections - Pine Bluff, AR"</span></span>,
+        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"project"</span></span>,
+        "<span class="hljs-attribute">_id</span>":<span class="hljs-value"><span class="hljs-string">"5363be766c5cc8a60d8b4567"</span>
+    </span>},
+    {
+        "<span class="hljs-attribute">name</span>":<span class="hljs-value"><span class="hljs-string">"SOLE SOURCE ENGINEERING TECHNICAL SERVICES TO SUPPORT THE IMPROVED CONTROL AND DISPLAY UPGRADE TO THE SLQ-32 COUNTERMEASURE SYSTEM"</span></span>,
+        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"project"</span></span>,
+        "<span class="hljs-attribute">_id</span>":<span class="hljs-value"><span class="hljs-string">"5363be2b6c5cc8a00c8b4567"</span>
+    </span>}
+]
+</span>}
+</code></pre><h5>Schema</h5><pre><code>{
+    "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+    "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+        "<span class="hljs-attribute">total</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The total number of entities for this endpoint"</span></span>,
+            "<span class="hljs-attribute">minimum</span>" : <span class="hljs-value"><span class="hljs-number">0</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">skip</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The number of entities skipped in the response"</span></span>,
+            "<span class="hljs-attribute">default</span>": <span class="hljs-value"><span class="hljs-number">0</span></span>,
+            "<span class="hljs-attribute">maximum</span>" : <span class="hljs-value"><span class="hljs-number">250</span></span>,
+            "<span class="hljs-attribute">minimum</span>" : <span class="hljs-value"><span class="hljs-number">0</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">take</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The number of entities returned in the response"</span></span>,
+            "<span class="hljs-attribute">default</span>": <span class="hljs-value"><span class="hljs-number">25</span></span>,
+            "<span class="hljs-attribute">maximum</span>" : <span class="hljs-value"><span class="hljs-number">250</span></span>,
+            "<span class="hljs-attribute">minimum</span>" : <span class="hljs-value"><span class="hljs-number">0</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">results</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">uniqueItems</span>": <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+            "<span class="hljs-attribute">minItems</span>" : <span class="hljs-value"><span class="hljs-number">0</span></span>,
+            "<span class="hljs-attribute">maxItems</span>" : <span class="hljs-value"><span class="hljs-number">250</span></span>,
+            "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                "<span class="hljs-attribute">title</span>": <span class="hljs-value"><span class="hljs-string">"NTI"</span></span>,
+                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The name, type, and ID of an entity. Commonly referred to as an NTI"</span></span>,
+                "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+                    "<span class="hljs-attribute">name</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The name of the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">type</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">enum</span>": <span class="hljs-value">[<span class="hljs-string">"project"</span>, <span class="hljs-string">"agency"</span>, <span class="hljs-string">"office"</span>, <span class="hljs-string">"person"</span>, <span class="hljs-string">"vendor"</span>, <span class="hljs-string">"category"</span>]</span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The type of the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">_id</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span>
+                        <span class="hljs-string">"description"</span>: <span class="hljs-string">"The unique ID for the entity"</span>
+                    </span>}
+                </span>}</span>,
+                "<span class="hljs-attribute">required</span>":<span class="hljs-value">[<span class="hljs-string">"name"</span>, <span class="hljs-string">"type"</span>, <span class="hljs-string">"_id"</span>]</span>,
+            }
+            <span class="hljs-string">"required"</span>: [<span class="hljs-string">"total"</span>, <span class="hljs-string">"skip"</span>, <span class="hljs-string">"take"</span>, <span class="hljs-string">"results"</span>]     
+        </span>}
+    </span>}
+</span>}
+</code></pre></li></ul></section></div></div></div><div><div class="panel panel-default"><div class="panel-heading"><h3 id="activity">Activity&nbsp;<a href="#activity"><i class="fa fa-link"></i></a></h3></div><div class="panel-body"><h4 id="activity-activity">Activity&nbsp;<a href="#activity-activity"><i class="fa fa-link"></i></a></h4><p>The Activity collection provides objects representing the ongoing activty of one or more of the Primary Entity types. It is a time series of the world of government procurement.</p>
+<p>A single Activity object contains actors, targets, and actions. For example, if a CO within the Bureau of Prisons awards a Mining Project named 23—Mining Contract to Acme Consulting, an Activity object is created with the actions that occurred as well as references to the involved entities.</p>
+<p>In this example, the actors are:</p>
+<ul>
+<li>An Agency - The Department of Justice</li>
+<li>An Office - The Bureau of Prisons</li>
+<li>A Person - The CO</li>
+<li>A Category - Mining</li>
+</ul>
+<p>In this example, the targets are:</p>
+<ul>
+<li>A Project - the 23—Mining Project</li>
+<li>A Vendor - Acme Consulting</li>
+</ul>
+<p>In this example, the actions are:</p>
+<ul>
+<li>Awarded = true</li>
+</ul>
+<section id="activity-activity-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Retrieve a Single Activity</span></div><div style="float:left"><a href="#activity-activity-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/activity/{_id}</code></div></div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>_id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>51f79dd2ca985f9b7c00031c</span></span><p>string <code>id</code> of the desired Activity.</p>
+</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Request&nbsp;&nbsp;<code>Activity</code></strong><a data-toggle="collapse" data-target="#4434d12d1bac99f550ad1982ffce7307" class="pull-right">Toggle</a></li><li id="4434d12d1bac99f550ad1982ffce7307" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-API-Key</span>: <span class="hljs-string">yourAPIKey</span><br></code></pre></li><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#88906875eec2a3f02a487c0f9b40ea45" class="pull-right">Toggle</a></li><li id="88906875eec2a3f02a487c0f9b40ea45" class="list-group-item panel-collapse collapse"><h5>Body</h5><pre><code>{
+    "<span class="hljs-attribute">Hello</span>" : <span class="hljs-value"><span class="hljs-string">"there"</span></span>,
+    "<span class="hljs-attribute">You look</span>" : <span class="hljs-value"><span class="hljs-string">"nice"</span>
+</span>}
+</code></pre><h5>Schema</h5><pre><code>{
+    "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+    "<span class="hljs-attribute">properties</span>" : <span class="hljs-value">{
+        "<span class="hljs-attribute">actors</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">minLength</span>" : <span class="hljs-value"><span class="hljs-number">1</span></span>,
+            "<span class="hljs-attribute">uniqueItems</span>" : <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"An array of NTIs for the Primary entities that are acting for this activity message"</span></span>,
+            "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                "<span class="hljs-attribute">title</span>" : <span class="hljs-value"><span class="hljs-string">"NTI"</span></span>,
+                "<span class="hljs-attribute">desription</span>" : <span class="hljs-value"><span class="hljs-string">"The name, type, and ID of an entity. Commonly referred to as an NTI"</span></span>,
+                "<span class="hljs-attribute">properties</span>" : <span class="hljs-value">{
+                    "<span class="hljs-attribute">name</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The name of the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">type</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">enum</span>": <span class="hljs-value">[<span class="hljs-string">"project"</span>, <span class="hljs-string">"agency"</span>, <span class="hljs-string">"office"</span>, <span class="hljs-string">"person"</span>, <span class="hljs-string">"vendor"</span>, <span class="hljs-string">"category"</span>]</span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The type of the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">_id</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The unique ID for the entity"</span>
+                    </span>}
+                </span>}
+            </span>}
+        </span>}</span>,
+        "<span class="hljs-attribute">actions</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"An array of action ojects and resulting values"</span></span>,
+            "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                "<span class="hljs-attribute">properties</span>" :
+                <span class="hljs-value">{
+                    "<span class="hljs-attribute">action</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The action that occurred"</span></span>,
+                        "<span class="hljs-attribute">enum</span>" : <span class="hljs-value">[<span class="hljs-string">"added"</span>, <span class="hljs-string">"addedAContact"</span>, <span class="hljs-string">"addedADecision"</span>, <span class="hljs-string">"addedADueDate"</span>, <span class="hljs-string">"addedANewSolicitationNumber"</span>, <span class="hljs-string">"addedASetAsideType"</span>, <span class="hljs-string">"addedASolicitationNumber"</span>, <span class="hljs-string">"addedASynopsis"</span>, <span class="hljs-string">"addedAwardValue"</span>, <span class="hljs-string">"addedFiles"</span>, <span class="hljs-string">"awarded"</span>, <span class="hljs-string">"awardedTo"</span>, <span class="hljs-string">"changedTheDueDate"</span>, <span class="hljs-string">"changedTheSetAsideType"</span>, <span class="hljs-string">"changedTheSynopsis"</span>, <span class="hljs-string">"changedTheWorkflowStatusTo"</span>, <span class="hljs-string">"issuedMultipleAwards"</span>, <span class="hljs-string">"named"</span>, <span class="hljs-string">"removedAContact"</span>, <span class="hljs-string">"removedTheDueDate"</span>, <span class="hljs-string">"removedTheSetAsideType"</span>, <span class="hljs-string">"renamed"</span>, <span class="hljs-string">"setTheProtestedProjectTo"</span>, <span class="hljs-string">"setTheProtestingPartyTo"</span>, <span class="hljs-string">"setTheWorkflowStatusTo"</span>, <span class="hljs-string">"updated"</span>]    
+                    </span>}</span>,
+                    "<span class="hljs-attribute">value</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value">[<span class="hljs-string">"string"</span>, <span class="hljs-string">"boolean"</span>, <span class="hljs-string">"number"</span>]</span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The value associated with the action."</span>
+                    </span>}
+                </span>}
+
+            </span>}
+        </span>}</span>, 
+        "<span class="hljs-attribute">participants</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">minLength</span>" : <span class="hljs-value"><span class="hljs-number">1</span></span>,
+            "<span class="hljs-attribute">uniqueItems</span>" : <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"An array of entity ids for both the actors and targets"</span></span>,
+            "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"An id for an entity invloved in this activity message"</span>
+            </span>}
+        </span>}</span>,    
+        "<span class="hljs-attribute">targets</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">minLength</span>" : <span class="hljs-value"><span class="hljs-number">1</span></span>,
+            "<span class="hljs-attribute">uniqueItems</span>" : <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"An array of NTIs for the Primary entities that are being acted upon for this activity message"</span></span>,
+            "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                "<span class="hljs-attribute">title</span>" : <span class="hljs-value"><span class="hljs-string">"NTI"</span></span>,
+                "<span class="hljs-attribute">desription</span>" : <span class="hljs-value"><span class="hljs-string">"The name, type, and ID of an entity. Commonly referred to as an NTI"</span></span>,
+                "<span class="hljs-attribute">properties</span>" : <span class="hljs-value">{
+                    "<span class="hljs-attribute">name</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The name of the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">type</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">enum</span>": <span class="hljs-value">[<span class="hljs-string">"project"</span>, <span class="hljs-string">"agency"</span>, <span class="hljs-string">"office"</span>, <span class="hljs-string">"person"</span>, <span class="hljs-string">"vendor"</span>, <span class="hljs-string">"category"</span>, <span class="hljs-string">"protest"</span>]</span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The type of the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">_id</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The unique ID for the entity"</span>
+                    </span>}
+                </span>}
+            </span>}
+        </span>}</span>,
+        "<span class="hljs-attribute">timestamp</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The date this activity occurred"</span></span>,
+            "<span class="hljs-attribute">format</span>" : <span class="hljs-value"><span class="hljs-string">"date-time"</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">name</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The name of this activity."</span></span>,
+            "<span class="hljs-attribute">enum</span>" : <span class="hljs-value">[<span class="hljs-string">"Project Activity Message"</span>, <span class="hljs-string">"Protest Activity Message"</span>]
+        </span>}</span>,
+        "<span class="hljs-attribute">type</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The type of the object. Namely activity"</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">activityType</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The type of the activity object."</span></span>,
+            "<span class="hljs-attribute">enum</span>" : <span class="hljs-value">[<span class="hljs-string">"forecast"</span>, <span class="hljs-string">"posting"</span>, <span class="hljs-string">"update"</span>, <span class="hljs-string">"cancelation"</span>, <span class="hljs-string">"award"</span>, <span class="hljs-string">"protest"</span>, <span class="hljs-string">"obligation"</span>, <span class="hljs-string">"recompete"</span>, <span class="hljs-string">"announcement"</span>]
+        </span>}
+    </span>}
+</span>}
+</code></pre></li></ul></section><h4 id="activity-activity-feed">Activity Feed&nbsp;<a href="#activity-activity-feed"><i class="fa fa-link"></i></a></h4><p>Retrieving multiple activity objects for one or more of the primay entities produces an activity feed. This is accomplished by submitting an array of <code>_id</code> properties to the <code>feed</code> endpoint along with a timestampRange. </p>
+<p>For example, let’s say you are interested in seeing a year’s worth of contracting activity for the U.S. Department of Agriculture. For this example, you would submit the <code>_id</code> property of the USDA agency entity and a timestampRange of now-31556926 to the <code>feed</code> endpoint. </p>
+<p>You can combine multiple <code>_id</code> properties in the submitted array to get an integrated activity feed for multiple entities. </p>
+<p>For example, let’s say you are interested in seeing the contracting activty for 3 different person entities. For this exampe, you will submit the three <code>_id</code> strings (in an array) to the <code>feed</code> endpoint.</p>
+<section id="activity-activity-feed-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Retrieve an Activity Feed</span></div><div style="float:left"><a href="#activity-activity-feed-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/activity/feed/{arrayOfEntityIDs,timestampRange}</code></div></div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>arrayOfEntityIDs</dt><dd><code>array</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>51f79dd2ca985f9b7c00031c</span></span><p>one or more <code>id</code> strings for the desired entities. If this paramter is not provided, the activity feed for all entities will be returned.</p>
+</dd><dt>timestampRange</dt><dd><code>number</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>now-31556926</span></span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>1399822866</span></span><p>the distance back in time for a particular call as a miliseconds since epoch.</p>
+</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Request&nbsp;&nbsp;<code>Activity</code></strong><a data-toggle="collapse" data-target="#2b74f2566e4b0807912f5e911d504b28" class="pull-right">Toggle</a></li><li id="2b74f2566e4b0807912f5e911d504b28" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-API-Key</span>: <span class="hljs-string">yourAPIKey</span><br></code></pre></li><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#feee8c01fb00df8baafc214109e88380" class="pull-right">Toggle</a></li><li id="feee8c01fb00df8baafc214109e88380" class="list-group-item panel-collapse collapse"><h5>Body</h5><pre><code>{
+    "<span class="hljs-attribute">Hello</span>" : <span class="hljs-value"><span class="hljs-string">"there"</span></span>,
+    "<span class="hljs-attribute">You look</span>" : <span class="hljs-value"><span class="hljs-string">"nice"</span>
+</span>}
+</code></pre><h5>Schema</h5><pre><code>{
+    "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+    "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"An activity feed for one or more entities. Paginated and sorted by activity timestamp."</span></span>,
+    "<span class="hljs-attribute">properties</span>" : <span class="hljs-value">{
+        "<span class="hljs-attribute">entityIDs</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">uniqueItems</span>" : <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"entity IDs for the requested activity feed"</span></span>,
+            "<span class="hljs-attribute">minLength</span>" : <span class="hljs-value"><span class="hljs-number">0</span></span>,
+            "<span class="hljs-attribute">maxLength</span>" : <span class="hljs-value"><span class="hljs-number">30</span></span>,
+            "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"An entity id"</span>
+            </span>}    
+        </span>}</span>,
+        "<span class="hljs-attribute">timestampRange</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"the distance back in time for a particular call as a miliseconds since epoch."</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">results</span>" : <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">uniqueItems</span>" : <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The activity objects for submitted set of entity IDs"</span></span>,
+            "<span class="hljs-attribute">minLength</span>" : <span class="hljs-value"><span class="hljs-number">0</span></span>,
+            "<span class="hljs-attribute">maxLength</span>" : <span class="hljs-value"><span class="hljs-number">30</span></span>,
+            "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                "<span class="hljs-attribute">properties</span>" : <span class="hljs-value">{
+                    "<span class="hljs-attribute">actors</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+                        "<span class="hljs-attribute">minLength</span>" : <span class="hljs-value"><span class="hljs-number">1</span></span>,
+                        "<span class="hljs-attribute">uniqueItems</span>" : <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"An array of NTIs for the Primary entities that are acting for this activity message"</span></span>,
+                        "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
+                            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                            "<span class="hljs-attribute">title</span>" : <span class="hljs-value"><span class="hljs-string">"NTI"</span></span>,
+                            "<span class="hljs-attribute">desription</span>" : <span class="hljs-value"><span class="hljs-string">"The name, type, and ID of an entity. Commonly referred to as an NTI"</span></span>,
+                            "<span class="hljs-attribute">properties</span>" : <span class="hljs-value">{
+                                "<span class="hljs-attribute">name</span>": <span class="hljs-value">{
+                                    "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                                    "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The name of the entity"</span>
+                                </span>}</span>,
+                                "<span class="hljs-attribute">type</span>" : <span class="hljs-value">{
+                                    "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                                    "<span class="hljs-attribute">enum</span>": <span class="hljs-value">[<span class="hljs-string">"project"</span>, <span class="hljs-string">"agency"</span>, <span class="hljs-string">"office"</span>, <span class="hljs-string">"person"</span>, <span class="hljs-string">"vendor"</span>, <span class="hljs-string">"category"</span>]</span>,
+                                    "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The type of the entity"</span>
+                                </span>}</span>,
+                                "<span class="hljs-attribute">_id</span>" : <span class="hljs-value">{
+                                    "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                                    "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The unique ID for the entity"</span>
+                                </span>}
+                            </span>}
+                        </span>}
+                    </span>}</span>,
+                    "<span class="hljs-attribute">actions</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"An array of action ojects and resulting values"</span></span>,
+                        "<span class="hljs-attribute">items</span>" : <span class="hljs-value">{
+                            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                            "<span class="hljs-attribute">properties</span>" :
+                            <span class="hljs-value">{
+                                "<span class="hljs-attribute">action</span>" : <span class="hljs-value">{
+                                    "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                                    "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The action that occurred"</span></span>,
+                                    "<span class="hljs-attribute">enum</span>" : <span class="hljs-value">[<span class="hljs-string">"added"</span>, <span class="hljs-string">"addedAContact"</span>, <span class="hljs-string">"addedADecision"</span>, <span class="hljs-string">"addedADueDate"</span>, <span class="hljs-string">"addedANewSolicitationNumber"</span>, <span class="hljs-string">"addedASetAsideType"</span>, <span class="hljs-string">"addedASolicitationNumber"</span>, <span class="hljs-string">"addedASynopsis"</span>, <span class="hljs-string">"addedAwardValue"</span>, <span class="hljs-string">"addedFiles"</span>, <span class="hljs-string">"awarded"</span>, <span class="hljs-string">"awardedTo"</span>, <span class="hljs-string">"changedTheDueDate"</span>, <span class="hljs-string">"changedTheSetAsideType"</span>, <span class="hljs-string">"changedTheSynopsis"</span>, <span class="hljs-string">"changedTheWorkflowStatusTo"</span>, <span class="hljs-string">"issuedMultipleAwards"</span>, <span class="hljs-string">"named"</span>, <span class="hljs-string">"removedAContact"</span>, <span class="hljs-string">"removedTheDueDate"</span>, <span class="hljs-string">"removedTheSetAsideType"</span>, <span class="hljs-string">"renamed"</span>, <span class="hljs-string">"setTheProtestedProjectTo"</span>, <span class="hljs-string">"setTheProtestingPartyTo"</span>, <span class="hljs-string">"setTheWorkflowStatusTo"</span>, <span class="hljs-string">"updated"</span>]    
+                                </span>}</span>,
+                                "<span class="hljs-attribute">value</span>" : <span class="hljs-value">{
+                                    "<span class="hljs-attribute">type</span>" : <span class="hljs-value">[<span class="hljs-string">"string"</span>, <span class="hljs-string">"boolean"</span>, <span class="hljs-string">"number"</span>]</span>,
+                                    "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The value associated with the action."</span>
+                                </span>}
+                            </span>}
+
+                        </span>}
+                    </span>}</span>, 
+                    "<span class="hljs-attribute">participants</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+                        "<span class="hljs-attribute">minLength</span>" : <span class="hljs-value"><span class="hljs-number">1</span></span>,
+                        "<span class="hljs-attribute">uniqueItems</span>" : <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"An array of entity ids for both the actors and targets"</span></span>,
+                        "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
+                            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                            "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"An id for an entity invloved in this activity message"</span>
+                        </span>}
+                    </span>}</span>,    
+                    "<span class="hljs-attribute">targets</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+                        "<span class="hljs-attribute">minLength</span>" : <span class="hljs-value"><span class="hljs-number">1</span></span>,
+                        "<span class="hljs-attribute">uniqueItems</span>" : <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"An array of NTIs for the Primary entities that are being acted upon for this activity message"</span></span>,
+                        "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
+                            "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                            "<span class="hljs-attribute">title</span>" : <span class="hljs-value"><span class="hljs-string">"NTI"</span></span>,
+                            "<span class="hljs-attribute">desription</span>" : <span class="hljs-value"><span class="hljs-string">"The name, type, and ID of an entity. Commonly referred to as an NTI"</span></span>,
+                            "<span class="hljs-attribute">properties</span>" : <span class="hljs-value">{
+                                "<span class="hljs-attribute">name</span>": <span class="hljs-value">{
+                                    "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                                    "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The name of the entity"</span>
+                                </span>}</span>,
+                                "<span class="hljs-attribute">type</span>" : <span class="hljs-value">{
+                                    "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                                    "<span class="hljs-attribute">enum</span>": <span class="hljs-value">[<span class="hljs-string">"project"</span>, <span class="hljs-string">"agency"</span>, <span class="hljs-string">"office"</span>, <span class="hljs-string">"person"</span>, <span class="hljs-string">"vendor"</span>, <span class="hljs-string">"category"</span>, <span class="hljs-string">"protest"</span>]</span>,
+                                    "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The type of the entity"</span>
+                                </span>}</span>,
+                                "<span class="hljs-attribute">_id</span>" : <span class="hljs-value">{
+                                    "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                                    "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The unique ID for the entity"</span>
+                                </span>}
+                            </span>}
+                        </span>}
+                    </span>}</span>,
+                    "<span class="hljs-attribute">timestamp</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The date this activity occurred"</span></span>,
+                        "<span class="hljs-attribute">format</span>" : <span class="hljs-value"><span class="hljs-string">"date-time"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">name</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The name of this activity."</span></span>,
+                        "<span class="hljs-attribute">enum</span>" : <span class="hljs-value">[<span class="hljs-string">"Project Activity Message"</span>, <span class="hljs-string">"Protest Activity Message"</span>]
+                    </span>}</span>,
+                    "<span class="hljs-attribute">type</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The type of the object. Namely activity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">activityType</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The type of the activity object."</span></span>,
+                        "<span class="hljs-attribute">enum</span>" : <span class="hljs-value">[<span class="hljs-string">"forecast"</span>, <span class="hljs-string">"posting"</span>, <span class="hljs-string">"update"</span>, <span class="hljs-string">"cancelation"</span>, <span class="hljs-string">"award"</span>, <span class="hljs-string">"protest"</span>, <span class="hljs-string">"obligation"</span>, <span class="hljs-string">"recompete"</span>, <span class="hljs-string">"announcement"</span>]
+                    </span>}
+                </span>}
+            </span>}
+        </span>}
+    </span>}
+</span>}    
+</code></pre></li></ul></section></div></div></div><div><div class="panel panel-default"><div class="panel-heading"><h3 id="protest">Protest&nbsp;<a href="#protest"><i class="fa fa-link"></i></a></h3></div><div class="panel-body"><h4 id="protest-protest">Protest&nbsp;<a href="#protest-protest"><i class="fa fa-link"></i></a></h4><p>The laws and regulations that govern contracting with the federal government are designed to ensure that federal procurements are conducted fairly and, whenever possible, in a way that maximizes competition. On occasion, however, bidders or others interested in government procurements may have reason to believe that a contract has been or is about to be awarded improperly or illegally, or that they have been unfairly denied a contract or an opportunity to compete for a contract. </p>
+<p>A major avenue of relief for those concerned about the propriety of an award has been the General Accounting Office, which for almost 75 years has provided an objective, independent, and impartial forum for the resolution of disputes concerning the awards of federal contracts.</p>
+<p>Each of these disputes is a protest object.</p>
+<section id="protest-protest-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Retrieve a Single Protest</span></div><div style="float:left"><a href="#protest-protest-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/protest/{_id}</code></div></div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>_id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>51f79dd2ca985f9b7c00031c</span></span><p>String <code>id</code> of the desired protest entity.</p>
+</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Request&nbsp;&nbsp;<code>Vendor</code></strong><a data-toggle="collapse" data-target="#e0ce1d8fbbddd4cfaa5881268d5023a9" class="pull-right">Toggle</a></li><li id="e0ce1d8fbbddd4cfaa5881268d5023a9" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-API-Key</span>: <span class="hljs-string">yourAPIKey</span><br></code></pre></li><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#c009168122e2fff03f07a2ea40b81e5b" class="pull-right">Toggle</a></li><li id="c009168122e2fff03f07a2ea40b81e5b" class="list-group-item panel-collapse collapse"><h5>Body</h5><pre><code>{
+    "<span class="hljs-attribute">Hello</span>" : <span class="hljs-value"><span class="hljs-string">"there"</span></span>,
+    "<span class="hljs-attribute">You look</span>" : <span class="hljs-value"><span class="hljs-string">"nice"</span>
+</span>}
+</code></pre><h5>Schema</h5><pre><code>{
+    <span class="hljs-string">"type"</span>: <span class="hljs-string">"object"</span>,
+    <span class="hljs-string">"properties"</span>: {
+        <span class="hljs-string">"_id"</span> : {
+            <span class="hljs-string">"type"</span>:<span class="hljs-string">"string"</span>,
+            <span class="hljs-string">"description"</span>: <span class="hljs-string">"The unique ID for the protest"</span>
+        },
+        <span class="hljs-string">"timestamp"</span> : {
+            <span class="hljs-string">"type"</span> : <span class="hljs-string">"string"</span>,
+            <span class="hljs-string">"description"</span> : <span class="hljs-string">"The date for the last time the protest was active"</span>,
+            <span class="hljs-string">"format"</span> : <span class="hljs-string">"date-time"</span>
+        },
+        <span class="hljs-string">"name"</span> : {
+            <span class="hljs-string">"type"</span> : <span class="hljs-string">"string"</span>,
+            <span class="hljs-string">"description"</span> : <span class="hljs-string">"The name of a protest"</span>
+        },
+        <span class="hljs-string">"type"</span> : {
+            <span class="hljs-string">"type"</span> : <span class="hljs-string">"string"</span>,
+            <span class="hljs-string">"description"</span> : <span class="hljs-string">"The type of the entity"</span>,
+            <span class="hljs-string">"enum"</span> : <span class="hljs-matrix">[<span class="hljs-string">"protest"</span>]</span>
+        },
+        },
+        <span class="hljs-string">"status"</span> : {
+            <span class="hljs-string">"type"</span> : <span class="hljs-string">"string"</span>,
+            <span class="hljs-string">"description"</span> : <span class="hljs-string">"The status of the protest"</span>,
+            <span class="hljs-string">"enum"</span> : <span class="hljs-matrix">[<span class="hljs-string">"Withdrawn"</span>, <span class="hljs-string">"Denied"</span>, <span class="hljs-string">"Sustained"</span>, <span class="hljs-string">"Dismissed"</span>]</span>
+        },
+        <span class="hljs-string">"decisionURI"</span> : {
+            <span class="hljs-string">"type"</span> : <span class="hljs-string">"string"</span>,
+            <span class="hljs-string">"description"</span> : <span class="hljs-string">"Link to the decision on GAO'</span>s website<span class="hljs-string">",
+            "</span>items<span class="hljs-string">" : {
+                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                "</span>description<span class="hljs-string">" : "</span>A link to the decision<span class="hljs-string">",
+                "</span>format<span class="hljs-string">" : "</span>uri<span class="hljs-string">"
+            }
+        },
+        "</span>decision<span class="hljs-string">" : {
+            "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+            "</span>description<span class="hljs-string">" : "</span>Text of the decision<span class="hljs-string">",
+            "</span>items<span class="hljs-string">" : {
+                "</span>type<span class="hljs-string">" : "</span>string<span class="hljs-string">",
+                "</span>description<span class="hljs-string">" : "</span>Text of the decision<span class="hljs-string">",
+            }
+        },
+       "</span>agencies<span class="hljs-string">" : {
+            "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">"
+            "</span>description<span class="hljs-string">" : "</span>The NTIs <span class="hljs-keyword">for</span> all agencies related to this person<span class="hljs-string">",
+            "</span>items<span class="hljs-string">" : {
+                "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                "</span>description<span class="hljs-string">" : "</span>An NTI <span class="hljs-keyword">for</span> a n agency<span class="hljs-string">",
+                "</span>properties<span class="hljs-string">": {
+                    "</span>name<span class="hljs-string">": {
+                        "</span>type<span class="hljs-string">":"</span>string<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">": "</span>The name of the agency<span class="hljs-string">"
+                    },
+                    "</span>type<span class="hljs-string">": {
+                        "</span>type<span class="hljs-string">":"</span>string<span class="hljs-string">",
+                        "</span>enum<span class="hljs-string">": ["</span>agency<span class="hljs-string">"],
+                        "</span>description<span class="hljs-string">": "</span>The type of the entity<span class="hljs-string">"
+                    },
+                    "</span>_id<span class="hljs-string">": {
+                        "</span>type<span class="hljs-string">":"</span>string<span class="hljs-string">"
+                        "</span>description<span class="hljs-string">": "</span>The unique ID <span class="hljs-keyword">for</span> the entity<span class="hljs-string">"
+                    }
+                }
+            }
+        },
+        "</span>offices<span class="hljs-string">" : {
+            "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">"
+            "</span>description<span class="hljs-string">" : "</span>The NTIs <span class="hljs-keyword">for</span> all offices related to this person<span class="hljs-string">",
+            "</span>items<span class="hljs-string">" : {
+                "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                "</span>description<span class="hljs-string">" : "</span>An NTI <span class="hljs-keyword">for</span> an office<span class="hljs-string">",
+                "</span>properties<span class="hljs-string">": {
+                    "</span>name<span class="hljs-string">": {
+                        "</span>type<span class="hljs-string">":"</span>string<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">": "</span>The name of the office<span class="hljs-string">"
+                    },
+                    "</span>type<span class="hljs-string">": {
+                        "</span>type<span class="hljs-string">":"</span>string<span class="hljs-string">",
+                        "</span>enum<span class="hljs-string">": ["</span>office<span class="hljs-string">"],
+                        "</span>description<span class="hljs-string">": "</span>The type of the entity<span class="hljs-string">"
+                    },
+                    "</span>_id<span class="hljs-string">": {
+                        "</span>type<span class="hljs-string">":"</span>string<span class="hljs-string">"
+                        "</span>description<span class="hljs-string">": "</span>The unique ID <span class="hljs-keyword">for</span> the entity<span class="hljs-string">"
+                    }
+                }
+            }
+        },
+        "</span>protesters<span class="hljs-string">" : {
+            "</span>type<span class="hljs-string">" : "</span>array<span class="hljs-string">"
+            "</span>description<span class="hljs-string">" : "</span>The NTIs <span class="hljs-keyword">for</span> all protesters related to this protest<span class="hljs-string">",
+            "</span>items<span class="hljs-string">" : {
+                "</span>type<span class="hljs-string">" : "</span>object<span class="hljs-string">",
+                "</span>description<span class="hljs-string">" : "</span>An NTI <span class="hljs-keyword">for</span> an entity<span class="hljs-string">",
+                "</span>properties<span class="hljs-string">": {
+                    "</span>name<span class="hljs-string">": {
+                        "</span>type<span class="hljs-string">":"</span>string<span class="hljs-string">",
+                        "</span>description<span class="hljs-string">": "</span>The name of the entity<span class="hljs-string">"
+                    },
+                    "</span>type<span class="hljs-string">": {
+                        "</span>type<span class="hljs-string">":"</span>string<span class="hljs-string">",
+                        "</span>enum<span class="hljs-string">": ["</span>agency<span class="hljs-string">", "</span>vendor<span class="hljs-string">"],
+                        "</span>description<span class="hljs-string">": "</span>The type of the entity<span class="hljs-string">"
+                    },
+                    "</span>_id<span class="hljs-string">": {
+                        "</span>type<span class="hljs-string">":"</span>string<span class="hljs-string">"
+                        "</span>description<span class="hljs-string">": "</span>The unique ID <span class="hljs-keyword">for</span> the entity<span class="hljs-string">"
+                    }
+                }
+            }
+        }
+    }
+}
+</span></code></pre></li></ul></section><h4 id="protest-search-protests">Search Protests&nbsp;<a href="#protest-search-protests"><i class="fa fa-link"></i></a></h4><p>Find a protest by…</p>
+<section id="protest-search-protests-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Retrieve Protest Search Results</span></div><div style="float:left"><a href="#protest-search-protests-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/protest/search/{?searchString,skip,take}</code></div></div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>searchString</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>James Smith</span></span><p>The string with which we will query the vendors</p>
+</dd><dt>skip</dt><dd><code>number</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>0</span></span>&nbsp;<p>The number of entities to skip.</p>
+</dd><dt>take</dt><dd><code>number</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>25</span></span>&nbsp;<p>The number of entities to return.</p>
+</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Request&nbsp;&nbsp;<code>Search Protests</code></strong><a data-toggle="collapse" data-target="#b9ec1b71beb4968501d82557cdbcf6d7" class="pull-right">Toggle</a></li><li id="b9ec1b71beb4968501d82557cdbcf6d7" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-API-Key</span>: <span class="hljs-string">yourAPIKey</span><br></code></pre></li><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#871eccbb791706f8ed8cc091f309b385" class="pull-right">Toggle</a></li><li id="871eccbb791706f8ed8cc091f309b385" class="list-group-item panel-collapse collapse"><h5>Body</h5><pre><code>{
+    "<span class="hljs-attribute">Hello</span>" : <span class="hljs-value"><span class="hljs-string">"You Fool"</span>
+</span>}
+</code></pre><h5>Schema</h5><pre><code>{
+    "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+    "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+        "<span class="hljs-attribute">total</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The total number of returned entities for this search"</span>                        
+        </span>}</span>,
+        "<span class="hljs-attribute">skip</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The number of entities skipped in the response"</span></span>,
+            "<span class="hljs-attribute">default</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">take</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The number of entities returned in the response"</span></span>,
+            "<span class="hljs-attribute">default</span>": <span class="hljs-value"><span class="hljs-number">25</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">results</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+            "<span class="hljs-attribute">uniqueItems</span>": <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+            "<span class="hljs-attribute">minItems</span>" : <span class="hljs-value"><span class="hljs-number">0</span></span>,
+            "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                "<span class="hljs-attribute">title</span>": <span class="hljs-value"><span class="hljs-string">"NTI"</span></span>,
+                "<span class="hljs-attribute">desription</span>" : <span class="hljs-value"><span class="hljs-string">"The name, type, and ID of an entity. Commonly referred to as an NTI"</span></span>,
+                "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+                    "<span class="hljs-attribute">name</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The name of the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">type</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The type of the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">_id</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>":<span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"The unique ID for the entity"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">highlighted</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"A snippet of text that matches the search query"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">score</span>" : <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>" : <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
+                        "<span class="hljs-attribute">description</span>" : <span class="hljs-value"><span class="hljs-string">"The score for a particular result"</span>
+                    </span>}
+                </span>}</span>,
+                "<span class="hljs-attribute">required</span>":<span class="hljs-value">[<span class="hljs-string">"name"</span>, <span class="hljs-string">"type"</span>, <span class="hljs-string">"_id"</span>, <span class="hljs-string">"highlighted"</span>, <span class="hljs-string">"score"</span>]
+            </span>}</span>,
+            "<span class="hljs-attribute">required</span>": <span class="hljs-value">[<span class="hljs-string">"total"</span>, <span class="hljs-string">"skip"</span>, <span class="hljs-string">"take"</span>, <span class="hljs-string">"results"</span>]     
+        </span>}
+    </span>}
+</span>}
+</code></pre></li></ul></section></div></div></div></div></div></div><p style="text-align: center;" class="text-muted">Generated by&nbsp;<a href="https://github.com/danielgtaylor/aglio" class="aglio">aglio</a>&nbsp;on 14 May 2014</p><div id="localFile" style="display: none; position: absolute; top: 0; left: 0; width: 100%; color: white; background: red; font-size: 150%; text-align: center; padding: 1em;">This page may not display correctly when opened as a local file. Instead, view it from a web server.
 
 </div></body><script src="//code.jquery.com/jquery-1.11.0.min.js"></script><script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script><script>(function() {
   if (location.protocol === 'file:') {

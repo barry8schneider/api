@@ -186,7 +186,7 @@ class APIController extends BaseController {
 	 * @param  string   $message
 	 * @return Response
 	 */
-	protected function respondWithError($message)
+	public function respondWithError($message)
 	{
 		return $this->respondWithArray([ 
 			'error' => [
