@@ -1,7 +1,6 @@
 <?php namespace GovTribe\Transformers;
 
-use GovTribe\Models\Vendor;
-use GovTribe\Models\APICollection as APICollection;
+use Carbon\Carbon;
 
 class VendorTransformer extends Transformer
 {
@@ -33,18 +32,19 @@ class VendorTransformer extends Transformer
 					'name' => $entity->name ? $entity->name : self::NULL_TEXT,
 					'type' => 'vendor',
 					'_id' => (string) $entity->_id,
+					'timestamp'  => $entity->timestamp ? Carbon::createFromTimeStamp($entity->timestamp->sec)->toISO8601String() : self::NULL_TIMESTAMP,
 					'websites'  => $entity->sourceLinks ? $entity->sourceLinks : self::NULL_TEXT,
 
 					'procurementStats' => [
-						'NAICSWon' => isset($entity->market['characteristics']['topNAICSs']) ? array_keys($entity->market['characteristics']['topNAICSs']) : self::EMPTY_NTI_ARRAY,
-						'setAsideTypesWon' => isset($entity->market['characteristics']['setAsideType']) ? array_keys($entity->market['characteristics']['setAsideType']) : self::EMPTY_NTI_ARRAY,
-						'classCodesWon' => isset($entity->market['characteristics']['topClassCodes']) ? array_keys($entity->market['characteristics']['topClassCodes']) : self::EMPTY_NTI_ARRAY,
-						'numbersOfAwards' => isset($entity->market['characteristics']['awardsPerYear']) ? $entity->market['characteristics']['awardsPerYear'] : self::EMPTY_NTI_ARRAY,
-						'awardDollarFlow' => isset($entity->market['dollarFlow']) ? $entity->market['dollarFlow'] : self::EMPTY_NTI_ARRAY,
+						'NAICSWon' => $entity->NAICSWon ? $entity->NAICSWon : self::EMPTY_NTI_ARRAY,
+						'setAsideTypesWon' => $entity->setAsideTypesWon ? $entity->setAsideTypesWon : self::EMPTY_NTI_ARRAY,
+						'classCodesWon' => $entity->classCodesWon ? $entity->classCodesWon : self::EMPTY_NTI_ARRAY,
+						'numbersOfAwards' => $entity->numbersOfAwards ? $entity->numbersOfAwards : self::EMPTY_NTI_ARRAY,
+						'awardDollarFlow' => $entity->awardDollarFlow ? $entity->awardDollarFlow : self::EMPTY_NTI_ARRAY,
 					],
 
 					'protestStats' => [
-						'totalProtests' => isset($entity->market['characteristics']['protestsPerYear']) ? $entity->market['characteristics']['protestsPerYear'] : self::EMPTY_NTI_ARRAY,
+						'totalProtests' => $entity->totalProtests ? $entity->totalProtests : self::EMPTY_NTI_ARRAY,
 					],
 				);
 

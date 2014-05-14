@@ -22,6 +22,8 @@ class Project extends APIEntity {
 			{
 				foreach ($packageGroup as $packageName => $packageDetails)
 				{
+					if (!$packageDetails) continue;
+
 					foreach ($packageDetails as &$packageDetailItem)
 					{
 						if (!isset($packageDetailItem['uri'])) continue;
@@ -54,6 +56,24 @@ class Project extends APIEntity {
 		}
 
 		return $output;
+	}
+
+	public function getDueDatesByStatusAttribute($value)
+	{
+		if (!$value)
+		{
+			$value = [
+				[
+					'dueDateType' => 'Presolicitation Response',
+					'date' => self::NULL_TEXT,
+				],
+				[
+					'dueDateType' => 'Complete Response',
+					'date' => self::NULL_TEXT,
+				]
+			];
+		}
+		else return $value;
 	}
 
 	// Get all of the project's synopsis by loading its raws
@@ -153,6 +173,8 @@ class Project extends APIEntity {
 				$count = $vendor['c'];
 				$vendor = \GovTribe\Models\Vendor::find($vendor['_id'], ['name']);
 
+				if (!$vendor) continue;
+
 				$vendor = [
 					'name' => $vendor->name,
 					'type' => 'vendor',
@@ -161,7 +183,7 @@ class Project extends APIEntity {
 				];
 			}
 
-			return $agg['result'];
+			return array_values(array_filter($agg['result']));
 		}
 	}
 }

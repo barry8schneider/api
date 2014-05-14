@@ -99,10 +99,10 @@ class AgencyController extends APIController {
 	public function getSlice($id, $sliceName)
 	{
 		$entity = $this->entity->find($id, ['_id']);
-
+		
 		if (!$entity)
 		{
-			return $this->errorNotFound('Did you just invent an id and try loading an agency?');
+			return $this->index();
 		}
 		else
 		{
@@ -116,7 +116,7 @@ class AgencyController extends APIController {
 
 			$response = $this->entity->slice($params);
 			$transformer = $response['collection']->getTransformer();
-			
+
 			$paginator = \Paginator::make($response['collection']->toNTIs(), $response['total'], $this->take);
 
 			return $this->respondWithPaginator($paginator, $transformer);

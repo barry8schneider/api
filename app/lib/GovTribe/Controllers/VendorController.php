@@ -49,7 +49,6 @@ class VendorController extends APIController {
 	/**
 	 * Display a listing of the specified resource.
 	 *
-	 * @param  object  $collection
 	 * @return Response
 	 */
 	public function index()
@@ -59,16 +58,8 @@ class VendorController extends APIController {
 			'columns' => ['name', '_id'],
 			'skip' => $this->skip,
 		];
-		
-		if ($q = \Input::get('q'))
-		{
-			$params['query'] = $q;
-			$response = $this->entity->search($params);
-		}
-		else
-		{
-			$response = $this->entity->findRecentlyActive($params);
-		}
+
+		$response = $this->entity->findRecentlyActive($params);
 
 		$paginator = \Paginator::make($response->getResults(), $response->getTotalHits(), $this->take);
 
@@ -111,7 +102,7 @@ class VendorController extends APIController {
 		
 		if (!$entity)
 		{
-			return $this->errorNotFound('Did you just invent an id and try loading a vendor?');
+			return $this->index();
 		}
 		else
 		{
@@ -131,5 +122,4 @@ class VendorController extends APIController {
 			return $this->respondWithPaginator($paginator, $transformer);
 		}
 	}
-
 }

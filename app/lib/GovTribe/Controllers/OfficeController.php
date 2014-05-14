@@ -49,7 +49,6 @@ class OfficeController extends APIController {
 	/**
 	 * Display a listing of the specified resource.
 	 *
-	 * @param  object  $collection
 	 * @return Response
 	 */
 	public function index()
@@ -60,18 +59,67 @@ class OfficeController extends APIController {
 			'skip' => $this->skip,
 		];
 
-		if ($q = \Input::get('q'))
-		{
-			$params['query'] = $q;
-			$response = $this->entity->search($params);
-		}
-		else
-		{
-			$response = $this->entity->findRecentlyActive($params);
-		}
-		
+		$response = $this->entity->findRecentlyActive($params);
+
 		$paginator = \Paginator::make($response->getResults(), $response->getTotalHits(), $this->take);
 
 		return $this->respondWithPaginator($paginator, $this->transformer);
+	}
+
+	/**
+	 * Search for entities.
+	 *
+	 * @return Response
+	 */
+	public function getSearch()
+	{
+		if (!$this->request->get('q')) return $this->index();
+
+		$params = [
+			'take' => $this->take,
+			'columns' => ['name', '_id'],
+			'skip' => $this->skip,
+			'query' => $this->request->get('q'),
+		];
+
+		$response = $this->entity->search($params);
+
+		$paginator = \Paginator::make($response->getResults(), $response->getTotalHits(), $this->take);
+
+		return $this->respondWithPaginator($paginator, $this->transformer);
+	}
+
+	/**
+	 * Get entities related to this entity for a given slice attribute.
+	 *
+	 * @param  string  $id
+	 * @param  string  $sliceName
+	 * @return Response
+	 */
+	public function getSlice($id, $sliceName)
+	{
+		$entity = $this->entity->find($id, ['_id']);
+		
+		if (!$entity)
+		{
+			return $this->index();
+		}
+		else
+		{
+			$params = [
+				'take' => $this->take,
+				'columns' => ['name', '_id'],
+				'skip' => $this->skip,
+				'sliceName' => $sliceName,
+				'entity' => $entity,
+			];
+
+			$response = $this->entity->slice($params);
+			$transformer = $response['collection']->getTransformer();
+
+			$paginator = \Paginator::make($response['collection']->toNTIs(), $response['total'], $this->take);
+
+			return $this->respondWithPaginator($paginator, $transformer);
+		}
 	}
 }

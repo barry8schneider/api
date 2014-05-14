@@ -50,7 +50,6 @@ class ProtestController extends APIController {
 	/**
 	 * Display a listing of the specified resource.
 	 *
-	 * @param  object  $collection
 	 * @return Response
 	 */
 	public function index()
@@ -60,16 +59,31 @@ class ProtestController extends APIController {
 			'columns' => ['name', '_id'],
 			'skip' => $this->skip,
 		];
-		
-		if ($q = \Input::get('q'))
-		{
-			$params['query'] = $q;
-			$response = $this->entity->search($params);
-		}
-		else
-		{
-			$response = $this->entity->findRecentlyActive($params);
-		}
+
+		$response = $this->entity->findRecentlyActive($params);
+
+		$paginator = \Paginator::make($response->getResults(), $response->getTotalHits(), $this->take);
+
+		return $this->respondWithPaginator($paginator, $this->transformer);
+	}
+
+	/**
+	 * Search for entities.
+	 *
+	 * @return Response
+	 */
+	public function getSearch()
+	{
+		if (!$this->request->get('q')) return $this->index();
+
+		$params = [
+			'take' => $this->take,
+			'columns' => ['name', '_id'],
+			'skip' => $this->skip,
+			'query' => $this->request->get('q'),
+		];
+
+		$response = $this->entity->search($params);
 
 		$paginator = \Paginator::make($response->getResults(), $response->getTotalHits(), $this->take);
 

@@ -174,7 +174,6 @@ class EntityRepository {
 
 		switch ($sliceName) 
 		{
-
 			case 'agenciesThatAwardToThisVendor':
 			case 'officesThatAwardToThisVendor':
 			case 'peopleThatAwardToThisVendor':
@@ -249,8 +248,6 @@ class EntityRepository {
 					return !in_array($item, $stopWords);
 				});
 
-				$setAsideType = implode('', $sliceArray);
-
 				$result['query'] = [
 					'_id' => new MongoRegex(
 							'/^'  . str_singular($entity->getTable())
@@ -258,7 +255,7 @@ class EntityRepository {
 							.'\|' . $relatedEntity
 							.'\|' . $relatedVia
 							.'\|' . 'sa'
-							.'\|' . $setAsideType
+							.'\|' . implode('', $sliceArray)
 							.'/'
 						)
 				];

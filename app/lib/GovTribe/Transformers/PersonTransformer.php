@@ -41,10 +41,10 @@ class PersonTransformer extends Transformer
 					'offices' => $entity->offices ? $this->convertMongoIdsInArray($entity->offices) : self::EMPTY_NTI_ARRAY,
 
 					'procurementStats' => [
-						'averageTimesToAward' => isset($entity->market['characteristics']['averageDaysToAwardPerYear']) ? $entity->market['characteristics']['averageDaysToAwardPerYear'] : self::EMPTY_NTI_ARRAY,
-						'averageAwardValues' => isset($entity->market['characteristics']['averageAwardValuePerYear']) ? $entity->market['characteristics']['averageAwardValuePerYear'] : self::EMPTY_NTI_ARRAY,
-						'numbersOfAwards' => isset($entity->market['characteristics']['awardsPerYear']) ? $entity->market['characteristics']['awardsPerYear'] : self::EMPTY_NTI_ARRAY,
-						'awardDollarFlow' => isset($entity->market['dollarFlow']) ? $entity->market['dollarFlow'] : self::EMPTY_NTI_ARRAY,
+						'averageTimesToAward' => $entity->averageTimesToAward ? $entity->averageTimesToAward : self::EMPTY_NTI_ARRAY,
+						'averageAwardValues' => $entity->averageAwardValues ? $entity->averageAwardValues : self::EMPTY_NTI_ARRAY,
+						'numbersOfAwards' => $entity->numbersOfAwards ? $entity->numbersOfAwards : self::EMPTY_NTI_ARRAY,
+						'awardDollarFlow' => $entity->awardDollarFlow ? $entity->awardDollarFlow : self::EMPTY_NTI_ARRAY,
 					],
 				);
 

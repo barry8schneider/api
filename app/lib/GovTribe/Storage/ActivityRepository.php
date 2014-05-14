@@ -11,11 +11,10 @@ class ActivityRepository extends EntityRepository {
 	 *
 	 * @return self
 	*/
-	public function __construct(Search $search, Actvity $entity, Edge $edge)
+	public function __construct(Search $search, Activity $entity, Edge $edge)
 	{
 		parent::__construct($search, $entity, $edge);
 	}
-	
 	/**
 	 * Find recently active entities.
 	 *

@@ -35,13 +35,13 @@ class ProjectTransformer extends Transformer
 					'timestamp'  => $entity->timestamp ? Carbon::createFromTimeStamp($entity->timestamp->sec)->toISO8601String() : self::NULL_TIMESTAMP,
 					'sourceLinks' => $entity->sourceLinks ? $entity->sourceLinks : self::EMPTY_NTI_ARRAY,
 
-
 					'NAICS' => $entity->NAICS ? $entity->NAICS : self::EMPTY_NTI_ARRAY,
 					'classCodes' => $entity->classCodes? $entity->classCodes : self::EMPTY_NTI_ARRAY,
 					'goodsOrServices' => $entity->goodsOrServices ? $entity->goodsOrServices : self::NULL_TEXT,
 					'setAsideType' => $entity->setAsideType ? $entity->setAsideType : self::NULL_TEXT,
-				
-					'dueDates' => $this->transformDueDatesByStatus($entity->dueDatesByStatus),
+					'tags' => $entity->tags ? $entity->tags : self::EMPTY_NTI_ARRAY,
+
+					'dueDates' => $this->convertMongoDatesInArray($entity->dueDatesByStatus, 'ISO8601'),
 					'workflowStatus' => isset($entity->workflowStatus['workflowStatus']) ? $entity->workflowStatus['workflowStatus'] : self::NULL_TEXT,
 		
 					'pointsOfContact' => $entity->people ? $this->convertMongoIdsInArray($entity->people) : self::EMPTY_NTI_ARRAY,
@@ -65,36 +65,8 @@ class ProjectTransformer extends Transformer
 				);
 		}
 
-		return $this->sortKINO($data);
-	}
-
-	public function transformDueDatesByStatus($value)
-	{
-		switch ($this->requestedAPIVersion) 
-		{
-			case '30':
-				if ($value)
-				{
-					$value = $this->convertMongoDatesInArray($value, 'ISO8601');
-				}
-				else
-				{
-					$value = [
-						[
-							'dueDateType' => 'Presolicitation Response',
-							'date' => self::NULL_TEXT,
-						],
-						[
-							'dueDateType' => 'Complete Response',
-							'date' => self::NULL_TEXT,
-						]
-					];
-				}
-				break;
-		}
-
 		$data = $this->convertHTMLEntitiesInArray($data);
 
-		return $value;
+		return $this->sortKINO($data);
 	}
 }
