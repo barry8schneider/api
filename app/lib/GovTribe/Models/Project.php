@@ -9,7 +9,6 @@ class Project extends APIEntity {
 	protected $connection = 'databot';
 	protected $collection = 'projects';
 
-	// Get all of the project's files in a slightly modified format
 	public function getFilesAttribute($value)
 	{
 		$output = [];
@@ -27,6 +26,7 @@ class Project extends APIEntity {
 					foreach ($packageDetails as &$packageDetailItem)
 					{
 						if (!isset($packageDetailItem['uri'])) continue;
+
 						$packageDetailItem = [
 							'fileURI' => $packageDetailItem['uri'],
 							'fileName' => isset($packageDetailItem['name']) ? $packageDetailItem['name'] : 'Not Available',
@@ -45,7 +45,15 @@ class Project extends APIEntity {
 		return $output;
 	}
 
-	// Get the project's class codes as an array
+	public function getWorkflowStatusAttribute()
+	{
+		if (isset($this->attributes['workflowStatus']['workflowStatus']))
+		{
+			return $this->attributes['workflowStatus']['workflowStatus'];
+		}
+		else return null;
+	}
+
 	public function getClassCodesAttribute()
 	{
 		$output = [];
@@ -76,7 +84,6 @@ class Project extends APIEntity {
 		else return $value;
 	}
 
-	// Get all of the project's synopsis by loading its raws
 	public function getSynopsisCollectionAttribute()
 	{
 		$synopsisCollection = [];

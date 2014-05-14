@@ -13,6 +13,7 @@ class ProjectTransformer extends Transformer
 					'name' => $entity->name ? $entity->name: self::NULL_TEXT,
 					'type' => 'project',
 					'_id' => (string) $entity->_id,
+					'highlights' => $entity->getHighlights(),
 				);
 
 				break;
@@ -42,8 +43,8 @@ class ProjectTransformer extends Transformer
 					'tags' => $entity->tags ? $entity->tags : self::EMPTY_NTI_ARRAY,
 
 					'dueDates' => $this->convertMongoDatesInArray($entity->dueDatesByStatus, 'ISO8601'),
-					'workflowStatus' => isset($entity->workflowStatus['workflowStatus']) ? $entity->workflowStatus['workflowStatus'] : self::NULL_TEXT,
-		
+					'workflowStatus' => $entity->workflowStatus ? $entity->workflowStatus : self::NULL_TEXT,
+
 					'pointsOfContact' => $entity->people ? $this->convertMongoIdsInArray($entity->people) : self::EMPTY_NTI_ARRAY,
 					'agencies' => $entity->agencies ? $this->convertMongoIdsInArray($entity->agencies) : self::EMPTY_NTI_ARRAY,
 					'categories' => $entity->categories ? $this->convertMongoIdsInArray($entity->categories) : self::EMPTY_NTI_ARRAY,
