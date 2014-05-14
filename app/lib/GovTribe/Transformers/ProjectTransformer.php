@@ -49,6 +49,7 @@ class ProjectTransformer extends Transformer
 					'agencies' => $entity->agencies ? $this->convertMongoIdsInArray($entity->agencies) : self::EMPTY_NTI_ARRAY,
 					'categories' => $entity->categories ? $this->convertMongoIdsInArray($entity->categories) : self::EMPTY_NTI_ARRAY,
 					'offices' => $entity->offices ? $this->convertMongoIdsInArray($entity->offices) : self::EMPTY_NTI_ARRAY,
+					'protests' => $entity->protests ? $this->convertMongoIdsInArray($entity->protests) : self::EMPTY_NTI_ARRAY,
 
 					'placeOfPerformanceGeocoded' => $entity->POPs ? $entity->POPs : self::NULL_TEXT,
 					'placeOfPerformanceText' => $entity->placeOfPerformanceText ? $entity->placeOfPerformanceText : self::NULL_TEXT,

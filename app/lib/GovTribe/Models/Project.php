@@ -150,11 +150,11 @@ class Project extends APIEntity {
 				$queries[] = new \MongoRegex('/^' . $NTI['type'] . '\\|' . $NTI['_id'] . '\\|vendor\\|project\\|na\\|' . $val . '/');
 			}
 
-			// if ($this->attributes['setAsideType'])
-			// {
-			// 	$val = strtolower(preg_replace('/[^A-Za-z0-9]/', '', $this->attributes['setAsideType']));
-			// 	$queries[] = new \MongoRegex('/^' . $NTI['type'] . '\\|' . $NTI['_id'] . '\\|vendor\\|project\\|sa\\|' . $val . '/');
-			// }
+			if ($this->attributes['setAsideType'])
+			{
+				$val = strtolower(preg_replace('/[^A-Za-z0-9]/', '', $this->attributes['setAsideType']));
+				$queries[] = new \MongoRegex('/^' . $NTI['type'] . '\\|' . $NTI['_id'] . '\\|vendor\\|project\\|sa\\|' . $val . '/');
+			}
 
 		}
 
@@ -162,8 +162,8 @@ class Project extends APIEntity {
 			['$match' => ['_id' => ['$in' => $queries]]],
 			['$project' => ['ts' => 1, '_id' => 0]],
 			['$unwind' => '$ts'],
-			['$group' => ['_id' => '$ts', 'c' => ['$sum' => 1]]],
-			['$sort' => ['c' => -1]],
+			['$group' => ['_id' => '$ts', 'intersects' => ['$sum' => 1]]],
+			['$sort' => ['intersects' => -1]],
 			['$limit' => 5],
 		];
 
@@ -177,16 +177,20 @@ class Project extends APIEntity {
 		{
 			foreach ($agg['result'] as &$vendor)
 			{
-				$count = $vendor['c'];
+				$intersects = $vendor['intersects'];
 				$vendor = \GovTribe\Models\Vendor::find($vendor['_id'], ['name']);
 
-				if (!$vendor) continue;
+				if ($intersects < 5 || !$vendor)
+				{
+					$vendor = false;
+					continue;
+				}
 
 				$vendor = [
 					'name' => $vendor->name,
 					'type' => 'vendor',
-					'_id' => $vendor['_id'],
-					'count' => $count,
+					'_id' => $vendor->_id,
+					'intersects' => $intersects,
 				];
 			}
 

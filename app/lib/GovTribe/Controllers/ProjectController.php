@@ -51,7 +51,8 @@ class ProjectController extends APIController {
 			'people', 'goodsOrServices', 'POPs', 'placeOfPerformanceText',
 			'sourceLink', 'solicitationNumbers', 'contractNumbers',
 			'files', 'classCode', 'agencies', 'categories', 'raws', 'offices',
-			'synopsis', 'awardValue', 'awardValueNumeric', 'vendors', 'tags'
+			'synopsis', 'awardValue', 'awardValueNumeric', 'vendors', 'tags',
+			'protests'
 		);
 
 		$entity = $this->entity->find($id, $columns);
