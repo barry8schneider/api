@@ -13,8 +13,9 @@ class ProjectTransformer extends Transformer
 					'name' => $entity->name ? $entity->name: self::NULL_TEXT,
 					'type' => 'project',
 					'_id' => (string) $entity->_id,
-					'highlights' => $entity->getHighlights(),
 				);
+
+				if ($hl = $entity->getHighlights()) $data['highlights'] = $hl;
 
 				break;
 		}

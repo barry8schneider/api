@@ -11,7 +11,7 @@ class MiddlewareServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->app->middleware( new HalManager($this->app) );
+		$this->app->middleware(new RateLimiter($this->app));
 	}
 
 }

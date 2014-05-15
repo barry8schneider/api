@@ -1,6 +1,7 @@
 <?php namespace GovTribe\Controllers;
 
 use Illuminate\Http\Request as Request;
+use Illuminate\Config\Repository as Config;
 use GovTribe\Storage\ProjectRepository as EntityRepository;
 use GovTribe\Transformers\ProjectTransformer as Transformer;
 use GovTribe\Transformers\Manager as Manager;
@@ -16,24 +17,13 @@ class ProjectController extends APIController {
 	protected $entityType = 'project';
 
 	/**
-	 * Available filters.
-	 *
-	 * @var array
-	 */
-	protected $filters = [
-		'agency', 'office', 'person',
-		'vendor', 'category', 'setAsideType',
-		'workflowStatus'
-	];
-
-	/**
 	 * Create a new instance of the controller.
 	 *
 	 * @return self
-	*/
-	public function __construct(Request $request, EntityRepository $entity, Manager $manager, Transformer $transformer)
+	 */
+	public function __construct(Request $request, Config $config, EntityRepository $entity, Manager $manager, Transformer $transformer)
 	{
-		parent::__construct($request, $entity, $manager, $transformer);
+		parent::__construct($request, $config, $entity, $manager, $transformer);
 	}
 
 	/**

@@ -1,6 +1,7 @@
 <?php namespace GovTribe\Controllers;
 
 use Illuminate\Http\Request as Request;
+use Illuminate\Config\Repository as Config;
 use GovTribe\Storage\VendorRepository as EntityRepository;
 use GovTribe\Transformers\VendorTransformer as Transformer;
 use GovTribe\Transformers\Manager as Manager;
@@ -18,10 +19,10 @@ class VendorController extends APIController {
 	 * Create a new instance of the controller.
 	 *
 	 * @return self
-	*/
-	public function __construct(Request $request, EntityRepository $entity, Manager $manager, Transformer $transformer)
+	 */
+	public function __construct(Request $request, Config $config, EntityRepository $entity, Manager $manager, Transformer $transformer)
 	{
-		parent::__construct($request, $entity, $manager, $transformer);
+		parent::__construct($request, $config, $entity, $manager, $transformer);
 	}
 	
 	/**

@@ -3,6 +3,7 @@
 use League\Fractal\Pagination\IlluminatePaginatorAdapter;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Http\Request as Request;
+use Illuminate\Config\Repository as Config;
 use Illuminate\Pagination\Paginator;
 use GovTribe\Response\Response;
 use GovTribe\Transformers\Manager as Manager;
@@ -60,14 +61,17 @@ class APIController extends BaseController {
 	 *
 	 * @return self
 	*/
-	public function __construct(Request $request, EntityRepository $entity, Manager $manager, Transformer $transformer)
+	public function __construct(Request $request, Config $config, EntityRepository $entity, Manager $manager, Transformer $transformer)
 	{
 		$this->request = $request;
+		$this->config = $config;
 		$this->entity = $entity;
 		$this->fractal = $manager;
 		$this->transformer = $transformer;
 
-		if (\Input::get('page', 0) > 1) $this->skip = (\Input::get('page') - 1 ) * $this->take;
+		$this->config->set('cache.prefix', $this->config->get('cache.prefix') . 'v' . $this->config->get('api.defaultVersion'));
+
+		if ($request->get('page', 0) > 1) $this->skip = ($request->get('page') - 1 ) * $this->take;
 	}
 
 	/**

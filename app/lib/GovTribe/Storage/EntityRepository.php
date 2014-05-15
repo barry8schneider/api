@@ -1,5 +1,6 @@
 <?php namespace GovTribe\Storage;
 
+use Illuminate\Cache\Repository as Cache;
 use GovTribe\Models\APIEntity;
 use GovTribe\Models\Edge;
 use GovTribe\Models\Collection;
@@ -13,41 +14,42 @@ class EntityRepository {
 	 *
 	 * @return self
 	*/
-	public function __construct(Search $search, APIEntity $entity, Edge $edge)
+	public function __construct(Search $search, APIEntity $entity, Edge $edge, Cache $cache)
 	{
 		$this->search = $search;
 		$this->entity = $entity;
 		$this->edge = $edge;
+		$this->cache = $cache;
 	}
 
 	public function all()
 	{
-		return $this->entity->all();
+		return $this->entity->remember(10)->all();
 	}
  
 	public function find($id, $columns = array('*'))
 	{
-		return $this->entity->find($id, $columns);
-	}
-
-	public function findOrFail($id, $columns = array('*'))
-	{
-		return $this->entity->findOrFail($id, $columns);
+		return $this->entity->remember(10)->find($id, $columns);
 	}
 
 	public function take($take)
 	{
-		return $this->entity->take($take);
+		return $this->entity->remember(10)->take($take);
 	}
  
 	public function orderBy($order)
 	{
-		return $this->entity->orderBy($order);
+		$this->entity->remember(10)->orderBy($order);
 	}
 
 	public function query(array $models = array())
 	{
 		return $this->entity->query();
+	}
+
+	protected function getCacheKey($data)
+	{
+		return md5(serialize($data + [$this->entity->getTable()]));
 	}
 
 	/**
@@ -58,33 +60,36 @@ class EntityRepository {
 	 */
 	public function slice(array $params)
 	{
-		$graph = $this->edge->getConnection()->getMongoDB();
-		$parsed = self::sliceToQuery($params['entity'], $params['sliceName']);
-		$query = $parsed['query'];
-		$relatedEntityModel = '\GovTribe\Models\\' . ucfirst($parsed['relatedEntity']);
-
-		$pipeline = [
-			['$match' => $query],
-			['$project' => ['ts' => 1, '_id' => 0]],
-			['$unwind' => '$ts'],
-			['$group' => ['_id' => null, 'count' => ['$sum' => 1]]],
-		];
-
-		$agg = $graph->edges->aggregate($pipeline);
-		$total = isset($agg['result'][0]['count']) ? $agg['result'][0]['count'] : 0;
-
-		$result = $graph->edges->findOne($query, ['ts' => ['$slice' => [$params['skip'], $params['take']]]]);
-		$result = $result['ts'];
-
-		$collection = new Collection;
-
-		foreach ($result as $key => $item)
+		return $this->cache->remember($this->getCacheKey(['slice'] + $params), 10, function() use ($params)
 		{
-			$entity = $relatedEntityModel::find($item, ['name', 'mail']);
-			if ($entity) $collection->add($entity);
-		}
+			$graph = $this->edge->getConnection()->getMongoDB();
+			$parsed = self::sliceToQuery($params['entity'], $params['sliceName']);
+			$query = $parsed['query'];
+			$relatedEntityModel = '\GovTribe\Models\\' . ucfirst($parsed['relatedEntity']);
 
-		return ['collection' => $collection, 'total' => $total];
+			$pipeline = [
+				['$match' => $query],
+				['$project' => ['ts' => 1, '_id' => 0]],
+				['$unwind' => '$ts'],
+				['$group' => ['_id' => null, 'count' => ['$sum' => 1]]],
+			];
+
+			$agg = $graph->edges->aggregate($pipeline);
+			$total = isset($agg['result'][0]['count']) ? $agg['result'][0]['count'] : 0;
+
+			$result = $graph->edges->findOne($query, ['ts' => ['$slice' => [$params['skip'], $params['take']]]]);
+			$result = $result['ts'];
+
+			$collection = new Collection;
+
+			foreach ($result as $key => $item)
+			{
+				$entity = $relatedEntityModel::find($item, ['name', 'mail']);
+				if ($entity) $collection->add($entity);
+			}
+
+			return ['collection' => $collection, 'total' => $total];
+		});
 	}
 
 	/**
@@ -95,43 +100,46 @@ class EntityRepository {
 	 */
 	public function search(array $params)
 	{
-		$index = $this->search->getIndex(str_singular($this->entity->getTable()));
+		return $this->cache->remember($this->getCacheKey(['search'] + $params), 10, function() use ($params)
+		{
+			$index = $this->search->getIndex(str_singular($this->entity->getTable()));
 
-		$query = new \Elastica\Query([
-			'size' => $params['take'],
-			'fields' => $params['columns'],
-			'from' => $params['skip'],
-		]);
+			$query = new \Elastica\Query([
+				'size' => $params['take'],
+				'fields' => $params['columns'],
+				'from' => $params['skip'],
+			]);
 
-		$query->setHighlight(array(
-			'fields' => array(
-				'name' => array(
-					'fragment_size' => 200,
-					'number_of_fragments' => 2,
+			$query->setHighlight(array(
+				'fields' => array(
+					'name' => array(
+						'fragment_size' => 200,
+						'number_of_fragments' => 2,
+					),
+					'synopsis' => array(
+						'fragment_size' => 200,
+						'number_of_fragments' => 2,
+					),
 				),
-				'synopsis' => array(
-					'fragment_size' => 200,
-					'number_of_fragments' => 2,
-				),
-			),
-			'pre_tags' => array('<em class="highlight">'),
-			'post_tags'  => array('</em>'),
-		));
+				'pre_tags' => array('<em class="highlight">'),
+				'post_tags'  => array('</em>'),
+			));
 
-		$qsQuery = new \Elastica\Query\QueryString;
-		$qsQuery->setQuery($params['query']);
-		$qsQuery->setPhraseSlop(15);
-		$qsQuery->setUseDisMax(true);
-		$qsQuery->setAnalyzer('standard');
+			$qsQuery = new \Elastica\Query\QueryString;
+			$qsQuery->setQuery($params['query']);
+			$qsQuery->setPhraseSlop(15);
+			$qsQuery->setUseDisMax(true);
+			$qsQuery->setAnalyzer('standard');
 
-		$fsQuery = new \Elastica\Query\FunctionScore;
-		$fsQuery->setScoreMode('avg');
-		$fsQuery->addDecayFunction('gauss', 'timestamp', date('Y-m-d'), '30d', '30d', 0.2);
-		$fsQuery->setQuery($qsQuery);
+			$fsQuery = new \Elastica\Query\FunctionScore;
+			$fsQuery->setScoreMode('avg');
+			$fsQuery->addDecayFunction('gauss', 'timestamp', date('Y-m-d'), '30d', '30d', 0.2);
+			$fsQuery->setQuery($qsQuery);
 
-		$query->setQuery($fsQuery);
+			$query->setQuery($fsQuery);
 
-		return $index->search($query);
+			return $index->search($query);
+		});
 	}
 
 	/**
@@ -142,16 +150,19 @@ class EntityRepository {
 	 */
 	public function findRecentlyActive(array $params)
 	{
-		$index = $this->search->getIndex(str_singular($this->entity->getTable()));
+		return $this->cache->remember($this->getCacheKey(['findRecentlyActive'] + $params), 10, function() use ($params)
+		{
+			$index = $this->search->getIndex(str_singular($this->entity->getTable()));
 
-		$query = new \Elastica\Query([
-			'size' => $params['take'],
-			'fields' => $params['columns'],
-			'from' => $params['skip'],
-			'sort' => ['timestamp' => ['order' => 'desc']],
-		]);
+			$query = new \Elastica\Query([
+				'size' => $params['take'],
+				'fields' => $params['columns'],
+				'from' => $params['skip'],
+				'sort' => ['timestamp' => ['order' => 'desc']],
+			]);
 
-		return $index->search($query);
+			return $index->search($query);
+		});
 	}
 
 	/**

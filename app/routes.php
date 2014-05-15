@@ -10,7 +10,6 @@
 | before routes are registered. 
 |
 */
-
 $setRequestedVersion = function($requestedVersion)
 {
 	$requestedVersion = str_replace('.', '', $requestedVersion);

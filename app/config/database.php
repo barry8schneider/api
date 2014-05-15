@@ -131,8 +131,10 @@ return array(
 		'cluster' => false,
 
 		'default' => array(
-			'host'     => '127.0.0.1',
-			'port'     => 6379,
+			'username' => $_ENV['REDIS_USERNAME'],
+			'password' => $_ENV['REDIS_PASSWORD'],
+			'host'     => $_ENV['REDIS_HOST'],
+			'port'     => $_ENV['REDIS_PORT'],
 			'database' => 0,
 		),
 

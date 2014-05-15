@@ -3,7 +3,7 @@
 use Symfony\Component\HttpKernel\HttpKernelInterface;
 use Symfony\Component\HttpFoundation\Request as SymfonyRequest;
 
-class HalManager implements HttpKernelInterface {
+class RateLimiter implements HttpKernelInterface {
 
 	/**
 	 * The wrapped kernel implementation.
@@ -38,31 +38,28 @@ class HalManager implements HttpKernelInterface {
 		// Handle on passed down request
 		$response = $this->app->handle($request, $type, $catch);
 
-		//$action = $this->app['router']->getCurrentRoute()->getAction();
+		// Allow up to four requests per second
+		$requestsPerHour = 240;
 
-		// d($action);
-		// die;
-		// $requestsPerHour = 60;
+		// Rate limit by IP address
+		$key = sprintf('api:%s', $request->getClientIp());
 
-		// // Rate limit by IP address
-		// $key = sprintf('api:%s', $request->getClientIp());
+		// Add if doesn't exist
+		// Remember for 1 hour
+		\Cache::add($key, 0, 60);
 
-		// // Add if doesn't exist
-		// // Remember for 1 hour
-		// \Cache::add($key, 0, 60);
+		// Add to count
+		$count = \Cache::increment($key);
 
-		// // Add to count
-		// $count = \Cache::increment($key);
+		if($count > $requestsPerHour)
+		{
+			// Short-circuit response - we're ignoring
+			$response->setContent('Rate limit exceeded');
+			$response->setStatusCode(403);
+		}
 
-		// if( $count > $requestsPerHour )
-		// {
-		// 	// Short-circuit response - we're ignoring
-		// 	$response->setContent('Rate limit exceeded');
-		// 	$response->setStatusCode(403);
-		// }
-
-		// $response->headers->set('X-Ratelimit-Limit', $requestsPerHour, false);
-		// $response->headers->set('X-Ratelimit-Remaining', $requestsPerHour-(int)$count, false);
+		$response->headers->set('X-GT-Ratelimit-Limit', $requestsPerHour, false);
+		$response->headers->set('X-GT-Ratelimit-Remaining', $requestsPerHour-(int)$count, false);
 
 		return $response;
 	}

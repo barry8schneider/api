@@ -3,9 +3,8 @@
 use \Mockery as Mockery;
 use GovTribe\Models\Agency;
 
-class SetAPIVersionTest extends TestCase
+class AgencyTest30 extends TestCase
 {
-
 	public function __construct()
 	{
 		$this->mock = Mockery::mock('GovTribe\Controllers\AgencyController');
