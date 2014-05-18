@@ -5,7 +5,7 @@ use Illuminate\Support\ServiceProvider;
 class TransformerServiceProvider extends ServiceProvider {
 
 	/**
-	 * Register the binding
+	 * Register the service provider
 	 *
 	 * @return void
 	 */

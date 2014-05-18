@@ -50,23 +50,41 @@ class ProjectRepository extends EntityRepository {
 
 		$boolQuery = new \Elastica\Query\Bool;
 
-		$matchName = new \Elastica\Query\Match;
-		$matchName->setFieldQuery('name.full', $params['query']);
-		$matchName->setFieldAnalyzer('name.full', 'standard');
-		$matchName->setFieldOperator('name.full', 'and');
-		$matchName->setFieldBoost('name.full', 5);
-		$matchName->setFieldFuzziness('name.full', 1);
-		$boolQuery->addShould($matchName);
+		if ($params['query'])
+		{
+			$matchName = new \Elastica\Query\Match;
+			$matchName->setFieldQuery('name.full', $params['query']);
+			$matchName->setFieldAnalyzer('name.full', 'standard');
+			$matchName->setFieldOperator('name.full', 'and');
+			$matchName->setFieldBoost('name.full', 5);
+			$matchName->setFieldFuzziness('name.full', 1);
+			$boolQuery->addShould($matchName);
 
-		$matchSynopsis = new \Elastica\Query\Match;
-		$matchSynopsis->setFieldQuery('synopsis', $params['query']);
-		$matchName->setFieldAnalyzer('synopsis', 'standard');
-		$matchSynopsis->setFieldOperator('synopsis', 'and');
-		$boolQuery->addShould($matchSynopsis);
+			$matchSynopsis = new \Elastica\Query\Match;
+			$matchSynopsis->setFieldQuery('synopsis', $params['query']);
+			$matchName->setFieldAnalyzer('synopsis', 'standard');
+			$matchSynopsis->setFieldOperator('synopsis', 'and');
+			$boolQuery->addShould($matchSynopsis);
+		}
+		else
+		{
+			$matchAll = new \Elastica\Query\MatchAll;
+			$boolQuery->addMust(new \Elastica\Query\MatchAll);
+		}
+
+		if ($params['filters'])
+		{
+			foreach ($params['filters'] as $filterName => $filterVal)
+			{
+				$filterTerm = new \Elastica\Query\Term;
+				$filterTerm->setTerm($filterName, $filterVal);
+				$boolQuery->addMust($filterTerm);
+			}
+		}
 
 		$fsQuery = new \Elastica\Query\FunctionScore;
 		$fsQuery->setScoreMode('avg');
-		$fsQuery->addDecayFunction('gauss', 'timestamp', date('Y-m-d'), '30d', '30d', 0.2);
+		$fsQuery->addDecayFunction('gauss', 'timestamp', date('Y-m-d'), '90d', '30d', .4);
 		$fsQuery->setQuery($boolQuery);
 
 		$query->setQuery($fsQuery);

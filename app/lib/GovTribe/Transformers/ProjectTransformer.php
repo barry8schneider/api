@@ -12,14 +12,20 @@ class ProjectTransformer extends Transformer
 				$data = array(
 					'name' => $entity->name ? $entity->name: self::NULL_TEXT,
 					'type' => 'project',
-					'_id' => (string) $entity->_id,
+					'_id' => $entity->_id,
 				);
 
-				if ($hl = $entity->getHighlights()) $data['highlights'] = $hl;
+				if ($hl = $entity->getHighlights())
+				{
+					$data['highlights'] = $hl;
+					$data['score'] = rtrim(sprintf('%.'.ini_get('serialize_precision').'f', $entity->getScore()));
+				}
 
 				break;
 		}
 
+		$data = $this->convertMongoIdsInArray($data);
+		$data = $this->convertMongoDatesInArray($data, 'ISO8601');
 		$data = $this->convertHTMLEntitiesInArray($data);
 
 		return $this->sortKINO($data);
@@ -31,43 +37,52 @@ class ProjectTransformer extends Transformer
 		{
 			case '30':
 				$data = array(
-					'name' => $entity->name ? $entity->name : self::NULL_TEXT,
+					'name' => $entity->name ? (string) $entity->name : self::NULL_TEXT,
 					'type' => 'project',
-					'_id' => (string) $entity->_id,
-					'timestamp'  => $entity->timestamp ? Carbon::createFromTimeStamp($entity->timestamp->sec)->toISO8601String() : self::NULL_TIMESTAMP,
-					'sourceLinks' => $entity->sourceLinks ? $entity->sourceLinks : self::EMPTY_NTI_ARRAY,
+					'_id' => $entity->_id,
+					'govTribeStats' => new \stdClass,
+					'timestamp'  => $entity->timestamp ? $entity->timestamp : self::NULL_TIMESTAMP,
+					'sourceLinks' => $entity->sourceLinks ? (array) $entity->sourceLinks : [],
+					'NAICS' => $entity->NAICS ? (array) $entity->NAICS : [],
+					'classCodes' => $entity->classCodes? (array) $entity->classCodes : [],
+					'goodsOrServices' => $entity->goodsOrServices ? (string) $entity->goodsOrServices : self::NULL_TEXT,
+					'setAsideType' => $entity->setAsideType ? (string) $entity->setAsideType : self::NULL_TEXT,
+					'tags' => $entity->tags ? (array) $entity->tags : [],
+					'workflowStatus' => $entity->workflowStatus ? (string) $entity->workflowStatus : self::NULL_TEXT,
 
-					'NAICS' => $entity->NAICS ? $entity->NAICS : self::EMPTY_NTI_ARRAY,
-					'classCodes' => $entity->classCodes? $entity->classCodes : self::EMPTY_NTI_ARRAY,
-					'goodsOrServices' => $entity->goodsOrServices ? $entity->goodsOrServices : self::NULL_TEXT,
-					'setAsideType' => $entity->setAsideType ? $entity->setAsideType : self::NULL_TEXT,
-					'tags' => $entity->tags ? $entity->tags : self::EMPTY_NTI_ARRAY,
+					'importantDates' => (array) $entity->importantDates,
 
-					'dueDates' => $this->convertMongoDatesInArray($entity->dueDatesByStatus, 'ISO8601'),
-					'workflowStatus' => $entity->workflowStatus ? $entity->workflowStatus : self::NULL_TEXT,
+					'awardData' => [
+						'totalAwardValue' => $entity->awardValueNumeric ? (float) $entity->awardValueNumeric : self::NULL_TEXT,
+						'awardedVendors' => $entity->vendors ? (array) $entity->vendors : [],
+						'basePeriodAwardData' => [],
+						'optionPeriodsAwardData' => [],
+					],
 
-					'pointsOfContact' => $entity->people ? $this->convertMongoIdsInArray($entity->people) : self::EMPTY_NTI_ARRAY,
-					'agencies' => $entity->agencies ? $this->convertMongoIdsInArray($entity->agencies) : self::EMPTY_NTI_ARRAY,
-					'categories' => $entity->categories ? $this->convertMongoIdsInArray($entity->categories) : self::EMPTY_NTI_ARRAY,
-					'offices' => $entity->offices ? $this->convertMongoIdsInArray($entity->offices) : self::EMPTY_NTI_ARRAY,
-					'protests' => $entity->protests ? $this->convertMongoIdsInArray($entity->protests) : self::EMPTY_NTI_ARRAY,
+					'obligationData' => [
+						'obligations' => [],
+					],
 
-					'placeOfPerformanceGeocoded' => $entity->POPs ? $entity->POPs : self::NULL_TEXT,
-					'placeOfPerformanceText' => $entity->placeOfPerformanceText ? $entity->placeOfPerformanceText : self::NULL_TEXT,
+					'pointsOfContact' => $entity->people ? (array) $entity->people : [],
+					'agencies' => $entity->agencies ? (array) $entity->agencies : [],
+					'categories' => $entity->categories ? (array) $entity->categories : [],
+					'offices' => $entity->offices ? (array) $entity->offices : [],
+					'protests' => $entity->protests ? (array) $entity->protests : [],
+
+					'placesOfPerformanceGeocoded' => $entity->POPs ? (array) $entity->POPs : [],
+					'placeOfPerformanceText' => $entity->placeOfPerformanceText ? (string) $entity->placeOfPerformanceText : self::NULL_TEXT,
 					
-					'solicitationNumbers' => $entity->solicitationNumbers ? $entity->solicitationNumbers : self::EMPTY_NTI_ARRAY,
-					'contractNumbers' => $entity->contractNumbers ? $entity->contractNumbers : self::EMPTY_NTI_ARRAY,
-					'files' => $entity->files ? $entity->files : self::EMPTY_NTI_ARRAY,
-					'synopsis' => $entity->synopsis ? $entity->synopsis : self::NULL_TEXT,
+					'solicitationNumbers' => $entity->solicitationNumbers ? (array) $entity->solicitationNumbers : [],
+					'contractNumbers' => $entity->contractNumbers ? (array) $entity->contractNumbers : [],
+					'files' => $entity->files ? (array) $entity->files : [],
+					'synopses' => $entity->synopsisCollection ? (array) $entity->synopsisCollection : self::NULL_TEXT,
 
-					'awardValue' => $entity->awardValue ? $entity->awardValue : self::NULL_TEXT,
-					'awardValueNumeric' => $entity->awardValueNumeric ? $entity->awardValueNumeric : self::NULL_TEXT,
-					'awardedVendors' => $entity->vendors ? $this->convertMongoIdsInArray($entity->vendors) : self::EMPTY_NTI_ARRAY,
-
-					'predictedCompetition' => $entity->predictedCompetition ? $this->convertMongoIdsInArray($entity->predictedCompetition) : self::EMPTY_NTI_ARRAY,
+					'predictedCompetition' => $entity->predictedCompetition ? (array) $entity->predictedCompetition : [],
 				);
 		}
 
+		$data = $this->convertMongoIdsInArray($data);
+		$data = $this->convertMongoDatesInArray($data, 'ISO8601');
 		$data = $this->convertHTMLEntitiesInArray($data);
 
 		return $this->sortKINO($data);

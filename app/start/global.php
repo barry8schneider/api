@@ -53,7 +53,7 @@ App::error(function(Exception $exception, $code)
 	if (App::environment('production'))
 	{
 		return App::make('Govtribe\Controllers\APIController')->setStatusCode(500)->respondWithError(
-				"We have a problem. Check back again soon or contact support@govtribe.com for more information"
+				"We have a problem. Check back again soon or contact help@govtribe.com for more information"
 			);
 	}
 
@@ -66,7 +66,7 @@ App::fatal(function($exception)
 	if (App::environment('production'))
 	{
 		return App::make('Govtribe\Controllers\APIController')->setStatusCode(500)->respondWithError(
-				"We have a problem. Check back again soon or contact support@govtribe.com for more information"
+				"We have a problem. Check back again soon or contact help@govtribe.com for more information"
 			);
 	}
 });
@@ -84,7 +84,7 @@ App::fatal(function($exception)
 
 App::down(function()
 {
-	return Response::json("We're temporarily down. Check back again soon or contact support@govtribe.com for more information", 500);
+	return Response::json("We're temporarily down. Check back again soon or contact help@govtribe.com for more information", 500);
 });
 
 /*

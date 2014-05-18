@@ -10,14 +10,16 @@ class PersonTransformer extends Transformer
 		{
 			case '30':
 				$data = array(
-					'name' => $entity->name ? $entity->name: self::NULL_TEXT,
+					'name' => $entity->name ? (string) $entity->name: (string) $entity->mail,
 					'type' => 'person',
-					'_id' => (string) $entity->_id,
+					'_id' => $entity->_id,
 				);
 
 				break;
 		}
 
+		$data = $this->convertMongoIdsInArray($data);
+		$data = $this->convertMongoDatesInArray($data, 'ISO8601');
 		$data = $this->convertHTMLEntitiesInArray($data);
 
 		return $this->sortKINO($data);
@@ -29,28 +31,35 @@ class PersonTransformer extends Transformer
 		{
 			case '30':
 				$data = array(
-					'name' => $entity->name ? $entity->name : self::NULL_TEXT,
+					'name' => $entity->name ? (string) $entity->name : self::NULL_TEXT,
 					'type' => 'person',
 					'_id' => (string) $entity->_id,
-					'timestamp'  => $entity->timestamp ? Carbon::createFromTimeStamp($entity->timestamp->sec)->toISO8601String() : self::NULL_TIMESTAMP,
+					'govTribeStats' => new \stdClass,
+					'timestamp'  => $entity->timestamp ? $entity->timestamp : self::NULL_TIMESTAMP,
 
-					'email' => $entity->mail,
-					'position' => $entity->position ? $entity->position : self::NULL_TEXT,
-					'phone' => $entity->phoneNumber ? $entity->phoneNumber : self::NULL_TEXT,
-					'agencies' => $entity->agencies ? $this->convertMongoIdsInArray($entity->agencies) : self::EMPTY_NTI_ARRAY,
-					'offices' => $entity->offices ? $this->convertMongoIdsInArray($entity->offices) : self::EMPTY_NTI_ARRAY,
+					'email' => $entity->mail ? (string) $entity->mail : self::NULL_TEXT,
+					'position' => $entity->position ? (string) $entity->position : self::NULL_TEXT,
+					'phone' => $entity->phoneNumber ? (string) $entity->phoneNumber : self::NULL_TEXT,
+					'agencies' => $entity->agencies ? (array) $entity->agencies : [],
+					'offices' => $entity->offices ? (array) $entity->offices : [],
+
+					'obligationStats' => [
+						'totalObligations' => [],
+					],
 
 					'procurementStats' => [
-						'averageTimesToAward' => $entity->averageTimesToAward ? $entity->averageTimesToAward : self::EMPTY_NTI_ARRAY,
-						'averageAwardValues' => $entity->averageAwardValues ? $entity->averageAwardValues : self::EMPTY_NTI_ARRAY,
-						'numbersOfAwards' => $entity->numbersOfAwards ? $entity->numbersOfAwards : self::EMPTY_NTI_ARRAY,
-						'awardDollarFlow' => $entity->awardDollarFlow ? $entity->awardDollarFlow : self::EMPTY_NTI_ARRAY,
+						'averageTimesToAward' => $entity->averageTimesToAward ? (array) $entity->averageTimesToAward : [],
+						'averageAwardValues' => $entity->averageAwardValues ? (array) $entity->averageAwardValues : [],
+						'numbersOfAwards' => $entity->numbersOfAwards ? (array) $entity->numbersOfAwards : [],
+						'awardDollarFlow' => $entity->awardDollarFlow ? (array) $entity->awardDollarFlow : [],
 					],
 				);
 
 				break;
 		}
 
+		$data = $this->convertMongoIdsInArray($data);
+		$data = $this->convertMongoDatesInArray($data, 'ISO8601');
 		$data = $this->convertHTMLEntitiesInArray($data);
 
 		return $this->sortKINO($data);

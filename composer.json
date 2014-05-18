@@ -8,14 +8,15 @@
 		"laravel/framework": "4.1.*",
 		"jenssegers/mongodb": "*",
 		"m4tthumphrey/fractal-laravel" : "1.*",
-		"ruflin/Elastica": "*"
+		"ruflin/Elastica": "*",
+		"GovTribe/laravel-kinvey": "dev-master",
+		"mandrill/mandrill": "1.0.*"
 	},
 	"require-dev": {
 		"way/generators": "2.*",
 		"raveren/kint": "1.0.*@dev",
 		"mockery/mockery": "0.9.*@dev",
-		"satooshi/php-coveralls": "dev-master",
-		"raveren/kint": "dev-master"
+		"satooshi/php-coveralls": "dev-master"
 	},	
 	"autoload": {
 		"classmap": [

@@ -10,14 +10,16 @@ class AgencyTransformer extends Transformer
 		{
 			case '30':
 				$data = array(
-					'name' => $entity->name ? $entity->name: self::NULL_TEXT,
+					'name' => $entity->name ? (string) $entity->name: self::NULL_TEXT,
 					'type' => 'agency',
-					'_id' => (string) $entity->_id,
+					'_id' => $entity->_id,
 				);
 
 				break;
 		}
 
+		$data = $this->convertMongoIdsInArray($data);
+		$data = $this->convertMongoDatesInArray($data, 'ISO8601');
 		$data = $this->convertHTMLEntitiesInArray($data);
 
 		return $this->sortKINO($data);
@@ -29,38 +31,44 @@ class AgencyTransformer extends Transformer
 		{
 			case '30':
 				$data = array(
-					'name' => $entity->name ? $entity->name : self::NULL_TEXT,
+					'name' => $entity->name ? (string) $entity->name : self::NULL_TEXT,
 					'type' => 'agency',
-					'_id' => (string) $entity->_id,
-					'timestamp'  => $entity->timestamp ? Carbon::createFromTimeStamp($entity->timestamp->sec)->toISO8601String() : self::NULL_TIMESTAMP,
-					'acronyms' => $entity->acronyms ? $entity->acronyms : self::EMPTY_NTI_ARRAY,
-					'website'  => $entity->sourceLink ? $entity->sourceLink : self::NULL_TEXT,
+					'_id' => $entity->_id,
+					'govTribeStats' => new \stdClass,
+					'timestamp'  => $entity->timestamp ? $entity->timestamp : self::NULL_TIMESTAMP,
+					'acronyms' => $entity->acronyms ? (array) $entity->acronyms : [],
+					'website'  => $entity->sourceLink ? (string) $entity->sourceLink : self::NULL_TEXT,
 
 					'procurementStats' => [
-						'averageTimesToAward' => $entity->averageTimesToAward ? $entity->averageTimesToAward : self::EMPTY_NTI_ARRAY,
-						'averageAwardValues' => $entity->averageAwardValues ? $entity->averageAwardValues : self::EMPTY_NTI_ARRAY,
-						'numbersOfAwards' => $entity->numbersOfAwards ? $entity->numbersOfAwards : self::EMPTY_NTI_ARRAY,
-						'awardDollarFlow' => $entity->awardDollarFlow ? $entity->awardDollarFlow : self::EMPTY_NTI_ARRAY,
+						'averageTimesToAward' => $entity->averageTimesToAward ? (array) $entity->averageTimesToAward : [],
+						'averageAwardValues' => $entity->averageAwardValues ? (array) $entity->averageAwardValues : [],
+						'numbersOfAwards' => $entity->numbersOfAwards ? (array) $entity->numbersOfAwards : [],
+						'awardDollarFlow' => $entity->awardDollarFlow ? (array) $entity->awardDollarFlow : [],
 					],
 
 					'organizationalStats' => [
-						'activePeople' => $entity->activePeople ? $entity->activePeople : self::EMPTY_NTI_ARRAY,
-						'activeOffices' => $entity->activeOffices ? $entity->activeOffices : self::EMPTY_NTI_ARRAY,
+						'activePeople' => $entity->activePeople ? (array) $entity->activePeople : [],
+						'activeOffices' => $entity->activeOffices ? (array) $entity->activeOffices : [],
+					],
+
+					'obligationStats' => [
+						'totalObligations' => [],
 					],
 
 					'protestStats' => [
-						'totalProtests' => $entity->totalProtests ? $entity->totalProtests : self::EMPTY_NTI_ARRAY,
-						'protestsWithdrawn' => $entity->protestsWithdrawn ? $entity->protestsWithdrawn : self::EMPTY_NTI_ARRAY,
-						'protestsDenied' => $entity->protestsDenied ? $entity->protestsDenied : self::EMPTY_NTI_ARRAY,
-						'protestsSustained' => $entity->protestsSustained ? $entity->protestsSustained : self::EMPTY_NTI_ARRAY,
-						'protestsDismissed' => $entity->protestsDismissed ? $entity->protestsDismissed : self::EMPTY_NTI_ARRAY,
+						'totalProtests' => $entity->totalProtests ? (array) $entity->totalProtests : [],
+						'protestsWithdrawn' => $entity->protestsWithdrawn ? (array) $entity->protestsWithdrawn : [],
+						'protestsDenied' => $entity->protestsDenied ? (array) $entity->protestsDenied : [],
+						'protestsSustained' => $entity->protestsSustained ? (array) $entity->protestsSustained : [],
+						'protestsDismissed' => $entity->protestsDismissed ? (array) $entity->protestsDismissed : [],
 					],
-
 				);
 
 				break;
 		}
 
+		$data = $this->convertMongoIdsInArray($data);
+		$data = $this->convertMongoDatesInArray($data, 'ISO8601');
 		$data = $this->convertHTMLEntitiesInArray($data);
 
 		return $this->sortKINO($data);

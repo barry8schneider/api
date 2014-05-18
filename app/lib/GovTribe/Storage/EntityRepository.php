@@ -49,7 +49,7 @@ class EntityRepository {
 
 	protected function getCacheKey($data)
 	{
-		return md5(serialize($data + [$this->entity->getTable()]));
+		return md5(serialize($data + ['type' => $this->entity->getTable()]));
 	}
 
 	/**
@@ -82,10 +82,13 @@ class EntityRepository {
 
 			$collection = new Collection;
 
-			foreach ($result as $key => $item)
+			if ($result)
 			{
-				$entity = $relatedEntityModel::find($item, ['name', 'mail']);
-				if ($entity) $collection->add($entity);
+				foreach ($result as $key => $item)
+				{
+					$entity = $relatedEntityModel::find($item, ['name', 'mail']);
+					if ($entity) $collection->add($entity);
+				}
 			}
 
 			return ['collection' => $collection, 'total' => $total];
@@ -274,5 +277,15 @@ class EntityRepository {
 		}
 
 		return $result;
+	}
+
+	/**
+	 * Get the Mongo collection instance associated with this entity.
+	 *
+	 * @return object
+	 */
+	protected function getMongoCollection()
+	{
+		return $this->entity->getConnection()->getCollection($this->entity->getTable());
 	}
 }

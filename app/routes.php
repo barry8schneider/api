@@ -2,31 +2,6 @@
 
 /*
 |--------------------------------------------------------------------------
-| Set requested API version.
-|--------------------------------------------------------------------------
-|
-| Validate and set the version of the API requested by the client. If one 
-| isn't provided, or is invalid, use a default. This needs to be done
-| before routes are registered. 
-|
-*/
-$setRequestedVersion = function($requestedVersion)
-{
-	$requestedVersion = str_replace('.', '', $requestedVersion);
-
-	if (!in_array($requestedVersion, Config::get('api.supportedVersions')))
-	{
-		Config::set('api.requestedVersion', Config::get('api.defaultVersion'));
-	}
-	else 
-	{
-		Config::set('api.requestedVersion', $requestedVersion);
-	}
-};
-$setRequestedVersion(Request::header('x-gt-api-version'));
-
-/*
-|--------------------------------------------------------------------------
 | Application Routes
 |--------------------------------------------------------------------------
 |
@@ -41,25 +16,38 @@ Route::get('/', function()
 	return View::make('docs');
 });
 
-
-$registerRoutesForRequestedVersion = function($requestedVersion)
+Route::group(array('before' => 'api.key|api.version', 'namespace' => 'GovTribe\Controllers'), function()
 {
-	$resources = array(
-			'Activity', 'Agency', 'Category', 
-			'Office', 'Person', 'Project',
-			'Protest', 'Vendor'
-		);
+	Route::controller('key', 'EnrollmentController');
 
-	foreach ($resources as $resourceName)
-	{
-		$resourceControllerName = 'GovTribe\Controllers\\' . $resourceName . 'Controller';
+	Route::get('activity/feed', array('uses' => 'ActivityController@getFeed'));
+	Route::resource('activity', 'ActivityController', array('only' => array('show', 'index')));
 
-		Route::get(strtolower($resourceName) . '/search', array('uses' => $resourceControllerName . '@getSearch'));
-		Route::get(strtolower($resourceName) . '/{' . strtolower($resourceName) .'}/slice/{sliceName}', array('uses' => $resourceControllerName . '@getSlice'));
+	Route::get('agency/search', array('uses' => 'AgencyController@getSearch'));
+	Route::get('agency/{id}/slice/{sliceName}', array('uses' => 'AgencyController@getSlice'));
+	Route::resource('agency', 'AgencyController', array('only' => array('show', 'index')));
 
-		Route::resource(strtolower($resourceName), $resourceControllerName, array('only' => array('show', 'index')));
-	}
-};
-$registerRoutesForRequestedVersion(Config::get('api.requestedVersion'));
+	Route::get('category/search', array('uses' => 'CategoryController@getSearch'));
+	Route::get('category/slice/{id}/{sliceName}', array('uses' => 'CategoryController@getSlice'));
+	Route::resource('category', 'CategoryController', array('only' => array('show', 'index')));
 
-Route::controller('/', 'GovTribe\Controllers\APIController');
+	Route::get('office/search', array('uses' => 'OfficeController@getSearch'));
+	Route::get('office/slice/{id}/{sliceName}', array('uses' => 'OfficeController@getSlice'));
+	Route::resource('office', 'OfficeController', array('only' => array('show', 'index')));
+
+	Route::get('person/search', array('uses' => 'PersonController@getSearch'));
+	Route::get('person/slice/{id}/{sliceName}', array('uses' => 'PersonController@getSlice'));
+	Route::resource('person', 'PersonController', array('only' => array('show', 'index')));
+
+	Route::get('project/search', array('uses' => 'ProjectController@getSearch'));
+	Route::resource('project', 'ProjectController', array('only' => array('show', 'index')));
+
+	Route::get('protest/search', array('uses' => 'ProtestController@getSearch'));
+	Route::resource('protest', 'ProtestController', array('only' => array('show', 'index')));
+
+	Route::get('vendor/search', array('uses' => 'VendorController@getSearch'));
+	Route::get('vendor/slice/{id}/{sliceName}', array('uses' => 'VendorController@getSlice'));
+	Route::resource('vendor', 'VendorController', array('only' => array('show', 'index')));
+
+	Route::controller('/', 'APIController');
+});

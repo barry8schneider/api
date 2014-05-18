@@ -99,6 +99,12 @@ class APIEntity extends \Jenssegers\Mongodb\Model {
 				$item = $formatter->parseCurrency($item, $curr);
 			});
 
+			foreach ($data as $tb => $val)
+			{
+				$data[] = ['timeBucket' => $tb, 'value' => $val];
+				unset($data[$tb]);
+			}
+
 			return $data;
 		}
 		else return [];

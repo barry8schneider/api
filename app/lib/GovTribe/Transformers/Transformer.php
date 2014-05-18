@@ -7,10 +7,8 @@ use MongoId;
 
 class Transformer extends TransformerAbstract
 {
-
 	protected $mode;
 	protected $requestedAPIVersion;
-	const EMPTY_NTI_ARRAY = 'None Listed';
 	const NULL_TEXT = 'Not Available';
 	const NULL_TIMESTAMP = 'No Activity';
 
@@ -65,6 +63,10 @@ class Transformer extends TransformerAbstract
 		elseif ($this->mode === 'resource')
 		{
 			return $this->transformForResource($entity);
+		}
+		else
+		{
+			throw new \ErrorException('Set a transformer mode (resource, index) before transforming a resource');
 		}
 	}
 

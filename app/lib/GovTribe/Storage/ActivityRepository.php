@@ -16,6 +16,46 @@ class ActivityRepository extends EntityRepository {
 	{
 		parent::__construct($search, $entity, $edge, $cache);
 	}
+
+	/**
+	 * Make an activity feed for one or more entities.
+	 *
+	 * @param  array  $params
+	 * @return object
+	 */
+	public function makeFeed(array $params)
+	{
+		$count = 0;
+
+		$result = $this->entity->raw(function($collection) use ($params, &$count)
+		{
+			$query = [
+				'type' => ['$in' => ['protest', 'project']],
+				'participants' => ['$in' => $params['participants']],
+				'timestamp' => ['$gte' => $params['timestampRange']],
+			];
+
+			$fields = [
+				'participants' => 0,
+				'timeBuckets' => 0,
+				'source' => 0,
+			];
+
+			$cursor = $collection->find($query, $fields)
+				->sort(['timestamp' => -1])
+				->skip($params['skip'])
+				->limit($params['take']);
+
+			$count = $cursor->count();
+
+			return $cursor;
+		});
+
+		$result->setCount($count);
+
+		return $result;
+	}
+
 	/**
 	 * Find recently active entities.
 	 *
