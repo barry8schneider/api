@@ -100,14 +100,14 @@ Route::filter('api.key', function()
 
 	if($env !== 'local' && !$keyProvided)
 	{
-		return $this->app->make('Govtribe\Controllers\APIController')->setStatusCode(403)->respondWithError(
+		return App::make('Govtribe\Controllers\APIController')->setStatusCode(403)->respondWithError(
 			'Please provide your API key as a request header (X-GT-API-Key: myapikey).
 			Contact help@govtribe.com if you need assistance.'
 		);
 	}
 	elseif ($env !== 'local' && $keyProvided && !$keyIsValid)
 	{
-		return $this->app->make('Govtribe\Controllers\APIController')->setStatusCode(403)->respondWithError(
+		return App::make('Govtribe\Controllers\APIController')->setStatusCode(403)->respondWithError(
 			'The API key you provided (' . $keyProvided . ') is not valid.
 			Contact help@govtribe.com if you need assistance.'
 		);
