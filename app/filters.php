@@ -91,29 +91,29 @@ Route::filter('api.version', function()
 | Confirm a valid API key is used.
 |
 */
-
 Route::filter('api.key', function()
 {
-	$keyProvided = Request::header('x-gt-api-key', null);
-	$keyIsValid = App::make('GovTribe\Storage\KeyRepository')->isValid($keyProvided);
+	$sentKey = Request::header('x-gt-api-key', null);
+	$keyIsValid = App::make('GovTribe\Storage\KeyRepository')->isValid($sentKey);
 	$env = App::environment();
 
-	if($env !== 'local' && !$keyProvided)
+	if ($env === 'local')
 	{
-		return App::make('Govtribe\Controllers\APIController')->setStatusCode(403)->respondWithError(
-			'Please provide your API key as a request header (X-GT-API-Key: myapikey).
-			Contact help@govtribe.com if you need assistance.'
-		);
-	}
-	elseif ($env !== 'local' && $keyProvided && !$keyIsValid)
-	{
-		return App::make('Govtribe\Controllers\APIController')->setStatusCode(403)->respondWithError(
-			'The API key you provided (' . $keyProvided . ') is not valid.
-			Contact help@govtribe.com if you need assistance.'
-		);
-	}
-	else
-	{
-		Config::set('api.sentKey', $keyProvided);
+		if(!$sentKey)
+		{
+			return App::make('Govtribe\Controllers\APIController')->setStatusCode(403)->respondWithError(
+				'Please provide your API key as a request header (X-GT-API-Key: myapikey). Contact help@govtribe.com if you need assistance.'
+			);
+		}
+		elseif ($sentKey && !$keyIsValid)
+		{
+			return App::make('Govtribe\Controllers\APIController')->setStatusCode(403)->respondWithError(
+				'The API key you provided (' . $sentKey . ') is not valid. Contact help@govtribe.com if you need assistance.'
+			);
+		}
+		else
+		{
+			Config::set('api.sentKey', $sentKey);
+		}
 	}
 });

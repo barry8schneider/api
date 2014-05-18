@@ -35,9 +35,9 @@ class KeyRepository {
 
 	public function isValid($key)
 	{
-		$key = $this->entity->where('key', $key)->remember(60)->first(['_id']);
+		$keyRecord = $this->entity->remember(60)->find($key);
 
-		if ($key)
+		if ($keyRecord)
 		{
 			return true;
 		}

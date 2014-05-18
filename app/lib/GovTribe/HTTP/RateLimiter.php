@@ -48,8 +48,12 @@ class RateLimiter implements HttpKernelInterface {
 		// Handle on passed down request
 		$response = $this->kernel->handle($request, $type, $catch);
 
+		$isAPIRoute = in_array($request->segment(1), $this->app->config->get('api.routes'));
+		$statusCode = $response->getStatusCode();
+		$env = $this->app->environment();
+
 		// Rate limit API request by key.
-		if ($this->app->environment() !== 'local' && in_array($request->segment(1), $this->app->config->get('api.routes')))
+		if ($env !== 'local' && $statusCode === 200 && $isAPIRoute)
 		{
 			// Load the current API key.
 			$sentKey = $this->app->config->get('api.sentKey');
