@@ -9,7 +9,12 @@ return array(
 	*/
 
 	'defaultVersion' => '30',
-	'supportedVersions' => array('30'),
+	'supportedVersions' => ['30'],
 	'requestedVersion' => null,
 	'sentKey' => null,
+	'routes' => [
+		'activity', 'agency', 'category',
+		'office', 'person', 'project',
+		'protest', 'vendor',
+	],
 );

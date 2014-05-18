@@ -48,7 +48,8 @@ class RateLimiter implements HttpKernelInterface {
 		// Handle on passed down request
 		$response = $this->kernel->handle($request, $type, $catch);
 
-		if ($this->app->environment() !== 'local')
+		// Rate limit API request by key.
+		if ($this->app->environment() !== 'local' && in_array($request->segment(1), $this->app->config->get('api.routes')))
 		{
 			// Load the current API key.
 			$sentKey = $this->app->config->get('api.sentKey');
@@ -56,7 +57,6 @@ class RateLimiter implements HttpKernelInterface {
 			// Load the key record.
 			$key = $this->app->make('GovTribe\Storage\KeyRepository')->find($sentKey, ['rateLimit', 'email']);
 
-			// Rate limit by API key.
 			$cacheKey = $key->email . ':requestslasthour';
 			$requestsPerHour = $key->rateLimit;
 

@@ -16,10 +16,10 @@ Route::get('/', function()
 	return View::make('docs');
 });
 
+Route::controller('key', 'GovTribe\Controllers\EnrollmentController');
+
 Route::group(array('before' => 'api.key|api.version', 'namespace' => 'GovTribe\Controllers'), function()
 {
-	Route::controller('key', 'EnrollmentController');
-
 	Route::get('activity/feed', array('uses' => 'ActivityController@getFeed'));
 	Route::resource('activity', 'ActivityController', array('only' => array('show', 'index')));
 
