@@ -97,7 +97,7 @@ Route::filter('api.key', function()
 	$keyIsValid = App::make('GovTribe\Storage\KeyRepository')->isValid($sentKey);
 	$env = App::environment();
 
-	if ($env === 'local')
+	if ($env !== 'local')
 	{
 		if(!$sentKey)
 		{
