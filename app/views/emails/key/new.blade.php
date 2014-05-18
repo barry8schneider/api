@@ -25,8 +25,9 @@
 			height: 500px;
 			position: absolute;
 			left: 50%;
-			top: 20%;
-			margin-left: -150px;
+			top: 50%;
+			margin-left: -250px;
+			margin-top: -250px;
 		}
 
 		a, a:visited {
