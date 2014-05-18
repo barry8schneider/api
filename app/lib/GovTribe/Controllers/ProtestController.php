@@ -40,54 +40,12 @@ class ProtestController extends APIController {
 		);
 
 		$entity = $this->entity->find($id, $columns);
+		$this->transformer->setMode('resource');
 
 		if (!$entity)
 		{
 			return $this->errorNotFound('Did you just invent an id and try loading a protest?');
 		}
 		else return $this->respondWithItem($entity, $this->transformer);
-	}
-
-	/**
-	 * Display a listing of the specified resource.
-	 *
-	 * @return Response
-	 */
-	public function index()
-	{
-		$params = [
-			'take' => $this->take,
-			'columns' => ['name', '_id'],
-			'skip' => $this->skip,
-		];
-
-		$response = $this->entity->findRecentlyActive($params);
-
-		$paginator = \Paginator::make($response->getResults(), $response->getTotalHits(), $this->take);
-
-		return $this->respondWithPaginator($paginator, $this->transformer);
-	}
-
-	/**
-	 * Search for entities.
-	 *
-	 * @return Response
-	 */
-	public function getSearch()
-	{
-		if (!$this->request->get('q')) return $this->index();
-
-		$params = [
-			'take' => $this->take,
-			'columns' => ['name', '_id'],
-			'skip' => $this->skip,
-			'query' => $this->request->get('q'),
-		];
-
-		$response = $this->entity->search($params);
-
-		$paginator = \Paginator::make($response->getResults(), $response->getTotalHits(), $this->take);
-
-		return $this->respondWithPaginator($paginator, $this->transformer);
 	}
 }

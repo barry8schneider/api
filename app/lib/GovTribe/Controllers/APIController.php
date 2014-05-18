@@ -68,10 +68,89 @@ class APIController extends BaseController {
 		$this->entity = $entity;
 		$this->fractal = $manager;
 		$this->transformer = $transformer;
-
-		$this->config->set('cache.prefix', $this->config->get('cache.prefix') . 'v' . $this->config->get('api.defaultVersion'));
-
+		
 		if ($request->get('page', 0) > 1) $this->skip = ($request->get('page') - 1 ) * $this->take;
+	}
+
+	/**
+	 * Display a listing of the specified resource.
+	 *
+	 * @return Response
+	 */
+	public function index()
+	{
+		$params = [
+			'take' => $this->take,
+			'columns' => ['name', '_id', 'mail'],
+			'skip' => $this->skip,
+		];
+
+		$response = $this->entity->findRecentlyActive($params);
+
+		$this->transformer->setMode('index');
+
+		$paginator = \Paginator::make($response->getResults(), $response->getTotalHits(), $this->take);
+
+		return $this->respondWithPaginator($paginator, $this->transformer);
+	}
+
+	/**
+	 * Search for entities.
+	 *
+	 * @return Response
+	 */
+	public function getSearch()
+	{
+		if (!$this->request->get('q')) return $this->index();
+
+		$params = [
+			'take' => $this->take,
+			'columns' => ['name', '_id'],
+			'skip' => $this->skip,
+			'query' => $this->request->get('q'),
+		];
+
+		$response = $this->entity->search($params);
+		$this->transformer->setMode('index');
+
+		$paginator = \Paginator::make($response->getResults(), $response->getTotalHits(), $this->take);
+
+		return $this->respondWithPaginator($paginator, $this->transformer);
+	}
+
+	/**
+	 * Get entities related to this entity for a given slice attribute.
+	 *
+	 * @param  string  $id
+	 * @param  string  $sliceName
+	 * @return Response
+	 */
+	public function getSlice($id, $sliceName)
+	{
+		$entity = $this->entity->find($id, ['_id']);
+		
+		if (!$entity)
+		{
+			return $this->index();
+		}
+		else
+		{
+			$params = [
+				'take' => $this->take,
+				'columns' => ['name', '_id'],
+				'skip' => $this->skip,
+				'sliceName' => $sliceName,
+				'entity' => $entity,
+			];
+
+			$response = $this->entity->slice($params);
+			$transformer = $response['collection']->getTransformer();
+			$transformer->setMode('index');
+
+			$paginator = \Paginator::make($response['collection']->toNTIs(), $response['total'], $this->take);
+
+			return $this->respondWithPaginator($paginator, $transformer);
+		}
 	}
 
 	/**
@@ -116,7 +195,6 @@ class APIController extends BaseController {
 	 */
 	protected function respondWithItem($item, $transformer)
 	{
-		$transformer->setMode('resource');
 		$resource = Item::make($item, $transformer);
 		$rootScope = $this->fractal->createData($resource);
 
@@ -132,7 +210,6 @@ class APIController extends BaseController {
 	 */
 	protected function respondWithCollection($collection, $transformer) 
 	{
-		$transformer->setMode('index');
 		$resource = Collection::make($collection, $transformer);
 		$rootScope = $this->fractal->createData($resource);
 
@@ -144,22 +221,23 @@ class APIController extends BaseController {
 	 *
 	 * @param  mixed    $collection
 	 * @param  mixed    $transformer
+	 * @param  array    $appends
 	 * @return Response
 	 */
-	protected function respondWithPaginator(Paginator $paginator, $transformer) 
+	protected function respondWithPaginator(Paginator $paginator, $transformer, array $appends = array()) 
 	{
-		$transformer->setMode('index');
 		$collection = $paginator->getCollection();
 
 		$resource = Collection::make($collection, $transformer);
-		$resource->setPaginator(new IlluminatePaginatorAdapter($paginator));
 
+		$leaguePaginator = new IlluminatePaginatorAdapter($paginator);
+		$leaguePaginator->appends($appends);
+
+		$resource->setPaginator($leaguePaginator);
 		$data = $this->fractal->createData($resource)->toArray();
 
 		$response = array();
-
 		$response['results'] = $data['data'];
-
 		$response['pagination'] = array(
 			'total' => $data['pagination']['total'],
 			'count' => $data['pagination']['count'],

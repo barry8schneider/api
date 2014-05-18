@@ -121,9 +121,12 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 
 		// Govtribe.
-		'GovTribe\Middleware\MiddlewareServiceProvider',
+		'GovTribe\HTTP\HTTPServiceProvider',
 		'GovTribe\Transformers\TransformerServiceProvider',
 		'GovTribe\Search\SearchServiceProvider',
+		'GovTribe\LaravelKinvey\LaravelKinveyServiceProvider',
+		'GovTribe\LaravelKinvey\LaravelKinveyAuthServiceProvider',
+		'GovTribe\Mandrill\MandrillServiceProvider',
 
 		// 3rd party.
 		'Jenssegers\Mongodb\MongodbServiceProvider',
@@ -198,9 +201,11 @@ return array(
 		//GovTribe.
 		'Response'        => 'GovTribe\Response\Response',
 		'Search'          => 'GovTribe\Search\Facades\Search',
+		'Kinvey'          => 'GovTribe\LaravelKinvey\Facades\Kinvey',
+		'User'            => 'GovTribe\Models\User',
 
 		//3rd Party.
-		'Fractal' => 'm4tthumphrey\FractalLaravel\Facade',
+		'Fractal'             => 'm4tthumphrey\FractalLaravel\Facade',
 	),
 
 );

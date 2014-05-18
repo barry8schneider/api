@@ -46,6 +46,7 @@ class ActivityController extends APIController {
 		);
 
 		$entity = $this->entity->find($id, $columns);
+		$this->transformer->setMode('resource');
 
 		if (!$entity || in_array($entity->type, $this->privateTypes))
 		{
@@ -70,9 +71,42 @@ class ActivityController extends APIController {
 		];
 
 		$response = $this->entity->findRecentlyActive($params);
+		$this->transformer->setMode('index');
 
 		$paginator = \Paginator::make($response->getResults(), $response->getTotalHits(), $this->take);
 
 		return $this->respondWithPaginator($paginator, $this->transformer);
+	}
+
+	/**
+	 * Get an activity feed for one more entities.
+	 *
+	 * @return Response
+	 */
+	public function getFeed()
+	{
+		$participants = explode(',', $this->request->get('ids'));
+		foreach ($participants as &$id) $id = new \MongoId($id);
+		$timestampRange = $this->request->get('timestampRange', time() - 31556940);
+
+		$params = [
+			'take' => $this->take,
+			'columns' => ['actors', 'targets', 'actions'],
+			'skip' => $this->skip,
+			'participants' => $participants,
+			'timestampRange' => new \MongoDate($timestampRange),
+			'skip' => $this->skip,
+		];
+
+		$response = $this->entity->makeFeed($params);
+		$this->transformer->setMode('resource');
+
+		$paginator = \Paginator::make($response->all(), $response->count(), $this->take);
+
+		return $this->respondWithPaginator(
+			$paginator, 
+			$this->transformer, 
+			['ids' => $this->request->get('ids'), 'timestampRange' => $timestampRange]
+		);
 	}
 }

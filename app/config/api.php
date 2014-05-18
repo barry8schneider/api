@@ -11,4 +11,5 @@ return array(
 	'defaultVersion' => '30',
 	'supportedVersions' => array('30'),
 	'requestedVersion' => null,
+	'sentKey' => null,
 );
