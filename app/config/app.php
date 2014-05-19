@@ -126,9 +126,9 @@ return array(
 		'GovTribe\Search\SearchServiceProvider',
 		'GovTribe\LaravelKinvey\LaravelKinveyServiceProvider',
 		'GovTribe\LaravelKinvey\LaravelKinveyAuthServiceProvider',
-		'GovTribe\Mandrill\MandrillServiceProvider',
 
 		// 3rd party.
+		'Jenssegers\Raven\RavenServiceProvider',
 		'Jenssegers\Mongodb\MongodbServiceProvider',
 		'Way\Generators\GeneratorsServiceProvider',
 		'm4tthumphrey\FractalLaravel\ServiceProvider',

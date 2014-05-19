@@ -10,7 +10,7 @@
 		"m4tthumphrey/fractal-laravel" : "1.*",
 		"ruflin/Elastica": "*",
 		"GovTribe/laravel-kinvey": "dev-master",
-		"mandrill/mandrill": "1.0.*"
+		"jenssegers/raven": "*"
 	},
 	"require-dev": {
 		"way/generators": "2.*",
