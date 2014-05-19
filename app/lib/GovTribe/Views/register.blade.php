@@ -24,7 +24,7 @@
           ]
         )}}
         <h1 class="form-key-enroll-heading">Send Me An API Key!</h1>
-        <p>Free API keys are limited to 500 requests per day and 4 requests per second. If you need more than that, please <a href="mailto:help@govtribe.com?Subject=API%20Key">contact us.</a></p>
+        <p>Free API keys are limited to 1200 requests per month and 4 requests per second. If you need more than that, please <a href="mailto:help@govtribe.com?Subject=API%20Key">contact us.</a></p>
         <hr>
         <div class="form-group">
           {{ Form::label('name', 'Name') }}

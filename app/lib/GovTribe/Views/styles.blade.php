@@ -42,5 +42,5 @@ a, a:visited {
 
 .modal-wide .modal-dialog {
   margin-top: 300px;
-  width: 30%; /* or whatever you wish */
+  width: 30%;
 }

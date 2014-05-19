@@ -61,6 +61,7 @@ class User extends KinveyUser
 		if (!$this->exists)
 		{
 			$this->attributes['joinDate'] = time();
+			$this->attributes['baseSubscriptionExpirationDate'] = \Carbon\Carbon::now()->addMonths(1)->timestamp;
 		}
 
 		parent::__construct($attributes);
