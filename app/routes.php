@@ -28,15 +28,15 @@ Route::group(array('before' => 'api.key|api.version', 'namespace' => 'GovTribe\C
 	Route::resource('agency', 'AgencyController', array('only' => array('show', 'index')));
 
 	Route::get('category/search', array('uses' => 'CategoryController@getSearch'));
-	Route::get('category/slice/{id}/{sliceName}', array('uses' => 'CategoryController@getSlice'));
+	Route::get('category/{id}/slice/{sliceName}', array('uses' => 'CategoryController@getSlice'));
 	Route::resource('category', 'CategoryController', array('only' => array('show', 'index')));
 
 	Route::get('office/search', array('uses' => 'OfficeController@getSearch'));
-	Route::get('office/slice/{id}/{sliceName}', array('uses' => 'OfficeController@getSlice'));
+	Route::get('office/{id}/slice/{sliceName}', array('uses' => 'OfficeController@getSlice'));
 	Route::resource('office', 'OfficeController', array('only' => array('show', 'index')));
 
 	Route::get('person/search', array('uses' => 'PersonController@getSearch'));
-	Route::get('person/slice/{id}/{sliceName}', array('uses' => 'PersonController@getSlice'));
+	Route::get('person/{id}/slice/{sliceName}', array('uses' => 'PersonController@getSlice'));
 	Route::resource('person', 'PersonController', array('only' => array('show', 'index')));
 
 	Route::get('project/search', array('uses' => 'ProjectController@getSearch'));
@@ -46,7 +46,7 @@ Route::group(array('before' => 'api.key|api.version', 'namespace' => 'GovTribe\C
 	Route::resource('protest', 'ProtestController', array('only' => array('show', 'index')));
 
 	Route::get('vendor/search', array('uses' => 'VendorController@getSearch'));
-	Route::get('vendor/slice/{id}/{sliceName}', array('uses' => 'VendorController@getSlice'));
+	Route::get('vendor/{id}/slice/{sliceName}', array('uses' => 'VendorController@getSlice'));
 	Route::resource('vendor', 'VendorController', array('only' => array('show', 'index')));
 
 	Route::controller('/', 'APIController');
