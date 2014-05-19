@@ -1,5 +1,6 @@
 <?php namespace GovTribe\Controllers;
 
+use App;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\View\Environment as View;
 use Illuminate\Validation\Factory as Validator;
@@ -42,7 +43,7 @@ class EnrollmentController extends BaseController {
 	 */
 	public function getIndex()
 	{
-		return $this->view->make('enroll');
+		return $this->view->make('register');
 	}
 
 	/**
@@ -62,14 +63,14 @@ class EnrollmentController extends BaseController {
 		$rules = [
 			'firstName' => 'required',
 			'lastName' => 'required',
-			'email' => 'required|email'
+			'email' => 'required|email',
 		];
 
 		$validator = $this->validator->make($formData, $rules);
 
 		if ($validator->passes())
 		{
-			$user = $this->userRepository->findByEmail($formData['email'], ['username', 'first_name', 'last_name']);
+			$user = $this->userRepository->findByEmail($formData['email']);
 			$key = $this->keyRepository->findByEmail($formData['email'], ['_id']);
 
 			if ($user && $key)
@@ -98,10 +99,16 @@ class EnrollmentController extends BaseController {
 
 			$data['name'] = $data['user']->first_name . ' ' . $data['user']->lastName;
 
-			$this->mailer->send('emails.key.new', $data, function($message) use ($data)
+			$this->mailer->send('emails.key.deliver', $data, function($message) use ($data)
 			{
 				$message->to($data['user']['username'], $data['name'])->subject('Your GovTribe API Key');
 			});
+
+			return \Response::json();
+		}
+		else
+		{
+			throw new \Exception($validator->messages()->first());
 		}
 	}
 
@@ -127,6 +134,8 @@ class EnrollmentController extends BaseController {
 		$formData['username'] = $formData['email'];
 		$formData['first_name'] = $formData['firstName'];
 		$formData['last_name'] = $formData['lastName'];
+
+		if (empty($formData['company'])) unset($formData['company']);
 
 		return $this->userRepository->create($formData);
 	}

@@ -16,7 +16,7 @@ Route::get('/', function()
 	return View::make('docs');
 });
 
-Route::controller('key', 'GovTribe\Controllers\EnrollmentController');
+Route::controller('register', 'GovTribe\Controllers\EnrollmentController');
 
 Route::group(array('before' => 'api.key|api.version', 'namespace' => 'GovTribe\Controllers'), function()
 {

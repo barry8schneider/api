@@ -46,7 +46,7 @@ class User extends KinveyUser
 	protected $fillable = [
 		'first_name', 'last_name', 
 		'company', 'username', 
-		'email',
+		'email', 'platforms',
 	];
 
 	/**

@@ -32,7 +32,7 @@ class UserRepository {
 
 	public function addPlatform(User $user, $platform)
 	{
-		$user->platforms = $platforms;
+		$platforms = $user->platforms;
 		$platforms[] = 'api';
 		$platforms = array_unique($platforms);
 		$user->platforms = $platforms;
