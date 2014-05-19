@@ -27,12 +27,12 @@ body {
 }
 
 .showkey {
-  width: 500px;
+  width: 600px;
   height: 500px;
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -250px;
+  margin-left: -300px;
   margin-top: -250px;
 }
 

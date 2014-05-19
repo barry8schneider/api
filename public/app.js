@@ -16,17 +16,6 @@ var submitEnrollForm = function(frm) {
   $( "#enrollsubmit" ).addClass("disabled");
   $('#appWindow').fadeTo("fast", 0.33);
 
-  var opts = {
-    lines: 13, // The number of lines to draw
-    length: 20, // The length of each line
-    width: 10, // The line thickness
-    radius: 30, // The radius of the inner circle
-    corners: 1, // Corner roundness (0..1)
-    top: '150', // Top position relative to parent in px
-  };
-  var target = document.getElementById('spinner');
-  var spinner = new Spinner(opts).spin(target);
-
   $.ajax({
     type: frm.attr('method'),
     url: frm.attr('action'),
@@ -35,7 +24,6 @@ var submitEnrollForm = function(frm) {
   })
     .done(function(data) {
       $('#appWindow').fadeIn('slow');
-      spinner.stop();
       $( "#enrollsubmit" ).removeClass("disabled");
 
       $("#modalTitle").replaceWith("It's on the way...");
@@ -51,7 +39,6 @@ var submitEnrollForm = function(frm) {
 
     .fail(function(data) {
       $('#appWindow').fadeIn('slow');
-      spinner.stop();
       $( "#enrollsubmit" ).removeClass("disabled");
 
       $("#modalTitle").replaceWith("Oops!");
