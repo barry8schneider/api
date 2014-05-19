@@ -59,28 +59,45 @@ class RateLimiter implements HttpKernelInterface {
 			$sentKey = $this->app->config->get('api.sentKey');
 
 			// Load the key record.
-			$key = $this->app->make('GovTribe\Storage\KeyRepository')->find($sentKey, ['rateLimit', 'email']);
+			$key = $this->app->make('GovTribe\Storage\KeyRepository')->find($sentKey, ['limits', 'email']);
 
-			$cacheKey = $key->email . ':requestslasthour';
-			$requestsPerHour = $key->rateLimit;
+			$perHourCacheKey = $key->email . ':requestslasthour';
+			$perDayCacheKey = $key->email . ':requestslastday';
 
-			$this->app->cache->add($cacheKey, 0, 60);
-			$count = $this->app->cache->get($cacheKey);
+			$this->app->cache->add($perHourCacheKey, 0, 60);
+			$this->app->cache->add($perDayCacheKey, 0, 1440);
 
-			if($count > $requestsPerHour)
+			$perHourLimit = (int) $key->limits['perHour'];
+			$perDayLimit = (int) $key->limits['perDay'];
+
+			$perHourUsed = (int) $this->app->cache->get($perHourCacheKey);
+			$perDayUsed = (int) $this->app->cache->get($perDayCacheKey);
+
+			if ($perHourUsed > $perHourLimit)
 			{
 				$response = $this->app->make('Govtribe\Controllers\APIController')->setStatusCode(403)->respondWithError(
-					'Rate limit exceeded. If you need a higher limit, contact help@govtribe.com.'
+					'Requests per hour rate limit exceeded. If you need a higher limit, contact help@govtribe.com.'
+				);
+			}
+			elseif ($perDayUsed > $perDayLimit)
+			{
+				$response = $this->app->make('Govtribe\Controllers\APIController')->setStatusCode(403)->respondWithError(
+					'Requests per day rate limit exceeded. If you need a higher limit, contact help@govtribe.com.'
 				);
 			}
 			else
 			{
-				$this->app->cache->increment($cacheKey);
+				$this->app->cache->increment($perHourCacheKey);
+				$this->app->cache->increment($perDayCacheKey);
 			}
 
-			$remaining = ($requestsPerHour - (int) $count) < 0 ? 0 : $requestsPerHour - (int) $count;
-			$response->headers->set('X-GT-Rate-Limit-Remaining', $remaining, false);
-			$response->headers->set('X-GT-Rate-Limit', $requestsPerHour, false);
+			$requestsPerDayRemaining = ($perDayLimit - $perDayUsed) - 1 < 0 ? 0 : ($perDayLimit - $perDayUsed) - 1;
+			$requestsPerHourRemaining = ($perHourLimit - $perHourUsed) -1 < 0 ? 0 : ($perHourLimit - $perHourUsed) -1;
+
+			$response->headers->set('X-GT-Rate-Limit-Day-Remaining', $requestsPerDayRemaining, false);
+			$response->headers->set('X-GT-Rate-Limit-Day', $perDayLimit, false);
+			$response->headers->set('X-GT-Rate-Limit-Hour-Remaining', $requestsPerHourRemaining, false);
+			$response->headers->set('X-GT-Rate-Limit-Hour', $perHourLimit, false);
 		}
 
 		return $response;
