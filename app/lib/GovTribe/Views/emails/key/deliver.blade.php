@@ -17,6 +17,5 @@
       <p>Free API keys are limited to 500 requests per day and 4 requests per second. If you need more than that, please <a href="mailto:help@govtribe.com?Subject=API%20Key">contact us.</a></p>
     </div>
   </div>
-  @include('scripts')
   </body>
 </html>
