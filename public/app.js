@@ -9,11 +9,16 @@ $(document).ready(function(event) {
     event.preventDefault();
     submitEnrollForm(frm);
   });
+
+  $('body').on('hidden.bs.modal', '.modal', function () {
+      $(this).removeData('bs.modal');
+      $('#appWindow').fadeTo('fast', 1);
+  });
+
 });
 
 var submitEnrollForm = function(frm) {
 
-  $( "#enrollsubmit" ).addClass("disabled");
   $('#appWindow').fadeTo("fast", 0.33);
 
   $.ajax({
@@ -23,33 +28,26 @@ var submitEnrollForm = function(frm) {
     dataType: 'json',
   })
     .done(function(data) {
-      $('#appWindow').fadeIn('slow');
-      $( "#enrollsubmit" ).removeClass("disabled");
-
-      $("#modalTitle").replaceWith("It's on the way...");
-      $("#modalBody").replaceWith("Wait a moment and check your email. In the mean time, take a look at the <a href='http://api.govtribe.com'>documentation</a>.");
-      $(".modalClose").attr("href", "http://www.govtribe.com");
+      $("#modalTemplate #modalTitle").html("It's on the way...");
+      $("#modalTemplate #modalBody").html("Wait a moment and check your email. In the mean time, take a look at the <a href='http://api.govtribe.com'>documentation</a>.");
+      $('.modalClose').click(function() {
+        window.location.href='http://www.govtribe.com';
+      });
 
       $('#modalTemplate').modal({
         keyboard: false
       });
-
-      $( "#enrollsubmit" ).removeClass("disabled");
     })
 
     .fail(function(data) {
-      $('#appWindow').fadeIn('slow');
-      $( "#enrollsubmit" ).removeClass("disabled");
-
-      $("#modalTitle").replaceWith("Oops!");
-      $("#modalBody").replaceWith("Looks like we're having a problem. Please try again later.");
-      $(".modalClose").attr("href", "http://www.govtribe.com");
-
+      $("#modalTemplate #modalTitle").html('Oops!');
+      $("#modalTemplate #modalBody").html(data.responseText);
+      $('.modalClose').click(function() {
+        $('#modalTemplate').modal('hide');
+      });
       $('#modalTemplate').modal({
         keyboard: false
       });
-
-      $( "#enrollsubmit" ).removeClass("disabled");
     });
 };
 

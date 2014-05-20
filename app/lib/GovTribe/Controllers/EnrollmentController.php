@@ -58,12 +58,16 @@ class EnrollmentController extends BaseController {
 			'lastName' => $this->request->get('lastName'),
 			'company' => $this->request->get('company'),
 			'email' => $this->request->get('email'),
+			'my_name' => $this->request->get('my_name'),
+			'my_time' => $this->request->get('my_time'),
 		];
 
 		$rules = [
 			'firstName' => 'required',
 			'lastName' => 'required',
 			'email' => 'required|email',
+			'my_name' => 'honeypot',
+			'my_time' => 'required|honeytime:5'
 		];
 
 		$validator = $this->validator->make($formData, $rules);
@@ -108,7 +112,7 @@ class EnrollmentController extends BaseController {
 		}
 		else
 		{
-			throw new \Exception($validator->messages()->first());
+			return $validator->messages()->first();
 		}
 	}
 

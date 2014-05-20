@@ -87,14 +87,14 @@ class ActivityController extends APIController {
 	{
 		$participants = explode(',', $this->request->get('ids'));
 		foreach ($participants as &$id) $id = new \MongoId($id);
-		$timestampRange = $this->request->get('timestampRange', time() - 31556940);
+		$since = $this->request->get('since', time() - 31556940);
 
 		$params = [
 			'take' => $this->take,
 			'columns' => ['actors', 'targets', 'actions'],
 			'skip' => $this->skip,
 			'participants' => $participants,
-			'timestampRange' => new \MongoDate($timestampRange),
+			'since' => new \MongoDate($since),
 			'skip' => $this->skip,
 		];
 
@@ -106,7 +106,7 @@ class ActivityController extends APIController {
 		return $this->respondWithPaginator(
 			$paginator, 
 			$this->transformer, 
-			['ids' => $this->request->get('ids'), 'timestampRange' => $timestampRange]
+			['ids' => $this->request->get('ids'), 'since' => $since]
 		);
 	}
 }

@@ -6,11 +6,12 @@
 	"require": {
 		"php": ">=5.5.0",
 		"laravel/framework": "4.1.*",
-		"jenssegers/mongodb": "*",
-		"m4tthumphrey/fractal-laravel" : "1.*",
-		"ruflin/Elastica": "*",
+		"jenssegers/mongodb": "1.3.0",
+		"m4tthumphrey/fractal-laravel" : "1.0",
+		"ruflin/Elastica": "1.1.1.1",
 		"GovTribe/laravel-kinvey": "dev-master",
-		"jenssegers/raven": "*"
+		"jenssegers/raven": "1.2.0",
+		"msurguy/honeypot": "dev-master"
 	},
 	"require-dev": {
 		"way/generators": "2.*",

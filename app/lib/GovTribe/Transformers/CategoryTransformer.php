@@ -50,6 +50,7 @@ class CategoryTransformer extends Transformer
 					'organizationalStats' => [
 						'activePeople' => $entity->activePeople ? (array) $entity->activePeople : [],
 						'activeOffices' => $entity->activeOffices ? (array) $entity->activeOffices : [],
+						'activeAgencies' => $entity->activeAgencies ? (array) $entity->activeAgencies : [],
 					],
 
 					'obligationStats' => [

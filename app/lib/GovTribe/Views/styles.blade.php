@@ -39,8 +39,3 @@ body {
 a, a:visited {
   text-decoration:none;
 }
-
-.modal-wide .modal-dialog {
-  margin-top: 300px;
-  width: 30%;
-}

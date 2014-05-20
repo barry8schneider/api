@@ -68,7 +68,11 @@ class APIController extends BaseController {
 		$this->entity = $entity;
 		$this->fractal = $manager;
 		$this->transformer = $transformer;
+
+		// Disable sessions for API routes
+		$this->config->set('session.driver', 'array');
 		
+		// Set the skip value for paginated colletion responses
 		if ($request->get('page', 0) > 1) $this->skip = ($request->get('page') - 1 ) * $this->take;
 	}
 

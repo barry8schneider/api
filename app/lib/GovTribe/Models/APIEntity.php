@@ -182,6 +182,15 @@ class APIEntity extends \Jenssegers\Mongodb\Model {
 		else return [];
 	}
 
+	public function getActiveAgenciesAttribute()
+	{
+		if (isset($this->attributes['market']['characteristics']['activeAgenciesPerYear']))
+		{
+			return $this->attributes['market']['characteristics']['activeAgenciesPerYear'];
+		}
+		else return [];
+	}
+
 	public function getActiveOfficesAttribute()
 	{
 		if (isset($this->attributes['market']['characteristics']['activeOfficesPerYear']))

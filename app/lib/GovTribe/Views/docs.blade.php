@@ -83,7 +83,7 @@ a.list-group-item.heading {
 }
 #nav {
   margin-top: 38px;
-  min-width: 255px;
+  max-width: 255px;
   top: 0;
   bottom: 0;
   padding-right: 12px;
@@ -5345,4 +5345,9 @@ a.list-group-item.heading {
   $('table').addClass('table');
 
 }).call(this);
-</script></html>
+</script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+e.src='//www.google-analytics.com/analytics.js';
+r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+ga('create','UA-35493497-2');ga('send','pageview');</script></html>

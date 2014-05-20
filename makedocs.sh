@@ -1,1 +1,1 @@
-aglio -i docs/docs.md -o app/lib/GovTribe/views/docs.blade.php
+aglio -t ./docs/template.jade -i docs/docs.md -o app/lib/GovTribe/views/docs.blade.php

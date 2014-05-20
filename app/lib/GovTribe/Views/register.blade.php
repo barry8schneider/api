@@ -44,6 +44,7 @@
           <div class="help-block with-errors"></div>
         </div>
         <hr>
+          {{ Form::honeypot('my_name', 'my_time') }}
           {{ Form::submit('Submit', ['class'=>'btn btn-primary btn-lg btn-block', 'id' => 'enrollsubmit']) }}
           {{ Form::close() }}
       </div>
@@ -58,7 +59,7 @@
             <p id="modalBody"></p>
           </div>
           <div class="modal-footer">
-              <a href="#" class="btn btn-default modalClose">Close</a><!-- note the use of "data-dismiss" -->
+              <button type="button" class="btn btn-primary modalClose">Close</button>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->

@@ -50,10 +50,9 @@ class RateLimiter implements HttpKernelInterface {
 
 		$isAPIRoute = in_array($request->segment(1), $this->app->config->get('api.routes'));
 		$statusCode = $response->getStatusCode();
-		$env = $this->app->environment();
 
 		// Rate limit API request by key.
-		if ($env !== 'local' && $statusCode === 200 && $isAPIRoute)
+		if ($statusCode === 200 && $isAPIRoute)
 		{
 			// Load the current API key.
 			$sentKey = $this->app->config->get('api.sentKey');
@@ -96,8 +95,6 @@ class RateLimiter implements HttpKernelInterface {
 
 			$response->headers->set('X-GT-Rate-Limit-Day-Remaining', $requestsPerDayRemaining, false);
 			$response->headers->set('X-GT-Rate-Limit-Day', $perDayLimit, false);
-			$response->headers->set('X-GT-Rate-Limit-Hour-Remaining', $requestsPerHourRemaining, false);
-			$response->headers->set('X-GT-Rate-Limit-Hour', $perHourLimit, false);
 		}
 
 		return $response;

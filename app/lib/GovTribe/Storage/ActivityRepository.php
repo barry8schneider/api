@@ -30,9 +30,9 @@ class ActivityRepository extends EntityRepository {
 		$result = $this->entity->raw(function($collection) use ($params, &$count)
 		{
 			$query = [
-				'type' => ['$in' => ['protest', 'project']],
-				'participants' => ['$in' => $params['participants']],
+				'type' => ['$in' => ['project', 'protest']],
 				'timestamp' => ['$gte' => $params['timestampRange']],
+				'participants' => ['$in' => $params['participants']],
 			];
 
 			$fields = [
