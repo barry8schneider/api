@@ -47,13 +47,14 @@ class MixpanelServiceProvider extends ServiceProvider {
 	{
 		$this->app->after(function($request, $response)
 		{
-			if (!in_array($request->segment(1), $this->app->config->get('api.routes'))) return;
+			$apiUser = $this->app->make('GovTribe\Storage\KeyRepository')->find($this->app->config->get('api.sentKey'), ['email']);
+
+			if (!$apiUser || !in_array($request->segment(1), $this->app->config->get('api.routes'))) return;
 
 			$action = $this->buildAction($request, $response);
-			$userEmail = $this->app->make('GovTribe\Storage\KeyRepository')->find($this->app->config->get('api.sentKey'), ['email'])->email;
 
 			$mp = App::make('mixpanel');
-			$mp->identify($userEmail);
+			$mp->identify($apiUser->username);
 			$mp->track($action['actionName'], $action['actionDetails']);
 		});
 	}
