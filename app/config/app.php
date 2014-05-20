@@ -127,6 +127,7 @@ return array(
 		'GovTribe\LaravelKinvey\LaravelKinveyServiceProvider',
 		'GovTribe\LaravelKinvey\LaravelKinveyAuthServiceProvider',
 		'GovTribe\Raven\RavenServiceProvider',
+		'GovTribe\Mixpanel\MixpanelServiceProvider',
 
 		// 3rd party.
 		'Jenssegers\Mongodb\MongodbServiceProvider',
@@ -204,6 +205,7 @@ return array(
 		'Search'          => 'GovTribe\Search\Facades\Search',
 		'Kinvey'          => 'GovTribe\LaravelKinvey\Facades\Kinvey',
 		'User'            => 'GovTribe\Models\User',
+		'Mixpanel'        => 'GovTribe\Mixpanel\Facades',
 
 		//3rd Party.
 		'Fractal'             => 'm4tthumphrey\FractalLaravel\Facade',

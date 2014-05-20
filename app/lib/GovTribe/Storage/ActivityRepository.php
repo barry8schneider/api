@@ -31,7 +31,7 @@ class ActivityRepository extends EntityRepository {
 		{
 			$query = [
 				'type' => ['$in' => ['project', 'protest']],
-				'timestamp' => ['$gte' => $params['timestampRange']],
+				'timestamp' => ['$gte' => $params['since']],
 				'participants' => ['$in' => $params['participants']],
 			];
 
