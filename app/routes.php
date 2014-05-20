@@ -48,6 +48,4 @@ Route::group(array('before' => 'api.key|api.version', 'namespace' => 'GovTribe\C
 	Route::get('vendor/search', array('uses' => 'VendorController@getSearch'));
 	Route::get('vendor/{id}/slice/{sliceName}', array('uses' => 'VendorController@getSlice'));
 	Route::resource('vendor', 'VendorController', array('only' => array('show', 'index')));
-
-	Route::controller('/', 'APIController');
 });
