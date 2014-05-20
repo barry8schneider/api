@@ -4573,7 +4573,69 @@ In this example, the actions are:
     + Body
     
             {
-                "Hello" : "There"
+                "actions": [
+                    {
+                        "action": "updated",
+                        "value": true
+                    },
+                    {
+                        "action": "changedTheStatusTo",
+                        "value": "Justification and Approval (J&A)"
+                    },
+                    {
+                        "action": "addedFiles",
+                        "value": 1
+                    },
+                    {
+                        "action": "changedTheWorkflowStatusTo",
+                        "value": "Awarded"
+                    },
+                    {
+                        "action": "removedAContact",
+                        "value": [
+                            "Richard Ferraiolo"
+                        ]
+                    }
+                ],
+                "activityType": "project",
+                "actors": [
+                    {
+                        "name": "Department of the Navy",
+                        "type": "agency",
+                        "_id": "51548151db40a5165c0000d1"
+                    },
+                    {
+                        "name": "Naval Supply Systems Command",
+                        "type": "office",
+                        "_id": "51c1d4dddb40a5298c79c740"
+                    },
+                    {
+                        "name": "NAVSUP Weapon Systems Support Philadelphia PA",
+                        "type": "office",
+                        "_id": "51c1d4e8db40a5298c79c75c"
+                    },
+                    {
+                        "name": "Manufacturing: Computer, Electronics, Appliances",
+                        "type": "category",
+                        "_id": "518ecbf0db40a51b0b00009c"
+                    },
+                    {
+                        "name": "Communication, detection, and radiation equipment",
+                        "type": "category",
+                        "_id": "518ecbf0db40a51b0b000034"
+                    }
+                ],
+                "name": "Update",
+                "targets": [
+                    {
+                        "name": "Receiver Transmitter",
+                        "type": "project",
+                        "_id": "52a092fde3dd9054348b4567"
+                    }
+                ],
+                "timestamp": "2014-05-20T11:05:00-0400",
+                "type": "activity",
+                "_id": "537b92226c5cc8fb188b4567"
             }
 
     + Schema
@@ -4694,16 +4756,181 @@ For example, let's say you are interested in seeing the contracting activity for
 
 + Parameters
 
-    + ids (string, `51f79dd2ca985f9b7c00031c`) ... one or more comma separated `id` strings for the desired entities. If this parameter is not provided, the activity feed for all entities will be returned.
-    + since = `now-31556926` (optional, number, `1399822866`) ... the distance back in time for a particular call as a milliseconds since epoch.
+    + ids (string, `51548151db40a5165c0000d1,51c1d4dddb40a5298c79c740`) ... one or more comma separated `id` strings for the desired entities.
+    + since  (optional, number, `1399822866`) ... the distance back in time for a particular call as milliseconds. Default is one year 
 
 + Model
 
     + Body
     
             {
-                "Hello" : "there",
-                "You look" : "nice"
+                "results": [
+                    {
+                        "actions": [
+                            {
+                                "action": "updated",
+                                "value": true
+                            },
+                            {
+                                "action": "changedTheStatusTo",
+                                "value": "Award Notice"
+                            },
+                            {
+                                "action": "removedTheDueDate",
+                                "value": true
+                            },
+                            {
+                                "action": "awarded",
+                                "value": true
+                            },
+                            {
+                                "action": "addedAwardValue",
+                                "value": "$50,817.06"
+                            },
+                            {
+                                "action": "changedTheWorkflowStatusTo",
+                                "value": "Awarded"
+                            },
+                            {
+                                "action": "awardedTo",
+                                "value": [
+                                    "Mac Business Solutions Inc."
+                                ]
+                            }
+                        ],
+                        "activityType": "project",
+                        "actors": [
+                            {
+                                "name": "Department of Health and Human Services",
+                                "type": "agency",
+                                "_id": "51548150db40a5165c0000c6"
+                            },
+                            {
+                                "name": "Food and Drug Administration",
+                                "type": "office",
+                                "_id": "51c1d621ca985fad34000076"
+                            },
+                            {
+                                "name": "Office of Acquisitions and Grants Services",
+                                "type": "office",
+                                "_id": "51c1d621ca985fad34000077"
+                            },
+                            {
+                                "name": "General purpose information technology equipment",
+                                "type": "category",
+                                "_id": "518ecbf0db40a51b0b00003c"
+                            }
+                        ],
+                        "name": "Update",
+                        "targets": [
+                            {
+                                "name": "Apple Mac Pros",
+                                "type": "project",
+                                "_id": "5373cae66c5cc89e1b8b4567"
+                            },
+                            {
+                                "name": "Mac Business Solutions Inc.",
+                                "type": "vendor",
+                                "_id": "51e0671eca985fd31705c1e1"
+                            }
+                        ],
+                        "timestamp": "2014-05-20T11:09:00-0400",
+                        "type": "activity",
+                        "_id": "537b97ed6c5cc8fc258b4567"
+                    },
+                    {
+                        "actions": [
+                            {
+                                "action": "added",
+                                "value": true
+                            },
+                            {
+                                "action": "named",
+                                "value": "Maintenance Agreement for a Tecan Infinite F500 Microplate Reader"
+                            },
+                            {
+                                "action": "setTheStatusTo",
+                                "value": "Sources Sought"
+                            },
+                            {
+                                "action": "addedADueDate",
+                                "value": "2014-05-27T14:00:00-0400"
+                            },
+                            {
+                                "action": "addedASolicitationNumber",
+                                "value": "FDA_14-223-SOL-1134480"
+                            },
+                            {
+                                "action": "addedFiles",
+                                "value": 1
+                            },
+                            {
+                                "action": "setTheWorkflowStatusTo",
+                                "value": "Presolicitation"
+                            },
+                            {
+                                "action": "addedAContact",
+                                "value": [
+                                    "Yolanda T. Peer"
+                                ]
+                            }
+                        ],
+                        "activityType": "project",
+                        "actors": [
+                            {
+                                "name": "Department of Health and Human Services",
+                                "type": "agency",
+                                "_id": "51548150db40a5165c0000c6"
+                            },
+                            {
+                                "name": "Food and Drug Administration",
+                                "type": "office",
+                                "_id": "51c1d621ca985fad34000076"
+                            },
+                            {
+                                "name": "Office of Acquisitions and Grants Services",
+                                "type": "office",
+                                "_id": "51c1d621ca985fad34000077"
+                            },
+                            {
+                                "name": "Yolanda T. Peer",
+                                "type": "person",
+                                "_id": "51c2832dca985ff1380000d7"
+                            },
+                            {
+                                "name": "Electronic Equipment Repair and Maintenance",
+                                "type": "category",
+                                "_id": "518ecbf0db40a51b0b000109"
+                            },
+                            {
+                                "name": "Maintenance, repair and rebuilding of equipment",
+                                "type": "category",
+                                "_id": "518ecbf0db40a51b0b00005a"
+                            }
+                        ],
+                        "name": "Posting",
+                        "targets": [
+                            {
+                                "name": "Maintenance Agreement for a Tecan Infinite F500 Microplate Reader",
+                                "type": "project",
+                                "_id": "537b98166c5cc89c268b4567"
+                            }
+                        ],
+                        "timestamp": "2014-05-20T11:00:00-0400",
+                        "type": "activity",
+                        "_id": "537b98166c5cc89c268b4568"
+                    },
+                ],
+                "pagination": {
+                    "total": 7658,
+                    "count": 50,
+                    "perPage": 50,
+                    "currentPage": 1,
+                    "totalPages": 154,
+                    "links": {
+                        "next": "http://api.govtribe.com/activity/feed?page=2&ids=51548150db40a5165c0000c6%2C51c1d621ca985fad34000077&timestampRange=1369051836"
+                    }
+                }
             }
             
    + Schema
@@ -4712,27 +4939,12 @@ For example, let's say you are interested in seeing the contracting activity for
                 "type" : "object",
                 "description" : "An activity feed for one or more entities. Paginated and sorted by activity timestamp.",
                 "properties" : {
-                    "entityIDs" : {
-                        "type": "array",
-                        "uniqueItems" : true,
-                        "description" : "entity IDs for the requested activity feed",
-                        "minLength" : 0,
-                        "maxLength" : 30,
-                        "items" : {
-                            "type" : "string",
-                            "description" : "An entity id"
-                        }    
-                    },
-                    "since" : {
-                        "type" : "number",
-                        "description" : "the distance back in time for a particular call as a milliseconds since epoch."
-                    },
                     "results" : {
                         "type": "array",
                         "uniqueItems" : true,
                         "description" : "The activity objects for submitted set of entity IDs",
                         "minLength" : 0,
-                        "maxLength" : 30,
+                        "maxLength" : 50,
                         "items" : {
                             "type": "object",
                             "properties" : {
