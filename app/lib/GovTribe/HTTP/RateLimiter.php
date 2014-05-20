@@ -74,13 +74,13 @@ class RateLimiter implements HttpKernelInterface {
 
 			if ($perHourUsed > $perHourLimit)
 			{
-				$response = $this->app->make('Govtribe\Controllers\APIController')->setStatusCode(403)->respondWithError(
+				$response = $this->app->make('GovTribe\Controllers\APIController')->setStatusCode(403)->respondWithError(
 					'Requests per hour rate limit exceeded. If you need a higher limit, contact help@govtribe.com.'
 				);
 			}
 			elseif ($perDayUsed > $perDayLimit)
 			{
-				$response = $this->app->make('Govtribe\Controllers\APIController')->setStatusCode(403)->respondWithError(
+				$response = $this->app->make('GovTribe\Controllers\APIController')->setStatusCode(403)->respondWithError(
 					'Requests per day rate limit exceeded. If you need a higher limit, contact help@govtribe.com.'
 				);
 			}
