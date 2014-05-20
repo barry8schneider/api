@@ -36,6 +36,16 @@ Collection of one of the eight types of entities, returned as a paginated list o
 
 + Model
 
+    + Headers
+
+            Content-Type: application/json
+            X-GT-Rate-Limit-Day: 40
+            X-GT-Rate-Limit-Day-Remaining: 40
+            X-GT-API-Version: 3.0
+            X-GT-Rate-Limit-Hour: 10
+            X-GT-Rate-Limit-Hour-Remaining: 10
+            X-GT-Response-Time: 0.181 sec
+    
     + Body
     
             {
@@ -171,6 +181,16 @@ A project is a U.S. federal government contract or opportunity.
     + _id (required, string, `5375057a6c5cc8435b8b4567`) ... String `id` of the desired project entity to return.
 
 + Model
+
+    + Headers
+
+            Content-Type: application/json
+            X-GT-Rate-Limit-Day: 40
+            X-GT-Rate-Limit-Day-Remaining: 40
+            X-GT-API-Version: 3.0
+            X-GT-Rate-Limit-Hour: 10
+            X-GT-Rate-Limit-Hour-Remaining: 10
+            X-GT-Response-Time: 0.181 sec
 
     + Body
     
@@ -834,6 +854,16 @@ Search Projects by keyword or phrase. GovTribe searches project names and synops
     
 + Model
 
+    + Headers
+
+            Content-Type: application/json
+            X-GT-Rate-Limit-Day: 40
+            X-GT-Rate-Limit-Day-Remaining: 40
+            X-GT-API-Version: 3.0
+            X-GT-Rate-Limit-Hour: 10
+            X-GT-Rate-Limit-Hour-Remaining: 10
+            X-GT-Response-Time: 0.181 sec
+
     + Body
         
             {
@@ -1053,6 +1083,16 @@ An agency is a U.S. government agency. Ain't that descriptive?
     + _id (required, string, `51548151db40a5165c0000cf`) ... String `id` of the desired agency entity.
 
 + Model
+
+    + Headers
+
+            Content-Type: application/json
+            X-GT-Rate-Limit-Day: 40
+            X-GT-Rate-Limit-Day-Remaining: 40
+            X-GT-API-Version: 3.0
+            X-GT-Rate-Limit-Hour: 10
+            X-GT-Rate-Limit-Hour-Remaining: 10
+            X-GT-Response-Time: 0.181 sec
 
     + Body
     
@@ -1883,6 +1923,16 @@ Find Agencies by their name or acronym
     
 + Model
 
+    + Headers
+
+            Content-Type: application/json
+            X-GT-Rate-Limit-Day: 40
+            X-GT-Rate-Limit-Day-Remaining: 40
+            X-GT-API-Version: 3.0
+            X-GT-Rate-Limit-Hour: 10
+            X-GT-Rate-Limit-Hour-Remaining: 10
+            X-GT-Response-Time: 0.181 sec
+
     + Body
         
             {
@@ -2025,6 +2075,16 @@ An Office is a sub unit of a U.S. government agency
     + _id (required, string, `51c1d4dadb40a5298c79c731`) ... String `id` of the desired Office entity.
 
 + Model
+
+    + Headers
+
+            Content-Type: application/json
+            X-GT-Rate-Limit-Day: 40
+            X-GT-Rate-Limit-Day-Remaining: 40
+            X-GT-API-Version: 3.0
+            X-GT-Rate-Limit-Hour: 10
+            X-GT-Rate-Limit-Hour-Remaining: 10
+            X-GT-Response-Time: 0.181 sec
 
     + Body
     
@@ -2846,6 +2906,16 @@ Find an office by its name or acronym.
     
 + Model
 
+    + Headers
+
+            Content-Type: application/json
+            X-GT-Rate-Limit-Day: 40
+            X-GT-Rate-Limit-Day-Remaining: 40
+            X-GT-API-Version: 3.0
+            X-GT-Rate-Limit-Hour: 10
+            X-GT-Rate-Limit-Hour-Remaining: 10
+            X-GT-Response-Time: 0.181 sec
+
     + Body
         
             {
@@ -2967,6 +3037,16 @@ An Person is a U.S. government point of contact for one or more projects
     + _id (required, string, `51c275c6ca985fa61e000099`) ... String `id` of the desired Person entity.
 
 + Model
+
+    + Headers
+
+            Content-Type: application/json
+            X-GT-Rate-Limit-Day: 40
+            X-GT-Rate-Limit-Day-Remaining: 40
+            X-GT-API-Version: 3.0
+            X-GT-Rate-Limit-Hour: 10
+            X-GT-Rate-Limit-Hour-Remaining: 10
+            X-GT-Response-Time: 0.181 sec
 
     + Body
     
@@ -3289,6 +3369,16 @@ Find a person by their name, email, telephone number, or position.
     
 + Model
 
+    + Headers
+
+            Content-Type: application/json
+            X-GT-Rate-Limit-Day: 40
+            X-GT-Rate-Limit-Day-Remaining: 40
+            X-GT-API-Version: 3.0
+            X-GT-Rate-Limit-Hour: 10
+            X-GT-Rate-Limit-Hour-Remaining: 10
+            X-GT-Response-Time: 0.181 sec
+
     + Body
         
             {
@@ -3476,6 +3566,16 @@ An Vendor is an entity that has been awarded a Project
     + _id (required, string, `51ed43bdca985f6c78000018`) ... String `id` of the desired Vendor entity.
 
 + Model
+
+    + Headers
+
+            Content-Type: application/json
+            X-GT-Rate-Limit-Day: 40
+            X-GT-Rate-Limit-Day-Remaining: 40
+            X-GT-API-Version: 3.0
+            X-GT-Rate-Limit-Hour: 10
+            X-GT-Rate-Limit-Hour-Remaining: 10
+            X-GT-Response-Time: 0.181 sec
 
     + Body
     
@@ -3770,6 +3870,16 @@ Find a vendor by name.
     
 + Model
 
+    + Headers
+
+            Content-Type: application/json
+            X-GT-Rate-Limit-Day: 40
+            X-GT-Rate-Limit-Day-Remaining: 40
+            X-GT-API-Version: 3.0
+            X-GT-Rate-Limit-Hour: 10
+            X-GT-Rate-Limit-Hour-Remaining: 10
+            X-GT-Response-Time: 0.181 sec
+
     + Body
         
             {
@@ -3919,6 +4029,16 @@ Categories are a hierarchical topical grouping construct. They are based on NAIC
     + _id (required, string, `518ecbf0db40a51b0b000067`) ... String `id` of the desired Category entity.
 
 + Model
+
+    + Headers
+
+            Content-Type: application/json
+            X-GT-Rate-Limit-Day: 40
+            X-GT-Rate-Limit-Day-Remaining: 40
+            X-GT-API-Version: 3.0
+            X-GT-Rate-Limit-Hour: 10
+            X-GT-Rate-Limit-Hour-Remaining: 10
+            X-GT-Response-Time: 0.181 sec
 
     + Body
     
@@ -4389,6 +4509,16 @@ Find a category by its name.
     
 + Model
 
+    + Headers
+
+            Content-Type: application/json
+            X-GT-Rate-Limit-Day: 40
+            X-GT-Rate-Limit-Day-Remaining: 40
+            X-GT-API-Version: 3.0
+            X-GT-Rate-Limit-Hour: 10
+            X-GT-Rate-Limit-Hour-Remaining: 10
+            X-GT-Response-Time: 0.181 sec
+
     + Body
         
             { 
@@ -4569,6 +4699,16 @@ In this example, the actions are:
     + _id (required, string, `51f79dd2ca985f9b7c00031c`) ... string `id` of the desired Activity.
 
 + Model
+
+    + Headers
+
+            Content-Type: application/json
+            X-GT-Rate-Limit-Day: 40
+            X-GT-Rate-Limit-Day-Remaining: 40
+            X-GT-API-Version: 3.0
+            X-GT-Rate-Limit-Hour: 10
+            X-GT-Rate-Limit-Hour-Remaining: 10
+            X-GT-Response-Time: 0.181 sec
 
     + Body
     
@@ -4760,6 +4900,16 @@ For example, let's say you are interested in seeing the contracting activity for
     + since  (optional, number, `1399822866`) ... the distance back in time for a particular call as milliseconds. Default is one year 
 
 + Model
+
+    + Headers
+
+            Content-Type: application/json
+            X-GT-Rate-Limit-Day: 40
+            X-GT-Rate-Limit-Day-Remaining: 40
+            X-GT-API-Version: 3.0
+            X-GT-Rate-Limit-Hour: 10
+            X-GT-Rate-Limit-Hour-Remaining: 10
+            X-GT-Response-Time: 0.181 sec
 
     + Body
     
@@ -5070,6 +5220,16 @@ Each of these disputes is a protest object.
 
 + Model
 
+    + Headers
+
+            Content-Type: application/json
+            X-GT-Rate-Limit-Day: 40
+            X-GT-Rate-Limit-Day-Remaining: 40
+            X-GT-API-Version: 3.0
+            X-GT-Rate-Limit-Hour: 10
+            X-GT-Rate-Limit-Hour-Remaining: 10
+            X-GT-Response-Time: 0.181 sec
+
     + Body
     
             {
@@ -5272,6 +5432,16 @@ Find a protest by...
     + q (required, string `Challenge`) ... The string with which we will query the protests
     
 + Model
+
+    + Headers
+
+            Content-Type: application/json
+            X-GT-Rate-Limit-Day: 40
+            X-GT-Rate-Limit-Day-Remaining: 40
+            X-GT-API-Version: 3.0
+            X-GT-Rate-Limit-Hour: 10
+            X-GT-Rate-Limit-Hour-Remaining: 10
+            X-GT-Response-Time: 0.181 sec
 
     + Body
         
