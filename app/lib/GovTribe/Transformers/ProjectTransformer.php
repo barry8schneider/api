@@ -10,7 +10,7 @@ class ProjectTransformer extends Transformer
 		{
 			case '30':
 				$data = array(
-					'name' => $entity->name ? $entity->name: self::NULL_TEXT,
+					'name' => $entity->name ? $item = preg_replace('/\s+/S', ' ', $entity->name) : self::NULL_TEXT,
 					'type' => 'project',
 					'_id' => $entity->_id,
 				);
