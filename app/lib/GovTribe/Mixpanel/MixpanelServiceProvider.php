@@ -45,7 +45,7 @@ class MixpanelServiceProvider extends ServiceProvider {
 	 */
 	protected function registerListeners()
 	{
-		$this->app->after(function($request, $response)
+		$this->app->finish(function($request, $response)
 		{
 			$apiUser = $this->app->make('GovTribe\Storage\KeyRepository')->find($this->app->config->get('api.sentKey'), ['email']);
 
