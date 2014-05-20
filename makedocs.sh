@@ -1,1 +1,1 @@
-aglio -i docs/docs.md -o app/lib/GovTribe/views/docs.php
+aglio -i docs/docs.md -o app/lib/GovTribe/views/docs.blade.php
