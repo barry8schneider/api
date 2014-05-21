@@ -54,7 +54,7 @@ class MixpanelServiceProvider extends ServiceProvider {
 			$action = $this->buildAction($request, $response);
 
 			$mp = App::make('mixpanel');
-			$mp->identify($apiUser->username);
+			$mp->identify($apiUser->email);
 			$mp->track($action['actionName'], $action['actionDetails']);
 		});
 	}
