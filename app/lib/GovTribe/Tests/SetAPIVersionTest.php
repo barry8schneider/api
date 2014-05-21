@@ -1,31 +1,34 @@
 <?php namespace GovTribe\Tests;
 
 use \Mockery as Mockery;
-use GovTribe\Models\Agency;
 
 class SetAPIVersionTest extends TestCase
 {
-
-	public function __construct()
-	{
-		$this->mock = Mockery::mock('GovTribe\Controllers\AgencyController');
-	}
 
 	public function tearDown()
 	{
 		Mockery::close();
 	}
 
-	public function testSetDefault()
+	public function test()
 	{
-		$this->mock
-			->shouldReceive('index', 'getAfterFilters', 'getBeforeFilters', 'callAction')
-			->andReturn([]);
+		$this->app['router']->enableFilters();
 
-		$this->app->instance('GovTribe\Controllers\AgencyController', $this->mock);
+		$this->mock('GovTribe\Storage\KeyRepository')
+			->shouldReceive('isValid')
+			->once()
+			->andReturn(true);
 
-		$response = $this->action('GET', 
-			'GovTribe\Controllers\AgencyController@index'
+		$this->mock('GovTribe\Storage\AgencyRepository')
+			->shouldReceive('findRecentlyActive')
+			->once()
+			->andReturn();
+
+		$response = $this->action(
+			'GET', 
+			'GovTribe\Controllers\AgencyController@index',
+			[], [], [],
+			['HTTP_X-GT-API-KEY' => 'mykey']
 		);
 
 		$this->assertResponseStatus(200);

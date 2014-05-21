@@ -24,7 +24,24 @@ class PersonController extends APIController {
 	{
 		parent::__construct($request, $config, $entity, $manager, $transformer);
 	}
-	
+
+	/**
+	 * Display a listing of the specified resource.
+	 *
+	 * @param  array  $params
+	 * @return Response
+	 */
+	public function index(array $params = array())
+	{
+		$params = [
+			'take' => $this->take,
+			'columns' => ['name', '_id', 'mail'],
+			'skip' => $this->skip,
+		];
+
+		return parent::index($params);
+	}
+
 	/**
 	 * Display the specified resource.
 	 *

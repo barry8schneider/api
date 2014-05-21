@@ -31,6 +31,24 @@ class ActivityController extends APIController {
 	{
 		parent::__construct($request, $config, $entity, $manager, $transformer);
 	}
+
+	/**
+	 * Display a listing of the specified resource.
+	 *
+	 * @param  array  $params
+	 * @return Response
+	 */
+	public function index(array $params = array())
+	{
+		$params = [
+			'take' => $this->take,
+			'columns' => ['name', '_id', 'type'],
+			'skip' => $this->skip,
+			'privateTypes' => $this->privateTypes,
+		];
+
+		return parent::index($params);
+	}
 	
 	/**
 	 * Display the specified resource.
@@ -53,29 +71,6 @@ class ActivityController extends APIController {
 			return $this->errorNotFound('Did you just invent an id and try loading an activity message?');
 		}
 		else return $this->respondWithItem($entity, $this->transformer);
-	}
-
-	/**
-	 * Display a listing of the specified resource.
-	 *
-	 * @param  object  $collection
-	 * @return Response
-	 */
-	public function index()
-	{
-		$params = [
-			'take' => $this->take,
-			'columns' => ['name', '_id', 'type'],
-			'skip' => $this->skip,
-			'privateTypes' => $this->privateTypes,
-		];
-
-		$response = $this->entity->findRecentlyActive($params);
-		$this->transformer->setMode('index');
-
-		$paginator = \Paginator::make($response->getResults(), $response->getTotalHits(), $this->take);
-
-		return $this->respondWithPaginator($paginator, $this->transformer);
 	}
 
 	/**

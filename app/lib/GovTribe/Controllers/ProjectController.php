@@ -38,6 +38,23 @@ class ProjectController extends APIController {
 	}
 
 	/**
+	 * Display a listing of the specified resource.
+	 *
+	 * @param  array  $params
+	 * @return Response
+	 */
+	public function index(array $params = array())
+	{
+		$params = [
+			'take' => $this->take,
+			'columns' => ['name', '_id'],
+			'skip' => $this->skip,
+		];
+
+		return parent::index($params);
+	}
+
+	/**
 	 * Display the specified resource.
 	 *
 	 * @param  string  $id

@@ -79,21 +79,19 @@ class APIController extends BaseController {
 	/**
 	 * Display a listing of the specified resource.
 	 *
+	 * @param  array  $params
 	 * @return Response
 	 */
-	public function index()
+	public function index(array $params)
 	{
-		$params = [
-			'take' => $this->take,
-			'columns' => ['name', '_id', 'mail'],
-			'skip' => $this->skip,
-		];
+		$this->transformer->setMode('index');
 
 		$response = $this->entity->findRecentlyActive($params);
 
-		$this->transformer->setMode('index');
+		$results = $response ? $response->getResults() : [];
+		$count = $response ? $response->getTotalHits() : 0;
 
-		$paginator = \Paginator::make($response->getResults(), $response->getTotalHits(), $this->take);
+		$paginator = \Paginator::make($results, $count, $this->take);
 
 		return $this->respondWithPaginator($paginator, $this->transformer);
 	}
