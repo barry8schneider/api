@@ -2,11 +2,11 @@
 /vendor
 composer.phar
 composer.lock
-.env.*.php
-.env.php
 .DS_Store
 Thumbs.db
 /app/views/hello.php
+.env.php
 .env.local.php
+.env.production.php
 npm-debug.log
 /node_modules
