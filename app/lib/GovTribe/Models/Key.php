@@ -24,8 +24,7 @@ class Key extends \Jenssegers\Mongodb\Model {
 		'email' => null,
 		'registrationIp' => null,
 		'limits' => [
-			'perHour' => 240,
-			'perDay' => 40,
+			'perMonth' => 1000,
 		],
 		'isValid' => true,
 	);

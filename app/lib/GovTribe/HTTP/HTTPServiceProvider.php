@@ -12,6 +12,7 @@ class HTTPServiceProvider extends ServiceProvider {
 	public function register()
 	{
 		$this->app->middleware('GovTribe\HTTP\RateLimiter', array($this->app));
+		$this->app->middleware('GovTribe\HTTP\KeyUsageLimiter', array($this->app));
 	}
 
 }

@@ -1,10 +1,11 @@
 <?php namespace GovTribe\HTTP;
 
 use Illuminate\Foundation\Application;
+use Carbon\Carbon;
 use Symfony\Component\HttpKernel\HttpKernelInterface;
 use Symfony\Component\HttpFoundation\Request as SymfonyRequest;
 
-class RateLimiter implements HttpKernelInterface {
+class KeyUsageLimiter implements HttpKernelInterface {
 
 	/**
 	 * The wrapped kernel implementation.
@@ -51,25 +52,31 @@ class RateLimiter implements HttpKernelInterface {
 		$isAPIRoute = in_array($request->segment(1), $this->app->config->get('api.routes'));
 		$statusCode = $response->getStatusCode();
 
-		// Rate limit by IP address to 240 requests per minute.
+		// Rate limit API request by key.
 		if ($statusCode === 200 && $isAPIRoute)
 		{
-			$requestsPerMinute = 240;
+			// Load the current API key
+			$sentKey = $this->app->config->get('api.sentKey');
 
-			$key = sprintf('ipratelimit:%s', $request->getClientIp());
+			// Load the key record and create the cache key
+			$key = $this->app->make('GovTribe\Storage\KeyRepository')->find($sentKey, ['limits', 'email']);
+			$cacheKey = sprintf('keyusagelimit:%s', $key->email);
 
-			// Add an entry to the cache, if doesn't exist, create it and remember it for one minute
-			$this->app->cache->add($key, 0, 1);
+			$this->app->cache->add($cacheKey, 0, Carbon::now()->addDays(30));
 
-			// Add to count
-			$count = $this->app->cache->increment($key);
+			$limit = (int) $key->limits['perMonth'];
+			$used = (int)  $this->app->cache->increment($cacheKey);
 
-			if( $count > $requestsPerMinute )
+			if ($used > $limit)
 			{
 				$response = $this->app->make('GovTribe\Controllers\APIController')->setStatusCode(403)->respondWithError(
-					'Whoa. Send less than 4 requests per second.'
+					'Too many requests for this key. If you need a higher limit, contact help@govtribe.com.'
 				);
 			}
+
+			$remaining = ($limit - $used) < 0 ? 0 : $limit - $used;
+			$response->headers->set('X-GT-Rate-Limit', $limit, false);
+			$response->headers->set('X-GT-Rate-Limit-Remaining', $remaining, false);
 		}
 
 		return $response;
