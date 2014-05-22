@@ -177,7 +177,7 @@ class ProjectTest extends TestCase
         $this->assertArrayHasKey('obligationData', $data);
         $this->assertInternalType('array', $data['obligationData']);
         $this->assertEmpty($data['obligationData']);
-        
+
 
         //awardData
         $this->assertArrayHasKey('awardData', $data);
@@ -206,10 +206,7 @@ class ProjectTest extends TestCase
         $this->assertInternalType('array', $data['pointsOfContact']);
         $this->assertEmpty($data['pointsOfContact']);
 
-        $this->assertArrayHasKey('awardedVendors', $data);
-        $this->assertInternalType('array', $data['awardedVendors']);
-        $this->assertEmpty($data['awardedVendors']);
-
+        
         $this->assertArrayHasKey('categories', $data);
         $this->assertInternalType('array', $data['categories']);
         $this->assertEmpty($data['categories']);
