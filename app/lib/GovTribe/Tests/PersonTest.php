@@ -44,8 +44,30 @@ class PersonTest extends TestCase
 			['HTTP_X-GT-API-KEY' => 'mykey']
 		);
 
+        //Case 1 - Legit entity
 		$this->assertResponseStatus(200);
 		$data = $response->getData(true);
+
+        $this->assertArrayHasKey('results', $data);
+        $this->assertInternalType('array', $data['results']);
+        $this->assertNotEmpty($data['results']);
+
+        $this->assertInternalType('array', $data['results'][0]);
+
+        $this->assertArrayHasKey('name', $data['results'][0]);
+        $this->assertInternalType('string', $data['results'][0]['name']);
+        $this->assertEquals($data['results'][0]['name'], 'Test Person');
+
+        $this->assertArrayHasKey('_id', $data['results'][0]);
+        $this->assertInternalType('string', $data['results'][0]['_id']);
+        $this->assertEquals($data['results'][0]['_id'], '51f79dd2ca985f9b7c00031c');
+
+        $this->assertArrayHasKey('type', $data['results'][0]);
+        $this->assertInternalType('string', $data['results'][0]['type']);
+        $this->assertEquals($data['results'][0]['type'], 'person');
+
+        //Case 2 - null handling
+        $this->assertEquals($data['results'][1]['name'], Transformer::NULL_TEXT);
 
 	}
 
