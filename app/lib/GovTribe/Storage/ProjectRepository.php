@@ -53,16 +53,16 @@ class ProjectRepository extends EntityRepository {
 		if ($params['query'])
 		{
 			$matchName = new \Elastica\Query\Match;
-			$matchName->setFieldQuery('name.full', $params['query']);
-			$matchName->setFieldAnalyzer('name.full', 'standard');
-			$matchName->setFieldOperator('name.full', 'and');
-			$matchName->setFieldBoost('name.full', 5);
-			$matchName->setFieldFuzziness('name.full', 1);
+			$matchName->setFieldQuery('name', $params['query']);
+			$matchName->setFieldAnalyzer('name', 'standard');
+			$matchName->setFieldOperator('name', 'and');
+			$matchName->setFieldBoost('name', 3);
+			$matchName->setFieldFuzziness('name', 1);
 			$boolQuery->addShould($matchName);
 
 			$matchSynopsis = new \Elastica\Query\Match;
 			$matchSynopsis->setFieldQuery('synopsis', $params['query']);
-			$matchName->setFieldAnalyzer('synopsis', 'standard');
+			$matchSynopsis->setFieldAnalyzer('synopsis', 'standard');
 			$matchSynopsis->setFieldOperator('synopsis', 'and');
 			$boolQuery->addShould($matchSynopsis);
 		}
