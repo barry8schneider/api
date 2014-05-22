@@ -65,7 +65,7 @@ class ProjectController extends APIController {
 		$columns = array(
 			'name', 'type', '_id', 'timestamp',
 			'NAICS', 'setAsideType', 'dueDate',
-			'dueDatesByStatus', 'workflowStatus.workflowStatus',
+			'importantDates', 'workflowStatus.workflowStatus',
 			'people', 'goodsOrServices', 'POPs', 'placeOfPerformanceText',
 			'sourceLink', 'solicitationNumbers', 'contractNumbers',
 			'files', 'classCode', 'agencies', 'categories', 'raws', 'offices',

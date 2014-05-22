@@ -1,7 +1,7 @@
 <?php namespace GovTribe\Models;
 
 use GovTribe\Traits\Strings;
-use GovTribe\Transformers\ProjectTransformer;
+use GovTribe\Transformers\Transformer;
 
 class Project extends APIEntity {
 
@@ -67,73 +67,17 @@ class Project extends APIEntity {
 		return $output;
 	}
 
-	public function getImportantDatesAttribute()
+	public function getImportantDatesAttribute($importantDates)
 	{
-		$forecast = ProjectTransformer::NULL_TEXT;
-		$presolicitationPosting = ProjectTransformer::NULL_TEXT;
-		$presolicitationDue = ProjectTransformer::NULL_TEXT;
-		$solicitationPosting = ProjectTransformer::NULL_TEXT;
-		$solicitationDue = ProjectTransformer::NULL_TEXT;
-		$award = ProjectTransformer::NULL_TEXT;
-		$contractEnd = ProjectTransformer::NULL_TEXT;
-		$basePeriodEnd = ProjectTransformer::NULL_TEXT;
-		$optionPeriodEnd = ProjectTransformer::NULL_TEXT;
+		if (!$importantDates) return [];
 
-		if (isset($this->attributes['dueDatesByStatus']))
+		foreach ($importantDates as $key => &$item)
 		{
-			$ddbs = $this->attributes['dueDatesByStatus'];
-
-			if (isset($ddbs[0]['date'])) $presolicitationDue = $ddbs[0]['date'];
-			if (isset($ddbs[1]['date'])) $solicitationDue = $ddbs[1]['date'];
+			$item['dateType'] = $key;
+			if (!$item['date']) $item['date'] = Transformer::NULL_TEXT;
 		}
 
-		return [
-			[
-				'dateType' => 'Forecast',
-				'date' => $forecast,
-				'valueSource' => 'Sourced',
-			],
-			[
-				'dateType' => 'Presolicitation Posting',
-				'date' => $presolicitationPosting,
-				'valueSource' => 'Sourced',
-			],
-			[
-				'dateType' => 'Presolicitation Due',
-				'date' => $presolicitationDue,
-				'valueSource' => 'Sourced',
-			],
-			[
-				'dateType' =>  'Solicitation Posting',
-				'date' => $solicitationPosting,
-				'valueSource' => 'Sourced',
-			],
-			[
-				'dateType' => 'Solicitation Due',
-				'date' => $solicitationDue,
-				'valueSource' => 'Sourced',
-			],
-			[
-				'dateType' => 'Award',
-				'date' => $award,
-				'valueSource' => 'Sourced',
-			],
-			[
-				'dateType' => 'Contract End',
-				'date' => $contractEnd,
-				'valueSource' => 'Sourced',
-			],
-			[
-				'dateType' => 'Base Period End',
-				'date' => $basePeriodEnd,
-				'valueSource' => 'Sourced',
-			],
-			[
-				'dateType' => 'Option Period End',
-				'date' => $optionPeriodEnd,
-				'valueSource' => 'Sourced',
-			]
-		];
+		return array_values($importantDates);
 	}
 
 	public function getSynopsisCollectionAttribute()

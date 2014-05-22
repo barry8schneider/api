@@ -59,9 +59,7 @@ class ProjectTransformer extends Transformer
 						'optionPeriodsAwardData' => [],
 					],
 
-					'obligationData' => [
-						'obligations' => [],
-					],
+					'obligationData' => [],
 
 					'pointsOfContact' => $entity->people ? (array) $entity->people : [],
 					'agencies' => $entity->agencies ? (array) $entity->agencies : [],
@@ -75,7 +73,7 @@ class ProjectTransformer extends Transformer
 					'solicitationNumbers' => $entity->solicitationNumbers ? (array) $entity->solicitationNumbers : [],
 					'contractNumbers' => $entity->contractNumbers ? (array) $entity->contractNumbers : [],
 					'files' => $entity->files ? (array) $entity->files : [],
-					'synopses' => $entity->synopsisCollection ? (array) $entity->synopsisCollection : self::NULL_TEXT,
+					'synopses' => $entity->synopsisCollection ? (array) $entity->synopsisCollection : [],
 
 					'predictedCompetition' => $entity->predictedCompetition ? (array) $entity->predictedCompetition : [],
 				);
