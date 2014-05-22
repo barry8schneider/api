@@ -83,6 +83,10 @@ return array(
 			'prefix'   => '',
 		),
 
+		'kinvey' => array(
+			'driver' => 'kinvey',
+		),
+
 		'databot' => array(
 			'driver'   => 'mongodb',
 			'host'     => $_ENV['MONGO_HOST_DATABOT'],
