@@ -174,10 +174,10 @@ class ProjectTest extends TestCase
 
 
         //obligationData
-        $this->assertArrayHasKey('obligtationData', $data);
-        $this->assertInternalType('array', $data);
-        $this->assertEmpty($data['obligtationData']);
-
+        $this->assertArrayHasKey('obligationData', $data);
+        $this->assertInternalType('array', $data['obligationData']);
+        $this->assertEmpty($data['obligationData']);
+        
 
         //awardData
         $this->assertArrayHasKey('awardData', $data);
