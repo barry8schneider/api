@@ -168,9 +168,9 @@ class ProjectTest extends TestCase
         $this->assertInternalType('array', $data['contractNumbers']);
         $this->assertEmpty($data['contractNumbers']);
 
-        $this->assertArrayHasKey('synopsis', $data);
-        $this->assertInternalType('string', $data['synopsis']);
-        $this->assertEquals($data['synopsis'], Transformer::NULL_TEXT);
+        $this->assertArrayHasKey('synopses', $data);
+        $this->assertInternalType('array', $data['synopses']);
+        $this->assertEmpty($data['synopses']);
 
 
         //obligationData
