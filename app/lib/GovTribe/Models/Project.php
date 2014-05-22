@@ -140,6 +140,8 @@ class Project extends APIEntity {
 	{
 		$synopsisCollection = [];
 
+		if (!isset($this->attributes['raws'])) return $synopsisCollection;
+
 		foreach ($this->attributes['raws'] as $NTI)
 		{
 			$raw = $this->getConnection()->getCollection('raws')->findOne(['_id' => $NTI['_id']], ['data.synopsis']);
@@ -179,6 +181,11 @@ class Project extends APIEntity {
 		$output = [];
 
 		$edges = \DB::connection('graph')->getCollection('edges');
+
+		if (!isset($this->attributes['agencies'])) return $output;
+		if (!isset($this->attributes['offices'])) return $output;
+		if (!isset($this->attributes['people'])) return $output;
+		if (!isset($this->attributes['categories'])) return $output;
 
 		$relatedNodes = array_merge(
 			$this->attributes['agencies'], 

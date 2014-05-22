@@ -9,6 +9,8 @@ class Category extends APIEntity {
 	{
 		$output = [];
 
+		if (!isset($this->attributes['ancestors'])) return $output;
+
 		if ($this->attributes['ancestors'])
 		{
 			foreach ($this->attributes['ancestors'] as $ancestorName)
