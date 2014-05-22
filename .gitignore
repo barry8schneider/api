@@ -10,3 +10,4 @@ Thumbs.db
 .env.production.php
 npm-debug.log
 /node_modules
+.idea

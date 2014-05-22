@@ -100,5 +100,64 @@ class PersonTest extends TestCase
 		$this->assertInternalType('array', $data);
 		$this->assertNotEmpty($data);
 
+        $this->assertArrayHasKey('name', $data);
+        $this->assertInternalType('string', $data['name']);
+        $this->assertEquals($data['name'], Transformer::NULL_TEXT);
+
+        $this->assertArrayHasKey('timestamp', $data);
+        $this->assertInternalType('string', $data['timestamp']);
+        $this->assertEquals($data['timestamp'], Transformer::NULL_TIMESTAMP);
+
+        $this->assertArrayHasKey('type', $data);
+        $this->assertInternalType('string', $data['type']);
+        $this->assertEquals($data['type'], 'agency');
+
+        $this->assertArrayHasKey('_id', $data);
+        $this->assertInternalType('string', $data['_id']);
+        $this->assertNotNull($data['_id']);
+
+        $this->assertArrayHasKey('email', $data);
+        $this->assertInternalType('string', $data['email']);
+        $this->assertEquals($data['email'], Transformer::NULL_TEXT);
+
+        $this->assertArrayHasKey('phone', $data);
+        $this->assertInternalType('string', $data['phone']);
+        $this->assertEquals($data['phone'], Transformer::NULL_TEXT);
+
+        $this->assertArrayHasKey('position', $data);
+        $this->assertInternalType('string', $data['position']);
+        $this->assertEquals($data['position'], Transformer::NULL_TEXT);
+
+        //relationships
+        $this->assertArrayHasKey('agencies', $data);
+        $this->assertInternalType('array', $data);
+        $this->assertEmpty($data['agencies']);
+
+        $this->assertArrayHasKey('offices', $data);
+        $this->assertInternalType('array', $data);
+        $this->assertEmpty($data['offices']);
+        
+        // procrurementStats
+        $this->assertArrayHasKey('procurementStats', $data);
+        $this->assertInternalType('array', $data['procurementStats']);
+        $this->assertNotEmpty($data['procurementStats']);
+
+        $this->assertArrayHasKey('averageTimesToAward', $data['procurementStats']);
+        $this->assertInternalType('array', $data['procurementStats']['averageTimesToAward']);
+        $this->assertEmpty($data['procurementStats']['averageTimesToAward']);
+
+        $this->assertArrayHasKey('averageAwardValues', $data['procurementStats']);
+        $this->assertInternalType('array', $data['procurementStats']['averageAwardValues']);
+        $this->assertEmpty($data['procurementStats']['averageAwardValues']);
+
+        $this->assertArrayHasKey('numbersOfAwards', $data['procurementStats']);
+        $this->assertInternalType('array', $data['procurementStats']['numbersOfAwards']);
+        $this->assertEmpty($data['procurementStats']['numbersOfAwards']);
+
+        $this->assertArrayHasKey('awardDollarFlow', $data['procurementStats']);
+        $this->assertInternalType('array', $data['procurementStats']['awardDollarFlow']);
+        $this->assertEmpty($data['procurementStats']['awardDollarFlow']);
+
+
 	}
 }
