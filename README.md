@@ -14,7 +14,7 @@ Get unified access to federal procurement data from a single API. We extract sev
 * **Activity**  - Activity represents the ongoing activity of one or more of the other entity types.
 
 # Getting Started
-To use the API you'll need a free API key. You can register for one at http://api.govtribe.com/register. Check out some of the usage examples or the full API documentation at http://api.govtribe.com/.
+To use the API you'll need a free API key. You can register for one at http://api.govtribe.com/register. Check out some of the usage examples here, or the full API documentation at http://api.govtribe.com/.
 
 Right now, the only HTTP method it uses is GET, and the only response format it supports is JSON.
 
