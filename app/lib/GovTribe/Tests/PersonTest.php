@@ -127,15 +127,17 @@ class PersonTest extends TestCase
         $this->assertArrayHasKey('position', $data);
         $this->assertInternalType('string', $data['position']);
         $this->assertEquals($data['position'], Transformer::NULL_TEXT);
+        
 
         //relationships
         $this->assertArrayHasKey('agencies', $data);
-        $this->assertInternalType('array', $data);
+        $this->assertInternalType('array', $data['agencies']);
         $this->assertEmpty($data['agencies']);
 
         $this->assertArrayHasKey('offices', $data);
-        $this->assertInternalType('array', $data);
+        $this->assertInternalType('array', $data['offices']);
         $this->assertEmpty($data['offices']);
+
 
         // procrurementStats
         $this->assertArrayHasKey('procurementStats', $data);
