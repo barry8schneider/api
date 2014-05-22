@@ -5,6 +5,12 @@ php:
 
 services: mongodb
 
+notifications:
+email:
+  - jay@govtribe.com
+  - arnob@govtribe.com
+  - nate@govtribe.com
+
 before_script:
   - echo "extension = mongo.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
   - composer self-update
