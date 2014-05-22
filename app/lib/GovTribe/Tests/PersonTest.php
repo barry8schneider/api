@@ -110,7 +110,7 @@ class PersonTest extends TestCase
 
         $this->assertArrayHasKey('type', $data);
         $this->assertInternalType('string', $data['type']);
-        $this->assertEquals($data['type'], 'agency');
+        $this->assertEquals($data['type'], 'person');
 
         $this->assertArrayHasKey('_id', $data);
         $this->assertInternalType('string', $data['_id']);
@@ -136,7 +136,7 @@ class PersonTest extends TestCase
         $this->assertArrayHasKey('offices', $data);
         $this->assertInternalType('array', $data);
         $this->assertEmpty($data['offices']);
-        
+
         // procrurementStats
         $this->assertArrayHasKey('procurementStats', $data);
         $this->assertInternalType('array', $data['procurementStats']);
