@@ -39,11 +39,9 @@ Collection of one of the eight types of entities, returned as a paginated list o
     + Headers
 
             Content-Type: application/json
-            X-GT-Rate-Limit-Day: 40
-            X-GT-Rate-Limit-Day-Remaining: 40
+            X-GT-Rate-Limit: 1000
+            X-GT-Rate-Limit-Remaining: 999
             X-GT-API-Version: 3.0
-            X-GT-Rate-Limit-Hour: 10
-            X-GT-Rate-Limit-Hour-Remaining: 10
             X-GT-Response-Time: 0.181 sec
     
     + Body
@@ -185,11 +183,9 @@ A project is a U.S. federal government contract or opportunity.
     + Headers
 
             Content-Type: application/json
-            X-GT-Rate-Limit-Day: 40
-            X-GT-Rate-Limit-Day-Remaining: 40
+            X-GT-Rate-Limit: 1000
+            X-GT-Rate-Limit-Remaining: 999
             X-GT-API-Version: 3.0
-            X-GT-Rate-Limit-Hour: 10
-            X-GT-Rate-Limit-Hour-Remaining: 10
             X-GT-Response-Time: 0.181 sec
 
     + Body
@@ -857,11 +853,9 @@ Search Projects by keyword or phrase. GovTribe searches project names and synops
     + Headers
 
             Content-Type: application/json
-            X-GT-Rate-Limit-Day: 40
-            X-GT-Rate-Limit-Day-Remaining: 40
+            X-GT-Rate-Limit: 1000
+            X-GT-Rate-Limit-Remaining: 999
             X-GT-API-Version: 3.0
-            X-GT-Rate-Limit-Hour: 10
-            X-GT-Rate-Limit-Hour-Remaining: 10
             X-GT-Response-Time: 0.181 sec
 
     + Body
@@ -1087,11 +1081,9 @@ An agency is a U.S. government agency. Ain't that descriptive?
     + Headers
 
             Content-Type: application/json
-            X-GT-Rate-Limit-Day: 40
-            X-GT-Rate-Limit-Day-Remaining: 40
+            X-GT-Rate-Limit: 1000
+            X-GT-Rate-Limit-Remaining: 999
             X-GT-API-Version: 3.0
-            X-GT-Rate-Limit-Hour: 10
-            X-GT-Rate-Limit-Hour-Remaining: 10
             X-GT-Response-Time: 0.181 sec
 
     + Body
@@ -1926,11 +1918,9 @@ Find Agencies by their name or acronym
     + Headers
 
             Content-Type: application/json
-            X-GT-Rate-Limit-Day: 40
-            X-GT-Rate-Limit-Day-Remaining: 40
+            X-GT-Rate-Limit: 1000
+            X-GT-Rate-Limit-Remaining: 999
             X-GT-API-Version: 3.0
-            X-GT-Rate-Limit-Hour: 10
-            X-GT-Rate-Limit-Hour-Remaining: 10
             X-GT-Response-Time: 0.181 sec
 
     + Body
@@ -2079,11 +2069,9 @@ An Office is a sub unit of a U.S. government agency
     + Headers
 
             Content-Type: application/json
-            X-GT-Rate-Limit-Day: 40
-            X-GT-Rate-Limit-Day-Remaining: 40
+            X-GT-Rate-Limit: 1000
+            X-GT-Rate-Limit-Remaining: 999
             X-GT-API-Version: 3.0
-            X-GT-Rate-Limit-Hour: 10
-            X-GT-Rate-Limit-Hour-Remaining: 10
             X-GT-Response-Time: 0.181 sec
 
     + Body
@@ -2909,11 +2897,9 @@ Find an office by its name or acronym.
     + Headers
 
             Content-Type: application/json
-            X-GT-Rate-Limit-Day: 40
-            X-GT-Rate-Limit-Day-Remaining: 40
+            X-GT-Rate-Limit: 1000
+            X-GT-Rate-Limit-Remaining: 999
             X-GT-API-Version: 3.0
-            X-GT-Rate-Limit-Hour: 10
-            X-GT-Rate-Limit-Hour-Remaining: 10
             X-GT-Response-Time: 0.181 sec
 
     + Body
@@ -3041,11 +3027,9 @@ An Person is a U.S. government point of contact for one or more projects
     + Headers
 
             Content-Type: application/json
-            X-GT-Rate-Limit-Day: 40
-            X-GT-Rate-Limit-Day-Remaining: 40
+            X-GT-Rate-Limit: 1000
+            X-GT-Rate-Limit-Remaining: 999
             X-GT-API-Version: 3.0
-            X-GT-Rate-Limit-Hour: 10
-            X-GT-Rate-Limit-Hour-Remaining: 10
             X-GT-Response-Time: 0.181 sec
 
     + Body
@@ -3372,11 +3356,9 @@ Find a person by their name, email, telephone number, or position.
     + Headers
 
             Content-Type: application/json
-            X-GT-Rate-Limit-Day: 40
-            X-GT-Rate-Limit-Day-Remaining: 40
+            X-GT-Rate-Limit: 1000
+            X-GT-Rate-Limit-Remaining: 999
             X-GT-API-Version: 3.0
-            X-GT-Rate-Limit-Hour: 10
-            X-GT-Rate-Limit-Hour-Remaining: 10
             X-GT-Response-Time: 0.181 sec
 
     + Body
@@ -3570,11 +3552,9 @@ An Vendor is an entity that has been awarded a Project
     + Headers
 
             Content-Type: application/json
-            X-GT-Rate-Limit-Day: 40
-            X-GT-Rate-Limit-Day-Remaining: 40
+            X-GT-Rate-Limit: 1000
+            X-GT-Rate-Limit-Remaining: 999
             X-GT-API-Version: 3.0
-            X-GT-Rate-Limit-Hour: 10
-            X-GT-Rate-Limit-Hour-Remaining: 10
             X-GT-Response-Time: 0.181 sec
 
     + Body
@@ -3873,11 +3853,9 @@ Find a vendor by name.
     + Headers
 
             Content-Type: application/json
-            X-GT-Rate-Limit-Day: 40
-            X-GT-Rate-Limit-Day-Remaining: 40
+            X-GT-Rate-Limit: 1000
+            X-GT-Rate-Limit-Remaining: 999
             X-GT-API-Version: 3.0
-            X-GT-Rate-Limit-Hour: 10
-            X-GT-Rate-Limit-Hour-Remaining: 10
             X-GT-Response-Time: 0.181 sec
 
     + Body
@@ -4033,11 +4011,9 @@ Categories are a hierarchical topical grouping construct. They are based on NAIC
     + Headers
 
             Content-Type: application/json
-            X-GT-Rate-Limit-Day: 40
-            X-GT-Rate-Limit-Day-Remaining: 40
+            X-GT-Rate-Limit: 1000
+            X-GT-Rate-Limit-Remaining: 999
             X-GT-API-Version: 3.0
-            X-GT-Rate-Limit-Hour: 10
-            X-GT-Rate-Limit-Hour-Remaining: 10
             X-GT-Response-Time: 0.181 sec
 
     + Body
@@ -4512,11 +4488,9 @@ Find a category by its name.
     + Headers
 
             Content-Type: application/json
-            X-GT-Rate-Limit-Day: 40
-            X-GT-Rate-Limit-Day-Remaining: 40
+            X-GT-Rate-Limit: 1000
+            X-GT-Rate-Limit-Remaining: 999
             X-GT-API-Version: 3.0
-            X-GT-Rate-Limit-Hour: 10
-            X-GT-Rate-Limit-Hour-Remaining: 10
             X-GT-Response-Time: 0.181 sec
 
     + Body
@@ -4703,11 +4677,9 @@ In this example, the actions are:
     + Headers
 
             Content-Type: application/json
-            X-GT-Rate-Limit-Day: 40
-            X-GT-Rate-Limit-Day-Remaining: 40
+            X-GT-Rate-Limit: 1000
+            X-GT-Rate-Limit-Remaining: 999
             X-GT-API-Version: 3.0
-            X-GT-Rate-Limit-Hour: 10
-            X-GT-Rate-Limit-Hour-Remaining: 10
             X-GT-Response-Time: 0.181 sec
 
     + Body
@@ -4904,11 +4876,9 @@ For example, let's say you are interested in seeing the contracting activity for
     + Headers
 
             Content-Type: application/json
-            X-GT-Rate-Limit-Day: 40
-            X-GT-Rate-Limit-Day-Remaining: 40
+            X-GT-Rate-Limit: 1000
+            X-GT-Rate-Limit-Remaining: 999
             X-GT-API-Version: 3.0
-            X-GT-Rate-Limit-Hour: 10
-            X-GT-Rate-Limit-Hour-Remaining: 10
             X-GT-Response-Time: 0.181 sec
 
     + Body
@@ -5223,11 +5193,9 @@ Each of these disputes is a protest object.
     + Headers
 
             Content-Type: application/json
-            X-GT-Rate-Limit-Day: 40
-            X-GT-Rate-Limit-Day-Remaining: 40
+            X-GT-Rate-Limit: 1000
+            X-GT-Rate-Limit-Remaining: 999
             X-GT-API-Version: 3.0
-            X-GT-Rate-Limit-Hour: 10
-            X-GT-Rate-Limit-Hour-Remaining: 10
             X-GT-Response-Time: 0.181 sec
 
     + Body
@@ -5436,11 +5404,9 @@ Find a protest by...
     + Headers
 
             Content-Type: application/json
-            X-GT-Rate-Limit-Day: 40
-            X-GT-Rate-Limit-Day-Remaining: 40
+            X-GT-Rate-Limit: 1000
+            X-GT-Rate-Limit-Remaining: 999
             X-GT-API-Version: 3.0
-            X-GT-Rate-Limit-Hour: 10
-            X-GT-Rate-Limit-Hour-Remaining: 10
             X-GT-Response-Time: 0.181 sec
 
     + Body
