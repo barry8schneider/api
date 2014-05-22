@@ -48,7 +48,7 @@ class ProtestController extends APIController {
 	 * @param  string  $id
 	 * @return Response
 	 */
-	public function show($id)
+	public function show($id, array $columns = array('*'))
 	{
 		$columns = array(
 			'name', 'type', '_id', 'timestamp',
@@ -56,13 +56,6 @@ class ProtestController extends APIController {
 			'projects', 'people', 'sourceLink', 'synopsis',
 		);
 
-		$entity = $this->entity->find($id, $columns);
-		$this->transformer->setMode('resource');
-
-		if (!$entity)
-		{
-			return $this->errorNotFound('Did you just invent an id and try loading a protest?');
-		}
-		else return $this->respondWithItem($entity, $this->transformer);
+		return parent::show($id, $columns);
 	}
 }

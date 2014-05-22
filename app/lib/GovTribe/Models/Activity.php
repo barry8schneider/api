@@ -36,6 +36,8 @@ class Activity extends APIEntity {
 
 	public function getActionsAttribute($actions)
 	{
+		if (!$actions) return [];
+		
 		foreach ($actions as $key => $value)
 		{
 

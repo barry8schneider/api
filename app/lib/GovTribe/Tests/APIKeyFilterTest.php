@@ -15,9 +15,7 @@ class APIKeyFilterTest extends TestCase
 
 		$response = $this->action(
 			'GET', 
-			'GovTribe\Controllers\AgencyController@index',
-			[], [], [],
-			['HTTP_X-GT-API-KEY' => 'foo']
+			'GovTribe\Controllers\AgencyController@index'
 		);
 
 		$this->assertResponseStatus(403);

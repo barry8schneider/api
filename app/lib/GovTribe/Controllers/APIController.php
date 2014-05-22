@@ -97,6 +97,24 @@ class APIController extends BaseController {
 	}
 
 	/**
+	 * Display the specified resource.
+	 *
+	 * @param  string  $id
+	 * @return Response
+	 */
+	public function show($id, array $columns = array('*'))
+	{
+		$entity = $this->entity->find($id, $columns);
+		$this->transformer->setMode('resource');
+
+		if (!$entity)
+		{
+			return $this->errorNotFound('Did you just invent an id and try loading something?');
+		}
+		else return $this->respondWithItem($entity, $this->transformer);
+	}
+
+	/**
 	 * Search for entities.
 	 *
 	 * @return Response

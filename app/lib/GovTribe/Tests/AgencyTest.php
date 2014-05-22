@@ -32,7 +32,6 @@ class AgencyTest extends TestCase
 		];
 		$resultsSet = new \Elastica\ResultSet(new \Elastica\Response($hits, 200), new \Elastica\Query);
 
-		Agency::unguard();
 		$this->mock('GovTribe\Storage\AgencyRepository')
 			->shouldReceive('findRecentlyActive')
 			->once()

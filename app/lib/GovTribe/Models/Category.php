@@ -5,7 +5,6 @@ class Category extends APIEntity {
 	protected $connection = 'databot';
 	protected $collection = 'categories';
 
-
 	public function getParentsAttribute()
 	{
 		$output = [];

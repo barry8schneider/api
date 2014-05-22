@@ -48,20 +48,13 @@ class OfficeController extends APIController {
 	 * @param  string  $id
 	 * @return Response
 	 */
-	public function show($id)
+	public function show($id, array $columns = array('*'))
 	{
 		$columns = array(
 			'name', 'type', '_id', 'timestamp',
 			'market', 'agencies',
 		);
 
-		$entity = $this->entity->find($id, $columns);
-		$this->transformer->setMode('resource');
-
-		if (!$entity)
-		{
-			return $this->errorNotFound('Did you just invent an id and try loading an office?');
-		}
-		else return $this->respondWithItem($entity, $this->transformer);
+		return parent::show($id, $columns);
 	}
 }

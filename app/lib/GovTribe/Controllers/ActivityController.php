@@ -56,21 +56,14 @@ class ActivityController extends APIController {
 	 * @param  string  $id
 	 * @return Response
 	 */
-	public function show($id)
+	public function show($id, array $columns = array('*'))
 	{
 		$columns = array(
 			'type', '_id', 'timestamp', 'actors',
 			'targets', 'participants', 'actions',
 		);
 
-		$entity = $this->entity->find($id, $columns);
-		$this->transformer->setMode('resource');
-
-		if (!$entity || in_array($entity->type, $this->privateTypes))
-		{
-			return $this->errorNotFound('Did you just invent an id and try loading an activity message?');
-		}
-		else return $this->respondWithItem($entity, $this->transformer);
+		return parent::show($id, $columns);
 	}
 
 	/**
