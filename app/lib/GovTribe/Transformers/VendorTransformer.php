@@ -47,9 +47,7 @@ class VendorTransformer extends Transformer
 						'awardDollarFlow' => $entity->awardDollarFlow ? (array) $entity->awardDollarFlow : [],
 					],
 
-					'obligationStats' => [
-						'totalObligations' => [],
-					],
+					'obligationStats' => [],
 
 					'protestStats' => [
 						'totalProtests' => $entity->totalProtests ? (array) $entity->totalProtests : [],

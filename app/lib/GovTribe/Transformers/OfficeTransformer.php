@@ -51,9 +51,7 @@ class OfficeTransformer extends Transformer
 						'activePeople' => $entity->activePeople ? (array) $entity->activePeople : [],
 					],
 
-					'obligationStats' => [
-						'totalObligations' => [],
-					],
+					'obligationStats' => [],
 
 					'protestStats' => [
 						'totalProtests' => $entity->totalProtests ? (array) $entity->totalProtests : [],

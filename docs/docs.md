@@ -3732,7 +3732,7 @@ An Vendor is an entity that has been awarded a Project
                         "type" : "object",
                         "description" : "Procurement stats for a vendor.",
                         "properties" : {
-                            "totalAwards" : {
+                            "numbersOfAwards" : {
                                 "type" : "array",
                                 "minLength" : 0,
                                 "description" : "A list of the numbers of total awards for a vendor, broken down by year.",
@@ -3744,15 +3744,32 @@ An Vendor is an entity that has been awarded a Project
                                             "type" : "string",
                                             "description" : "A calendar year"
                                         },
-                                        "numberOfProtests" : {
+                                        "numberOfAwards" : {
                                             "type" : "number",
-                                            "description" : "The number of awards."
+                                            "description" : "The number of awards"
+                                        }
+                                    }
+                                }
+                            },
+                            "awardDollarFlow" : {
+                                "type"  "array",
+                                "description" : "The total award values for an entity, grouped by time buckets, going back two years.",
+                                "items" : {
+                                    "type" : "object",
+                                    "description" : "A time bucket of total award value",
+                                    "properties" : " {
+                                        "timeBucket" : {
+                                            "type" : "string",
+                                            "description" : "A human readable time bucket"
+                                        },
+                                        "total" : {
+                                            "type" : "string",
+                                            "description" : "The total amount awarded for a time bucket. 
                                         }
                                     }
                                 }
                             }
                         }
-                        
                     },
                     "protestStats" : {
                         "type" : "object",
@@ -4408,6 +4425,24 @@ Categories are a hierarchical topical grouping construct. They are based on NAIC
                                         "numberOfActiveOffices" : {
                                             "type" : "number",
                                             "description" : "The number of active offices."
+                                        }
+                                    }
+                                }
+                            },
+                            "activeAgencies" : {
+                                "type" : "array",
+                                "description" : "A list of the numbers of active agencies for a category, broken down by year.",
+                                "items" : {
+                                    "type" : "object",
+                                    "description" :  "Number of active agencies for a given year.",
+                                    "properties" : {
+                                        "calendarYear" : {
+                                            "type" : "string",
+                                            "description" : "A calendar year"
+                                        },
+                                        "numberOfActiveAgencies" : {
+                                            "type" : "number",
+                                            "description" : "The number of active agencies."
                                         }
                                     }
                                 }

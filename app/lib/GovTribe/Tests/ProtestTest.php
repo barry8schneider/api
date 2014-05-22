@@ -47,6 +47,25 @@ class ProtestTest extends TestCase
 		$this->assertResponseStatus(200);
 		$data = $response->getData(true);
 
+		$this->assertArrayHasKey('results', $data);
+		$this->assertInternalType('array', $data['results']);
+		$this->assertNotEmpty($data['results']);
+
+		$this->assertInternalType('array', $data['results'][0]);
+
+		$this->assertArrayHasKey('name', $data['results'][0]);
+		$this->assertInternalType('string', $data['results'][0]['name']);
+		$this->assertEquals($data['results'][0]['name'], 'Test Protest');
+
+		$this->assertArrayHasKey('_id', $data['results'][0]);
+		$this->assertInternalType('string', $data['results'][0]['_id']);
+		$this->assertEquals($data['results'][0]['_id'], '51f79dd2ca985f9b7c00031c');
+
+		$this->assertArrayHasKey('type', $data['results'][0]);
+		$this->assertInternalType('string', $data['results'][0]['type']);
+		$this->assertEquals($data['results'][0]['type'], 'protest');
+
+		$this->assertEquals($data['results'][1]['name'], Transformer::NULL_TEXT);
 	}
 
 	public function testShow()
@@ -77,6 +96,49 @@ class ProtestTest extends TestCase
 
 		$this->assertInternalType('array', $data);
 		$this->assertNotEmpty($data);
+
+		$this->assertArrayHasKey('_id', $data);
+		$this->assertInternalType('string', $data['_id']);
+		$this->assertNotNull($data['_id']);
+
+		$this->assertArrayHasKey('timestamp', $data);
+		$this->assertInternalType('string', $data['timestamp']);
+		$this->assertEquals($data['timestamp'], Transformer::NULL_TIMESTAMP);
+
+		$this->assertArrayHasKey('type', $data);
+		$this->assertInternalType('string', $data['type']);
+
+		$this->assertArrayHasKey('name', $data);
+		$this->assertInternalType('string', $data['name']);
+		$this->assertEquals($data['name'], Transformer::NULL_TEXT);
+
+		$this->assertArrayHasKey('status', $data);
+		$this->assertInternalType('string', $data['status']);
+		$this->assertEquals($data['status'], Transformer::NULL_TEXT);
+
+		$this->assertArrayHasKey('decisionURI', $data);
+		$this->assertInternalType('string', $data['decisionURI']);
+		$this->assertEquals($data['decisionURI'], Transformer::NULL_TEXT);
+
+		$this->assertArrayHasKey('decision', $data);
+		$this->assertInternalType('string', $data['decision']);
+		$this->assertEquals($data['decision'], Transformer::NULL_TEXT);
+
+		$this->assertArrayHasKey('agencies', $data);
+		$this->assertInternalType('array', $data['agencies']);
+		$this->assertEmpty($data['agencies']);
+
+		$this->assertArrayHasKey('offices', $data);
+		$this->assertInternalType('array', $data['offices']);
+		$this->assertEmpty($data['offices']);
+
+		$this->assertArrayHasKey('people', $data);
+		$this->assertInternalType('array', $data['people']);
+		$this->assertEmpty($data['people']);
+
+		$this->assertArrayHasKey('protesters', $data);
+		$this->assertInternalType('array', $data['protesters']);
+		$this->assertEmpty($data['protesters']);
 
 	}
 }

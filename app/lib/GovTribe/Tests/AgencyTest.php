@@ -129,10 +129,6 @@ class AgencyTest extends TestCase
 		$this->assertInternalType('array', $data['acronyms']);
 		$this->assertEmpty($data['acronyms']);
 
-		$this->assertArrayHasKey('govTribeStats', $data);
-		$this->assertInternalType('array', $data['govTribeStats']);
-		$this->assertEmpty($data['govTribeStats']);
-
 		$this->assertArrayHasKey('name', $data);
 		$this->assertInternalType('string', $data['name']);
 		$this->assertEquals($data['name'], Transformer::NULL_TEXT);
@@ -156,11 +152,7 @@ class AgencyTest extends TestCase
 		// obligationStats
 		$this->assertArrayHasKey('obligationStats', $data);
 		$this->assertInternalType('array', $data['obligationStats']);
-		$this->assertNotEmpty($data['obligationStats']);
-
-		$this->assertArrayHasKey('totalObligations', $data['obligationStats']);
-		$this->assertInternalType('array', $data['obligationStats']['totalObligations']);
-		$this->assertEmpty($data['obligationStats']['totalObligations']);
+		$this->assertEmpty($data['obligationStats']);
 
 		// organizationalStats
 		$this->assertArrayHasKey('organizationalStats', $data);
@@ -195,6 +187,11 @@ class AgencyTest extends TestCase
 		$this->assertArrayHasKey('awardDollarFlow', $data['procurementStats']);
 		$this->assertInternalType('array', $data['procurementStats']['awardDollarFlow']);
 		$this->assertEmpty($data['procurementStats']['awardDollarFlow']);
+
+		// GovTribe stats
+		$this->assertArrayHasKey('govTribeStats', $data);
+		$this->assertInternalType('array', $data['govTribeStats']);
+		$this->assertEmpty($data['govTribeStats']);
 
 		// protestStats
 		$this->assertArrayHasKey('protestStats', $data);
