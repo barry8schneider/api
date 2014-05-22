@@ -51,9 +51,7 @@ class AgencyTransformer extends Transformer
 						'activeOffices' => $entity->activeOffices ? (array) $entity->activeOffices : [],
 					],
 
-					'obligationStats' => [
-						'totalObligations' => [],
-					],
+					'obligationStats' => [],
 
 					'protestStats' => [
 						'totalProtests' => $entity->totalProtests ? (array) $entity->totalProtests : [],

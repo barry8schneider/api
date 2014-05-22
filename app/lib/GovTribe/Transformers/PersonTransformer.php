@@ -10,7 +10,7 @@ class PersonTransformer extends Transformer
 		{
 			case '30':
 				$data = array(
-					'name' => $entity->name ? (string) $entity->name: (string) $entity->mail,
+					'name' => $entity->name ? (string) $entity->name: self::NULL_TEXT,
 					'type' => 'person',
 					'_id' => $entity->_id,
 				);
@@ -43,9 +43,7 @@ class PersonTransformer extends Transformer
 					'agencies' => $entity->agencies ? (array) $entity->agencies : [],
 					'offices' => $entity->offices ? (array) $entity->offices : [],
 
-					'obligationStats' => [
-						'totalObligations' => [],
-					],
+					'obligationStats' => [],
 
 					'procurementStats' => [
 						'averageTimesToAward' => $entity->averageTimesToAward ? (array) $entity->averageTimesToAward : [],

@@ -36,6 +36,10 @@ class CategoryTransformer extends Transformer
 					'_id' => $entity->_id,
 					'govTribeStats' => new \stdClass,
 					'timestamp'  => $entity->timestamp ? $entity->timestamp : self::NULL_TIMESTAMP,
+					'description' => $entity->description ? (string) $entity->description : self::NULL_TEXT,
+
+					'mappedNAICS' => $entity->mappedNAICS ? (array) $entity->mappedNAICS : [],
+					'mappedClassCodes' => $entity->mappedClassCodes ? (array) $entity->mappedClassCodes : [],
 
 					'parentCategories' => $entity->parents ? (array) $entity->parents : [],
 					'childCategories' => $entity->children ? (array) $entity->children : [],
@@ -53,9 +57,7 @@ class CategoryTransformer extends Transformer
 						'activeAgencies' => $entity->activeAgencies ? (array) $entity->activeAgencies : [],
 					],
 
-					'obligationStats' => [
-						'totalObligations' => [],
-					],
+					'obligationStats' => [],
 				);
 
 				break;
