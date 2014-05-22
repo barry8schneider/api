@@ -117,8 +117,8 @@ class ProjectTest extends TestCase
         $this->assertNotNull($data['_id']);
 
         $this->assertArrayHasKey('NAICS', $data);
-        $this->assertInternalType('string', $data['NAICS']);
-        $this->assertEquals($data['NAICS'], Transformer::NULL_TEXT);
+        $this->assertInternalType('array', $data['NAICS']);
+        $this->assertEmpty($data['NAICS']);
 
         $this->assertArrayHasKey('setAsideType', $data);
         $this->assertInternalType('string', $data['setAsideType']);
