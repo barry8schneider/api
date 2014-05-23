@@ -15,6 +15,8 @@ The [GovTribe](http://www.govtribe.com) API provides data on the U.S. federal go
 * **Protest**  - The laws and regulations that govern contracting with the federal government are designed to ensure that federal procurements are conducted fairly and, whenever possible, in a way that maximizes competition. On occasion, however, bidders or others interested in government procurements may have reason to believe that a contract has been or is about to be awarded improperly or illegally, or that they have been unfairly denied a contract or an opportunity to compete for a contract. This is a protest.
 * **Activity**  - Activity represents the ongoing activity of one or more of the other entity types. It is a time series of the actions they perform.
 
+To request an API key, visit the [API registraiton page](https://api.govtribe.com/register). To log issues or feature requests, visit https://github.com/GovTribe/api.
+
 ## Examples
 
 ### View Recent Projects

@@ -106,6 +106,7 @@ a.list-group-item.heading {
 <li><strong>Protest</strong>  - The laws and regulations that govern contracting with the federal government are designed to ensure that federal procurements are conducted fairly and, whenever possible, in a way that maximizes competition. On occasion, however, bidders or others interested in government procurements may have reason to believe that a contract has been or is about to be awarded improperly or illegally, or that they have been unfairly denied a contract or an opportunity to compete for a contract. This is a protest.</li>
 <li><strong>Activity</strong>  - Activity represents the ongoing activity of one or more of the other entity types. It is a time series of the actions they perform.</li>
 </ul>
+<p>To request an API key, visit the <a href="https://api.govtribe.com/register">API registraiton page</a>. To log issues or feature requests, visit <a href="https://github.com/GovTribe/api">https://github.com/GovTribe/api</a>.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="view-recent-projects">View Recent Projects</h3>
 <p>Let’s say you’d like to view some recent projects. Send a GET request to the project endpoint like so:</p>
