@@ -106,6 +106,58 @@ a.list-group-item.heading {
 <li><strong>Protest</strong>  - The laws and regulations that govern contracting with the federal government are designed to ensure that federal procurements are conducted fairly and, whenever possible, in a way that maximizes competition. On occasion, however, bidders or others interested in government procurements may have reason to believe that a contract has been or is about to be awarded improperly or illegally, or that they have been unfairly denied a contract or an opportunity to compete for a contract. This is a protest.</li>
 <li><strong>Activity</strong>  - Activity represents the ongoing activity of one or more of the other entity types. It is a time series of the actions they perform.</li>
 </ul>
+<h2 id="examples">Examples</h2>
+<h3 id="view-recent-projects">View Recent Projects</h3>
+<p>Let’s say you’d like to view some recent projects. Send a GET request to the project endpoint like so:</p>
+<pre><code class="lang-json">GET http://api.govtribe.com/project
+{
+  &quot;results&quot;: [
+    {
+      &quot;name&quot;: &quot;Bread and Bakery Products for Florida&quot;,
+      &quot;type&quot;: &quot;project&quot;,
+      &quot;_id&quot;: &quot;537e2c5d6c5cc86f2a8b4567&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Spar,Aircraft/19F Aircraft,F15&quot;,
+      &quot;type&quot;: &quot;project&quot;,
+      &quot;_id&quot;: &quot;537e2c766c5cc8af2a8b4567&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Sea Survival Training Facility and Refurbishing of Floating Pier&quot;,
+      &quot;type&quot;: &quot;project&quot;,
+      &quot;_id&quot;: &quot;537e08da6c5cc8f35b8b4567&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Chapel Music Director&quot;,
+      &quot;type&quot;: &quot;project&quot;,
+      &quot;_id&quot;: &quot;5332d4e46c5cc86a238b4567&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Framing Lumber and Hardware/Fasteners&quot;,
+      &quot;type&quot;: &quot;project&quot;,
+      &quot;_id&quot;: &quot;537e181c6c5cc8167c8b4567&quot;
+    }
+  ],
+  &quot;pagination&quot;: {
+    &quot;total&quot;: 184961,
+    &quot;count&quot;: 50,
+    &quot;perPage&quot;: 50,
+    &quot;currentPage&quot;: 1,
+    &quot;totalPages&quot;: 3700,
+    &quot;links&quot;: {
+      &quot;next&quot;: &quot;http://api.govtribe.dev/project?page=2&quot;
+    }
+  }
+}
+</code></pre>
+<h3 id="view-project">View Project</h3>
+<p>Success! You are a sea survival enthusiast who likes rebuilding piers. Why not take a look at the project?</p>
+<pre><code class="lang-json">GET http://api.govtribe.com/project
+</code></pre>
+<h3 id="view-office">View Office</h3>
+<p>Your curiosity is piqued. How long does it take the Corps of Engineers to award projects? How much is the average project there worth?</p>
+<pre><code class="lang-json">GET http://api.govtribe.com/office/51c1d4f8db40a5298c79c77f
+</code></pre>
 </div></div></div><div><div class="panel panel-default"><div class="panel-heading"><h3 id="collection">Collection&nbsp;<a href="#collection"><i class="fa fa-link"></i></a></h3></div><div class="panel-body"><h4 id="collection-entity-collection">Entity Collection&nbsp;<a href="#collection-entity-collection"><i class="fa fa-link"></i></a></h4><p>Collection of one of the eight types of entities, returned as a paginated list of NTIs (name, type, ID), ordered by timestamp.</p>
 <section id="collection-entity-collection-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">List Entities</span></div><div style="float:left"><a href="#collection-entity-collection-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/{entityType}/</code></div></div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>entityType</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>project</span></span><p>The type of entities to be returned</p>
 <p><strong>Choices:&nbsp;</strong><code>project</code>&nbsp;<code>vendor</code>&nbsp;<code>category</code>&nbsp;<code>agency</code>&nbsp;<code>office</code>&nbsp;<code>person</code>&nbsp;<code>protest</code>&nbsp;<code>activity</code>&nbsp;</p></dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Request&nbsp;&nbsp;<code>Entities</code></strong><a data-toggle="collapse" data-target="#ec493a894bb8928c1b58af03f653ace8" class="pull-right">Toggle</a></li><li id="ec493a894bb8928c1b58af03f653ace8" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-API-Key</span>: <span class="hljs-string">yourAPIKey</span><br></code></pre></li><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#6c8a41d3df93b108fc8a89ce0610f0a5" class="pull-right">Toggle</a></li><li id="6c8a41d3df93b108fc8a89ce0610f0a5" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">X-GT-Rate-Limit</span>: <span class="hljs-string">1000</span><br><span class="hljs-attribute">X-GT-Rate-Limit-Remaining</span>: <span class="hljs-string">999</span><br><span class="hljs-attribute">X-GT-API-Version</span>: <span class="hljs-string">3.0</span><br><span class="hljs-attribute">X-GT-Response-Time</span>: <span class="hljs-string">0.181 sec</span><br></code></pre><h5>Body</h5><pre><code><span class="hljs-rules">{
@@ -5368,7 +5420,7 @@ a.list-group-item.heading {
         }
     }
 }
-</code></pre></li></ul></section></div></div></div></div></div></div><p style="text-align: center;" class="text-muted">Generated by&nbsp;<a href="https://github.com/danielgtaylor/aglio" class="aglio">aglio</a>&nbsp;on 22 May 2014</p><div id="localFile" style="display: none; position: absolute; top: 0; left: 0; width: 100%; color: white; background: red; font-size: 150%; text-align: center; padding: 1em;">This page may not display correctly when opened as a local file. Instead, view it from a web server.
+</code></pre></li></ul></section></div></div></div></div></div></div><p style="text-align: center;" class="text-muted">Generated by&nbsp;<a href="https://github.com/danielgtaylor/aglio" class="aglio">aglio</a>&nbsp;on 23 May 2014</p><div id="localFile" style="display: none; position: absolute; top: 0; left: 0; width: 100%; color: white; background: red; font-size: 150%; text-align: center; padding: 1em;">This page may not display correctly when opened as a local file. Instead, view it from a web server.
 
 </div></body><script src="//code.jquery.com/jquery-1.11.0.min.js"></script><script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script><script>(function() {
   if (location.protocol === 'file:') {

@@ -15,6 +15,65 @@ The [GovTribe](http://www.govtribe.com) API provides data on the U.S. federal go
 * **Protest**  - The laws and regulations that govern contracting with the federal government are designed to ensure that federal procurements are conducted fairly and, whenever possible, in a way that maximizes competition. On occasion, however, bidders or others interested in government procurements may have reason to believe that a contract has been or is about to be awarded improperly or illegally, or that they have been unfairly denied a contract or an opportunity to compete for a contract. This is a protest.
 * **Activity**  - Activity represents the ongoing activity of one or more of the other entity types. It is a time series of the actions they perform.
 
+## Examples
+
+### View Recent Projects
+Let's say you'd like to view some recent projects. Send a GET request to the project endpoint like so:
+```json
+GET http://api.govtribe.com/project
+{
+  "results": [
+    {
+      "name": "Bread and Bakery Products for Florida",
+      "type": "project",
+      "_id": "537e2c5d6c5cc86f2a8b4567"
+    },
+    {
+      "name": "Spar,Aircraft/19F Aircraft,F15",
+      "type": "project",
+      "_id": "537e2c766c5cc8af2a8b4567"
+    },
+    {
+      "name": "Sea Survival Training Facility and Refurbishing of Floating Pier",
+      "type": "project",
+      "_id": "537e08da6c5cc8f35b8b4567"
+    },
+    {
+      "name": "Chapel Music Director",
+      "type": "project",
+      "_id": "5332d4e46c5cc86a238b4567"
+    },
+    {
+      "name": "Framing Lumber and Hardware/Fasteners",
+      "type": "project",
+      "_id": "537e181c6c5cc8167c8b4567"
+    }
+  ],
+  "pagination": {
+    "total": 184961,
+    "count": 50,
+    "perPage": 50,
+    "currentPage": 1,
+    "totalPages": 3700,
+    "links": {
+      "next": "http://api.govtribe.dev/project?page=2"
+    }
+  }
+}
+```
+
+### View Project
+Success! You are a sea survival enthusiast who likes rebuilding piers. Why not take a look at the project?
+```json
+GET http://api.govtribe.com/project
+```
+
+### View Office
+Your curiosity is piqued. How long does it take the Corps of Engineers to award projects? How much is the average project there worth?
+```json
+GET http://api.govtribe.com/office/51c1d4f8db40a5298c79c77f
+```
+
 # Group Collection
 
 ## Entity Collection [/{entityType}/]
