@@ -1,6 +1,5 @@
 <?php namespace GovTribe\Mixpanel;
 
-use App;
 use Mixpanel;
 use Illuminate\Support\ServiceProvider;
 
@@ -20,7 +19,6 @@ class MixpanelServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		// Register listeners
 		$this->registerListeners();
 	}
 
@@ -50,14 +48,21 @@ class MixpanelServiceProvider extends ServiceProvider {
 			if (!$this->app->environment('production')) return;
 			if (!in_array($request->segment(1), $this->app->config->get('api.routes'))) return;
 
-			$apiUser = $this->app->make('GovTribe\Storage\KeyRepository')->find($this->app->config->get('api.sentKey'), ['email']);
+			$apiUser = $this->app->make('GovTribe\Storage\KeyRepository')->find($this->app->config->get('api.sentKey'));
 			
 			if (!$apiUser) return;
 
 			$action = $this->buildAction($request, $response);
 
-			$mp = App::make('mixpanel');
+			$mp = $this->app->make('mixpanel');
 			$mp->identify($apiUser->email);
+			$mp->people->set($apiUser->email, [
+				'$first_name' => $apiUser->firstName,
+				'$last_name' => $apiUser->lastName,
+				'$email' => $apiUser->email,
+				'$company' => $apiUser->company,
+			]);
+
 			$mp->track($action['actionName'], $action['actionDetails']);
 		});
 	}
