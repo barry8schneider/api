@@ -1,7 +1,7 @@
 FORMAT: 1A
 HOST: http://api.govtribe.com
 
-# GovTribe API
+# GovTribe API (beta)
 
 # Group What Is This?
 The [GovTribe](http://www.govtribe.com) API provides data on the U.S. federal government contracting market. The GovTribe API presents eight types of entities as well as their relationships to each other:
@@ -15,7 +15,7 @@ The [GovTribe](http://www.govtribe.com) API provides data on the U.S. federal go
 * **Protest**  - The laws and regulations that govern contracting with the federal government are designed to ensure that federal procurements are conducted fairly and, whenever possible, in a way that maximizes competition. On occasion, however, bidders or others interested in government procurements may have reason to believe that a contract has been or is about to be awarded improperly or illegally, or that they have been unfairly denied a contract or an opportunity to compete for a contract. This is a protest.
 * **Activity**  - Activity represents the ongoing activity of one or more of the other entity types. It is a time series of the actions they perform.
 
-To request an API key, visit the [API registraiton page](https://api.govtribe.com/register). To log issues or feature requests, visit https://github.com/GovTribe/api.
+To request an API key, visit the [API registration page](https://api.govtribe.com/register). To log issues or feature requests, visit https://github.com/GovTribe/api.
 
 ## Examples
 
@@ -65,16 +65,22 @@ GET http://api.govtribe.com/project
 ```
 
 ### View Project
-Success! You are a sea survival enthusiast who likes rebuilding piers. Why not take a look at the project?
+Success! You are a sea survival enthusiast who likes rebuilding piers. Why not take a look at that project? It's number two in the list of results. Just grab the id and you are off and running. 
 ```json
-GET http://api.govtribe.com/project
+GET http://api.govtribe.com/project/537e08da6c5cc8f35b8b4567
 ```
 
 ### View Office
-Your curiosity is piqued. How long does it take the Corps of Engineers to award projects? How much is the average project there worth?
+Looks like this is an Army Corps of Engineers project. Ever wonder how long it takes them to award projects? Or what the average award size is? Let's grab the id from the offices array and find out.
 ```json
 GET http://api.govtribe.com/office/51c1d4f8db40a5298c79c77f
 ```
+
+Now that you get the gist of it, check out the docs below on all of the great data you can get from the GovTribe API
+
+#### Disclaimer
+The GovTribe API is currently in beta. As such, it's subject to change and all API data and services are provided as is. We reserve the right to make changes to the API during beta without notification. Have an issue or feature request? Log it on our [GitHub repo](https://github.com/GovTribe/api).  
+
 
 # Group Collection
 
