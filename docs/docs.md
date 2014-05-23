@@ -71,7 +71,7 @@ GET http://api.govtribe.com/project/537e08da6c5cc8f35b8b4567
 ```
 
 ### View Office
-Looks like this is an Army Corps of Engineers project. I wonder how long it takes them to award projects? And how much on average is an award? Let's check out that office.
+Looks like this is an Army Corps of Engineers project. Ever wonder how long it takes them to award projects? Or what the average award size is? Let's grab the id from the offices array and find out.
 ```json
 GET http://api.govtribe.com/office/51c1d4f8db40a5298c79c77f
 ```
