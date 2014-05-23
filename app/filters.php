@@ -113,7 +113,7 @@ Route::filter('api.key', function()
 	if(!$sentKey)
 	{
 		return App::make('GovTribe\Controllers\APIController')->setStatusCode(403)->respondWithError(
-			'Please provide your API key as a request header (X-GT-API-Key: myapikey). Contact help@govtribe.com if you need assistance.'
+			'Please provide your API key as a request header (X-GT-API-Key: myapikey). Get one at https://api.govtribe.com/register'
 		);
 	}
 	elseif ($sentKey && !$keyIsValid)
