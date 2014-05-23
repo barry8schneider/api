@@ -2,7 +2,6 @@
 
 trait Strings
 {
-
 	/**
 	 * Clean dirty HTML.
 	 *
@@ -11,6 +10,11 @@ trait Strings
 	 */
 	public function cleanDirtyHTML($string) 
 	{
+		mb_regex_encoding('UTF-8');
+
+		// Strip some common MS Office tags
+		$string = preg_replace('(mso-[a-z\-: ]+; )i', '', $string);
+
 		// Remove all html tags except 'p' and 'br'
 		$string = strip_tags($string, '<p><br>');
 
@@ -25,4 +29,5 @@ trait Strings
 
 		return $string;
 	}
+
 }

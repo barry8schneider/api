@@ -80,7 +80,7 @@ class Project extends APIEntity {
 		return array_values($importantDates);
 	}
 
-	public function getSynopsisCollectionAttribute()
+	public function getSynopsesAttribute()
 	{
 		$synopsisCollection = [];
 
@@ -102,12 +102,6 @@ class Project extends APIEntity {
 		return $synopsisCollection;
 	}
 
-	// Get all the project's synopsis attribute
-	public function getSynopsisAttribute($value)
-	{
-		return $this->cleanDirtyHTML($value);
-	}
-
 	public function getNameAttribute($value)
 	{
 		// Remove leading NAICS/Class code.
@@ -118,6 +112,12 @@ class Project extends APIEntity {
 		$name = trim($name);
 
 		return $name;
+	}
+
+	public function getCategoriesAttribute($categories)
+	{
+		if (!$categories) return $categories;
+		return array_unique($categories, SORT_REGULAR);
 	}
 
 	protected function getPredictedCompetitionAttribute()

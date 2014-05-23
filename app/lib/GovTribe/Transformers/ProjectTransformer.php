@@ -73,7 +73,7 @@ class ProjectTransformer extends Transformer
 					'solicitationNumbers' => $entity->solicitationNumbers ? (array) $entity->solicitationNumbers : [],
 					'contractNumbers' => $entity->contractNumbers ? (array) $entity->contractNumbers : [],
 					'files' => $entity->files ? (array) $entity->files : [],
-					'synopses' => $entity->synopsisCollection ? (array) $entity->synopsisCollection : [],
+					'synopses' => $entity->synopses ? (array) $entity->synopses : [],
 
 					'predictedCompetition' => $entity->predictedCompetition ? (array) $entity->predictedCompetition : [],
 				);
