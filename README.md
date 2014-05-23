@@ -1,4 +1,4 @@
-GovTribe's Government Data API
+GovTribe API
 ======
 
 > **Note:** This repository tracks issues and feature requests for the GovTribe API. To request an API key, visit the [API registraiton page](https://api.govtribe.com/register). To view the full API documentation, visit http://api.govtribe.com.
