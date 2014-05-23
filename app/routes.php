@@ -13,7 +13,13 @@
 
 Route::get('/', function()
 {
-	return View::make('docs');
+	$response = Response::make(View::make('docs'), 200);
+	$response->setCache([
+		'max_age' => 600,
+		'public' => true,
+	]);
+	
+	return $response;
 });
 
 Route::controller('register', 'GovTribe\Controllers\EnrollmentController');
