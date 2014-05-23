@@ -64,6 +64,7 @@ class MixpanelServiceProvider extends ServiceProvider {
 			]);
 
 			$mp->track($action['actionName'], $action['actionDetails']);
+			$mp->people->increment($apiUser->email, 'total requests', 1);
 		});
 	}
 
