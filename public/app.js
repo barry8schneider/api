@@ -5,11 +5,32 @@ $(document).ready(function(event) {
 
   var frm = $('#form-key-enroll');
 
+  // Submit registration form
   frm.submit(function(event) {
     event.preventDefault();
     submitEnrollForm(frm);
   });
 
+  // Click disclaimer link
+  $(document).on('click', "#loadLegal", function(event) {
+
+    event.preventDefault();
+
+      //$("#modalTemplate #modalTitle").html('Oops!');
+      //$("#modalTemplate #modalBody").load('register/legal #container');
+
+      $("#modalTemplate #modalBody").load('register/legal #legal', function() {
+        $("#modalTemplate #modalTitle").html('GovTribe API Disclaimer');
+        $('.modalClose').click(function() {
+          $('#modalTemplate').modal('hide');
+        });
+        $('#modalTemplate').modal({
+          keyboard: false
+        });
+      });
+  });
+
+  // Modal dismissed
   $('body').on('hidden.bs.modal', '.modal', function () {
       $(this).removeData('bs.modal');
       $('#appWindow').fadeTo('fast', 1);

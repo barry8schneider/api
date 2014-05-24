@@ -47,6 +47,16 @@ class EnrollmentController extends BaseController {
 	}
 
 	/**
+	 * Display the disclaimer, terms of use, etc.
+	 *
+	 * @return Response
+	 */
+	public function getLegal()
+	{
+		return $this->view->make('legal');
+	}
+
+	/**
 	 * Enroll a user
 	 *
 	 * @return Response

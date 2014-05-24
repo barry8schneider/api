@@ -9,7 +9,8 @@
 </head>
   <body>
     <div class="container" id="appWindow">
-    <span id="spinner" style="position: absolute;display: block;top: 50%;left: 50%;"></span>
+      <div class="row">
+        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-6 col-xs-offset-3">
       <div class="keyform">
         <div class="logo">
           <a href="http://govtribe.com" title="GovTribe"><img src="{{ asset('logo.png') }}" alt="GovTribe"></a>
@@ -23,9 +24,10 @@
             'data-delay' => "1000"
           ]
         )}}
-        <h1 class="form-key-enroll-heading">Send Me An API Key!</h1>
-        <p>Free API keys are limited to 1000 requests per month. If you need more than that, please <a href="mailto:help@govtribe.com?Subject=API%20Key">contact us.</a></p>
-        <hr>
+        <div class="text-center header">
+          <h1>Send Me An API Key!</h1>
+        </div>
+        <p class="lead">Free API keys are limited to 1000 requests per month. If you need more than that, please <a href="mailto:help@govtribe.com?Subject=API%20Key">contact us.</a></p>
         <div class="form-group">
           {{ Form::label('name', 'Name') }}
           {{ Form::text('firstName', null, ['class' => 'form-control', 'id' => 'inputFirstName', 'placeholder' => 'First', 'required' => '']) }}
@@ -43,12 +45,24 @@
           {{ Form::email('email', null, ['class' => 'form-control', 'id' => 'inputEmailConfirm', 'placeholder' => 'Confirm', 'required' => '', 'data-match' => "#inputEmail", 'data-match-error' => 'Whoops, these don\'t match']) }}
           <div class="help-block with-errors"></div>
         </div>
+        <div class="form-group">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" id="terms" data-error="You must check this box to continue" required>
+              I have read and agree to <a href="/register/legal" id="loadLegal">this disclaimer</a>
+            </label>
+            <div class="help-block with-errors"></div>
+          </div>
+        </div>
         <hr>
           {{ Form::honeypot('my_name', 'my_time') }}
-          {{ Form::submit('Submit', ['class'=>'btn btn-primary btn-lg btn-block', 'id' => 'enrollsubmit']) }}
+          {{ Form::submit('Submit', ['class'=>'btn btn-success btn-lg btn-block', 'id' => 'enrollsubmit']) }}
           {{ Form::close() }}
       </div>
-    </div>
+        </div>
+      </div>
+      @include('footer')
+    </div> <!-- /container -->
     <div class="modal fade modal-wide" id="modalTemplate">
       <div class="modal-dialog">
         <div class="modal-content">
