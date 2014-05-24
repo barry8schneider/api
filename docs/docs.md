@@ -4977,7 +4977,7 @@ For example, let's say you are interested in seeing the contracting activity for
 + Parameters
 
     + ids (string, `51548151db40a5165c0000d1,51c1d4dddb40a5298c79c740`) ... one or more comma separated `id` strings for the desired entities.
-    + since  (optional, number, `1399822866`) ... the distance back in time for a particular call as milliseconds. Default is one year 
+    + since  (optional, number, `1399822866`) ... the distance back in time for a particular call as seconds. Default is one year 
 
 + Model
 
