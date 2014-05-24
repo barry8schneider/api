@@ -108,7 +108,7 @@ a.list-group-item.heading {
 </ul>
 <p>To request an API key, visit the <a href="https://api.govtribe.com/register">API registration page</a>. To log issues or feature requests, visit <a href="https://github.com/GovTribe/api">https://github.com/GovTribe/api</a>.</p>
 <h2 id="examples">Examples</h2>
-<h3 id="view-recent-projects">View Recent Projects</h3>
+<h3 id="recent-projects">Recent Projects</h3>
 <p>Let’s say you’d like to view some recent projects. Send a GET request to the project endpoint like so:</p>
 <pre><code class="lang-json">GET http://api.govtribe.com/project
 {
@@ -151,15 +151,15 @@ a.list-group-item.heading {
   }
 }
 </code></pre>
-<h3 id="view-project">View Project</h3>
+<h3 id="project">Project</h3>
 <p>Success! You are a sea survival enthusiast who likes rebuilding piers. Why not take a look at that project? It’s number two in the list of results. Just grab the id and you are off and running. </p>
 <pre><code class="lang-json">GET http://api.govtribe.com/project/537e08da6c5cc8f35b8b4567
 </code></pre>
-<h3 id="view-office">View Office</h3>
+<h3 id="office">Office</h3>
 <p>Looks like this is an Army Corps of Engineers project. Ever wonder how long it takes them to award projects? Or what the average award size is? Let’s grab the id from the offices array and find out.</p>
 <pre><code class="lang-json">GET http://api.govtribe.com/office/51c1d4f8db40a5298c79c77f
 </code></pre>
-<h3 id="view-activity">View Activity</h3>
+<h3 id="activity">Activity</h3>
 <p>Interested in everything else Army Corps of Engineers does? Load its activity:</p>
 <pre><code class="lang-json">GET http://api.govtribe.com/activity/feed?ids=51c1d4f8db40a5298c79c77f
 </code></pre>

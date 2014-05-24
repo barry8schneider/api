@@ -19,7 +19,7 @@ To request an API key, visit the [API registration page](https://api.govtribe.co
 
 ## Examples
 
-### View Recent Projects
+### Recent Projects
 Let's say you'd like to view some recent projects. Send a GET request to the project endpoint like so:
 ```json
 GET http://api.govtribe.com/project
@@ -64,19 +64,19 @@ GET http://api.govtribe.com/project
 }
 ```
 
-### View Project
+### Project
 Success! You are a sea survival enthusiast who likes rebuilding piers. Why not take a look at that project? It's number two in the list of results. Just grab the id and you are off and running. 
 ```json
 GET http://api.govtribe.com/project/537e08da6c5cc8f35b8b4567
 ```
 
-### View Office
+### Office
 Looks like this is an Army Corps of Engineers project. Ever wonder how long it takes them to award projects? Or what the average award size is? Let's grab the id from the offices array and find out.
 ```json
 GET http://api.govtribe.com/office/51c1d4f8db40a5298c79c77f
 ```
 
-### View Activity
+### Activity
 Interested in everything else Army Corps of Engineers does? Load its activity:
 ```json
 GET http://api.govtribe.com/activity/feed?ids=51c1d4f8db40a5298c79c77f
