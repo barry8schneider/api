@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/GovTribe/api.svg?branch=master)](https://travis-ci.org/GovTribe/api)
 GovTribe API
 ======
 
