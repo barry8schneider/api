@@ -80,6 +80,7 @@ GET http://api.govtribe.com/office/51c1d4f8db40a5298c79c77f
 Interested in everything else Army Corps of Engineers does? Load its activity:
 ```json
 GET http://api.govtribe.com/activity/feed?ids=51c1d4f8db40a5298c79c77f
+```
 
 Now that you get the gist of it, check out the docs below on all of the great data you can get from the GovTribe API
 
