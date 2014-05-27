@@ -62,9 +62,9 @@ class KeyUsageLimiter implements HttpKernelInterface {
 			$key = $this->app->make('GovTribe\Storage\KeyRepository')->find($sentKey, ['limits', 'email']);
 			$cacheKey = sprintf('keyusagelimit:%s', $key->email);
 
-			$this->app->cache->add($cacheKey, 0, Carbon::now()->addDays(30));
+			$this->app->cache->add($cacheKey, 0, Carbon::now()->addDays(1));
 
-			$limit = (int) $key->limits['perMonth'];
+			$limit = (int) $key->limits['perDay'];
 			$used = (int)  $this->app->cache->increment($cacheKey);
 
 			if ($used > $limit)

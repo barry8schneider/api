@@ -27,7 +27,7 @@
         <div class="text-center header">
           <h1>Send Me An API Key!</h1>
         </div>
-        <p class="lead">Free API keys are limited to 1000 requests per month. If you need more than that, please <a href="mailto:help@govtribe.com?Subject=API%20Key">contact us.</a></p>
+        <p class="lead">Just fill this out and we'll send it right over. <a href="mailto:help@govtribe.com?Subject=API%20Key">Contact us</a> if you have any questions.</p>
         <div class="form-group">
           {{ Form::label('name', 'Name') }}
           {{ Form::text('firstName', null, ['class' => 'form-control', 'id' => 'inputFirstName', 'placeholder' => 'First', 'required' => '']) }}
