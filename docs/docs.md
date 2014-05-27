@@ -2169,7 +2169,7 @@ Find Agencies by their name or acronym
 
 Search all agencies by keyword
 
-+ Request Search Projects
++ Request Search Agencies
     
     + Headers
 
@@ -3475,7 +3475,7 @@ Returns a listing (slice) of NTIs that are related to an person based on the sli
    [Entity Collection][]
 
 
-## Search Person [/person/search/{?q}]
+## Search People [/person/search/{?q}]
 Find a person by their name, email, telephone number, or position.
 
 + Parameters
@@ -3658,7 +3658,7 @@ Find a person by their name, email, telephone number, or position.
 ### Retrieve Person Search Results [GET]
 
 
-+ Request Search Person
++ Request Search People
     
     + Headers
 
@@ -3668,7 +3668,7 @@ Find a person by their name, email, telephone number, or position.
 
 + Response 200
 
-    [Search Person][]
+    [Search People][]
 
 
 # Group Vendor
@@ -5556,7 +5556,7 @@ Each of these disputes is a protest object.
     
 
 ### Retrieve a Single Protest [GET]
-+ Request Vendor
++ Request Protest
     
     + Headers
 
