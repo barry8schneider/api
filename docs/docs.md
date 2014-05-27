@@ -3668,7 +3668,7 @@ Find a person by their name, email, telephone number, or position.
 
 + Response 200
 
-    [Search People][]
+    [Search Person][]
 
 
 # Group Vendor
@@ -4823,7 +4823,7 @@ Returns a listing (slice) of NTIs that are related to a category based on the sl
 
 The Activity collection provides objects representing the ongoing activity of one or more of the other entity types. It is a time series of the world of government procurement.
 
-A single Activity object contains actors, targets, and actions. For example, if a CO within the Bureau of Prisons awards a Mining Project named 23--Mining Contract to Acme Consulting, an Activity object is created with the actions that occurred as well as references to the involved entities.
+A single Activity object contains actors, targets, and actions. For example, if a CO within the Bureau of Prisons awards a Mining Project named "23--Mining Contract" to Acme Consulting, an Activity object is created with the actions that occurred as well as references to the involved entities.
 
 In this example, the actors are:
 
@@ -4834,7 +4834,7 @@ In this example, the actors are:
 
 In this example, the targets are:
 
-* A Project - the 23--Mining Project
+* A Project - 23--Mining Project
 * A Vendor - Acme Consulting
 
 In this example, the actions are:
