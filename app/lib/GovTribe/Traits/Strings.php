@@ -12,11 +12,14 @@ trait Strings
 	{
 		mb_regex_encoding('UTF-8');
 
-		// Strip some common MS Office tags
-		$string = preg_replace('(mso-[a-z\-: ]+; )i', '', $string);
-
 		// Remove all html tags except 'p' and 'br'
 		$string = strip_tags($string, '<p><br>');
+
+		// Remove all class attributes from tags
+		$string = preg_replace('/class=".*?"/', '', $string);
+
+		// Remove all style attributes from tags
+		$string = preg_replace('/style=".*?"/', '', $string);
 
 		// Normalize newlines
 		$string = preg_replace('/(\r\n|\r|\n)+/', "\n", $string);

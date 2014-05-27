@@ -11,7 +11,7 @@ The [GovTribe](http://www.govtribe.com) API provides data on the U.S. federal go
 * **Office**  - An organizational unit within an Agency that executes Projects
 * **Person**  - A point of contact for one or more Projects
 * **Vendor**  - A legal entity that has been awarded a Project
-* **Category**  - A topical grouping, based off North American Industry Classification System (NAICS) codes or Product and Service (PSC) codes
+* **Category**  - A topical grouping, based on North American Industry Classification System (NAICS) codes or Product and Service (PSC) codes
 * **Protest**  - The laws and regulations that govern contracting with the federal government are designed to ensure that federal procurements are conducted fairly and, whenever possible, in a way that maximizes competition. On occasion, however, bidders or others interested in government procurements may have reason to believe that a contract has been or is about to be awarded improperly or illegally, or that they have been unfairly denied a contract or an opportunity to compete for a contract. This is a protest.
 * **Activity**  - Activity represents the ongoing activity of one or more of the other entity types. It is a time series of the actions they perform.
 
@@ -77,7 +77,7 @@ GET http://api.govtribe.com/office/51c1d4f8db40a5298c79c77f
 ```
 
 ### Activity
-Interested in everything else Army Corps of Engineers does? Load its activity:
+Interested in everything else the Army Corps of Engineers does? Load its activity:
 ```json
 GET http://api.govtribe.com/activity/feed?ids=51c1d4f8db40a5298c79c77f
 ```
@@ -236,6 +236,7 @@ Collection of one of the eight types of entities, returned as a paginated list o
 
             Accept: application/json
             X-GT-API-Key: yourAPIKey
+            X-GT-API-Version: 3.0
 
 + Response 200
 
@@ -262,101 +263,147 @@ A project is a U.S. federal government contract or opportunity.
             X-GT-Response-Time: 0.181 sec
 
     + Body
-    
-            {
-                agencies: [
+
+                {
+                "agencies": [
                     {
-                        name: "Agency for International Development",
-                        type: "agency",
-                        _id: "51548150db40a5165c0000af"
+                        "name": "Agency for International Development",
+                        "type": "agency",
+                        "_id": "51548150db40a5165c0000af"
                     }
                 ],
-                awardedVendors: "None Listed",
-                awardValue: "Not Available",
-                awardValueNumeric: "Not Available",
-                categories: [
+                "awardData": {
+                    "totalAwardValue": "Not Available",
+                    "awardedVendors": [],
+                    "basePeriodAwardData": [],
+                    "optionPeriodsAwardData": []
+                },
+                "categories": [
                     {
-                        name: "Architecture and Engineering",
-                        type: "category",
-                        _id: "518ecbf0db40a51b0b0000c4"
+                        "name": "Architecture and Engineering",
+                        "type": "category",
+                        "_id": "518ecbf0db40a51b0b0000c4"
                     },
                     {
-                    name: "Architect and engineering services",
-                    type: "category",
-                    _id: "518ecbf0db40a51b0b000054"
+                        "name": "Architect and engineering services",
+                        "type": "category",
+                        "_id": "518ecbf0db40a51b0b000054"
                     }
                 ],
-                classCodes: [
+                "classCodes": [
                     "C"
                 ],
-                contractNumbers: "None Listed",
-                dueDates: [
+                "contractNumbers": [],
+                "files": [
                     {
-                        dueDateType: "Presolicitation Response",
-                        date: "Not Available"
-                    },
-                    {
-                    dueDateType: "Complete Response",
-                    date: "2014-07-17T14:00:00-0400"
-                    }
-                ],
-                files: [
-                    {
-                        packageName: "Combined Synopsis/Solicitation",
-                        packageDetails: [
+                        "packageName": "Combined Synopsis/Solicitation",
+                        "packageDetails": [
                             {
-                                fileURI: "https://www.fbo.gov/utils/view?id=bcba3445f4084328fa3bc40a559692c9",
-                                fileName: "SOL-278-14-000010.pdf",
-                                fileDescription: "SOL-278-14-000010 - Water Sector Infrastructure Project in Jordan"
+                                "fileURI": "https://www.fbo.gov/utils/view?id=bcba3445f4084328fa3bc40a559692c9",
+                                "fileName": "SOL-278-14-000010.pdf",
+                                "fileDescription": "SOL-278-14-000010 - Water Sector Infrastructure Project in Jordan"
                             }
                         ]
                     }
                 ],
-                goodsOrServices: "Services",
-                NAICS: "541330",
-                name: "Water Sector Infrastructure Project",
-                offices: [
+                "goodsOrServices": "Services",
+                "govTribeStats": {},
+                "importantDates": [
                     {
-                        name: "Washington D.C.",
-                        type: "office",
-                        _id: "51c1d52bdb40a5298c79c7ca"
+                        "date": "Not Available",
+                        "valueSource": "Sourced",
+                        "dateType": "Forecast"
                     },
                     {
-                    name: "USAID/Washington",
-                    type: "office",
-                    _id: "51c1d52bdb40a5298c79c7cb"
-                    }
-                ],
-                placeOfPerformanceGeocoded: "Not Available",
-                placeOfPerformanceText: "Jordan Jordan",
-                pointsOfContact: [
+                        "date": "Not Available",
+                        "valueSource": "Sourced",
+                        "dateType": "Presolicitation Posting"
+                    },
                     {
-                        name: "Beatrice Diah",
-                        type: "person",
-                        _id: "537114ed6c5cc884708b4567"
+                        "date": "Not Available",
+                        "valueSource": "Sourced",
+                        "dateType": "Presolicitation Due"
+                    },
+                    {
+                        "date": "2014-05-15T11:16:00-0400",
+                        "valueSource": "Sourced",
+                        "dateType": "Solicitation Posting"
+                    },
+                    {
+                        "date": "2014-07-17T14:00:00-0400",
+                        "valueSource": "Sourced",
+                        "dateType": "Solicitation Due"
+                    },
+                    {
+                        "date": "Not Available",
+                        "valueSource": "Sourced",
+                        "dateType": "Award"
+                    },
+                    {
+                        "date": "Not Available",
+                        "valueSource": "Sourced",
+                        "dateType": "Contract End"
+                    },
+                    {
+                        "date": "Not Available",
+                        "valueSource": "Sourced",
+                        "dateType": "Base Period End"
+                    },
+                    {
+                        "date": "Not Available",
+                        "valueSource": "Sourced",
+                        "dateType": "Option Period End"
                     }
                 ],
-                predictedCompetition: "None Listed",
-                protests: "None Listed",
-                setAsideType: "Not Available",
-                solicitationNumbers: [
+                "NAICS": [
+                    "541330"
+                ],
+                "name": "Water Sector Infrastructure Project",
+                "obligationData": [],
+                "offices": [
+                    {
+                        "name": "Washington D.C.",
+                        "type": "office",
+                        "_id": "51c1d52bdb40a5298c79c7ca"
+                    },
+                    {
+                        "name": "USAID/Washington",
+                        "type": "office",
+                        "_id": "51c1d52bdb40a5298c79c7cb"
+                    }
+                ],
+                "placeOfPerformanceText": "Jordan Jordan",
+                "placesOfPerformanceGeocoded": [],
+                "pointsOfContact": [
+                    {
+                        "name": "Beatrice Diah",
+                        "type": "person",
+                        "_id": "537114ed6c5cc884708b4567"
+                    }
+                ],
+                "predictedCompetition": [],
+                "protests": [],
+                "setAsideType": "Not Available",
+                "solicitationNumbers": [
                     "SOL-278-14-000010"
                 ],
-                sourceLinks: [
+                "sourceLinks": [
                     "https://www.fbo.gov/index?s=opportunity&mode=form&id=0c662f01e4c17d26274813ef05c0fc10&tab=core&_cview=0"
                 ],
-                synopsis: "<p class="MsoNormal" style="line-height:115%;"><br />The United States Agency for International Development (USAID) Mission to Jordan, is seeking proposals from interested qualified Jordanian Architect-Engineer (A-E) Consulting Firms, to provide construction supervision services for the construction contracts of Amman Water System Improvements Phase II, East Jerash Wastewater Treatment Plant and Tafilah Wastewater Treatment Plant.  This is in addition to other engineering infrastructure development tasks that USAID in cooperation with Ministry of Water and Irrigation may plan to implement during the life of the proposed contract. Detailed information is provided in the attached Request for proposal.</p> <br /><p class="MsoNormal" style="line-height:115%;"> </p> <br /><p class="MsoNormal" style="line-height:115%;"> </p> <br /><p class="MsoNormal" style="line-height:115%;"> </p>",
-                tags: [
+                "synopses": [
+                    "The United States Agency for International Development (USAID) Mission to Jordan, is seeking proposals from interested qualified Jordanian Architect-Engineer (A-E) Consulting Firms, to provide construction supervision services for the construction contracts of Amman Water System Improvements Phase II, East Jerash Wastewater Treatment Plant and Tafilah Wastewater Treatment Plant.  This is in addition to other engineering infrastructure development tasks that USAID in cooperation with Ministry of Water and Irrigation may plan to implement during the life of the proposed contract. Detailed information is provided in the attached Request for proposal."
+                ],
+                "tags": [
                     "construction supervision services",
                     "east jerash wastewater treatment plant",
                     "tafilah wastewater treatment plant",
                     "the united states agency for international development",
                     "ministry of water and irrigation"
                 ],
-                timestamp: "2014-05-15T11:16:00-0400",
-                type: "project",
-                workflowStatus: "Open",
-                _id: "5375057a6c5cc8435b8b4567"
+                "timestamp": "2014-05-15T11:16:00-0400",
+                "type": "project",
+                "workflowStatus": "Open",
+                "_id": "5375057a6c5cc8435b8b4567"
             }
 
     + Schema
@@ -904,6 +951,7 @@ A project is a U.S. federal government contract or opportunity.
 
             Accept: application/json
             X-GT-API-Key: yourAPIKey
+            X-GT-API-Version: 3.0
 
 + Response 200
     
@@ -1083,6 +1131,7 @@ Search all projects by keyword
 
             Accept: application/json
             X-GT-API-Key: yourAPIKey
+            X-GT-API-Version: 3.0
 
 + Response 200
 
@@ -1134,6 +1183,7 @@ Returns a paginated list of filtered projects, ordered by their timestamp proper
 
             Accept: application/json
             X-GT-API-Key: yourAPIKey
+            X-GT-API-Version: 3.0
 
 + Response 200
 
@@ -1904,6 +1954,7 @@ An agency is a U.S. government agency. Ain't that descriptive?
 
             Accept: application/json
             X-GT-API-Key: yourAPIKey
+            X-GT-API-Version: 3.0
 
 + Response 200
     
@@ -1972,6 +2023,7 @@ Returns a listing (slice) of NTIs that are related to an agency based on the sli
 
             Accept: application/json
             X-GT-API-Key: yourAPIKey
+            X-GT-API-Version: 3.0
 
 + Response 200
     
@@ -2123,6 +2175,7 @@ Search all agencies by keyword
 
             Accept: application/json
             X-GT-API-Key: yourAPIKey
+            X-GT-API-Version: 3.0
 
 + Response 200
 
@@ -2132,7 +2185,7 @@ Search all agencies by keyword
 # Group Office
 
 ## Office [/office/{_id}]
-An Office is a sub unit of a U.S. government agency 
+An Office is a subunit of a U.S. government agency 
 
 + Parameters
     + _id (required, string, `51c1d4dadb40a5298c79c731`) ... String `id` of the desired Office entity.
@@ -2887,12 +2940,13 @@ An Office is a sub unit of a U.S. government agency
     
 
 ### Retrieve a Single Office [GET]
-+ Request Agency
++ Request Office
     
     + Headers
 
             Accept: application/json
             X-GT-API-Key: yourAPIKey
+            X-GT-API-Version: 3.0
 
 + Response 200
     
@@ -2951,6 +3005,7 @@ Returns a listing (slice) of NTIs that are related to an office based on the sli
 
             Accept: application/json
             X-GT-API-Key: yourAPIKey
+            X-GT-API-Version: 3.0
 
 + Response 200
     
@@ -3076,12 +3131,13 @@ Find an office by its name or acronym.
 
 Search all agencies by keyword
 
-+ Request Search Projects
++ Request Search Offices
     
     + Headers
 
             Accept: application/json
             X-GT-API-Key: yourAPIKey
+            X-GT-API-Version: 3.0
 
 + Response 200
 
@@ -3363,6 +3419,7 @@ An Person is a U.S. government point of contact for one or more projects
 
             Accept: application/json
             X-GT-API-Key: yourAPIKey
+            X-GT-API-Version: 3.0
 
 + Response 200
     
@@ -3411,13 +3468,14 @@ Returns a listing (slice) of NTIs that are related to an person based on the sli
 
             Accept: application/json
             X-GT-API-Key: yourAPIKey
+            X-GT-API-Version: 3.0
 
 + Response 200
     
    [Entity Collection][]
 
 
-## Search People [/person/search/{?q}]
+## Search Person [/person/search/{?q}]
 Find a person by their name, email, telephone number, or position.
 
 + Parameters
@@ -3600,12 +3658,13 @@ Find a person by their name, email, telephone number, or position.
 ### Retrieve Person Search Results [GET]
 
 
-+ Request Search Projects
++ Request Search Person
     
     + Headers
 
             Accept: application/json
             X-GT-API-Key: yourAPIKey
+            X-GT-API-Version: 3.0
 
 + Response 200
 
@@ -3925,6 +3984,7 @@ An Vendor is an entity that has been awarded a Project
 
             Accept: application/json
             X-GT-API-Key: yourAPIKey
+            X-GT-API-Version: 3.0
 
 + Response 200
     
@@ -4053,6 +4113,7 @@ Find a vendor by name.
 
             Accept: application/json
             X-GT-API-Key: yourAPIKey
+            X-GT-API-Version: 3.0
 
 + Response 200
 
@@ -4083,6 +4144,7 @@ Returns a listing (slice) of NTIs that are related to a vendor based on the slic
 
             Accept: application/json
             X-GT-API-Key: yourAPIKey
+            X-GT-API-Version: 3.0
 
 + Response 200
     
@@ -4578,6 +4640,7 @@ Categories are a hierarchical topical grouping construct. They are based on NAIC
 
             Accept: application/json
             X-GT-API-Key: yourAPIKey
+            X-GT-API-Version: 3.0
 
 + Response 200
     
@@ -4711,12 +4774,13 @@ Find a category by its name.
 ### Retrieve Vendor Search Results [GET]
 
 
-+ Request Search Vendors
++ Request Search Categories
     
     + Headers
 
             Accept: application/json
             X-GT-API-Key: yourAPIKey
+            X-GT-API-Version: 3.0
 
 + Response 200
 
@@ -4747,6 +4811,7 @@ Returns a listing (slice) of NTIs that are related to a category based on the sl
 
             Accept: application/json
             X-GT-API-Key: yourAPIKey
+            X-GT-API-Version: 3.0
 
 + Response 200
     
@@ -4960,6 +5025,7 @@ In this example, the actions are:
 
             Accept: application/json
             X-GT-API-Key: yourAPIKey
+            X-GT-API-Version: 3.0
 
 + Response 200
     
@@ -5277,6 +5343,7 @@ For example, let's say you are interested in seeing the contracting activity for
 
             Accept: application/json
             X-GT-API-Key: yourAPIKey
+            X-GT-API-Version: 3.0
 
 + Response 200
     
@@ -5495,6 +5562,7 @@ Each of these disputes is a protest object.
 
             Accept: application/json
             X-GT-API-Key: yourAPIKey
+            X-GT-API-Version: 3.0
 
 + Response 200
     
@@ -5633,6 +5701,7 @@ Find a protest by...
 
             Accept: application/json
             X-GT-API-Key: yourAPIKey
+            X-GT-API-Version: 3.0
 
 + Response 200
 
